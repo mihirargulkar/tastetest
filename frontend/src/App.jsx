@@ -44,7 +44,12 @@ export default function App() {
     setBusy(kind); setError(null);
     if (kind === "signature") setTrace([]);
     if (kind === "score") { setResult(null); setBriefs({}); setSelected(null); }
-    try { await streamPost(url, body, onEvent); } catch (e) { setError(e.message); } finally { setBusy(null); }
+    let terminal = false;
+    const want = kind === "signature" ? "signature" : "result";
+    try {
+      await streamPost(url, body, (ev) => { if (ev.type === want || ev.type === "error") terminal = true; onEvent(ev); });
+      if (!terminal) setError("The run ended before finishing. Try again, or use a preloaded example.");
+    } catch (e) { setError(e.message); } finally { setBusy(null); }
   }
 
   const readTaste = (instruction) =>

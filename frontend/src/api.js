@@ -22,6 +22,8 @@ export async function streamPost(url, body, onEvent) {
       if (chunk.startsWith("data: ")) onEvent(JSON.parse(chunk.slice(6)));
     }
   }
+  buf += decoder.decode();
+  if (buf.startsWith("data: ")) onEvent(JSON.parse(buf.slice(6)));
 }
 
 export const getJSON = async (url) => (await check(await fetch(url))).json();
