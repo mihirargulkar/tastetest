@@ -91,7 +91,8 @@ def check_rate(request: Request, bucket: str) -> None:
         if not q:
             del _hits[k]
         if len(q) >= limit:
-            raise HTTPException(429, "Live run limit reached for this hour. The preloaded examples still work.")
+            msg = "Daily limit reached. The preloaded examples still work." if k[1].endswith("*day") else "Live run limit reached for this hour. The preloaded examples still work."
+            raise HTTPException(429, msg)
     for k, _, _ in keys:
         _hits[k].append(now)
 

@@ -122,6 +122,12 @@ async def test_refusal_raises():
         await collect(build_signature(llm, FakeTools(), "x"))
 
 
+async def test_max_tokens_raises():
+    llm = FakeLLM([resp(text("incomplete"), stop="max_tokens")])
+    with pytest.raises(AgentError, match="cut off"):
+        await collect(build_signature(llm, FakeTools(), "x"))
+
+
 async def test_stopping_without_finish_raises():
     llm = FakeLLM([resp(text("I am done"), stop="end_turn")])
     with pytest.raises(AgentError, match="submit_signature"):

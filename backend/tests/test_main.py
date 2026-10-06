@@ -131,10 +131,12 @@ def test_global_daily_ceiling_across_ips(client, monkeypatch):
     _ok_score(monkeypatch)
     monkeypatch.setattr(main, "GLOBAL_LIVE_PER_DAY", 2)
     monkeypatch.setattr(main, "GLOBAL_LIVE_PER_HOUR", 1000)
-    codes = [
-        client.post("/api/score", json={"signature": SIG}, headers={"X-Forwarded-For": f"8.8.8.{i}"}).status_code
-        for i in range(3)
-    ]
+    codes = []
+    for i in range(3):
+        r = client.post("/api/score", json={"signature": SIG}, headers={"X-Forwarded-For": f"8.8.8.{i}"})
+        codes.append(r.status_code)
+        if r.status_code == 429:
+            assert "Daily limit" in r.json()["detail"]
     assert codes == [200, 200, 429]
 
 

@@ -31,6 +31,8 @@ async def create(llm, *, output_config: dict | None = None, **kw):
         output_config={"effort": "medium", **(output_config or {})}, **kw)
     if resp.stop_reason == "refusal":
         raise AgentError("the model declined this request")
+    if resp.stop_reason == "max_tokens":
+        raise AgentError("the model response was cut off")
     return resp
 
 
