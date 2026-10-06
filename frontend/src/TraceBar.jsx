@@ -11,7 +11,7 @@ export default function TraceBar({ trace, stability, metros, metro, onMetro }) {
         </button>
         {stability && (
           <span title="Leave-one-out Spearman correlation between the full ranking and the ranking with one concept removed">
-            {stability.rho >= 0.7 ? "✓" : "⚠"} Ranking holds when any single concept is dropped: ρ ≥ {stability.rho.toFixed(2)} · most sensitive to "{stability.weakest}"
+            {stability.rho >= 0.7 ? "✓" : "⚠"} Ranking holds when any single concept is dropped: ρ ≥ {stability.rho.toFixed(2)} · most sensitive to “{stability.weakest}”
           </span>
         )}
         <span className="metros">

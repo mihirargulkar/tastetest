@@ -40,7 +40,7 @@ export default function InputCard({ demos, lto, setLto, signature, setSignature,
           <form onSubmit={refine}>
             <input className="input" aria-label="Adjust the signature" maxLength={300} value={instruction}
               onChange={(e) => setInstruction(e.target.value)} disabled={!!busy}
-              placeholder='Adjust: "aim at an older crowd"' />
+              placeholder='Adjust: “aim at an older crowd”' />
           </form>
           <button className="btn" disabled={!!busy || signature.length === 0} onClick={onScore}>
             {busy === "score" ? "Scoring…" : `Score ${storeCount} stores`}

@@ -28,22 +28,15 @@
    "id": "urn:tag:specialty_dish:place:oatmeal_raisin_cookie",
    "name": "Oatmeal Raisin Cookie",
    "kind": "tag",
-   "weight": 0.3,
-   "substituted_from": null
+   "weight": 0.4,
+   "substituted_from": "oatmeal cookie"
   },
   {
    "id": "urn:tag:specialty_dish:place:apple_pie",
    "name": "Apple Pie",
    "kind": "tag",
    "weight": 0.3,
-   "substituted_from": null
-  },
-  {
-   "id": "urn:tag:specialty_dish:place:maple_walnut",
-   "name": "Maple Walnut",
-   "kind": "tag",
-   "weight": 0.3,
-   "substituted_from": null
+   "substituted_from": "fall comfort"
   }
  ],
  "result": {
@@ -56,17 +49,16 @@
     "lat": 37.781385,
     "lon": -122.416976,
     "metro": "Bay Area",
-    "affinity": 0.9827873964429967,
+    "affinity": 0.9806882890442188,
     "popularity": 1,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9955156950672646,
      "urn:tag:specialty_dish:place:oatmilk_latte": 1,
      "urn:tag:specialty_dish:place:brown_butter": 0.9695121951219512,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.9097222222222222,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9977528089887641,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.9822222222222222
+     "urn:tag:specialty_dish:place:apple_pie": 0.9977528089887641
     },
-    "fit": 1.64,
+    "fit": 1.65,
     "confidence": "high"
    },
    {
@@ -76,17 +68,16 @@
     "lat": 37.7945298,
     "lon": -122.3951458,
     "metro": "Bay Area",
-    "affinity": 0.9671299115500072,
-    "popularity": 0.9695193742333469,
+    "affinity": 0.9657274226869357,
+    "popularity": 0.9696454713022384,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9820627802690582,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.9186046511627907,
      "urn:tag:specialty_dish:place:brown_butter": 0.9939024390243902,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.9513888888888888,
-     "urn:tag:specialty_dish:place:apple_pie": 0.996629213483146,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.9777777777777777
+     "urn:tag:specialty_dish:place:apple_pie": 0.996629213483146
     },
-    "fit": 1.58,
+    "fit": 1.59,
     "confidence": "high"
    },
    {
@@ -96,15 +87,14 @@
     "lat": 37.7918825,
     "lon": -122.3988519,
     "metro": "Bay Area",
-    "affinity": 0.9634571888340481,
-    "popularity": 0.9858743034015369,
+    "affinity": 0.9567978077850706,
+    "popularity": 0.9857158307485109,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9730941704035875,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.9844961240310077,
      "urn:tag:specialty_dish:place:brown_butter": 0.9512195121951219,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8333333333333334,
-     "urn:tag:specialty_dish:place:apple_pie": 0.998876404494382,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.9955555555555555
+     "urn:tag:specialty_dish:place:apple_pie": 0.998876404494382
     },
     "fit": 1.56,
     "confidence": "high"
@@ -116,17 +106,16 @@
     "lat": 34.0462665,
     "lon": -118.2596525,
     "metro": "LA basin",
-    "affinity": 0.8997348476231616,
-    "popularity": 0.97473786561144,
+    "affinity": 0.8943651484859819,
+    "popularity": 0.9766333295525866,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.8914473684210527,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.928388746803069,
      "urn:tag:specialty_dish:place:brown_butter": 0.864406779661017,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8095238095238095,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9950310559006211,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.9305210918114144
+     "urn:tag:specialty_dish:place:apple_pie": 0.9950310559006211
     },
-    "fit": 1.31,
+    "fit": 1.3,
     "confidence": "high"
    },
    {
@@ -136,17 +125,16 @@
     "lat": 34.0976563,
     "lon": -118.3299312,
     "metro": "LA basin",
-    "affinity": 0.8944254360705951,
-    "popularity": 0.9905898615497732,
+    "affinity": 0.8839283412110713,
+    "popularity": 0.9911892234378916,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.8930921052631579,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.90153452685422,
      "urn:tag:specialty_dish:place:brown_butter": 0.9084745762711864,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.6904761904761905,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9930434782608696,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.9454094292803971
+     "urn:tag:specialty_dish:place:apple_pie": 0.9930434782608696
     },
-    "fit": 1.29,
+    "fit": 1.26,
     "confidence": "high"
    },
    {
@@ -156,15 +144,14 @@
     "lat": 37.7601055,
     "lon": -122.4346797,
     "metro": "Bay Area",
-    "affinity": 0.8782100980065091,
-    "popularity": 0.8929758306770942,
+    "affinity": 0.8755067704382646,
+    "popularity": 0.8911265523680686,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9147982062780269,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8875968992248062,
      "urn:tag:specialty_dish:place:brown_butter": 0.8109756097560976,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.7916666666666666,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9921348314606742,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.88
+     "urn:tag:specialty_dish:place:apple_pie": 0.9921348314606742
     },
     "fit": 1.22,
     "confidence": "high"
@@ -176,17 +163,16 @@
     "lat": 34.0637237,
     "lon": -118.399308,
     "metro": "LA basin",
-    "affinity": 0.8663128676335925,
-    "popularity": 0.8995776358636647,
+    "affinity": 0.8700539328849851,
+    "popularity": 0.9092698379743628,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.8651315789473685,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.7595907928388747,
      "urn:tag:specialty_dish:place:brown_butter": 0.9220338983050848,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.9404761904761905,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9853416149068323,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.8486352357320099
+     "urn:tag:specialty_dish:place:apple_pie": 0.9853416149068323
     },
-    "fit": 1.17,
+    "fit": 1.2,
     "confidence": "high"
    },
    {
@@ -196,17 +182,16 @@
     "lat": 37.4422033,
     "lon": -122.1616018,
     "metro": "Bay Area",
-    "affinity": 0.8642370564257389,
-    "popularity": 0.8689777265795103,
+    "affinity": 0.8685140728167956,
+    "popularity": 0.8747732718954124,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.852017937219731,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.9147286821705426,
      "urn:tag:specialty_dish:place:brown_butter": 0.7682926829268293,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.9236111111111112,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9786516853932584,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.8355555555555556
+     "urn:tag:specialty_dish:place:apple_pie": 0.9786516853932584
     },
-    "fit": 1.16,
+    "fit": 1.19,
     "confidence": "high"
    },
    {
@@ -216,17 +201,16 @@
     "lat": 37.7887269,
     "lon": -122.393156,
     "metro": "Bay Area",
-    "affinity": 0.8552664402275207,
-    "popularity": 0.8920985897557905,
+    "affinity": 0.8480108713520155,
+    "popularity": 0.8882960854847264,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.874439461883408,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.7945736434108527,
      "urn:tag:specialty_dish:place:brown_butter": 0.8780487804878049,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.7361111111111112,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9893258426966293,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.8977777777777778
+     "urn:tag:specialty_dish:place:apple_pie": 0.9893258426966293
     },
-    "fit": 1.13,
+    "fit": 1.11,
     "confidence": "high"
    },
    {
@@ -236,37 +220,16 @@
     "lat": 37.7904312,
     "lon": -122.3952043,
     "metro": "Bay Area",
-    "affinity": 0.8552664402275207,
-    "popularity": 0.8920985897557905,
+    "affinity": 0.8480108713520155,
+    "popularity": 0.8882960854847264,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.874439461883408,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.7945736434108527,
      "urn:tag:specialty_dish:place:brown_butter": 0.8780487804878049,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.7361111111111112,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9893258426966293,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.8977777777777778
+     "urn:tag:specialty_dish:place:apple_pie": 0.9893258426966293
     },
-    "fit": 1.13,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-glendale-glendale",
-    "name": "Glendale",
-    "address": "252 South Brand Blvd, Glendale, CA 91204",
-    "lat": 34.1427824,
-    "lon": -118.2547408,
-    "metro": "LA basin",
-    "affinity": 0.8532645639772776,
-    "popularity": 0.8632641215001253,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.9884868421052632,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8964194373401535,
-     "urn:tag:specialty_dish:place:brown_butter": 0.7152542372881356,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5059523809523809,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9806211180124224,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.8610421836228288
-    },
-    "fit": 1.12,
+    "fit": 1.11,
     "confidence": "high"
    },
    {
@@ -276,17 +239,35 @@
     "lat": 37.7975392,
     "lon": -122.4219848,
     "metro": "Bay Area",
-    "affinity": 0.843768922298995,
-    "popularity": 0.8382187247707245,
+    "affinity": 0.8432798392969751,
+    "popularity": 0.8378624697248694,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.7892376681614349,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8372093023255814,
      "urn:tag:specialty_dish:place:brown_butter": 0.8414634146341463,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8958333333333334,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9764044943820225,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.8666666666666667
+     "urn:tag:specialty_dish:place:apple_pie": 0.9764044943820225
     },
-    "fit": 1.08,
+    "fit": 1.09,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-glendale-glendale",
+    "name": "Glendale",
+    "address": "252 South Brand Blvd, Glendale, CA 91204",
+    "lat": 34.1427824,
+    "lon": -118.2547408,
+    "metro": "LA basin",
+    "affinity": 0.8423632392137027,
+    "popularity": 0.8637085090755846,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.9884868421052632,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8964194373401535,
+     "urn:tag:specialty_dish:place:brown_butter": 0.7152542372881356,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5059523809523809,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9806211180124224
+    },
+    "fit": 1.09,
     "confidence": "high"
    },
    {
@@ -296,17 +277,16 @@
     "lat": 34.0244516,
     "lon": -118.3933641,
     "metro": "LA basin",
-    "affinity": 0.7191608179706579,
-    "popularity": 0.7566198946450559,
+    "affinity": 0.7204693374254867,
+    "popularity": 0.7724600026063251,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.8355263157894737,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.7301790281329923,
      "urn:tag:specialty_dish:place:brown_butter": 0.5457627118644067,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5714285714285714,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9724223602484472,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.6550868486352357
+     "urn:tag:specialty_dish:place:apple_pie": 0.9724223602484472
     },
-    "fit": 0.58,
+    "fit": 0.59,
     "confidence": "high"
    },
    {
@@ -323,8 +303,7 @@
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.6627906976744186,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8179775280898877,
-     "urn:tag:specialty_dish:place:maple_walnut": null
+     "urn:tag:specialty_dish:place:apple_pie": 0.8179775280898877
     },
     "fit": 0.51,
     "confidence": "high"
@@ -336,15 +315,14 @@
     "lat": 34.1104689,
     "lon": -118.2876272,
     "metro": "LA basin",
-    "affinity": 0.6984942968229456,
-    "popularity": 0.665483654403238,
+    "affinity": 0.6992437597724809,
+    "popularity": 0.6814587971945556,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9111842105263158,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.6649616368286445,
      "urn:tag:specialty_dish:place:brown_butter": 0.43389830508474575,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5863095238095238,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9537888198757764,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.652605459057072
+     "urn:tag:specialty_dish:place:apple_pie": 0.9537888198757764
     },
     "fit": 0.5,
     "confidence": "high"
@@ -356,17 +334,16 @@
     "lat": 37.5669875,
     "lon": -122.3236083,
     "metro": "Bay Area",
-    "affinity": 0.656132326479386,
-    "popularity": 0.6809558910959591,
+    "affinity": 0.6512234437232715,
+    "popularity": 0.6767026248707064,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.43946188340807174,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.872093023255814,
      "urn:tag:specialty_dish:place:brown_butter": 0.4634146341463415,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8541666666666666,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9247191011235955,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.7777777777777778
+     "urn:tag:specialty_dish:place:apple_pie": 0.9247191011235955
     },
-    "fit": 0.33,
+    "fit": 0.3,
     "confidence": "high"
    },
    {
@@ -376,57 +353,16 @@
     "lat": 34.1432645,
     "lon": -118.13177,
     "metro": "LA basin",
-    "affinity": 0.6367196513561992,
-    "popularity": 0.5987939507142568,
+    "affinity": 0.6515714693697499,
+    "popularity": 0.6470887210059915,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.875,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8120204603580563,
      "urn:tag:specialty_dish:place:brown_butter": 0.15254237288135594,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.48214285714285715,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9821118012422361,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.41687344913151364
+     "urn:tag:specialty_dish:place:apple_pie": 0.9821118012422361
     },
-    "fit": 0.25,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-torrance-del-amo-fashion-center",
-    "name": "Del Amo Fashion Center",
-    "address": "21434 Hawthorne Boulevard, Torrance, CA 90503",
-    "lat": 33.8342763,
-    "lon": -118.3511753,
-    "metro": "LA basin",
-    "affinity": 0.557614601784349,
-    "popularity": 0.6514854685130704,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.40789473684210525,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8158567774936062,
-     "urn:tag:specialty_dish:place:brown_butter": 0.3559322033898305,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.3958333333333333,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9709316770186336,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.5682382133995038
-    },
-    "fit": -0.07,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-noe-valley",
-    "name": "Noe Valley",
-    "address": "4298 24th St, San Francisco, CA 94114",
-    "lat": 37.7511414,
-    "lon": -122.4383792,
-    "metro": "Bay Area",
-    "affinity": 0.5566405274269667,
-    "popularity": 0.5236154287014003,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.6188340807174888,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.43410852713178294,
-     "urn:tag:specialty_dish:place:brown_butter": 0.5853658536585366,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.04861111111111111,
-     "urn:tag:specialty_dish:place:apple_pie": 0.949438202247191,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.7555555555555555
-    },
-    "fit": -0.08,
+    "fit": 0.3,
     "confidence": "high"
    },
    {
@@ -436,17 +372,35 @@
     "lat": 37.3242262,
     "lon": -122.0105165,
     "metro": "Bay Area",
-    "affinity": 0.5452043755362809,
-    "popularity": 0.4949713940375411,
+    "affinity": 0.5631657440318791,
+    "popularity": 0.5210767839561604,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.26905829596412556,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.9418604651162791,
      "urn:tag:specialty_dish:place:brown_butter": 0.24390243902439024,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8402777777777778,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8893258426966292,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.44
+     "urn:tag:specialty_dish:place:apple_pie": 0.8893258426966292
     },
-    "fit": -0.12,
+    "fit": -0.06,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-torrance-del-amo-fashion-center",
+    "name": "Del Amo Fashion Center",
+    "address": "21434 Hawthorne Boulevard, Torrance, CA 90503",
+    "lat": 33.8342763,
+    "lon": -118.3511753,
+    "metro": "LA basin",
+    "affinity": 0.5519189516873937,
+    "popularity": 0.6626758624638235,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.40789473684210525,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8158567774936062,
+     "urn:tag:specialty_dish:place:brown_butter": 0.3559322033898305,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.3958333333333333,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9709316770186336
+    },
+    "fit": -0.11,
     "confidence": "high"
    },
    {
@@ -456,57 +410,35 @@
     "lat": 37.7755634,
     "lon": -122.3933972,
     "metro": "Bay Area",
-    "affinity": 0.5269843066818994,
-    "popularity": 0.42973872810346136,
+    "affinity": 0.53063044236907,
+    "popularity": 0.45257536261304254,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.7443946188340808,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.686046511627907,
      "urn:tag:specialty_dish:place:brown_butter": 0.1524390243902439,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.08333333333333333,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9567415730337079,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.3377777777777778
+     "urn:tag:specialty_dish:place:apple_pie": 0.9567415730337079
     },
     "fit": -0.19,
     "confidence": "high"
    },
    {
-    "id": "philz-san-jose-philz-coffee-san-jose",
-    "name": "Philz Coffee - San Jose",
-    "address": "118 Paseo de San Antonio Walk, San Jose, CA 95112",
-    "lat": 37.3336349,
-    "lon": -121.88499,
+    "id": "philz-san-francisco-noe-valley",
+    "name": "Noe Valley",
+    "address": "4298 24th St, San Francisco, CA 94114",
+    "lat": 37.7511414,
+    "lon": -122.4383792,
     "metro": "Bay Area",
-    "affinity": 0.5149378771364885,
-    "popularity": 0.6840498869284841,
+    "affinity": 0.5241471597592718,
+    "popularity": 0.49500518110834707,
     "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.23766816143497757,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8643410852713178,
-     "urn:tag:specialty_dish:place:brown_butter": 0.4024390243902439,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.10416666666666667,
-     "urn:tag:specialty_dish:place:apple_pie": 0.95,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.6666666666666666
+     "urn:tag:specialty_dish:place:maple_latte": 0.6188340807174888,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.43410852713178294,
+     "urn:tag:specialty_dish:place:brown_butter": 0.5853658536585366,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.04861111111111111,
+     "urn:tag:specialty_dish:place:apple_pie": 0.949438202247191
     },
-    "fit": -0.24,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-potrero",
-    "name": "Potrero",
-    "address": "1775 17th St, San Francisco, CA 94103",
-    "lat": 37.7647559,
-    "lon": -122.4011997,
-    "metro": "Bay Area",
-    "affinity": 0.507483296061666,
-    "popularity": 0.45038226728394615,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.6591928251121076,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.25193798449612403,
-     "urn:tag:specialty_dish:place:brown_butter": 0.5487804878048781,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.14583333333333334,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9185393258426966,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.6088888888888889
-    },
-    "fit": -0.27,
+    "fit": -0.22,
     "confidence": "high"
    },
    {
@@ -516,17 +448,54 @@
     "lat": 37.5779248,
     "lon": -122.3485707,
     "metro": "Bay Area",
-    "affinity": 0.5062967884848385,
-    "popularity": 0.5161552541151168,
+    "affinity": 0.493415553820548,
+    "popularity": 0.5100529716048068,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.1210762331838565,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8217054263565892,
      "urn:tag:specialty_dish:place:brown_butter": 0.4695121951219512,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.4027777777777778,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9342696629213483,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.6177777777777778
+     "urn:tag:specialty_dish:place:apple_pie": 0.9342696629213483
     },
-    "fit": -0.28,
+    "fit": -0.35,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-philz-coffee-san-jose",
+    "name": "Philz Coffee - San Jose",
+    "address": "118 Paseo de San Antonio Walk, San Jose, CA 95112",
+    "lat": 37.3336349,
+    "lon": -121.88499,
+    "metro": "Bay Area",
+    "affinity": 0.48946853657588985,
+    "popularity": 0.667970975425292,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.23766816143497757,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8643410852713178,
+     "urn:tag:specialty_dish:place:brown_butter": 0.4024390243902439,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.10416666666666667,
+     "urn:tag:specialty_dish:place:apple_pie": 0.95
+    },
+    "fit": -0.36,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-potrero",
+    "name": "Potrero",
+    "address": "1775 17th St, San Francisco, CA 94103",
+    "lat": 37.7647559,
+    "lon": -122.4011997,
+    "metro": "Bay Area",
+    "affinity": 0.4878989801437248,
+    "popularity": 0.4409031651851798,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.6591928251121076,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.25193798449612403,
+     "urn:tag:specialty_dish:place:brown_butter": 0.5487804878048781,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.14583333333333334,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9185393258426966
+    },
+    "fit": -0.37,
     "confidence": "high"
    },
    {
@@ -536,17 +505,16 @@
     "lat": 37.4544368,
     "lon": -122.1825021,
     "metro": "Bay Area",
-    "affinity": 0.44616700384620356,
-    "popularity": 0.34973081395949535,
+    "affinity": 0.47783695832081685,
+    "popularity": 0.4196769767513944,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.16591928251121077,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.875968992248062,
      "urn:tag:specialty_dish:place:brown_butter": 0.2073170731707317,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.6111111111111112,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8668539325842697,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.14222222222222222
+     "urn:tag:specialty_dish:place:apple_pie": 0.8668539325842697
     },
-    "fit": -0.52,
+    "fit": -0.41,
     "confidence": "high"
    },
    {
@@ -556,17 +524,16 @@
     "lat": 37.3225787,
     "lon": -122.034649,
     "metro": "Bay Area",
-    "affinity": 0.4412636851909386,
-    "popularity": 0.48155626829806114,
+    "affinity": 0.45775141830674554,
+    "popularity": 0.5147564108465622,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.22869955156950672,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8255813953488372,
      "urn:tag:specialty_dish:place:brown_butter": 0.15853658536585366,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.4513888888888889,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9241573033707865,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.2577777777777778
+     "urn:tag:specialty_dish:place:apple_pie": 0.9241573033707865
     },
-    "fit": -0.54,
+    "fit": -0.49,
     "confidence": "high"
    },
    {
@@ -576,17 +543,35 @@
     "lat": 37.3767094,
     "lon": -122.0311824,
     "metro": "Bay Area",
-    "affinity": 0.4007027267120605,
-    "popularity": 0.46480349089136547,
+    "affinity": 0.4541318864152202,
+    "popularity": 0.5841824322995984,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.1031390134529148,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.7054263565891473,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8702247191011236,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.008888888888888889
+     "urn:tag:specialty_dish:place:apple_pie": 0.8702247191011236
     },
-    "fit": -0.7,
+    "fit": -0.51,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-redwood-city-redwood-city",
+    "name": "Redwood City",
+    "address": "2116 Broadway, Redwood City, CA 94063",
+    "lat": 37.4866611,
+    "lon": -122.228595,
+    "metro": "Bay Area",
+    "affinity": 0.40384807756179053,
+    "popularity": 0.46241281453367206,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.242152466367713,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.6782945736434108,
+     "urn:tag:specialty_dish:place:brown_butter": 0.06097560975609756,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9056179775280899
+    },
+    "fit": -0.71,
     "confidence": "high"
    },
    {
@@ -603,10 +588,9 @@
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.12403100775193798,
      "urn:tag:specialty_dish:place:brown_butter": 0.676829268292683,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.5056179775280899,
-     "urn:tag:specialty_dish:place:maple_walnut": null
+     "urn:tag:specialty_dish:place:apple_pie": 0.5056179775280899
     },
-    "fit": -0.7,
+    "fit": -0.72,
     "confidence": "high"
    },
    {
@@ -616,37 +600,35 @@
     "lat": 37.8972067,
     "lon": -122.0635489,
     "metro": "Bay Area",
-    "affinity": 0.38191109935178075,
-    "popularity": 0.4521635131201222,
+    "affinity": 0.3950055431044999,
+    "popularity": 0.4963739935219244,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.6053811659192825,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.4263565891472868,
      "urn:tag:specialty_dish:place:brown_butter": 0.006097560975609756,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.2013888888888889,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8949438202247191,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.17333333333333334
+     "urn:tag:specialty_dish:place:apple_pie": 0.8949438202247191
     },
-    "fit": -0.78,
+    "fit": -0.75,
     "confidence": "high"
    },
    {
-    "id": "philz-redwood-city-redwood-city",
-    "name": "Redwood City",
-    "address": "2116 Broadway, Redwood City, CA 94063",
-    "lat": 37.4866611,
-    "lon": -122.228595,
-    "metro": "Bay Area",
-    "affinity": 0.38233799917872807,
-    "popularity": 0.4238625306299119,
+    "id": "philz-orange-old-towne-orange",
+    "name": "Old Towne Orange",
+    "address": "202 N Glassell St, Orange, CA 92866",
+    "lat": 33.789841,
+    "lon": -117.853187,
+    "metro": "LA basin",
+    "affinity": 0.39339708111753685,
+    "popularity": 0.5351389443144903,
     "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.242152466367713,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.6782945736434108,
-     "urn:tag:specialty_dish:place:brown_butter": 0.06097560975609756,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9056179775280899,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.17777777777777778
+     "urn:tag:specialty_dish:place:maple_latte": 0.05098684210526316,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8797953964194374,
+     "urn:tag:specialty_dish:place:brown_butter": 0.020338983050847456,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.47619047619047616,
+     "urn:tag:specialty_dish:place:apple_pie": 0.96
     },
-    "fit": -0.78,
+    "fit": -0.76,
     "confidence": "high"
    },
    {
@@ -663,30 +645,9 @@
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.2364341085271318,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.7966292134831461,
-     "urn:tag:specialty_dish:place:maple_walnut": null
+     "urn:tag:specialty_dish:place:apple_pie": 0.7966292134831461
     },
-    "fit": -0.8,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-orange-old-towne-orange",
-    "name": "Old Towne Orange",
-    "address": "202 N Glassell St, Orange, CA 92866",
-    "lat": 33.789841,
-    "lon": -117.853187,
-    "metro": "LA basin",
-    "affinity": 0.36369051858062634,
-    "popularity": 0.47862074970789825,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.05098684210526316,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8797953964194374,
-     "urn:tag:specialty_dish:place:brown_butter": 0.020338983050847456,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.47619047619047616,
-     "urn:tag:specialty_dish:place:apple_pie": 0.96,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.06451612903225806
-    },
-    "fit": -0.85,
+    "fit": -0.82,
     "confidence": "high"
    },
    {
@@ -703,10 +664,47 @@
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.28294573643410853,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.5719101123595506,
-     "urn:tag:specialty_dish:place:maple_walnut": null
+     "urn:tag:specialty_dish:place:apple_pie": 0.5719101123595506
     },
-    "fit": -0.89,
+    "fit": -0.91,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-brea-brea-mall",
+    "name": "Brea Mall",
+    "address": "1240 Brea Mall, Brea, CA 92821",
+    "lat": 33.917613,
+    "lon": -117.8843567,
+    "metro": "LA basin",
+    "affinity": 0.2955163909429288,
+    "popularity": 0.43247079896031637,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.044407894736842105,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.38618925831202044,
+     "urn:tag:specialty_dish:place:brown_butter": null,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.2619047619047619,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9053416149068323
+    },
+    "fit": -1.16,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-chase-center",
+    "name": "Chase Center",
+    "address": "1 Warriors Way, San Francisco, CA 94158",
+    "lat": 37.7679001,
+    "lon": -122.3874223,
+    "metro": "Bay Area",
+    "affinity": 0.2716164849413384,
+    "popularity": 0.44507126102730254,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.17488789237668162,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.12015503875968993,
+     "urn:tag:specialty_dish:place:brown_butter": 0.23780487804878048,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.4375,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9174157303370787
+    },
+    "fit": -1.25,
     "confidence": "high"
    },
    {
@@ -723,50 +721,9 @@
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.12790697674418605,
      "urn:tag:specialty_dish:place:brown_butter": 0.25,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.746629213483146,
-     "urn:tag:specialty_dish:place:maple_walnut": null
+     "urn:tag:specialty_dish:place:apple_pie": 0.746629213483146
     },
-    "fit": -1.23,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-brea-brea-mall",
-    "name": "Brea Mall",
-    "address": "1240 Brea Mall, Brea, CA 92821",
-    "lat": 33.917613,
-    "lon": -117.8843567,
-    "metro": "LA basin",
-    "affinity": 0.27063746235841807,
-    "popularity": 0.3459766391682531,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.044407894736842105,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.38618925831202044,
-     "urn:tag:specialty_dish:place:brown_butter": null,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.2619047619047619,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9053416149068323,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.052109181141439205
-    },
-    "fit": -1.23,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-chase-center",
-    "name": "Chase Center",
-    "address": "1 Warriors Way, San Francisco, CA 94158",
-    "lat": 37.7679001,
-    "lon": -122.3874223,
-    "metro": "Bay Area",
-    "affinity": 0.2477072357779307,
-    "popularity": 0.4005223471523818,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.17488789237668162,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.12015503875968993,
-     "urn:tag:specialty_dish:place:brown_butter": 0.23780487804878048,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.4375,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9174157303370787,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.04
-    },
-    "fit": -1.32,
+    "fit": -1.26,
     "confidence": "high"
    },
    {
@@ -776,35 +733,14 @@
     "lat": 37.2870273,
     "lon": -121.931647,
     "metro": "Bay Area",
-    "affinity": 0.22944871834929745,
-    "popularity": 0.18688651293569947,
+    "affinity": 0.23515158413455026,
+    "popularity": 0.20293048218950602,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.08071748878923767,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.6589147286821705,
      "urn:tag:specialty_dish:place:brown_butter": 0.06707317073170732,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.041666666666666664,
-     "urn:tag:specialty_dish:place:apple_pie": 0.18483146067415732,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.10222222222222223
-    },
-    "fit": -1.39,
-    "confidence": "low"
-   },
-   {
-    "id": "philz-fremont-fremont",
-    "name": "Fremont",
-    "address": "39000 Paseo Padre Pkwy, Fremont, CA 94538",
-    "lat": 37.5535513,
-    "lon": -121.980306,
-    "metro": "Bay Area",
-    "affinity": 0.22764153383433097,
-    "popularity": 0.3451421985423633,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.008968609865470852,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.29844961240310075,
-     "urn:tag:specialty_dish:place:brown_butter": null,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.020833333333333332,
-     "urn:tag:specialty_dish:place:apple_pie": 0.6719101123595506,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.5066666666666667
+     "urn:tag:specialty_dish:place:apple_pie": 0.18483146067415732
     },
     "fit": -1.4,
     "confidence": "high"
@@ -823,10 +759,9 @@
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.050387596899224806,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.6325842696629214,
-     "urn:tag:specialty_dish:place:maple_walnut": null
+     "urn:tag:specialty_dish:place:apple_pie": 0.6325842696629214
     },
-    "fit": -1.53,
+    "fit": -1.57,
     "confidence": "high"
    },
    {
@@ -836,17 +771,35 @@
     "lat": 37.8112398,
     "lon": -122.2434366,
     "metro": "Bay Area",
-    "affinity": 0.17308755628033212,
-    "popularity": 0.2874669485889231,
+    "affinity": 0.1899518674639209,
+    "popularity": 0.3593336857361538,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.026905829596412557,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.1511627906976744,
      "urn:tag:specialty_dish:place:brown_butter": 0.18292682926829268,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8685393258426967,
-     "urn:tag:specialty_dish:place:maple_walnut": 0.0044444444444444444
+     "urn:tag:specialty_dish:place:apple_pie": 0.8685393258426967
     },
-    "fit": -1.62,
+    "fit": -1.59,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-fremont-fremont",
+    "name": "Fremont",
+    "address": "39000 Paseo Padre Pkwy, Fremont, CA 94538",
+    "lat": 37.5535513,
+    "lon": -121.980306,
+    "metro": "Bay Area",
+    "affinity": 0.1874921646421,
+    "popularity": 0.2992055259557319,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.008968609865470852,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.29844961240310075,
+     "urn:tag:specialty_dish:place:brown_butter": null,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.020833333333333332,
+     "urn:tag:specialty_dish:place:apple_pie": 0.6719101123595506
+    },
+    "fit": -1.6,
     "confidence": "high"
    }
   ],
@@ -858,31 +811,31 @@
    "philz-los-angeles-hollywood"
   ],
   "bottom": [
+   "philz-fremont-fremont",
    "philz-oakland-lakeshore-oakland",
-   "philz-san-mateo-hillsdale",
-   "philz-fremont-fremont"
+   "philz-san-mateo-hillsdale"
   ],
   "reasons": {
-   "philz-san-francisco-civic-center": "Good test site: Lively, Social, Tourists and Locals mix, plus Event venue and Live music venue traffic, give broad exposure.",
-   "philz-san-francisco-embarcadero": "Good test site: Lively, Social, Tourists and Foodies, plus Couples and Business Professionals, suit a seasonal offer.",
-   "philz-san-francisco-front-st": "Good test site: Lively, Social, Tourists, Foodies and Business Professionals offer varied audiences to try a limited-time drink.",
-   "philz-los-angeles-dtla-hope": "Good test site: Lively, Social, Fun, Tourists and Foodies, with Locals, should give a useful read on interest.",
-   "philz-los-angeles-hollywood": "Good test site: Live music venue, Lively, Social and Fun, with Tourists and Locals, bring strong foot traffic for trials.",
-   "philz-oakland-lakeshore-oakland": "Weaker test site: despite Lively and Foodies, Cocktail Enthusiasts and Californian tags point away from this offer's signature appeal.",
-   "philz-san-mateo-hillsdale": "Weaker test site: Science museum, Aquarium and Event venue tags suggest visit-driven traffic, less fitting for this offer.",
-   "philz-fremont-fremont": "Weaker test site: Regulars and Locals with Californian, New American tags suggest less novelty-seeking traffic than other stores."
+   "philz-san-francisco-civic-center": "Good test spot: Lively, Social, Tourists and Locals mix, plus Event venue and Live music venue tags, bring steady, varied foot traffic.",
+   "philz-san-francisco-embarcadero": "Good test spot: Lively, Social, Tourists and Foodies tags suggest an audience eager to try a new limited-time offer.",
+   "philz-san-francisco-front-st": "Good test spot: Lively, Tourists, Foodies and Business Professionals tags suggest varied, curious customers who would try something new.",
+   "philz-los-angeles-dtla-hope": "Good test spot: Lively, Social, Fun, Tourists and Foodies tags point to energetic crowds likely to sample a limited-time offer.",
+   "philz-los-angeles-hollywood": "Good test spot: Live music venue, Lively, Fun and Social tags suggest busy, sociable traffic well suited to testing offers.",
+   "philz-fremont-fremont": "Weaker test spot: Regulars, Locals and Californian tags suggest a steadier crowd, with less of the lively, social buzz of stronger stores.",
+   "philz-oakland-lakeshore-oakland": "Weaker test spot: despite Foodies and Social tags, Cocktail Enthusiasts and Californian tags suggest a weaker match for this offer.",
+   "philz-san-mateo-hillsdale": "Weaker test spot: Science museum, Aquarium and Event venue tags suggest attraction-driven visits rather than a crowd seeking new offers."
   },
   "stability": {
-   "rho": 0.87,
+   "rho": 0.85,
    "weakest": "Oatmilk Latte"
   }
  },
  "briefs": {
   "philz-san-francisco-civic-center": {
    "store_id": "philz-san-francisco-civic-center",
-   "fit": 1.64,
+   "fit": 1.65,
    "label": "test",
-   "verdict": "Strong fit: the lively, social, foodie crowd of locals and tourists should embrace these cozy, shareable fall flavors for group outings.",
+   "verdict": "Strong fit: Civic Center's lively, social crowd of locals, tourists and foodies suits a cozy, shareable fall-flavored offer.",
    "why_tags": [
     {
      "id": "urn:tag:ambience:qloo:lively",
@@ -912,35 +865,35 @@
    ],
    "partners": [
     {
-     "id": "120D07EB-F96F-4E04-93C4-0B0A202A82B6",
-     "name": "San Francisco City Hall",
+     "id": "222B15DF-DE5A-48D8-B018-85C44FA74DE1",
+     "name": "The Cheesecake Factory",
      "affinity": null,
      "image": null
     },
     {
-     "id": "848D69EC-CA8E-476F-91E6-C23838A95A91",
-     "name": "Bill Graham Civic Auditorium",
+     "id": "4D41FB32-3EFD-4A0D-9091-2863C004FEAD",
+     "name": "Son and Garden",
      "affinity": null,
      "image": null
     },
     {
-     "id": "47565D33-335A-4AA4-80F6-41F854F933AF",
-     "name": "The Warfield",
+     "id": "1AB8DD53-170B-4795-8E54-094310D3B733",
+     "name": "Salt & Straw",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Maple Latte for lively groups of friends",
-    "Brown Butter and Apple Pie for foodies",
-    "Oatmeal Raisin Cookie as a shareable event-night treat"
+    "Pair Maple Latte with Oatmeal Raisin Cookie for group sharing",
+    "Feature Brown Butter and Apple Pie for foodies",
+    "Promote Oatmilk Latte as an easy grab-and-go option"
    ]
   },
   "philz-san-francisco-embarcadero": {
    "store_id": "philz-san-francisco-embarcadero",
-   "fit": 1.58,
+   "fit": 1.59,
    "label": "test",
-   "verdict": "Embarcadero's Californian foodies and celebratory diners should welcome this cozy, dessert-inspired lineup, a strong fit at z-score 1.58.",
+   "verdict": "Embarcadero's foodie, New American crowd should embrace this cozy, dessert-inspired lineup as a celebratory, shareable treat, giving it a strong above-average fit.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -976,29 +929,29 @@
      "image": null
     },
     {
-     "id": "4B694352-3FDD-4335-B569-306D0D12BC0C",
-     "name": "Ferry Building",
+     "id": "6BF61FBA-FFA7-43A3-B743-FCE0E6A09463",
+     "name": "City Lights Booksellers & Publishers",
      "affinity": null,
      "image": null
     },
     {
-     "id": "18CB1680-1C15-4498-9D39-9608C0BAE714",
-     "name": "Exploratorium",
+     "id": "41773BE5-EA43-4542-9A4F-56191FDB00EB",
+     "name": "The Baked Bear",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Maple Latte for lively, social tourists",
-    "Brown Butter Oatmilk Latte for Californian foodies",
-    "Apple Pie and Oatmeal Raisin Cookie pairings for romantic couples"
+    "Pair Maple Latte with Apple Pie for a shareable couples' treat",
+    "Spotlight Brown Butter as a New American, foodie-friendly flavor",
+    "Offer Oatmilk Latte for Californian tastes and quick professional orders"
    ]
   },
   "philz-san-francisco-front-st": {
    "store_id": "philz-san-francisco-front-st",
    "fit": 1.56,
    "label": "test",
-   "verdict": "Strong fit: the Californian and New American, foodie-leaning local palate should welcome the offer's maple, brown butter, and apple pie flavors.",
+   "verdict": "Front St scores a strong fit (z 1.56): its Californian, foodie, New American crowd should welcome the LTO's cozy-sweet, brown butter-forward flavors.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1034,29 +987,29 @@
      "image": null
     },
     {
-     "id": "4B694352-3FDD-4335-B569-306D0D12BC0C",
-     "name": "Ferry Building",
+     "id": "6BF61FBA-FFA7-43A3-B743-FCE0E6A09463",
+     "name": "City Lights Booksellers & Publishers",
      "affinity": null,
      "image": null
     },
     {
-     "id": "18CB1680-1C15-4498-9D39-9608C0BAE714",
-     "name": "Exploratorium",
+     "id": "222B15DF-DE5A-48D8-B018-85C44FA74DE1",
+     "name": "The Cheesecake Factory",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Maple Latte with oatmilk option",
-    "Brown Butter and Maple Walnut pairing",
-    "Apple Pie or Oatmeal Raisin Cookie on the side"
+    "Feature Maple Latte and Brown Butter for foodies seeking New American flair",
+    "Pair Oatmilk Latte with Apple Pie for a Californian touch",
+    "Offer Oatmeal Raisin Cookie as a shareable treat for social couples"
    ]
   },
   "philz-los-angeles-dtla-hope": {
    "store_id": "philz-los-angeles-dtla-hope",
-   "fit": 1.31,
+   "fit": 1.3,
    "label": "test",
-   "verdict": "Strong fit: this lively, social, foodie-friendly crowd should embrace a cozy, dessert-inspired seasonal offer built for sharing and celebrating.",
+   "verdict": "Strong fit: the lively, social, foodie-leaning crowd should welcome a cozy, dessert-inspired maple and brown butter lineup that suits celebratory outings.",
    "why_tags": [
     {
      "id": "urn:tag:ambience:qloo:lively",
@@ -1086,35 +1039,35 @@
    ],
    "partners": [
     {
-     "id": "2CBC5CC2-7A30-4002-9978-A3A392C397E0",
-     "name": "Crypto.com Arena",
+     "id": "F69781A8-5967-4DFA-AD69-496D1023F55D",
+     "name": "The Last Bookstore",
      "affinity": null,
      "image": null
     },
     {
-     "id": "1ABA1843-B6BF-4066-B46B-479BEE81B988",
-     "name": "Grand Central Market",
+     "id": "12B2DC06-E328-4975-89F2-EE98F42A186C",
+     "name": "Whole Foods Market",
      "affinity": null,
      "image": null
     },
     {
-     "id": "2E6410EF-53A0-4559-82B6-876AD7DF3507",
-     "name": "Los Angeles Convention Center",
+     "id": "02CB0F4A-32B0-41AF-A3E6-1E6DB61D9FC6",
+     "name": "Pitchoun!",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Maple Latte with Oatmilk option",
-    "Brown Butter Oatmeal Raisin Cookie pairing",
-    "Shareable Apple Pie and Maple Walnut treats"
+    "Maple Latte as a shareable, celebratory sip",
+    "Brown Butter paired with Oatmeal Raisin Cookie for foodies",
+    "Apple Pie flavor as a familiar, New American-style comfort treat"
    ]
   },
   "philz-los-angeles-hollywood": {
    "store_id": "philz-los-angeles-hollywood",
-   "fit": 1.29,
+   "fit": 1.26,
    "label": "test",
-   "verdict": "With a z-score of 1.29, this cozy-sweet lineup suits Hollywood's lively, social crowd of locals, tourists, and groups looking for shareable fun.",
+   "verdict": "Fit is strong (z 1.26): a lively, social Hollywood crowd of groups, couples and foodies should enjoy this shareable, cozy-sweet fall lineup.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:live_music_venue",
@@ -1144,151 +1097,35 @@
    ],
    "partners": [
     {
-     "id": "B5915C74-1826-4A14-A8EB-EA67FC808923",
-     "name": "Hollywood",
+     "id": "21B92CCF-E8B2-428A-85B4-310DFCEB138C",
+     "name": "Kettle Glazed Doughnuts",
      "affinity": null,
      "image": null
     },
     {
-     "id": "2FEF8FE9-1B13-4CBA-9CB6-BA532C84CD38",
-     "name": "Hollywood Pantages Theatre",
+     "id": "B077AF99-2413-4C9A-90CF-44B8F6CFD3CA",
+     "name": "Groundwork Coffee Co.",
      "affinity": null,
      "image": null
     },
     {
-     "id": "65395B84-D136-4B72-BB4C-EFE7149E957A",
-     "name": "Hollywood Palladium",
-     "affinity": null,
-     "image": null
-    }
-   ],
-   "menu_cues": [
-    "Maple Latte and Oatmilk Latte as easy, crowd-pleasing pre-show sips for groups of friends",
-    "Brown Butter and Maple Walnut as foodie-friendly flavors for couples seeking something new",
-    "Oatmeal Raisin Cookie and Apple Pie as grab-and-share treats for event-night energy"
-   ]
-  },
-  "philz-oakland-lakeshore-oakland": {
-   "store_id": "philz-oakland-lakeshore-oakland",
-   "fit": -1.62,
-   "label": "skip",
-   "verdict": "Skip: the cozy, baked-dessert-heavy offer clashes with this lively, cocktail-minded, foodie crowd, reflected in the weak fit score of -1.62.",
-   "why_tags": [
-    {
-     "id": "urn:tag:genre:place:restaurant:californian",
-     "name": "Californian",
-     "affinity": 1
-    },
-    {
-     "id": "urn:tag:genre:place:restaurant:new_american",
-     "name": "New American",
-     "affinity": 0.999892
-    },
-    {
-     "id": "urn:tag:customer_identity:qloo:tourists",
-     "name": "Tourists",
-     "affinity": 0.999857
-    },
-    {
-     "id": "urn:tag:customer_identity:qloo:foodies",
-     "name": "Foodies",
-     "affinity": 0.999839
-    },
-    {
-     "id": "urn:tag:ambience:qloo:social",
-     "name": "Social",
-     "affinity": 0.999821
-    }
-   ],
-   "partners": [
-    {
-     "id": "9C76B583-1DE1-4474-BCEA-D01366CB18C1",
-     "name": "Grand Lake Theatre",
-     "affinity": null,
-     "image": null
-    },
-    {
-     "id": "112B5275-E33A-4336-BD0E-074ACF4AACE1",
-     "name": "Jong Ga House",
-     "affinity": null,
-     "image": null
-    },
-    {
-     "id": "580ADBE7-270E-46E4-AAAA-CC9CB4F6071E",
-     "name": "Arizmendi Bakery (Lakeshore)",
+     "id": "220E7113-0C40-4EFE-9AFB-8441066EDB34",
+     "name": "The Coffee Bean & Tea Leaf",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Lean on social, shareable formats for couples and celebratory groups",
-    "Spotlight Californian, New American flavors over heavy dessert-style sweetness",
-    "Pair any maple or brown butter notes with a cocktail-style twist"
-   ]
-  },
-  "philz-san-mateo-hillsdale": {
-   "store_id": "philz-san-mateo-hillsdale",
-   "fit": -1.53,
-   "label": "skip",
-   "verdict": "Skip: the cozy, bakery-style fall flavors fit poorly with Hillsdale's Californian, New American, foodie-leaning, lively tourist crowd (fit z-score -1.53).",
-   "why_tags": [
-    {
-     "id": "urn:tag:genre:place:restaurant:californian",
-     "name": "Californian",
-     "affinity": 1
-    },
-    {
-     "id": "urn:tag:genre:place:event_venue",
-     "name": "Event venue",
-     "affinity": 0.99997
-    },
-    {
-     "id": "urn:tag:genre:place:science_museum",
-     "name": "Science museum",
-     "affinity": 0.999941
-    },
-    {
-     "id": "urn:tag:genre:place:aquarium",
-     "name": "Aquarium",
-     "affinity": 0.999911
-    },
-    {
-     "id": "urn:tag:genre:place:restaurant:new_american",
-     "name": "New American",
-     "affinity": 0.999852
-    }
-   ],
-   "partners": [
-    {
-     "id": "6E53E5C2-C5A7-41E4-ABD8-EF46AEF671D3",
-     "name": "San Mateo County Event Center",
-     "affinity": null,
-     "image": null
-    },
-    {
-     "id": "7BFBE5DA-BB6F-4D61-BFCD-4AD29B89A1D6",
-     "name": "Hillsdale Shopping Center",
-     "affinity": null,
-     "image": null
-    },
-    {
-     "id": "A7F251D0-E586-4FF4-949F-22FF8B116172",
-     "name": "Fieldwork San Mateo",
-     "affinity": null,
-     "image": null
-    }
-   ],
-   "menu_cues": [
-    "Lead with Californian-style freshness instead of heavy dessert flavors",
-    "Offer a shareable celebratory option for couples and diners",
-    "Keep one familiar latte for tourists and foodies"
+    "Pair Maple Latte and Oatmilk Latte as a duo for groups and couples to share",
+    "Feature Brown Butter and Apple Pie flavors to appeal to foodies",
+    "Promote Oatmeal Raisin Cookie as a grab-and-go treat for tourists and event-goers"
    ]
   },
   "philz-fremont-fremont": {
    "store_id": "philz-fremont-fremont",
-   "fit": -1.4,
+   "fit": -1.6,
    "label": "skip",
-   "verdict": "Skip: the cozy, sweet, baked-dessert LTO lineup fits this lively, foodie, New American crowd poorly, scoring well below average.",
+   "verdict": "Skip: fit is weak (z -1.6); this cozy, dessert-like lineup doesn't match Fremont's lively, foodie-leaning Californian and New American crowd.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1324,22 +1161,138 @@
      "image": null
     },
     {
-     "id": "1D8EDCE7-933C-468E-901A-D5AC73CAE260",
-     "name": "Smoking Pig BBQ",
+     "id": "8B545171-3882-4FEA-B374-3606836BD16E",
+     "name": "Half Price Books",
      "affinity": null,
      "image": null
     },
     {
-     "id": "2F434EAD-3CF1-4C72-BA8C-61137C71057F",
-     "name": "Kickapoo State Recreation Area",
+     "id": "67AB6514-B2D0-4807-A1B3-1BA0DC66E77B",
+     "name": "Panera Bread",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Keep menu cues Californian and New American, not dessert-heavy",
-    "Offer shareable items for groups of friends and celebratory diners",
-    "Prioritize fresh, foodie-friendly flavors for regulars and tourists"
+    "Offer a small shareable tasting flight for groups of friends",
+    "Keep the core menu front and center for regulars and locals",
+    "Skip a heavy push for tourists and celebratory diners"
+   ]
+  },
+  "philz-oakland-lakeshore-oakland": {
+   "store_id": "philz-oakland-lakeshore-oakland",
+   "fit": -1.59,
+   "label": "skip",
+   "verdict": "Skip: the cozy, sweet-spiced fall offer clashes with this lively, cocktail-minded, foodie crowd, so fit is weak (z-score -1.59).",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999892
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999857
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999839
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999821
+    }
+   ],
+   "partners": [
+    {
+     "id": "580ADBE7-270E-46E4-AAAA-CC9CB4F6071E",
+     "name": "Arizmendi Bakery (Lakeshore)",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2004B326-237A-4BEC-A72E-6C68894998BF",
+     "name": "Walden Pond Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "D3BDFA58-8638-4250-A927-6622BFCE7CE8",
+     "name": "Bake Sum",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Offer a cocktail-style, shareable alternative",
+    "Highlight Californian, New American flavors",
+    "Skip heavy dessert-like sweetness for celebratory diners"
+   ]
+  },
+  "philz-san-mateo-hillsdale": {
+   "store_id": "philz-san-mateo-hillsdale",
+   "fit": -1.57,
+   "label": "skip",
+   "verdict": "Skip: the cozy, bakery-style fall signature fits poorly with this lively, tourist-heavy, Californian and New American crowd, so the offer is a weak match.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:event_venue",
+     "name": "Event venue",
+     "affinity": 0.99997
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999941
+    },
+    {
+     "id": "urn:tag:genre:place:aquarium",
+     "name": "Aquarium",
+     "affinity": 0.999911
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999852
+    }
+   ],
+   "partners": [
+    {
+     "id": "165BCA7F-5286-4EEA-BD6B-45C47B696D8E",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "3B01A9DE-2D8F-4692-9134-6F29CDADF647",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "84202765-BF41-4C9B-8011-1F21F6CCEB7E",
+     "name": "Barnes & Noble",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Keep menu lighter and fresher, in line with Californian and New American tastes",
+    "Position any sweet items as shareable treats for couples and celebratory diners",
+    "Offer an elevated, foodie-friendly option instead of heavy dessert flavors"
    ]
   }
  },
@@ -1372,9 +1325,17 @@
    "type": "trace",
    "tool": "find_tags",
    "args": {
-    "query": "oatmeal"
+    "query": "latte"
    },
-   "summary": "4 results: Oatmeal Raisin Cookie, Oatmeal Bar, Oatmeal Raisin"
+   "summary": "4 results: Latte 12oz, Latte Coffee, Latte"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "oatmeal cookie"
+   },
+   "summary": "2 results: Oatmeal Raisin Cookie, Oatmeal Chocolate Chip Cookie"
   },
   {
    "type": "trace",
@@ -1386,14 +1347,6 @@
   },
   {
    "type": "trace",
-   "tool": "find_tags",
-   "args": {
-    "query": "latte"
-   },
-   "summary": "4 results: Latte 12oz, Latte Coffee, Latte"
-  },
-  {
-   "type": "trace",
    "tool": "score_stores",
    "args": {
     "items": [
@@ -1401,8 +1354,7 @@
      "Oatmilk Latte",
      "Brown Butter",
      "Oatmeal Raisin Cookie",
-     "Apple Pie",
-     "Maple Walnut"
+     "Apple Pie"
     ]
    },
    "summary": "40 of 40 stores scored"
@@ -1451,6 +1403,14 @@
    "type": "trace",
    "tool": "area_taste",
    "args": {
+    "store": "Fremont"
+   },
+   "summary": "10 results: Californian, Locals, Tourists"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
     "store": "Lakeshore Oakland"
    },
    "summary": "10 results: Californian, New American, Tourists"
@@ -1462,14 +1422,6 @@
     "store": "Hillsdale"
    },
    "summary": "10 results: Californian, Event venue, Science museum"
-  },
-  {
-   "type": "trace",
-   "tool": "area_taste",
-   "args": {
-    "store": "Fremont"
-   },
-   "summary": "10 results: Californian, Locals, Tourists"
   }
  ]
 }

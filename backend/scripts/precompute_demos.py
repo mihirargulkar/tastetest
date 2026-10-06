@@ -20,7 +20,7 @@ DATA = Path(__file__).resolve().parents[1] / "data"
 DEMOS = [
     ("matcha-yuzu", "Matcha-yuzu cold brew", "Matcha-yuzu cold brew: bright, citrusy, aimed at a younger crowd"),
     ("maple-oat", "Brown-butter maple oat latte", "Brown-butter maple oat latte: cozy, nostalgic, fall comfort"),
-    ("smoky-tonic", "Smoky cold brew tonic", "Smoky cold brew tonic: bold and adventurous, for the after-work crowd"),
+    ("smoky-tonic", "Smoky cold brew tonic", "Smoky cold brew tonic: cold brew over tonic with a smoked-citrus finish, bold and adventurous for the after-work crowd"),
 ]
 
 

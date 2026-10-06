@@ -11,10 +11,10 @@ export default function RankCard({ result, busy, onSelect }) {
     );
   }
   const byId = Object.fromEntries(result.stores.map((s) => [s.id, s]));
-  const Row = ({ id }) => {
+  const renderRow = (id) => {
     const s = byId[id];
     return (
-      <li>
+      <li key={id}>
         <button className="row" onClick={() => onSelect(id)}>
           <span className="row-main"><span>{s.name}</span><span className={s.fit >= 0 ? "up" : "dn"}>{fmt(s.fit)}</span></span>
           {result.reasons?.[id] && <span className="why">{result.reasons[id]}</span>}
@@ -26,11 +26,11 @@ export default function RankCard({ result, busy, onSelect }) {
   return (
     <section className="card rank-card" aria-label="Store ranking">
       <div className="label" style={{ marginTop: 0 }}>Test here</div>
-      <ul>{result.top.map((id) => <Row key={id} id={id} />)}</ul>
+      <ul>{result.top.map(renderRow)}</ul>
       {result.bottom.length > 0 && (
         <>
           <div className="label">Skip</div>
-          <ul>{result.bottom.map((id) => <Row key={id} id={id} />)}</ul>
+          <ul>{result.bottom.map(renderRow)}</ul>
         </>
       )}
     </section>

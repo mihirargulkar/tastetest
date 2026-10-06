@@ -13,6 +13,15 @@ MAX_RETRIES = 3
 _sleep = asyncio.sleep  # indirection so tests can skip real waits
 
 
+PARTNER_CATEGORY_TAGS = ",".join([
+    "urn:tag:category:place:bakery",
+    "urn:tag:category:place:dessert_shop",
+    "urn:tag:category:place:tea_house",
+    "urn:tag:category:place:book_store",
+    "urn:tag:category:place:ice_cream_shop",
+])
+
+
 class QlooError(Exception):
     def __init__(self, status: int, body: str):
         super().__init__(f"Qloo {status}: {body[:200]}")
@@ -109,4 +118,4 @@ class Qloo:
     async def area_places(self, lat: float, lon: float, radius_m: int, take: int = 5) -> list[dict]:
         return parse_entities(await self.get("/v2/insights", {
             "filter.type": "urn:entity:place", "filter.location": point(lat, lon),
-            "filter.location.radius": radius_m, "take": take}))
+            "filter.location.radius": radius_m, "filter.tags": PARTNER_CATEGORY_TAGS, "take": take}))

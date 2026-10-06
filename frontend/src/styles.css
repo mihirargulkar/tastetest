@@ -37,8 +37,8 @@ ul { list-style: none; margin: 0; padding: 0; }
 .metros { margin-left: auto; }
 .link { border: 0; background: none; padding: 0; color: var(--ink); }
 .trace { max-height: 160px; overflow: auto; margin: 8px 0 0; padding-left: 18px; }
-.drawer-head { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
-.fit { font-size: 20px; }
+.drawer-head { display: flex; gap: 10px; align-items: flex-start; }
+.fit { font-size: 20px; margin-left: auto; }
 .close { border: 0; background: none; font-size: 20px; line-height: 1; color: var(--muted); }
 .verdict { margin: 10px 0; }
 .meter { position: relative; height: 6px; border-radius: 3px; background: #eee; margin: 6px 0 2px; }
@@ -47,11 +47,13 @@ ul { list-style: none; margin: 0; padding: 0; }
 .sec { margin-top: 12px; padding-top: 10px; border-top: 1px solid #ece6da; }
 .ent { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
 .ent img, .ent .thumb { width: 26px; height: 26px; border-radius: 4px; object-fit: cover; background: #cfc8b8; flex: none; }
-.toast { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); background: var(--red); color: #fff; padding: 8px 12px; border-radius: 8px; }
+.toast { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); background: var(--red); color: #fff; padding: 8px 12px; border-radius: 8px;
+  max-width: min(560px, calc(100vw - 32px)); text-align: center; }
 .toast button { border: 0; background: none; color: #fff; }
-@media (max-width: 800px) {
-  .input-card, .rank-card, .drawer { position: absolute; left: 8px; right: 8px; width: auto; }
-  .input-card { top: 8px; max-height: 40vh; }
-  .rank-card, .drawer { top: auto; bottom: 120px; max-height: 38vh; }
-  .trace-bar { left: 8px; right: 8px; bottom: 8px; }
+.maplibregl-ctrl-bottom-right { bottom: 92px; }
+@media (max-width: 900px) {
+  .app { position: static; min-height: 100vh; display: flex; flex-direction: column; overflow-y: auto; }
+  .map { position: relative; height: 45vh; flex: none; }
+  .input-card, .rank-card, .drawer, .trace-bar { position: static; width: auto; margin: 8px; max-height: none; }
+  .maplibregl-ctrl-bottom-right { bottom: 0; }
 }

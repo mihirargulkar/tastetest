@@ -62,7 +62,7 @@ export default function MapView({ stores, selected, metro, onSelect }) {
     const w = container.current.clientWidth;
     let padding = 40;
     if (w >= 1100) padding = { top: 120, bottom: 140, left: 380, right: 420 };
-    else if (w > 800) { const k = Math.min(1, (0.6 * w) / 800); padding = { top: 120, bottom: 140, left: 380 * k, right: 420 * k }; }
+    else if (w > 900) { const k = Math.min(1, (0.6 * w) / 800); padding = { top: 120, bottom: 140, left: 380 * k, right: 420 * k }; }
     map.current.fitBounds(bounds, { padding, maxZoom: 13, duration: 800 });
   }, [ready, metro, stores.length]);
 

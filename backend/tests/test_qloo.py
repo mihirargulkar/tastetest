@@ -2,7 +2,7 @@ import httpx
 import pytest
 
 from app import qloo
-from app.qloo import (BASE_URL, Qloo, QlooError, cache_key, parse_area_tags, parse_entities,
+from app.qloo import (BASE_URL, PARTNER_CATEGORY_TAGS, Qloo, QlooError, cache_key, parse_area_tags, parse_entities,
                       parse_heatmap, parse_search, parse_tag_search, point)
 
 
@@ -91,6 +91,7 @@ async def test_area_queries_use_point_location(tmp_path):
     await q.area_tags(40.7, -73.9, 1200)
     assert seen[0]["filter.type"] == "urn:entity:place"
     assert seen[0]["filter.location"] == "POINT(-73.9 40.7)"
+    assert seen[0]["filter.tags"] == PARTNER_CATEGORY_TAGS
     assert seen[1]["filter.type"] == "urn:tag"
     assert seen[1]["signal.location"] == "POINT(-73.9 40.7)"
 

@@ -66,9 +66,10 @@ A single screen, map-first (mockup "B"):
 - **Store drawer** (opens on clicking a dot or list row):
   1. Store name and fit score, then a **verdict line** ("✅ Test here. The neighborhood leans hard into Japanese café culture.")
   2. Fit meter vs. chain average (relative to each region), plus confidence
-  3. Why it fits: over-indexed Qloo tags (source + radius shown)
-  4. Local collab partners: nearby Qloo places
-  5. Menu cues
+  3. What drives this score
+  4. Why it fits: over-indexed Qloo tags (source + radius shown)
+  5. Local collab partners: nearby bakeries, dessert shops, tea houses, bookstores and ice cream shops (Qloo places)
+  6. Menu cues
 
   It is one scroll, with no tabs.
 - **"Not affiliated with [Chain]"** note and a "prioritization, not sales prediction" note in the footer.

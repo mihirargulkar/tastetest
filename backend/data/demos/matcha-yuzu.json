@@ -28,14 +28,14 @@
    "id": "urn:tag:specialty_dish:place:yuzu_cheesecake",
    "name": "Yuzu Cheesecake",
    "kind": "tag",
-   "weight": 0.5,
+   "weight": 0.4,
    "substituted_from": "yuzu"
   },
   {
    "id": "urn:tag:specialty_dish:place:matcha_ice_cream",
    "name": "Matcha Ice Cream",
    "kind": "tag",
-   "weight": 0.4,
+   "weight": 0.3,
    "substituted_from": "matcha"
   }
  ],
@@ -49,7 +49,7 @@
     "lat": 37.3242262,
     "lon": -122.0105165,
     "metro": "Bay Area",
-    "affinity": 0.9597058079144954,
+    "affinity": 0.9598265259448289,
     "popularity": 0.8761554115128715,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.9661654135338346,
@@ -58,7 +58,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9240506329113924,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.9923430321592649
     },
-    "fit": 1.89,
+    "fit": 1.92,
     "confidence": "high"
    },
    {
@@ -68,7 +68,7 @@
     "lat": 37.5669875,
     "lon": -122.3236083,
     "metro": "Bay Area",
-    "affinity": 0.8592948833535508,
+    "affinity": 0.8525523560496583,
     "popularity": 0.8429175969377249,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.9135338345864662,
@@ -77,7 +77,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9493670886075949,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.998468606431853
     },
-    "fit": 1.32,
+    "fit": 1.3,
     "confidence": "high"
    },
    {
@@ -87,7 +87,7 @@
     "lat": 37.7945298,
     "lon": -122.3951458,
     "metro": "Bay Area",
-    "affinity": 0.8479940000848584,
+    "affinity": 0.8397170627986873,
     "popularity": 0.9716250252495177,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.518796992481203,
@@ -96,7 +96,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9957805907172996,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.9816232771822359
     },
-    "fit": 1.25,
+    "fit": 1.23,
     "confidence": "high"
    },
    {
@@ -106,7 +106,7 @@
     "lat": 37.4422033,
     "lon": -122.1616018,
     "metro": "Bay Area",
-    "affinity": 0.8426589163916012,
+    "affinity": 0.8378673674338271,
     "popularity": 0.9041452875311848,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.8646616541353384,
@@ -125,7 +125,7 @@
     "lat": 37.7975392,
     "lon": -122.4219848,
     "metro": "Bay Area",
-    "affinity": 0.8377437891025591,
+    "affinity": 0.8290169805721007,
     "popularity": 0.8963117185227676,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.6954887218045113,
@@ -134,7 +134,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9767932489451476,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.9954058192955589
     },
-    "fit": 1.19,
+    "fit": 1.17,
     "confidence": "high"
    },
    {
@@ -144,7 +144,7 @@
     "lat": 37.7918825,
     "lon": -122.3988519,
     "metro": "Bay Area",
-    "affinity": 0.8314911311984351,
+    "affinity": 0.8218550771824708,
     "popularity": 0.9895056801450833,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.45112781954887216,
@@ -153,7 +153,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9936708860759493,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.996937212863706
     },
-    "fit": 1.16,
+    "fit": 1.13,
     "confidence": "high"
    },
    {
@@ -163,7 +163,7 @@
     "lat": 34.1427824,
     "lon": -118.2547408,
     "metro": "LA basin",
-    "affinity": 0.8075338120755626,
+    "affinity": 0.8021325662581211,
     "popularity": 0.902000889091738,
     "items": {
      "urn:tag:specialty_dish:place:matcha": null,
@@ -176,13 +176,32 @@
     "confidence": "high"
    },
    {
+    "id": "philz-los-gatos-los-gatos",
+    "name": "Los Gatos",
+    "address": "681 Blossom Hill Rd, Los Gatos, CA 95032",
+    "lat": 37.2359736,
+    "lon": -121.9635663,
+    "metro": "Bay Area",
+    "affinity": 0.7901956580717882,
+    "popularity": 0.5991664146443353,
+    "items": {
+     "urn:tag:specialty_dish:place:matcha": 0.9624060150375939,
+     "urn:tag:specialty_dish:place:cold_brew": null,
+     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.7950530035335689,
+     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7151898734177216,
+     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.30321592649310875
+    },
+    "fit": 0.95,
+    "confidence": "high"
+   },
+   {
     "id": "philz-san-francisco-folsom-beale",
     "name": "Folsom & Beale",
     "address": "300 Folsom St, San Francisco, CA 94105",
     "lat": 37.7887269,
     "lon": -122.393156,
     "metro": "Bay Area",
-    "affinity": 0.7953538900017181,
+    "affinity": 0.7858800840423037,
     "popularity": 0.92606812940014,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.4849624060150376,
@@ -191,7 +210,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9556962025316456,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.9571209800918836
     },
-    "fit": 0.95,
+    "fit": 0.92,
     "confidence": "high"
    },
    {
@@ -201,7 +220,7 @@
     "lat": 37.7904312,
     "lon": -122.3952043,
     "metro": "Bay Area",
-    "affinity": 0.7953538900017181,
+    "affinity": 0.7858800840423037,
     "popularity": 0.92606812940014,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.4849624060150376,
@@ -210,7 +229,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9556962025316456,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.9571209800918836
     },
-    "fit": 0.95,
+    "fit": 0.92,
     "confidence": "high"
    },
    {
@@ -220,7 +239,7 @@
     "lat": 34.0637237,
     "lon": -118.399308,
     "metro": "LA basin",
-    "affinity": 0.7877855113100255,
+    "affinity": 0.7780656295453429,
     "popularity": 0.8230396484998191,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.3709677419354839,
@@ -229,45 +248,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9831261101243339,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.922920892494929
     },
-    "fit": 0.91,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-los-gatos-los-gatos",
-    "name": "Los Gatos",
-    "address": "681 Blossom Hill Rd, Los Gatos, CA 95032",
-    "lat": 37.2359736,
-    "lon": -121.9635663,
-    "metro": "Bay Area",
-    "affinity": 0.7693813796927976,
-    "popularity": 0.5991664146443353,
-    "items": {
-     "urn:tag:specialty_dish:place:matcha": 0.9624060150375939,
-     "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.7950530035335689,
-     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7151898734177216,
-     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.30321592649310875
-    },
-    "fit": 0.8,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-civic-center",
-    "name": "Civic Center",
-    "address": "399 Golden Gate Ave, San Francisco, CA 94102",
-    "lat": 37.781385,
-    "lon": -122.416976,
-    "metro": "Bay Area",
-    "affinity": 0.767235221477465,
-    "popularity": 0.9989418415871225,
-    "items": {
-     "urn:tag:specialty_dish:place:matcha": 0.3233082706766917,
-     "urn:tag:specialty_dish:place:cold_brew": 0.9850746268656716,
-     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.8939929328621908,
-     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9535864978902954,
-     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.900459418070444
-    },
-    "fit": 0.79,
+    "fit": 0.88,
     "confidence": "high"
    },
    {
@@ -277,7 +258,7 @@
     "lat": 34.0244516,
     "lon": -118.3933641,
     "metro": "LA basin",
-    "affinity": 0.7603954845048726,
+    "affinity": 0.7606243410476549,
     "popularity": 0.690127052548857,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.5,
@@ -286,7 +267,26 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9369449378330373,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.5760649087221096
     },
-    "fit": 0.75,
+    "fit": 0.78,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-civic-center",
+    "name": "Civic Center",
+    "address": "399 Golden Gate Ave, San Francisco, CA 94102",
+    "lat": 37.781385,
+    "lon": -122.416976,
+    "metro": "Bay Area",
+    "affinity": 0.7578359428596472,
+    "popularity": 0.9989418415871225,
+    "items": {
+     "urn:tag:specialty_dish:place:matcha": 0.3233082706766917,
+     "urn:tag:specialty_dish:place:cold_brew": 0.9850746268656716,
+     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.8939929328621908,
+     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.9535864978902954,
+     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.900459418070444
+    },
+    "fit": 0.76,
     "confidence": "high"
    },
    {
@@ -296,7 +296,7 @@
     "lat": 37.4544368,
     "lon": -122.1825021,
     "metro": "Bay Area",
-    "affinity": 0.7578122376877431,
+    "affinity": 0.7555538330649008,
     "popularity": 0.6281573105213117,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.9548872180451128,
@@ -305,7 +305,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.6751054852320675,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.9173047473200613
     },
-    "fit": 0.73,
+    "fit": 0.75,
     "confidence": "high"
    },
    {
@@ -315,7 +315,7 @@
     "lat": 37.4866611,
     "lon": -122.228595,
     "metro": "Bay Area",
-    "affinity": 0.7549270343887516,
+    "affinity": 0.7531275852833712,
     "popularity": 0.7248378113949702,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.9924812030075187,
@@ -324,7 +324,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7088607594936709,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8621745788667687
     },
-    "fit": 0.72,
+    "fit": 0.74,
     "confidence": "high"
    },
    {
@@ -334,7 +334,7 @@
     "lat": 34.0462665,
     "lon": -118.2596525,
     "metro": "LA basin",
-    "affinity": 0.7419588312023596,
+    "affinity": 0.7343036704934855,
     "popularity": 0.9585272090392193,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.532258064516129,
@@ -343,7 +343,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.8658969804618117,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8782961460446247
     },
-    "fit": 0.64,
+    "fit": 0.63,
     "confidence": "high"
    },
    {
@@ -353,7 +353,7 @@
     "lat": 37.5779248,
     "lon": -122.3485707,
     "metro": "Bay Area",
-    "affinity": 0.7154707150411896,
+    "affinity": 0.7050418412709192,
     "popularity": 0.8085531046886788,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.5676691729323309,
@@ -362,7 +362,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.8248945147679325,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8667687595712098
     },
-    "fit": 0.49,
+    "fit": 0.46,
     "confidence": "high"
    },
    {
@@ -372,7 +372,7 @@
     "lat": 37.3225787,
     "lon": -122.034649,
     "metro": "Bay Area",
-    "affinity": 0.6539624246758872,
+    "affinity": 0.646722467506736,
     "popularity": 0.6602584190455439,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.8233082706766918,
@@ -381,7 +381,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7531645569620253,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8009188361408882
     },
-    "fit": 0.14,
+    "fit": 0.13,
     "confidence": "high"
    },
    {
@@ -391,7 +391,7 @@
     "lat": 33.8342763,
     "lon": -118.3511753,
     "metro": "LA basin",
-    "affinity": 0.6486255076789805,
+    "affinity": 0.6408552670232012,
     "popularity": 0.7553848482696177,
     "items": {
      "urn:tag:specialty_dish:place:matcha": null,
@@ -400,26 +400,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7859680284191829,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.6977687626774848
     },
-    "fit": 0.11,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-pasadena-pasadena",
-    "name": "Pasadena",
-    "address": "146 S Lake Ave, Pasadena, CA 91101",
-    "lat": 34.1432645,
-    "lon": -118.13177,
-    "metro": "LA basin",
-    "affinity": 0.633861902751743,
-    "popularity": 0.579702338452179,
-    "items": {
-     "urn:tag:specialty_dish:place:matcha": 0.41935483870967744,
-     "urn:tag:specialty_dish:place:cold_brew": 0.524074074074074,
-     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.9024211298606016,
-     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.844582593250444,
-     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.6166328600405679
-    },
-    "fit": 0.02,
+    "fit": 0.1,
     "confidence": "high"
    },
    {
@@ -429,7 +410,7 @@
     "lat": 37.307988,
     "lon": -121.9010641,
     "metro": "Bay Area",
-    "affinity": 0.6277146188299797,
+    "affinity": 0.6301503705373201,
     "popularity": 0.6366836289042834,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.7969924812030075,
@@ -438,26 +419,26 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.5253164556962026,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.669218989280245
     },
-    "fit": -0.01,
+    "fit": 0.04,
     "confidence": "high"
    },
    {
-    "id": "philz-los-angeles-hollywood",
-    "name": "Hollywood",
-    "address": "6430 Sunset Blvd, Los Angeles, CA 90028",
-    "lat": 34.0976563,
-    "lon": -118.3299312,
+    "id": "philz-pasadena-pasadena",
+    "name": "Pasadena",
+    "address": "146 S Lake Ave, Pasadena, CA 91101",
+    "lat": 34.1432645,
+    "lon": -118.13177,
     "metro": "LA basin",
-    "affinity": 0.625959895010107,
-    "popularity": 0.9667415927587588,
+    "affinity": 0.6281709719344628,
+    "popularity": 0.579702338452179,
     "items": {
-     "urn:tag:specialty_dish:place:matcha": 0.25806451612903225,
-     "urn:tag:specialty_dish:place:cold_brew": 0.8092592592592592,
-     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.6302274394717535,
-     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.8214920071047958,
-     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8803245436105477
+     "urn:tag:specialty_dish:place:matcha": 0.41935483870967744,
+     "urn:tag:specialty_dish:place:cold_brew": 0.524074074074074,
+     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.9024211298606016,
+     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.844582593250444,
+     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.6166328600405679
     },
-    "fit": -0.02,
+    "fit": 0.03,
     "confidence": "high"
    },
    {
@@ -467,7 +448,7 @@
     "lat": 37.6717582,
     "lon": -122.4652105,
     "metro": "Bay Area",
-    "affinity": 0.6104590108131678,
+    "affinity": 0.6238714322746247,
     "popularity": 0.5131842130120459,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.6353383458646616,
@@ -476,7 +457,26 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.14135021097046413,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.7442572741194488
     },
-    "fit": -0.11,
+    "fit": 0.0,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-hollywood",
+    "name": "Hollywood",
+    "address": "6430 Sunset Blvd, Los Angeles, CA 90028",
+    "lat": 34.0976563,
+    "lon": -118.3299312,
+    "metro": "LA basin",
+    "affinity": 0.6127276373426033,
+    "popularity": 0.9667415927587588,
+    "items": {
+     "urn:tag:specialty_dish:place:matcha": 0.25806451612903225,
+     "urn:tag:specialty_dish:place:cold_brew": 0.8092592592592592,
+     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.6302274394717535,
+     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.8214920071047958,
+     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8803245436105477
+    },
+    "fit": -0.06,
     "confidence": "high"
    },
    {
@@ -486,7 +486,7 @@
     "lat": 37.7755634,
     "lon": -122.3933972,
     "metro": "Bay Area",
-    "affinity": 0.6094975028309461,
+    "affinity": 0.5988031924143987,
     "popularity": 0.7119905970129519,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.5526315789473685,
@@ -495,7 +495,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7510548523206751,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8315467075038285
     },
-    "fit": -0.12,
+    "fit": -0.14,
     "confidence": "high"
    },
    {
@@ -505,7 +505,7 @@
     "lat": 37.3336349,
     "lon": -121.88499,
     "metro": "Bay Area",
-    "affinity": 0.5801985431453699,
+    "affinity": 0.5711197840324458,
     "popularity": 0.7892453201359328,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.4699248120300752,
@@ -514,26 +514,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7447257383966245,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.7243491577335375
     },
-    "fit": -0.29,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-castro",
-    "name": "Castro",
-    "address": "549 Castro St, San Francisco, CA 94114",
-    "lat": 37.7601055,
-    "lon": -122.4346797,
-    "metro": "Bay Area",
-    "affinity": 0.5692785070413297,
-    "popularity": 0.799193409255051,
-    "items": {
-     "urn:tag:specialty_dish:place:matcha": 0.02631578947368421,
-     "urn:tag:specialty_dish:place:cold_brew": 0.7985074626865671,
-     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.6325088339222615,
-     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.8924050632911392,
-     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8805513016845329
-    },
-    "fit": -0.35,
+    "fit": -0.3,
     "confidence": "high"
    },
    {
@@ -543,7 +524,7 @@
     "lat": 37.3834494,
     "lon": -121.8967714,
     "metro": "Bay Area",
-    "affinity": 0.5591543179763334,
+    "affinity": 0.5543369706623902,
     "popularity": 0.39556644532294266,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.631578947368421,
@@ -552,7 +533,26 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.5189873417721519,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.7197549770290965
     },
-    "fit": -0.41,
+    "fit": -0.4,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-castro",
+    "name": "Castro",
+    "address": "549 Castro St, San Francisco, CA 94114",
+    "lat": 37.7601055,
+    "lon": -122.4346797,
+    "metro": "Bay Area",
+    "affinity": 0.5506197026032998,
+    "popularity": 0.799193409255051,
+    "items": {
+     "urn:tag:specialty_dish:place:matcha": 0.02631578947368421,
+     "urn:tag:specialty_dish:place:cold_brew": 0.7985074626865671,
+     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.6325088339222615,
+     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.8924050632911392,
+     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8805513016845329
+    },
+    "fit": -0.42,
     "confidence": "high"
    },
    {
@@ -562,7 +562,7 @@
     "lat": 37.7236571,
     "lon": -122.4537767,
     "metro": "Bay Area",
-    "affinity": 0.5240273195063329,
+    "affinity": 0.4997677150809904,
     "popularity": 0.5101787990813665,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.2669172932330827,
@@ -571,26 +571,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7341772151898734,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.9203675344563553
     },
-    "fit": -0.61,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-los-angeles-los-feliz",
-    "name": "Los Feliz",
-    "address": "2117 Hillhurst Avenue, Los Angeles, CA 90027",
-    "lat": 34.1104689,
-    "lon": -118.2876272,
-    "metro": "LA basin",
-    "affinity": 0.4883391646826815,
-    "popularity": 0.633564984491005,
-    "items": {
-     "urn:tag:specialty_dish:place:matcha": 0.11290322580645161,
-     "urn:tag:specialty_dish:place:cold_brew": 0.6314814814814815,
-     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.6559060895084373,
-     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.8152753108348135,
-     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.36105476673427994
-    },
-    "fit": -0.81,
+    "fit": -0.71,
     "confidence": "high"
    },
    {
@@ -600,7 +581,7 @@
     "lat": 37.2870273,
     "lon": -121.931647,
     "metro": "Bay Area",
-    "affinity": 0.4845669090230766,
+    "affinity": 0.4900248730135942,
     "popularity": 0.31780124163619267,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.6240601503759399,
@@ -609,7 +590,26 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.3333333333333333,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.450229709035222
     },
-    "fit": -0.84,
+    "fit": -0.76,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-los-feliz",
+    "name": "Los Feliz",
+    "address": "2117 Hillhurst Avenue, Los Angeles, CA 90027",
+    "lat": 34.1104689,
+    "lon": -118.2876272,
+    "metro": "LA basin",
+    "affinity": 0.48246705444139537,
+    "popularity": 0.633564984491005,
+    "items": {
+     "urn:tag:specialty_dish:place:matcha": 0.11290322580645161,
+     "urn:tag:specialty_dish:place:cold_brew": 0.6314814814814815,
+     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.6559060895084373,
+     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.8152753108348135,
+     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.36105476673427994
+    },
+    "fit": -0.8,
     "confidence": "high"
    },
    {
@@ -619,7 +619,7 @@
     "lat": 37.3767094,
     "lon": -122.0311824,
     "metro": "Bay Area",
-    "affinity": 0.47051357300900115,
+    "affinity": 0.4597004676676137,
     "popularity": 0.49854580232813855,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.6842105263157895,
@@ -628,45 +628,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.5506329113924051,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.7580398162327718
     },
-    "fit": -0.92,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-noe-valley",
-    "name": "Noe Valley",
-    "address": "4298 24th St, San Francisco, CA 94114",
-    "lat": 37.7511414,
-    "lon": -122.4383792,
-    "metro": "Bay Area",
-    "affinity": 0.4482588046093591,
-    "popularity": 0.5514254478379574,
-    "items": {
-     "urn:tag:specialty_dish:place:matcha": 0.14285714285714285,
-     "urn:tag:specialty_dish:place:cold_brew": 0.3805970149253731,
-     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.5406360424028268,
-     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7215189873417721,
-     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8376722817764165
-    },
-    "fit": -1.04,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-oakland-lakeshore-oakland",
-    "name": "Lakeshore Oakland",
-    "address": "3347 Lakeshore Avenue, Oakland, CA 94610",
-    "lat": 37.8112398,
-    "lon": -122.2434366,
-    "metro": "Bay Area",
-    "affinity": 0.4382939017771419,
-    "popularity": 0.3563202754108409,
-    "items": {
-     "urn:tag:specialty_dish:place:matcha": 0.5338345864661654,
-     "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.12367491166077739,
-     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7067510548523207,
-     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.49310872894333846
-    },
-    "fit": -1.1,
+    "fit": -0.93,
     "confidence": "high"
    },
    {
@@ -676,7 +638,7 @@
     "lat": 37.5535513,
     "lon": -121.980306,
     "metro": "Bay Area",
-    "affinity": 0.43131978656995973,
+    "affinity": 0.4449743799051558,
     "popularity": 0.46344326643421,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.5375939849624061,
@@ -685,7 +647,45 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.11392405063291139,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.40735068912710565
     },
-    "fit": -1.14,
+    "fit": -1.02,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-noe-valley",
+    "name": "Noe Valley",
+    "address": "4298 24th St, San Francisco, CA 94114",
+    "lat": 37.7511414,
+    "lon": -122.4383792,
+    "metro": "Bay Area",
+    "affinity": 0.42876840284761003,
+    "popularity": 0.5514254478379574,
+    "items": {
+     "urn:tag:specialty_dish:place:matcha": 0.14285714285714285,
+     "urn:tag:specialty_dish:place:cold_brew": 0.3805970149253731,
+     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.5406360424028268,
+     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7215189873417721,
+     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8376722817764165
+    },
+    "fit": -1.11,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-oakland-lakeshore-oakland",
+    "name": "Lakeshore Oakland",
+    "address": "3347 Lakeshore Avenue, Oakland, CA 94610",
+    "lat": 37.8112398,
+    "lon": -122.2434366,
+    "metro": "Bay Area",
+    "affinity": 0.4253630225674868,
+    "popularity": 0.3563202754108409,
+    "items": {
+     "urn:tag:specialty_dish:place:matcha": 0.5338345864661654,
+     "urn:tag:specialty_dish:place:cold_brew": null,
+     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.12367491166077739,
+     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7067510548523207,
+     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.49310872894333846
+    },
+    "fit": -1.13,
     "confidence": "high"
    },
    {
@@ -695,7 +695,7 @@
     "lat": 37.7647559,
     "lon": -122.4011997,
     "metro": "Bay Area",
-    "affinity": 0.43130563237597125,
+    "affinity": 0.4077063561379381,
     "popularity": 0.5069124876694326,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.14661654135338345,
@@ -704,7 +704,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.7890295358649789,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8759571209800919
     },
-    "fit": -1.14,
+    "fit": -1.23,
     "confidence": "high"
    },
    {
@@ -714,7 +714,7 @@
     "lat": 37.5388043,
     "lon": -122.302004,
     "metro": "Bay Area",
-    "affinity": 0.40093925575640893,
+    "affinity": 0.38377873606998547,
     "popularity": 0.3557322155574506,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.36466165413533835,
@@ -723,26 +723,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.4177215189873418,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8131699846860643
     },
-    "fit": -1.32,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-chase-center",
-    "name": "Chase Center",
-    "address": "1 Warriors Way, San Francisco, CA 94158",
-    "lat": 37.7679001,
-    "lon": -122.3874223,
-    "metro": "Bay Area",
-    "affinity": 0.3947708950089094,
-    "popularity": 0.595998072914316,
-    "items": {
-     "urn:tag:specialty_dish:place:matcha": 0.3533834586466165,
-     "urn:tag:specialty_dish:place:cold_brew": 0.08955223880597014,
-     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.40636042402826855,
-     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.6687763713080169,
-     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8192955589586524
-    },
-    "fit": -1.35,
+    "fit": -1.37,
     "confidence": "high"
    },
    {
@@ -752,7 +733,7 @@
     "lat": 33.789841,
     "lon": -117.853187,
     "metro": "LA basin",
-    "affinity": 0.37301778351988457,
+    "affinity": 0.38105899967452667,
     "popularity": 0.5098868967780584,
     "items": {
      "urn:tag:specialty_dish:place:matcha": null,
@@ -761,7 +742,26 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.4049733570159858,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.14807302231237324
     },
-    "fit": -1.48,
+    "fit": -1.38,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-chase-center",
+    "name": "Chase Center",
+    "address": "1 Warriors Way, San Francisco, CA 94158",
+    "lat": 37.7679001,
+    "lon": -122.3874223,
+    "metro": "Bay Area",
+    "affinity": 0.3742258908839432,
+    "popularity": 0.595998072914316,
+    "items": {
+     "urn:tag:specialty_dish:place:matcha": 0.3533834586466165,
+     "urn:tag:specialty_dish:place:cold_brew": 0.08955223880597014,
+     "urn:tag:specialty_dish:place:yuzu_sorbet": 0.40636042402826855,
+     "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.6687763713080169,
+     "urn:tag:specialty_dish:place:matcha_ice_cream": 0.8192955589586524
+    },
+    "fit": -1.42,
     "confidence": "high"
    },
    {
@@ -771,7 +771,7 @@
     "lat": 37.8972067,
     "lon": -122.0635489,
     "metro": "Bay Area",
-    "affinity": 0.31695958320500234,
+    "affinity": 0.30548144140852046,
     "popularity": 0.5072861520270652,
     "items": {
      "urn:tag:specialty_dish:place:matcha": 0.07894736842105263,
@@ -780,7 +780,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.5295358649789029,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.4946401225114854
     },
-    "fit": -1.8,
+    "fit": -1.81,
     "confidence": "high"
    },
    {
@@ -790,7 +790,7 @@
     "lat": 33.917613,
     "lon": -117.8843567,
     "metro": "LA basin",
-    "affinity": 0.24863597128836806,
+    "affinity": 0.25576272978981224,
     "popularity": 0.3609829693355849,
     "items": {
      "urn:tag:specialty_dish:place:matcha": null,
@@ -799,7 +799,7 @@
      "urn:tag:specialty_dish:place:yuzu_cheesecake": 0.216696269982238,
      "urn:tag:specialty_dish:place:matcha_ice_cream": 0.10953346855983773
     },
-    "fit": -2.19,
+    "fit": -2.1,
     "confidence": "high"
    }
   ],
@@ -813,29 +813,29 @@
   "bottom": [
    "philz-brea-brea-mall",
    "philz-walnut-creek-walnut-creek",
-   "philz-orange-old-towne-orange"
+   "philz-san-francisco-chase-center"
   ],
   "reasons": {
-   "philz-cupertino-cupertino-main": "Strong fit: Foodies, Asian, and Groups of Friends tags suggest an adventurous crowd likely to try a Yuzu or Matcha offer.",
-   "philz-san-mateo-san-mateo": "Good fit: Foodies, Tourists, and Groups of Friends tags point to trial-minded visitors who may sample a new limited-time item.",
-   "philz-san-francisco-embarcadero": "Good fit: Tourists, Foodies, and Social tags suggest steady, curious traffic for a limited-time offer, though the margin is modest.",
-   "philz-palo-alto-forest-ave": "Decent fit: Foodies, Business Professionals, and Social tags suggest a receptive crowd, though the fit score is only moderate.",
-   "philz-san-francisco-russian-hill": "Decent fit: Foodies, Tourists, and Fun tags suggest an audience open to trying something new, with only moderate fit.",
-   "philz-brea-brea-mall": "Poor fit: Regulars, Casual, and American tags suggest habitual orders and less appetite for a novel limited-time offer.",
-   "philz-walnut-creek-walnut-creek": "Weak fit: Wine Enthusiasts and Cocktail Enthusiasts tags suggest drink interests that differ from this offer lineup.",
-   "philz-orange-old-towne-orange": "Weak fit: Live music venue, Event venue, and American tags point to an audience less aligned with this offer."
+   "philz-cupertino-cupertino-main": "Strong fit: Foodies, Asian, and Groups of Friends audiences in a Lively, Californian setting suit a Matcha or Yuzu limited-time offer.",
+   "philz-san-mateo-san-mateo": "Good fit: Foodies, Tourists, and Locals in a Lively, Californian setting give a varied audience for testing a new offer.",
+   "philz-san-francisco-embarcadero": "Decent fit: Lively, Social, Tourists, and Foodies create steady traffic for trying a new limited-time drink.",
+   "philz-palo-alto-forest-ave": "Decent fit: Foodies, Business Professionals, and Social, Lively crowds offer a receptive audience for a new limited-time offer.",
+   "philz-san-francisco-russian-hill": "Decent fit: Foodies, Locals, Tourists, and Fun, Lively energy support a new limited-time offer test.",
+   "philz-brea-brea-mall": "Weak fit: Regulars, Casual, and American tags point to a less adventurous audience than this offer needs.",
+   "philz-walnut-creek-walnut-creek": "Weak fit: Wine Enthusiasts and Cocktail Enthusiasts suggest a drinking crowd that does not match the offer.",
+   "philz-san-francisco-chase-center": "Weak fit: Stadium, Arena, and Live music venue tags suggest event-driven visits, which make results hard to read for this offer."
   },
   "stability": {
-   "rho": 0.9,
+   "rho": 0.88,
    "weakest": "Matcha"
   }
  },
  "briefs": {
   "philz-cupertino-cupertino-main": {
    "store_id": "philz-cupertino-cupertino-main",
-   "fit": 1.89,
+   "fit": 1.92,
    "label": "test",
-   "verdict": "Strong fit: Cupertino's Californian, Asian-influenced, foodie crowd should welcome this matcha and yuzu lineup, especially among lively groups of friends and celebratory diners.",
+   "verdict": "Strong fit: Cupertino's Californian, Asian-influenced foodie crowd of locals and groups should embrace the matcha and yuzu lineup in a lively setting.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -865,35 +865,35 @@
    ],
    "partners": [
     {
-     "id": "7D4A1759-AA07-41F6-8CAF-EC4D2B7E9E84",
-     "name": "Apple Apple Park Visitor Center",
+     "id": "F89D10F2-1716-4FA2-A15E-371E2529F8BC",
+     "name": "SOMISOMI",
      "affinity": null,
      "image": null
     },
     {
-     "id": "C9D63D8C-9323-43A9-B276-BE5B36A0A6EC",
-     "name": "Alexander's Steakhouse",
+     "id": "FE22BD4C-1A47-41B1-8482-A58417DEAC58",
+     "name": "Caf\u00e9 LaTTea",
      "affinity": null,
      "image": null
     },
     {
-     "id": "46C1C53A-12DC-4B70-B14D-FF49CD5B26B5",
-     "name": "Benihana - Cupertino",
+     "id": "0C97B1D7-6669-40C1-B32F-9FC868A698AF",
+     "name": "Holder's Country Inn Cupertino",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Matcha cold brew for Californian foodies",
-    "Yuzu sorbet and cheesecake duo for sharing among groups",
-    "Matcha ice cream for Asian-inspired flavor lovers"
+    "Matcha cold brew for business professionals on the go",
+    "Yuzu cheesecake and sorbet duo to share among friends",
+    "Matcha ice cream treat for celebratory diners"
    ]
   },
   "philz-san-mateo-san-mateo": {
    "store_id": "philz-san-mateo-san-mateo",
-   "fit": 1.32,
+   "fit": 1.3,
    "label": "test",
-   "verdict": "Good fit: San Mateo's Californian, foodie-minded locals and lively groups should welcome this matcha and yuzu lineup with a fresh, modern New American feel.",
+   "verdict": "Strong fit: San Mateo's foodie, Californian, New American crowd should welcome the inventive matcha and yuzu lineup, especially for lively group outings and celebrations.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -923,35 +923,35 @@
    ],
    "partners": [
     {
-     "id": "CC3AEF98-AD1B-4C0D-BAB3-5EB46A7EB316",
-     "name": "Ramen Dojo",
+     "id": "077215ED-F331-40A4-85A1-1D5962A97C37",
+     "name": "Icicles San Mateo",
      "affinity": null,
      "image": null
     },
     {
-     "id": "1D715F6C-D99B-4D38-8B5B-679A7D6FE9F9",
-     "name": "Pausa Bar & Cookery",
+     "id": "1EFFBD95-DE36-479C-824F-CA96F0A57A30",
+     "name": "Meet Fresh | San Mateo",
      "affinity": null,
      "image": null
     },
     {
-     "id": "D01634AD-D85F-4623-848D-E474EC3131C7",
-     "name": "Gyu-Kaku Japanese BBQ",
+     "id": "F18F9EE5-68D3-4B67-A1E8-10877C99BEE0",
+     "name": "Backhaus | San Mateo",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Pair matcha cold brew with yuzu sorbet for a bright, shareable Californian-style treat",
-    "Feature yuzu cheesecake as a celebratory dessert for groups and couples",
-    "Offer matcha ice cream as a foodie-friendly finish for lively gatherings"
+    "Matcha cold brew for business professionals and locals",
+    "Yuzu cheesecake or sorbet as a shareable celebratory dessert",
+    "Matcha ice cream for groups of friends and couples"
    ]
   },
   "philz-san-francisco-embarcadero": {
    "store_id": "philz-san-francisco-embarcadero",
-   "fit": 1.25,
+   "fit": 1.23,
    "label": "test",
-   "verdict": "Embarcadero's Californian, foodie-minded, celebratory crowd should welcome this bright, inventive matcha and yuzu lineup, a solid fit for social, romantic outings.",
+   "verdict": "Embarcadero's Californian, foodie-driven crowd should welcome this inventive matcha and yuzu lineup, a lively, shareable fit for its social, celebratory diners.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -987,29 +987,29 @@
      "image": null
     },
     {
-     "id": "4B694352-3FDD-4335-B569-306D0D12BC0C",
-     "name": "Ferry Building",
+     "id": "6BF61FBA-FFA7-43A3-B743-FCE0E6A09463",
+     "name": "City Lights Booksellers & Publishers",
      "affinity": null,
      "image": null
     },
     {
-     "id": "18CB1680-1C15-4498-9D39-9608C0BAE714",
-     "name": "Exploratorium",
+     "id": "41773BE5-EA43-4542-9A4F-56191FDB00EB",
+     "name": "The Baked Bear",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Offer shareable yuzu cheesecake and sorbet for couples and celebratory groups",
-    "Pitch matcha cold brew as a modern Californian pick for foodies",
-    "Add a quick grab-and-go matcha option for business professionals and tourists"
+    "Pitch the yuzu cheesecake as a shareable dessert for couples and celebratory diners",
+    "Position matcha cold brew as a fresh New American twist for foodies",
+    "Offer matcha ice cream and yuzu sorbet as a light, Californian finish"
    ]
   },
   "philz-palo-alto-forest-ave": {
    "store_id": "philz-palo-alto-forest-ave",
    "fit": 1.22,
    "label": "test",
-   "verdict": "Forest Ave's foodie, celebratory, wine-loving crowd suits this offer's layered matcha and yuzu flavors, a solid above-average fit for social, lively occasions.",
+   "verdict": "Strong fit: the matcha and yuzu lineup suits Forest Ave's Californian, foodie, celebratory crowd seeking fresh, polished, shareable treats.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1039,35 +1039,35 @@
    ],
    "partners": [
     {
-     "id": "815C1AA9-C5CA-41BA-9591-2EED7FE106AA",
-     "name": "Stanford Shopping Center",
+     "id": "6F9390F7-89D5-49B9-9192-C5B96DF687FC",
+     "name": "Palo Alto Creamery",
      "affinity": null,
      "image": null
     },
     {
-     "id": "69E35B88-C959-4991-8D1E-63A820EF93C2",
-     "name": "Stanford Stadium",
+     "id": "58D5BFD8-62BB-4857-B5F4-B496FD0BCEB9",
+     "name": "Salt & Straw",
      "affinity": null,
      "image": null
     },
     {
-     "id": "8F94A9DB-1E88-4431-BDD2-7023666F1877",
-     "name": "Nola",
+     "id": "9A76359D-FAFB-4CF3-9921-1C680570EAA7",
+     "name": "Whole Foods Market",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Shareable yuzu cheesecake for celebratory, social tables",
-    "Matcha ice cream as a Californian-style foodie dessert",
-    "Cold brew with yuzu sorbet for a refined, shareable pairing"
+    "Pair yuzu cheesecake with matcha for a shareable celebratory dessert",
+    "Feature cold brew for business professionals on the go",
+    "Offer yuzu sorbet as a bright, wine-friendly palate cleanser"
    ]
   },
   "philz-san-francisco-russian-hill": {
    "store_id": "philz-san-francisco-russian-hill",
-   "fit": 1.19,
+   "fit": 1.17,
    "label": "test",
-   "verdict": "Russian Hill's Californian, foodie-minded locals and couples should welcome this matcha and yuzu lineup, a good fit for a lively, social crowd.",
+   "verdict": "Russian Hill's Californian, foodie crowd should welcome this matcha and yuzu lineup as a fun, social treat, though fit is only moderately strong.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1097,35 +1097,35 @@
    ],
    "partners": [
     {
-     "id": "59866B4C-CC25-418B-BC27-0495E168ED64",
-     "name": "Fairmont San Francisco",
+     "id": "E618726C-04E8-4A81-B919-041B371033D9",
+     "name": "Ghirardelli Chocolate Experience",
      "affinity": null,
      "image": null
     },
     {
-     "id": "84DD6068-1DCC-4984-BB11-CAD5BB9F3681",
-     "name": "In-N-Out Burger",
+     "id": "556332E7-D945-4CCA-8E6D-692249912D21",
+     "name": "Ghirardelli Chocolate To Go",
      "affinity": null,
      "image": null
     },
     {
-     "id": "1D9E51B5-EC82-4472-B19E-27E82047D7C0",
-     "name": "House of Prime Rib",
+     "id": "419318B7-B85D-4057-B2E7-7315617D4BA9",
+     "name": "Mara's Italian Pastries",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Matcha cold brew for lively, social visitors",
-    "Yuzu cheesecake to share on a romantic date",
-    "Matcha ice cream and yuzu sorbet for foodies"
+    "Matcha cold brew for lively locals and business professionals",
+    "Yuzu cheesecake to share on a romantic couples' outing",
+    "Matcha ice cream and yuzu sorbet duo for foodies and tourists"
    ]
   },
   "philz-brea-brea-mall": {
    "store_id": "philz-brea-brea-mall",
-   "fit": -2.19,
+   "fit": -2.1,
    "label": "skip",
-   "verdict": "Skip: the local tags show casual, lively, American-leaning crowds with no taste signals supporting matcha or yuzu, so this offer is a poor fit.",
+   "verdict": "Skip: the offer's matcha and yuzu flavors fit poorly with this store's casual, lively, American-leaning local tags, giving a weak fit score.",
    "why_tags": [
     {
      "id": "urn:tag:customer_identity:qloo:regulars",
@@ -1155,35 +1155,35 @@
    ],
    "partners": [
     {
-     "id": "5C8A36BF-FBB2-4D08-87D1-49547B4D02A3",
-     "name": "Brea Mall",
-     "affinity": null,
-     "image": null
-    },
-    {
-     "id": "AF87BE3D-F413-4FF6-97DA-5D7F6F310C48",
-     "name": "Lazy Dog Restaurant & Bar",
-     "affinity": null,
-     "image": null
-    },
-    {
      "id": "6C69FBAF-6577-4920-BAEC-0F61AED1D77D",
      "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "FE2EA394-972D-441D-A473-C5F7E8580C35",
+     "name": "Crumbl Cookies",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F940F600-D3B9-4875-AEF1-D69E8F45F92D",
+     "name": "Panera Bread",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Keep familiar American-style casual favorites front and center",
-    "Offer shareable items for groups and couples",
-    "Limit the offer to a small trial for curious foodies"
+    "Keep familiar American-style classics front and center for casual regulars",
+    "Offer shareable portions for groups of friends and couples",
+    "Show a small, simple sample of the featured flavors to tempt curious foodies"
    ]
   },
   "philz-walnut-creek-walnut-creek": {
    "store_id": "philz-walnut-creek-walnut-creek",
-   "fit": -1.8,
+   "fit": -1.81,
    "label": "skip",
-   "verdict": "Skip: the matcha and yuzu dessert lineup scores poorly here, as the local tags point to wine, cocktail and celebratory dining over iced sweets.",
+   "verdict": "Skip: the matcha-yuzu dessert-forward offer fits poorly with this wine- and cocktail-leaning, celebratory, business-and-couples crowd (fit z-score -1.81).",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1213,86 +1213,86 @@
    ],
    "partners": [
     {
-     "id": "942FA1E7-5837-4AF9-93BB-7E5C9265BC31",
-     "name": "Broadway Plaza",
+     "id": "F14E967F-A6E2-4116-B24D-22CAD0C63C3E",
+     "name": "The Cheesecake Factory",
      "affinity": null,
      "image": null
     },
     {
-     "id": "B035B1D7-5EBF-4EF6-8C89-46DB62952925",
-     "name": "Ruth's Chris Steak House",
+     "id": "B4F7AEE1-E625-4126-AAA6-1750CED70E24",
+     "name": "San Francisco Creamery",
      "affinity": null,
      "image": null
     },
     {
-     "id": "13015A31-2A2D-4C75-838F-D730BE7A967A",
-     "name": "Va de Vi Bistro & Wine Bar",
+     "id": "B236E3D8-7080-417A-BACE-8355D23A2B09",
+     "name": "Whole Foods Market",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Local tags lean toward wine and cocktails, so skip the matcha cold brew",
-    "Foodies and couples might sample yuzu cheesecake as a shared dessert",
-    "Business professionals and tourists may want familiar Californian options instead"
+    "Lead with familiar, polished drinks for business professionals and locals",
+    "Keep any celebratory pairing simple for couples and foodies",
+    "Test only a small cold brew tie-in for lively, cocktail-minded guests"
    ]
   },
-  "philz-orange-old-towne-orange": {
-   "store_id": "philz-orange-old-towne-orange",
-   "fit": -1.48,
+  "philz-san-francisco-chase-center": {
+   "store_id": "philz-san-francisco-chase-center",
+   "fit": -1.42,
    "label": "skip",
-   "verdict": "Skip: the offer's matcha and yuzu profile fits poorly with this lively, tourist-heavy, American-leaning area (fit z-score -1.48).",
+   "verdict": "Skip: the delicate, refined matcha-yuzu dessert profile fits poorly with this energetic, social, celebratory arena crowd seeking quick, shareable fare.",
    "why_tags": [
     {
-     "id": "urn:tag:ambience:qloo:lively",
-     "name": "Lively",
-     "affinity": 0.99998
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
     },
     {
-     "id": "urn:tag:customer_identity:qloo:tourists",
-     "name": "Tourists",
-     "affinity": 0.99996
+     "id": "urn:tag:genre:place:stadium",
+     "name": "Stadium",
+     "affinity": 0.999931
     },
     {
-     "id": "urn:tag:customer_identity:qloo:locals",
-     "name": "Locals",
-     "affinity": 0.999901
+     "id": "urn:tag:genre:place:arena",
+     "name": "Arena",
+     "affinity": 0.999885
     },
     {
-     "id": "urn:tag:customer_identity:qloo:foodies",
-     "name": "Foodies",
+     "id": "urn:tag:genre:place:amphitheater",
+     "name": "Amphitheater",
      "affinity": 0.999862
     },
     {
-     "id": "urn:tag:ambience:qloo:fun",
-     "name": "Fun",
-     "affinity": 0.999822
+     "id": "urn:tag:genre:place:concert_hall",
+     "name": "Concert hall",
+     "affinity": 0.999793
     }
    ],
    "partners": [
     {
-     "id": "8629E1EC-7E98-4ABE-B28D-B3F3CD7AD9D7",
-     "name": "Bruxie",
+     "id": "A8BCAF75-A0CE-4398-8C42-DD74D8BA606E",
+     "name": "Neighbor Bakehouse",
      "affinity": null,
      "image": null
     },
     {
-     "id": "6A6FBCB7-517C-43DD-AD53-CAAC99FBBB8B",
-     "name": "The Filling Station Cafe",
+     "id": "AA7659F0-6F3C-4C62-9712-415C51528088",
+     "name": "Safeway",
      "affinity": null,
      "image": null
     },
     {
-     "id": "A832B866-9381-41EA-8671-B8AEC8F001A7",
-     "name": "Urth Caffe Orange",
+     "id": "5F7902D6-E671-4A9C-B84D-12EEC0454E4C",
+     "name": "SPRO - Mission Bay/SOMA",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Offer no taste claims, since the local tags list no flavor preferences",
-    "Keep the standard menu front and center",
-    "Revisit only if tags show a flavor signal"
+    "Keep cold brew front and center for energetic, on-the-go event crowds",
+    "Skip yuzu cheesecake and sorbet, which suit slower sit-down moments",
+    "Consider only a simple, portable matcha cold drink for Californian tastes"
    ]
   }
  },
@@ -1411,9 +1411,9 @@
    "type": "trace",
    "tool": "area_taste",
    "args": {
-    "store": "Old Towne Orange"
+    "store": "Chase Center"
    },
-   "summary": "10 results: Lively, Tourists, Locals"
+   "summary": "10 results: Californian, Stadium, Arena"
   }
  ]
 }
