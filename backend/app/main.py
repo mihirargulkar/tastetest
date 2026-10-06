@@ -1,0 +1,137 @@
+import json
+import os
+import time
+from collections import defaultdict, deque
+from pathlib import Path
+from typing import Literal
+
+from anthropic import AsyncAnthropic
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import StreamingResponse
+from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel, Field
+
+from . import agent
+from .qloo import Qloo
+from .stores import load_stores
+from .tools import Tools
+
+ROOT = Path(__file__).resolve().parents[1]  # backend/
+DATA = ROOT / "data"
+DEMOS = DATA / "demos"
+DIST = ROOT.parent / "frontend" / "dist"
+LIMITS = {"live": 6, "brief": 30}  # per IP per hour
+
+app = FastAPI(title="TasteTest")
+
+
+class SignatureItem(BaseModel):
+    id: str = Field(max_length=200)
+    name: str = Field(max_length=200)
+    kind: Literal["tag", "entity"]
+    weight: float = Field(ge=0, le=1)
+    substituted_from: str | None = Field(default=None, max_length=200)
+
+
+class SignatureReq(BaseModel):
+    lto: str = Field(min_length=1, max_length=500)
+    current: list[SignatureItem] | None = Field(default=None, max_length=8)
+    instruction: str | None = Field(default=None, max_length=300)
+
+
+class ScoreReq(BaseModel):
+    signature: list[SignatureItem] = Field(min_length=1, max_length=8)
+
+
+class BriefReq(BaseModel):
+    store_id: str = Field(max_length=100)
+    signature: list[SignatureItem] = Field(min_length=1, max_length=8)
+    fit: float | None = None
+
+
+def deps(request: Request):
+    s = request.app.state
+    if not hasattr(s, "tools"):
+        s.tools = Tools(Qloo(os.environ["QLOO_API_KEY"], DATA / "cache"), load_stores(DATA / "stores.csv"))
+        s.llm = AsyncAnthropic()
+    return s.llm, s.tools
+
+
+# ponytail: in-memory per-IP limiter; resets on restart and assumes a single instance.
+# X-Forwarded-For is set by Render's proxy; it is spoofable elsewhere.
+_hits: dict[tuple[str, str], deque] = defaultdict(deque)
+
+
+def check_rate(request: Request, bucket: str) -> None:
+    ip = request.headers.get("x-forwarded-for", request.client.host).split(",")[0].strip()
+    now, q = time.time(), _hits[(bucket, ip)]
+    while q and now - q[0] > 3600:
+        q.popleft()
+    if len(q) >= LIMITS[bucket]:
+        raise HTTPException(429, "Live run limit reached for this hour. The preloaded examples still work.")
+    q.append(now)
+
+
+def sse(gen) -> StreamingResponse:
+    async def body():
+        try:
+            async for ev in gen:
+                yield f"data: {json.dumps(ev)}\n\n"
+        except Exception as e:  # stream boundary: show the failure in the UI instead of a dead stream
+            yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
+    return StreamingResponse(body(), media_type="text/event-stream")
+
+
+def _items(items: list[SignatureItem] | None) -> list[dict] | None:
+    return [i.model_dump() for i in items] if items is not None else None
+
+
+@app.get("/api/stores")
+def stores(request: Request):
+    return deps(request)[1].stores
+
+
+@app.get("/api/demos")
+def demos():
+    out = []
+    for p in sorted(DEMOS.glob("*.json")):
+        d = json.loads(p.read_text())
+        out.append({"slug": d["slug"], "title": d["title"], "lto": d["lto"]})
+    return out
+
+
+@app.get("/api/demos/{slug}")
+def demo(slug: str):
+    if slug not in {p.stem for p in DEMOS.glob("*.json")}:
+        raise HTTPException(404, "unknown demo")
+    return json.loads((DEMOS / f"{slug}.json").read_text())
+
+
+@app.post("/api/signature")
+def signature(req: SignatureReq, request: Request):
+    check_rate(request, "live")
+    llm, tools = deps(request)
+    return sse(agent.build_signature(llm, tools, req.lto, _items(req.current), req.instruction))
+
+
+@app.post("/api/score")
+def score(req: ScoreReq, request: Request):
+    check_rate(request, "live")
+    llm, tools = deps(request)
+    return sse(agent.run_score(llm, tools, _items(req.signature)))
+
+
+@app.post("/api/brief")
+async def brief(req: BriefReq, request: Request):
+    check_rate(request, "brief")
+    llm, tools = deps(request)
+    try:
+        return await agent.write_brief(llm, tools, req.store_id, _items(req.signature), req.fit)
+    except KeyError:
+        raise HTTPException(404, "unknown store")
+    except agent.AgentError as e:
+        raise HTTPException(502, str(e))
+
+
+if DIST.exists():
+    app.mount("/", StaticFiles(directory=DIST, html=True), name="web")
