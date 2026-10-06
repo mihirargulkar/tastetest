@@ -6,6 +6,14 @@ from .scoring import score, stability
 RADIUS_M = 1200
 # The only tag type the hackathon API returns heatmaps for (live probe, 2026-10-06).
 HEATMAP_TAG_PREFIX = "urn:tag:specialty_dish:place:"
+BASELINE_TAGS = [
+    "urn:tag:specialty_dish:place:burgers",
+    "urn:tag:specialty_dish:place:sushi",
+    "urn:tag:specialty_dish:place:tacos",
+    "urn:tag:specialty_dish:place:ramen",
+    "urn:tag:specialty_dish:place:croissant",
+    "urn:tag:specialty_dish:place:ice_cream_cone",
+]
 MAX_TAGS = 5  # heatmap calls per find_tags
 
 
@@ -42,14 +50,21 @@ class Tools:
         items = [i for i in signature if i["weight"] > 0]
         metros = sorted({s["metro"] for s in self.stores})
         pairs = [(m, i) for m in metros for i in items]
-        results = await asyncio.gather(*(self.qloo.heatmap(i, self.regions.get(m, m)) for m, i in pairs), return_exceptions=True)
+        base_pairs = [(m, {"id": t, "kind": "tag"}) for m in metros for t in BASELINE_TAGS]
+        both = await asyncio.gather(*(self.qloo.heatmap(i, self.regions.get(m, m)) for m, i in pairs + base_pairs),
+                                    return_exceptions=True)
+        results, base_results = both[:len(pairs)], both[len(pairs):]
         if results and all(isinstance(r, Exception) for r in results):
             raise results[0]
+        baseline = {m: [] for m in metros}
+        for (m, _), cells in zip(base_pairs, base_results):
+            baseline[m].append([] if isinstance(cells, Exception) else cells)
         by_metro = {m: {} for m in metros}
         for (m, i), cells in zip(pairs, results):
             by_metro[m][i["id"]] = [] if isinstance(cells, Exception) else cells
         weights = {i["id"]: i["weight"] for i in items}
-        return {"stores": score(self.stores, by_metro, weights), "stability": stability(self.stores, by_metro, weights)}
+        return {"stores": score(self.stores, by_metro, weights, baseline),
+                "stability": stability(self.stores, by_metro, weights, baseline)}
 
     async def area_taste(self, store_id: str) -> dict:
         s = self.store(store_id)

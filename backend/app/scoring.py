@@ -35,19 +35,28 @@ def _store_affinity(store: dict, cells_by_item: dict, weights: dict) -> tuple[fl
     return sum(w * a for w, a, _ in hits) / total, mean(p for _, _, p in hits)
 
 
-def score(stores: list[dict], cells_by_metro: dict, weights: dict) -> list[dict]:
+def _baseline_affinity(store: dict, baseline_lists: list[list[dict]]) -> float | None:
+    """Unweighted mean nearest-cell affinity over the baseline tags, same sparse-cell rules as _store_affinity."""
+    affs = [(c["affinity"] if (c := nearest_cell(cells, store["lat"], store["lon"])) else 0.0)
+            for cells in baseline_lists if cells]
+    return mean(affs) if affs else None
+
+
+def score(stores: list[dict], cells_by_metro: dict, weights: dict, baseline_by_metro: dict | None = None) -> list[dict]:
     rows = []
     for s in stores:
         aff, pop = _store_affinity(s, cells_by_metro.get(s["metro"], {}), weights)
-        rows.append({**s, "affinity": aff, "popularity": pop})
-    vals = [r["affinity"] for r in rows if r["affinity"] is not None]
+        base = _baseline_affinity(s, baseline_by_metro.get(s["metro"], [])) if baseline_by_metro else None
+        lift = None if aff is None else aff if base is None else aff - base
+        rows.append({**s, "affinity": aff, "popularity": pop, "baseline": base, "lift": lift})
+    vals = [r["lift"] for r in rows if r["lift"] is not None]
     mu = mean(vals) if vals else 0.0
     sd = pstdev(vals) if len(vals) > 1 else 0.0
     for r in rows:
         if r["affinity"] is None:
             r["fit"], r["confidence"] = None, "none"
         else:
-            r["fit"] = round((r["affinity"] - mu) / sd, 2) if sd else 0.0
+            r["fit"] = round((r["lift"] - mu) / sd, 2) if sd else 0.0
             r["confidence"] = "high" if r["popularity"] >= MIN_POPULARITY else "low"
     return sorted(rows, key=lambda r: (r["fit"] is None, -(r["fit"] or 0)))
 
@@ -84,16 +93,16 @@ def spearman(a: list[float], b: list[float]) -> float | None:
     return sum((x - ma) * (y - mb) for x, y in zip(ra, rb)) / (len(ra) * sa * sb)
 
 
-def stability(stores: list[dict], cells_by_metro: dict, weights: dict) -> dict | None:
+def stability(stores: list[dict], cells_by_metro: dict, weights: dict, baseline_by_metro: dict | None = None) -> dict | None:
     """Leave-one-out: how much does the ranking move when any single concept is dropped? Reports the worst case."""
     if len(weights) < 2:
         return None
-    full = {s["id"]: s["fit"] for s in score(stores, cells_by_metro, weights)}
+    full = {s["id"]: s["fit"] for s in score(stores, cells_by_metro, weights, baseline_by_metro)}
     worst = None
     for item_id in weights:
         w2 = {k: v for k, v in weights.items() if k != item_id}
         c2 = {m: {k: v for k, v in items.items() if k != item_id} for m, items in cells_by_metro.items()}
-        reduced = {s["id"]: s["fit"] for s in score(stores, c2, w2)}
+        reduced = {s["id"]: s["fit"] for s in score(stores, c2, w2, baseline_by_metro)}
         ids = [i for i in full if full[i] is not None and reduced.get(i) is not None]
         rho = spearman([full[i] for i in ids], [reduced[i] for i in ids])
         if rho is not None and (worst is None or rho < worst[0]):

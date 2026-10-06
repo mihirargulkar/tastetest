@@ -102,3 +102,33 @@ def test_stability_finds_the_item_the_ranking_hangs_on():
 
 def test_stability_needs_two_items():
     assert stability(four_stores(), {"M": {"T1": cells_for([0.9, 0.7, 0.5, 0.3])}}, {"T1": 1.0}) is None
+
+
+def _ab_stores():
+    return [store("A", 0.0, 0.0), store("B", 0.0, 0.1), store("C", 0.0, 0.2)]
+
+
+def _lons(affs):
+    return [cell(0.0, 0.1 * i, a) for i, a in enumerate(affs)]
+
+
+def test_baseline_cancels_common_factor():
+    cells = {"M": {"T1": _lons([0.9, 0.6, 0.3])}}
+    base = {"M": [_lons([0.9, 0.1, 0.3])]}
+    out = score(_ab_stores(), cells, {"T1": 1.0}, base)
+    assert out[0]["id"] == "B"
+    for r in out:
+        assert r["lift"] == pytest.approx(r["affinity"] - r["baseline"])
+    assert {r["id"]: round(r["lift"], 2) for r in out} == {"A": 0.0, "B": 0.5, "C": 0.0}
+
+
+def test_empty_baseline_lists_leave_lift_equal_affinity():
+    cells = {"M": {"T1": _lons([0.9, 0.6, 0.3])}}
+    out = score(_ab_stores(), cells, {"T1": 1.0}, {"M": [[], []]})
+    assert all(r["baseline"] is None and r["lift"] == r["affinity"] for r in out)
+
+
+def test_stability_with_baseline():
+    cells = {"M": {"T1": _lons([0.9, 0.6, 0.3]), "T2": _lons([0.2, 0.8, 0.5])}}
+    st = stability(_ab_stores(), cells, {"T1": 1.0, "T2": 1.0}, {"M": [_lons([0.9, 0.1, 0.3])]})
+    assert set(st) == {"rho", "weakest"}

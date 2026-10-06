@@ -1,7 +1,7 @@
 import pytest
 
 from app.qloo import QlooError
-from app.tools import Tools
+from app.tools import BASELINE_TAGS, Tools
 
 STORES = [
     {"id": "a", "name": "A", "address": "", "lat": 0.0, "lon": 0.0, "metro": "M1"},
@@ -23,6 +23,8 @@ class FakeQloo:
         self.heatmap_calls.append((item["id"], metro))
         if metro == self.fail_metro:
             raise QlooError(500, "boom")
+        if item["id"] in BASELINE_TAGS:
+            return []  # no baseline data: lift == affinity
         return {"M1": [{"lat": 0.0, "lon": 0.0, "affinity": 0.9, "popularity": 0.9},
                        {"lat": 0.0, "lon": 0.1, "affinity": 0.1, "popularity": 0.9}],
                 "M2": [{"lat": 5.0, "lon": 5.0, "affinity": 0.5, "popularity": 0.9}]}[metro]
@@ -46,8 +48,9 @@ async def test_find_tags_keeps_only_heatmap_capable_tags():
 async def test_score_stores_one_heatmap_per_metro_and_weighted_item():
     q = FakeQloo()
     out = await Tools(q, STORES).score_stores(SIG)
-    assert sorted(q.heatmap_calls) == [("T1", "M1"), ("T1", "M2")]
+    assert sorted(q.heatmap_calls) == sorted([(i, m) for m in ("M1", "M2") for i in ["T1", *BASELINE_TAGS]])
     assert [s["id"] for s in out["stores"]] == ["a", "c", "b"]
+    assert all("lift" in s for s in out["stores"])
     assert out["stability"] is None  # only one weighted item
 
 
@@ -71,7 +74,7 @@ async def test_score_stores_sends_region_wkt_to_heatmap():
     t = Tools(q, STORES, regions={"M1": "POLYGON((M1))"})
     q.heatmap = lambda item, area: _wkt_heatmap(q, item, area)
     await t.score_stores(SIG)
-    assert sorted(q.heatmap_calls) == [("T1", "M2"), ("T1", "POLYGON((M1))")]
+    assert sorted(q.heatmap_calls) == sorted([(i, w) for w in ("M2", "POLYGON((M1))") for i in ["T1", *BASELINE_TAGS]])
 
 
 async def _wkt_heatmap(q, item, area):
