@@ -16,6 +16,9 @@
 - Supported Qloo `filter.type` values only: `urn:entity:artist|book|brand|destination|movie|person|place|podcast|tv_show|video_game`, plus `urn:heatmap` and `urn:tag` for heatmap/taste analysis.
 - Claude model: `claude-sonnet-5-5` (named in the approved spec). Call it through `client.beta.messages.create` with `betas=["server-side-fallback-2026-07-01"]` and `fallbacks="default"`. Check `stop_reason == "refusal"` before reading content. Never use forced `tool_choice` (`any`/`tool` returns 400 on this model). Append `response.content` back unchanged (no history edits).
 - Max 25 tool calls per agent run.
+- Signature items must be `urn:tag:specialty_dish:place:*` tags or place entity IDs: the only kinds the hackathon API returns heatmaps for (live probe, 2026-10-06).
+- Qloo: at most 3 concurrent requests; retry 429 with back-off.
+- No playlist/artists anywhere: location-based artist results are megastar-dominated and include unsafe raw entries.
 - `QLOO_API_KEY` and `ANTHROPIC_API_KEY` exist only as server environment variables. Never send them to the browser.
 - Live-run rate limit: 6 signature/score runs per IP per hour; 30 briefs per IP per hour.
 - Copy rules: name the chain only descriptively, never use its logo or colors, and show "Not affiliated with [Chain]" and "Prioritizes which stores to test in. Not a sales forecast." in the UI footer.
@@ -33,13 +36,13 @@ qloo-hackathon/
 │   │   ├── __init__.py
 │   │   ├── qloo.py        # HTTP client, disk cache, ALL Qloo response parsing
 │   │   ├── stores.py      # load stores.csv
-│   │   ├── scoring.py     # pure math: nearest cell, z-scores, pick, validation, spread
-│   │   ├── tools.py       # the 5 agent tools over Qloo + stores
+│   │   ├── scoring.py     # pure math: nearest cell, z-scores, pick, spearman, stability
+│   │   ├── tools.py       # agent tools over Qloo + stores
 │   │   ├── agent.py       # Claude calls: tool loop, signature, scoring run, brief
 │   │   └── main.py        # FastAPI routes, SSE, rate limit, demos, static files
 │   ├── data/
-│   │   ├── stores.csv     # the chosen chain (Task 11)
-│   │   ├── candidates/    # per-chain sample CSVs for the coverage test
+│   │   ├── stores.csv     # covered Philz stores (Task 11)
+│   │   ├── candidates/    # raw + geocoded Philz store lists
 │   │   ├── demos/         # precomputed demo runs (Task 12)
 │   │   └── cache/         # Qloo response cache (gitignored)
 │   ├── scripts/
@@ -69,11 +72,11 @@ qloo-hackathon/
 
 ```python
 # Store (stores.py)
-{"id": "phl-rittenhouse", "name": "Rittenhouse", "address": "130 S 19th St, Philadelphia, PA",
- "lat": 39.9502, "lon": -75.1720, "metro": "Philadelphia"}
+{"id": "philz-sf-mission", "name": "24th St (Mission)", "address": "3101 24th St, San Francisco, CA",
+ "lat": 37.7524, "lon": -122.4148, "metro": "San Francisco"}
 
 # SignatureItem (agent.py output, frontend chips)
-{"id": "urn:tag:...", "name": "matcha", "kind": "tag" | "entity", "weight": 0.9,
+{"id": "urn:tag:specialty_dish:place:matcha", "name": "Matcha", "kind": "tag" | "entity", "weight": 0.9,
  "substituted_from": None | "yuzu"}
 
 # Heatmap cell (qloo.parse_heatmap)
@@ -87,13 +90,12 @@ qloo-hackathon/
 {"type": "trace", "tool": "find_tags", "args": {...}, "summary": "3 results: matcha, ..."}
 {"type": "signature", "items": [SignatureItem], "dropped": 0}
 {"type": "result", "stores": [ScoredStore], "top": [id], "bottom": [id],
- "reasons": {id: str}, "validation": None | {"top_mean": 6.2, "bottom_mean": 1.4, "tag": "matcha"}}
+ "reasons": {id: str}, "stability": None | {"rho": 0.86, "weakest": "Matcha Latte"}}
 {"type": "error", "message": str}
 
 # Brief (agent.write_brief)
 {"store_id": id, "fit": float | None, "label": "test" | "maybe" | "skip", "verdict": str,
- "why_tags": [{"id","name","affinity"}], "artists": [{"id","name","affinity","image"}],
- "partners": [{"id","name","affinity","image"}], "menu_cues": [str]}
+ "why_tags": [{"id","name","affinity"}], "partners": [{"id","name","affinity","image"}], "menu_cues": [str]}
 ```
 
 **Order note:** Tasks 1–9 run on fakes and need no API key. Tasks 10–12 need the Qloo key. Task 13 needs both keys.
@@ -106,14 +108,15 @@ qloo-hackathon/
 - Create: `backend/requirements.txt`, `backend/pytest.ini`, `backend/app/__init__.py`, `backend/app/qloo.py`, `backend/tests/test_qloo.py`, `.gitignore` (modify)
 
 **Interfaces:**
-- Produces: `qloo.BASE_URL`, `qloo.QlooError(status, body)`, `qloo.point(lat, lon) -> str`, `qloo.cache_key(path, params) -> str`, parsers `parse_tag_search`, `parse_search`, `parse_entities`, `parse_area_tags`, `parse_heatmap`, and `class Qloo(api_key, cache_dir, http=None, max_concurrency=8)` with async methods:
-  - `get(path, params) -> dict`
-  - `search_tags(query, take=5) -> list[{"id","name"}]`
-  - `search_entities(query, entity_type, take=5) -> list[{"id","name","type"}]`
+- Produces: `qloo.BASE_URL`, `qloo.MAX_RETRIES`, `qloo.QlooError(status, body)`, `qloo.point(lat, lon) -> str`, `qloo.cache_key(path, params) -> str`, parsers `parse_tag_search`, `parse_search`, `parse_entities`, `parse_area_tags`, `parse_heatmap`, and `class Qloo(api_key, cache_dir, http=None, max_concurrency=3)` with async methods:
+  - `get(path, params) -> dict` (retries 429 with back-off)
+  - `search_tags(query, take=10) -> list[{"id","name","type"}]`
+  - `search_places(query, take=5) -> list[{"id","name","type"}]`
   - `heatmap(item: SignatureItem, metro: str) -> list[cell]`
   - `area_tags(lat, lon, radius_m, take=10) -> list[{"id","name","affinity"}]`
-  - `area_entities(entity_type, lat, lon, radius_m, take=5) -> list[{"id","name","affinity","image"}]`
-  - `nearby_places(lat, lon, radius_m, tag_id, take=50) -> list[entity]`
+  - `area_places(lat, lon, radius_m, take=5) -> list[{"id","name","affinity","image"}]`
+
+Response shapes in this task were confirmed against the live API on 2026-10-06.
 
 - [ ] **Step 1: Create dependency and test config**
 
@@ -158,6 +161,7 @@ Expected: installs without errors.
 import httpx
 import pytest
 
+from app import qloo
 from app.qloo import (BASE_URL, Qloo, QlooError, cache_key, parse_area_tags, parse_entities,
                       parse_heatmap, parse_search, parse_tag_search, point)
 
@@ -220,23 +224,43 @@ async def test_heatmap_uses_tags_or_entities_param(tmp_path):
     assert seen[0]["filter.location.query"] == "Brooklyn"
 
 
-async def test_area_entities_place_uses_filter_location(tmp_path):
+async def test_area_queries_use_point_location(tmp_path):
     seen = []
 
     def handler(request):
         seen.append(dict(request.url.params))
-        return httpx.Response(200, json={"results": {"entities": []}})
+        return httpx.Response(200, json={"results": {"entities": [], "tags": []}})
 
     q = make_client(tmp_path, handler)
-    await q.area_entities("urn:entity:place", 40.7, -73.9, 1200)
-    await q.area_entities("urn:entity:artist", 40.7, -73.9, 1200)
+    await q.area_places(40.7, -73.9, 1200)
+    await q.area_tags(40.7, -73.9, 1200)
+    assert seen[0]["filter.type"] == "urn:entity:place"
     assert seen[0]["filter.location"] == "POINT(-73.9 40.7)"
+    assert seen[1]["filter.type"] == "urn:tag"
     assert seen[1]["signal.location"] == "POINT(-73.9 40.7)"
 
 
+async def test_retries_429_then_succeeds(tmp_path, monkeypatch):
+    statuses = [429, 429, 200]
+    slept = []
+
+    async def fake_sleep(s):
+        slept.append(s)
+
+    def handler(request):
+        code = statuses.pop(0)
+        return httpx.Response(code, json={"results": {"tags": []}}, headers={"retry-after": "1"} if code == 429 else {})
+
+    monkeypatch.setattr(qloo, "_sleep", fake_sleep)
+    q = make_client(tmp_path, handler)
+    assert await q.get("/v2/tags", {"filter.query": "x"}) == {"results": {"tags": []}}
+    assert slept == [1.0, 1.0]
+
+
 def test_parsers():
-    assert parse_tag_search({"results": {"tags": [{"id": "T1", "name": "matcha"}]}}) == [{"id": "T1", "name": "matcha"}]
-    assert parse_search({"results": [{"entity_id": "E1", "name": "Cafe", "subtype": "urn:entity:place"}]}) == [
+    assert parse_tag_search({"results": {"tags": [{"id": "T1", "name": "Matcha", "type": "urn:tag:specialty_dish:place"}]}}) == [
+        {"id": "T1", "name": "Matcha", "type": "urn:tag:specialty_dish:place"}]
+    assert parse_search({"results": [{"entity_id": "E1", "name": "Cafe", "types": ["urn:entity:place"]}]}) == [
         {"id": "E1", "name": "Cafe", "type": "urn:entity:place"}]
     assert parse_entities({"results": {"entities": [{"entity_id": "E1", "name": "Khruangbin", "query": {"affinity": 0.9},
                                                        "properties": {"image": {"url": "http://img"}}}]}}) == [
@@ -265,6 +289,8 @@ from pathlib import Path
 import httpx
 
 BASE_URL = "https://hackathon.api.qloo.com"
+MAX_RETRIES = 3
+_sleep = asyncio.sleep  # indirection so tests can skip real waits
 
 
 class QlooError(Exception):
@@ -283,12 +309,12 @@ def cache_key(path: str, params: dict) -> str:
 
 
 def parse_tag_search(resp: dict) -> list[dict]:
-    return [{"id": t.get("id") or t.get("tag_id"), "name": t["name"]}
+    return [{"id": t["id"], "name": t["name"], "type": t.get("type")}
             for t in resp.get("results", {}).get("tags", [])]
 
 
 def parse_search(resp: dict) -> list[dict]:
-    return [{"id": e["entity_id"], "name": e["name"], "type": e.get("subtype") or e.get("type")}
+    return [{"id": e["entity_id"], "name": e["name"], "type": (e.get("types") or [None])[0]}
             for e in resp.get("results", [])]
 
 
@@ -316,30 +342,34 @@ def parse_heatmap(resp: dict) -> list[dict]:
 
 class Qloo:
     def __init__(self, api_key: str, cache_dir: Path, http: httpx.AsyncClient | None = None,
-                 max_concurrency: int = 8):
+                 max_concurrency: int = 3):  # the hackathon API returns 429 under bursts
         self.api_key = api_key
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
-        self.http = http or httpx.AsyncClient(base_url=BASE_URL, timeout=30)
+        self.http = http or httpx.AsyncClient(base_url=BASE_URL, timeout=60)
         self.sem = asyncio.Semaphore(max_concurrency)
 
     async def get(self, path: str, params: dict) -> dict:
         f = self.cache_dir / f"{cache_key(path, params)}.json"
         if f.exists():
             return json.loads(f.read_text())
-        async with self.sem:
-            r = await self.http.get(path, params=params, headers={"X-Api-Key": self.api_key})
+        for attempt in range(MAX_RETRIES + 1):
+            async with self.sem:
+                r = await self.http.get(path, params=params, headers={"X-Api-Key": self.api_key})
+            if r.status_code != 429 or attempt == MAX_RETRIES:
+                break
+            await _sleep(float(r.headers.get("retry-after", 2 ** (attempt + 1))))
         if r.status_code != 200:
             raise QlooError(r.status_code, r.text)
         data = r.json()
         f.write_text(json.dumps(data))
         return data
 
-    async def search_tags(self, query: str, take: int = 5) -> list[dict]:
+    async def search_tags(self, query: str, take: int = 10) -> list[dict]:
         return parse_tag_search(await self.get("/v2/tags", {"filter.query": query, "take": take}))
 
-    async def search_entities(self, query: str, entity_type: str, take: int = 5) -> list[dict]:
-        return parse_search(await self.get("/search", {"query": query, "types": entity_type, "take": take}))
+    async def search_places(self, query: str, take: int = 5) -> list[dict]:
+        return parse_search(await self.get("/search", {"query": query, "types": "urn:entity:place", "take": take}))
 
     async def heatmap(self, item: dict, metro: str) -> list[dict]:
         key = "signal.interests.tags" if item["kind"] == "tag" else "signal.interests.entities"
@@ -351,26 +381,16 @@ class Qloo:
             "filter.type": "urn:tag", "signal.location": point(lat, lon),
             "signal.location.radius": radius_m, "take": take}))
 
-    async def area_entities(self, entity_type: str, lat: float, lon: float, radius_m: int,
-                            take: int = 5) -> list[dict]:
-        # Places are filtered to the area; other types are signaled by the area's audience.
-        if entity_type == "urn:entity:place":
-            loc = {"filter.location": point(lat, lon), "filter.location.radius": radius_m}
-        else:
-            loc = {"signal.location": point(lat, lon), "signal.location.radius": radius_m}
-        return parse_entities(await self.get("/v2/insights", {"filter.type": entity_type, "take": take, **loc}))
-
-    async def nearby_places(self, lat: float, lon: float, radius_m: int, tag_id: str,
-                            take: int = 50) -> list[dict]:
+    async def area_places(self, lat: float, lon: float, radius_m: int, take: int = 5) -> list[dict]:
         return parse_entities(await self.get("/v2/insights", {
             "filter.type": "urn:entity:place", "filter.location": point(lat, lon),
-            "filter.location.radius": radius_m, "filter.tags": tag_id, "take": take}))
+            "filter.location.radius": radius_m, "take": take}))
 ```
 
 - [ ] **Step 5: Run tests to verify they pass**
 
 Run: `cd backend && pytest tests/test_qloo.py -v`
-Expected: 7 passed
+Expected: 8 passed
 
 - [ ] **Step 6: Commit**
 
@@ -502,17 +522,24 @@ git commit -m "feat: store CSV loader, geocoding script, placeholder stores"
 - Produces:
   - `km(lat1, lon1, lat2, lon2) -> float`
   - `nearest_cell(cells, lat, lon, max_km=MAX_CELL_KM) -> cell | None`
-  - `score(stores, cells_by_metro: dict[metro, dict[item_id, list[cell]]], weights: dict[item_id, float]) -> list[ScoredStore]`, sorted by fit descending, unscored stores last
+  - `score(stores, cells_by_metro: dict[metro, dict[item_id, list[cell]]], weights: dict[item_id, float]) -> list[ScoredStore]`, sorted by fit descending with unscored stores last
   - `pick(scored, top_n=5, bottom_n=3) -> (top: list[ScoredStore], bottom: list[ScoredStore])`, with bottom ordered worst first and no overlap with top
-  - `validation(top, bottom, counts: dict[store_id, int]) -> {"top_mean","bottom_mean"} | None`
-  - `spread(tag_sets: list[set]) -> float`, the mean pairwise Jaccard distance
-  - Constants `MAX_CELL_KM = 3.0`, `MIN_POPULARITY = 0.3`
+  - `spearman(a: list[float], b: list[float]) -> float | None`, using average ranks for ties; `None` if fewer than 3 points or a constant series
+  - `stability(stores, cells_by_metro, weights) -> {"rho": float, "weakest": item_id} | None`: leave-one-out over items, reporting the minimum ρ; `None` if there are fewer than 2 items
+  - Constants `MAX_CELL_KM = 1.5`, `MIN_POPULARITY = 0.2`
+
+**Missing-data rule** (from the live probe: heatmap cells are sparse and only appear where there's signal):
+- The city has cells for an item, but none within `MAX_CELL_KM` of the store → that item contributes affinity 0 and popularity 0. No signal nearby means low interest.
+- The city has no cells for an item → the item is skipped for that store.
+- No usable items → `fit=None`, `confidence="none"`.
 
 - [ ] **Step 1: Write the failing tests**
 
 `backend/tests/test_scoring.py`:
 ```python
-from app.scoring import km, nearest_cell, pick, score, spread, validation
+import pytest
+
+from app.scoring import km, nearest_cell, pick, score, spearman, stability
 
 
 def store(id, lat, lon, metro="M"):
@@ -530,7 +557,7 @@ def test_km_one_degree_latitude():
 def test_nearest_cell_picks_closest_and_respects_max():
     cells = [cell(40.0, -74.0, 0.1), cell(40.01, -74.0, 0.9)]
     assert nearest_cell(cells, 40.009, -74.0)["affinity"] == 0.9
-    assert nearest_cell(cells, 41.0, -74.0) is None
+    assert nearest_cell(cells, 40.05, -74.0) is None  # ~4.4 km away
     assert nearest_cell([], 40.0, -74.0) is None
 
 
@@ -547,19 +574,28 @@ def test_score_weighted_mean_across_items():
     stores = [store("a", 0.0, 0.0), store("b", 0.0, 0.1)]
     cells = {"M": {"T1": [cell(0.0, 0.0, 1.0), cell(0.0, 0.1, 0.0)],
                    "T2": [cell(0.0, 0.0, 0.0), cell(0.0, 0.1, 1.0)]}}
-    out = score(stores, cells, {"T1": 3.0, "T2": 1.0})
-    by_id = {s["id"]: s for s in out}
+    by_id = {s["id"]: s for s in score(stores, cells, {"T1": 3.0, "T2": 1.0})}
     assert by_id["a"]["affinity"] == 0.75
     assert by_id["b"]["affinity"] == 0.25
 
 
-def test_unscored_store_goes_last_and_low_popularity_flagged():
-    stores = [store("far", 10.0, 10.0), store("a", 0.0, 0.0), store("b", 0.0, 0.1)]
+def test_missing_data_rules():
+    stores = [store("a", 0.0, 0.0), store("b", 0.0, 0.1), store("far", 10.0, 10.0),
+              store("nodata", 0.0, 0.0, metro="M2")]
     cells = {"M": {"T1": [cell(0.0, 0.0, 0.9, popularity=0.1), cell(0.0, 0.1, 0.5)]}}
+    by_id = {s["id"]: s for s in score(stores, cells, {"T1": 1.0})}
+    assert by_id["far"]["affinity"] == 0.0 and by_id["far"]["confidence"] == "low"  # city has data, none nearby
+    assert by_id["nodata"]["fit"] is None and by_id["nodata"]["confidence"] == "none"  # city has no data
+    assert by_id["a"]["confidence"] == "low"  # popularity below MIN_POPULARITY
     out = score(stores, cells, {"T1": 1.0})
-    assert out[-1]["id"] == "far"
-    assert out[-1]["fit"] is None and out[-1]["confidence"] == "none"
-    assert {s["id"]: s["confidence"] for s in out}["a"] == "low"
+    assert [s["id"] for s in out] == ["a", "b", "far", "nodata"]
+
+
+def test_item_without_city_data_is_skipped_not_penalized():
+    stores = [store("a", 0.0, 0.0), store("b", 0.0, 0.1)]
+    cells = {"M": {"T1": [cell(0.0, 0.0, 0.8), cell(0.0, 0.1, 0.4)], "T2": []}}
+    by_id = {s["id"]: s for s in score(stores, cells, {"T1": 1.0, "T2": 1.0})}
+    assert by_id["a"]["affinity"] == 0.8
 
 
 def test_single_scored_store_gets_zero_fit():
@@ -577,16 +613,34 @@ def test_pick_no_overlap_and_bottom_worst_first():
     assert [s["id"] for s in bottom] == ["5", "4"]
 
 
-def test_validation_means():
-    top, bottom = [{"id": "a"}, {"id": "b"}], [{"id": "c"}]
-    assert validation(top, bottom, {"a": 6, "b": 4, "c": 1}) == {"top_mean": 5.0, "bottom_mean": 1.0}
-    assert validation(top, bottom, {}) is None
+def test_spearman():
+    assert spearman([1, 2, 3, 4], [10, 20, 30, 40]) == pytest.approx(1.0)
+    assert spearman([1, 2, 3, 4], [4, 3, 2, 1]) == pytest.approx(-1.0)
+    assert spearman([1, 1, 2], [1, 2, 3]) == pytest.approx(0.866, abs=1e-3)  # ties get average ranks
+    assert spearman([1, 2], [1, 2]) is None
+    assert spearman([1, 1, 1], [1, 2, 3]) is None
 
 
-def test_spread():
-    assert spread([{"a", "b"}, {"a", "b"}]) == 0.0
-    assert spread([{"a"}, {"b"}]) == 1.0
-    assert spread([{"a"}]) == 0.0
+def four_stores():
+    return [store(f"s{i}", 0.0, i * 0.1) for i in range(4)]
+
+
+def cells_for(affinities):
+    return [cell(0.0, i * 0.1, a) for i, a in enumerate(affinities)]
+
+
+def test_stability_agreeing_items_is_one():
+    cells = {"M": {"T1": cells_for([0.9, 0.7, 0.5, 0.3]), "T2": cells_for([0.8, 0.6, 0.4, 0.2])}}
+    assert stability(four_stores(), cells, {"T1": 1.0, "T2": 1.0}) == {"rho": 1.0, "weakest": "T1"}
+
+
+def test_stability_finds_the_item_the_ranking_hangs_on():
+    cells = {"M": {"T1": cells_for([0.9, 0.7, 0.5, 0.3]), "T2": cells_for([0.1, 0.3, 0.5, 0.7])}}
+    assert stability(four_stores(), cells, {"T1": 1.0, "T2": 0.5}) == {"rho": -1.0, "weakest": "T1"}
+
+
+def test_stability_needs_two_items():
+    assert stability(four_stores(), {"M": {"T1": cells_for([0.9, 0.7, 0.5, 0.3])}}, {"T1": 1.0}) is None
 ```
 
 - [ ] **Step 2: Run tests to verify they fail**
@@ -599,11 +653,11 @@ Expected: FAIL with `ModuleNotFoundError: No module named 'app.scoring'`
 ```python
 """Pure scoring math. No I/O; everything here is unit-tested."""
 import math
-from itertools import combinations
 from statistics import mean, pstdev
 
-MAX_CELL_KM = 3.0  # ponytail: nearest-cell lookup; retune once the real heatmap cell size is known (Task 10)
-MIN_POPULARITY = 0.3  # ponytail: fixed cutoff; recalibrate from the real popularity distribution (Task 10)
+# Calibrated on live hackathon heatmaps (2026-10-06): cells sit ~0.2-0.8 km apart; popularity p25 ~0.23.
+MAX_CELL_KM = 1.5
+MIN_POPULARITY = 0.2
 
 
 def km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -621,15 +675,17 @@ def nearest_cell(cells: list[dict], lat: float, lon: float, max_km: float = MAX_
 
 
 def _store_affinity(store: dict, cells_by_item: dict, weights: dict) -> tuple[float | None, float | None]:
-    hits = []
+    hits = []  # (weight, affinity, popularity)
     for item_id, cells in cells_by_item.items():
+        if not cells:
+            continue  # the city has no data for this item: skip it rather than penalize the store
         c = nearest_cell(cells, store["lat"], store["lon"])
-        if c is not None:
-            hits.append((weights[item_id], c))
-    total = sum(w for w, _ in hits)
+        # Cells only exist where there's signal, so none nearby (in a city with data) means low interest.
+        hits.append((weights[item_id], c["affinity"], c["popularity"]) if c else (weights[item_id], 0.0, 0.0))
+    total = sum(w for w, _, _ in hits)
     if total == 0:
         return None, None
-    return sum(w * c["affinity"] for w, c in hits) / total, mean(c["popularity"] for _, c in hits)
+    return sum(w * a for w, a, _ in hits) / total, mean(p for _, _, p in hits)
 
 
 def score(stores: list[dict], cells_by_metro: dict, weights: dict) -> list[dict]:
@@ -656,31 +712,58 @@ def pick(scored: list[dict], top_n: int = 5, bottom_n: int = 3) -> tuple[list[di
     return top, bottom
 
 
-def validation(top: list[dict], bottom: list[dict], counts: dict) -> dict | None:
-    t = [counts[s["id"]] for s in top if s["id"] in counts]
-    b = [counts[s["id"]] for s in bottom if s["id"] in counts]
-    if not t or not b:
+def _ranks(xs: list[float]) -> list[float]:
+    order = sorted(range(len(xs)), key=lambda i: xs[i])
+    ranks = [0.0] * len(xs)
+    i = 0
+    while i < len(order):
+        j = i
+        while j + 1 < len(order) and xs[order[j + 1]] == xs[order[i]]:
+            j += 1
+        for k in range(i, j + 1):
+            ranks[order[k]] = (i + j) / 2 + 1  # ties share the average rank
+        i = j + 1
+    return ranks
+
+
+def spearman(a: list[float], b: list[float]) -> float | None:
+    if len(a) < 3:
         return None
-    return {"top_mean": round(mean(t), 1), "bottom_mean": round(mean(b), 1)}
+    ra, rb = _ranks(a), _ranks(b)
+    sa, sb = pstdev(ra), pstdev(rb)
+    if sa == 0 or sb == 0:
+        return None
+    ma, mb = mean(ra), mean(rb)
+    return sum((x - ma) * (y - mb) for x, y in zip(ra, rb)) / (len(ra) * sa * sb)
 
 
-def spread(tag_sets: list[set]) -> float:
-    pairs = list(combinations([s for s in tag_sets if s], 2))
-    if not pairs:
-        return 0.0
-    return round(mean(1 - len(a & b) / len(a | b) for a, b in pairs), 3)
+def stability(stores: list[dict], cells_by_metro: dict, weights: dict) -> dict | None:
+    """Leave-one-out: how much does the ranking move when any single concept is dropped? Reports the worst case."""
+    if len(weights) < 2:
+        return None
+    full = {s["id"]: s["fit"] for s in score(stores, cells_by_metro, weights)}
+    worst = None
+    for item_id in weights:
+        w2 = {k: v for k, v in weights.items() if k != item_id}
+        c2 = {m: {k: v for k, v in items.items() if k != item_id} for m, items in cells_by_metro.items()}
+        reduced = {s["id"]: s["fit"] for s in score(stores, c2, w2)}
+        ids = [i for i in full if full[i] is not None and reduced.get(i) is not None]
+        rho = spearman([full[i] for i in ids], [reduced[i] for i in ids])
+        if rho is not None and (worst is None or rho < worst[0]):
+            worst = (rho, item_id)
+    return {"rho": round(worst[0], 2), "weakest": worst[1]} if worst else None
 ```
 
 - [ ] **Step 4: Run tests to verify they pass**
 
 Run: `cd backend && pytest tests/test_scoring.py -v`
-Expected: 9 passed
+Expected: 12 passed
 
 - [ ] **Step 5: Commit**
 
 ```bash
 git add backend/app/scoring.py backend/tests/test_scoring.py
-git commit -m "feat: store fit scoring (nearest heatmap cell, weighted affinity, z-score)"
+git commit -m "feat: store fit scoring with sparse-cell rules and leave-one-out stability"
 ```
 
 ---
@@ -691,14 +774,13 @@ git commit -m "feat: store fit scoring (nearest heatmap cell, weighted affinity,
 - Create: `backend/app/tools.py`, `backend/tests/test_tools.py`
 
 **Interfaces:**
-- Consumes: `Qloo` methods from Task 1, `score` from Task 3, Store list from Task 2.
-- Produces: `RADIUS_M = 1200`, and `class Tools(qloo, stores)` with:
+- Consumes: `Qloo` methods from Task 1, `score`/`stability` from Task 3, the Store list from Task 2.
+- Produces: `RADIUS_M = 1200`, `HEATMAP_TAG_PREFIX = "urn:tag:specialty_dish:place:"`, and `class Tools(qloo, stores)` with:
   - `store(store_id) -> Store` (raises `KeyError` if the id is unknown)
-  - `async find_tags(query) -> list[{"id","name"}]`
-  - `async find_entities(query, entity_type) -> list[{"id","name","type"}]`
-  - `async score_stores(signature: list[SignatureItem]) -> list[ScoredStore]`
-  - `async area_taste(store_id) -> {"tags": [...], "artists": [...], "places": [...], "brands": [...]}`
-  - `async nearby_related(store_id, tag_id) -> int`
+  - `async find_tags(query) -> list[{"id","name","type"}]` (only heatmap-capable specialty-dish tags)
+  - `async find_places(query) -> list[{"id","name","type"}]`
+  - `async score_stores(signature: list[SignatureItem]) -> {"stores": list[ScoredStore], "stability": {"rho","weakest"} | None}`
+  - `async area_taste(store_id) -> {"tags": [...], "places": [...]}`
 
 - [ ] **Step 1: Write the failing tests**
 
@@ -721,6 +803,10 @@ class FakeQloo:
         self.heatmap_calls = []
         self.fail_metro = fail_metro
 
+    async def search_tags(self, query, take=10):
+        return [{"id": "urn:tag:specialty_dish:place:matcha", "name": "Matcha", "type": "urn:tag:specialty_dish:place"},
+                {"id": "urn:tag:menu_highlight:qloo:matcha", "name": "Matcha", "type": "urn:tag:menu_highlight:qloo"}]
+
     async def heatmap(self, item, metro):
         self.heatmap_calls.append((item["id"], metro))
         if metro == self.fail_metro:
@@ -730,42 +816,37 @@ class FakeQloo:
                 "M2": [{"lat": 5.0, "lon": 5.0, "affinity": 0.5, "popularity": 0.9}]}[metro]
 
     async def area_tags(self, lat, lon, radius_m, take=10):
-        return [{"id": "T1", "name": "matcha", "affinity": 0.8}]
+        return [{"id": "T1", "name": "Foodies", "affinity": 0.8}]
 
-    async def area_entities(self, entity_type, lat, lon, radius_m, take=5):
-        if entity_type == "urn:entity:brand":
-            raise QlooError(403, "no brands")
-        return [{"id": entity_type, "name": "x", "affinity": 0.5, "image": None}]
-
-    async def nearby_places(self, lat, lon, radius_m, tag_id, take=50):
-        return [{"id": "p1"}, {"id": "p2"}]
+    async def area_places(self, lat, lon, radius_m, take=5):
+        raise QlooError(429, "slow down")
 
 
 SIG = [{"id": "T1", "name": "matcha", "kind": "tag", "weight": 1.0, "substituted_from": None},
        {"id": "T0", "name": "dropped", "kind": "tag", "weight": 0.0, "substituted_from": None}]
 
 
+async def test_find_tags_keeps_only_heatmap_capable_tags():
+    tags = await Tools(FakeQloo(), STORES).find_tags("matcha")
+    assert [t["id"] for t in tags] == ["urn:tag:specialty_dish:place:matcha"]
+
+
 async def test_score_stores_one_heatmap_per_metro_and_weighted_item():
     q = FakeQloo()
     out = await Tools(q, STORES).score_stores(SIG)
     assert sorted(q.heatmap_calls) == [("T1", "M1"), ("T1", "M2")]
-    assert [s["id"] for s in out] == ["a", "c", "b"]
+    assert [s["id"] for s in out["stores"]] == ["a", "c", "b"]
+    assert out["stability"] is None  # only one weighted item
 
 
 async def test_score_stores_survives_one_failed_metro():
     out = await Tools(FakeQloo(fail_metro="M2"), STORES).score_stores(SIG)
-    assert {s["id"]: s["confidence"] for s in out}["c"] == "none"
+    assert {s["id"]: s["confidence"] for s in out["stores"]}["c"] == "none"
 
 
 async def test_area_taste_tolerates_partial_failure():
     taste = await Tools(FakeQloo(), STORES).area_taste("a")
-    assert taste["tags"][0]["name"] == "matcha"
-    assert taste["brands"] == []
-    assert taste["artists"][0]["id"] == "urn:entity:artist"
-
-
-async def test_nearby_related_counts():
-    assert await Tools(FakeQloo(), STORES).nearby_related("a", "T1") == 2
+    assert taste == {"tags": [{"id": "T1", "name": "Foodies", "affinity": 0.8}], "places": []}
 
 
 def test_unknown_store_raises_keyerror():
@@ -784,9 +865,11 @@ Expected: FAIL with `ModuleNotFoundError: No module named 'app.tools'`
 """The agent's tools: thin wrappers over Qloo + the store list."""
 import asyncio
 
-from .scoring import score
+from .scoring import score, stability
 
 RADIUS_M = 1200
+# The only tag type the hackathon API returns heatmaps for (live probe, 2026-10-06).
+HEATMAP_TAG_PREFIX = "urn:tag:specialty_dish:place:"
 
 
 class Tools:
@@ -799,12 +882,12 @@ class Tools:
         return self._by_id[store_id]
 
     async def find_tags(self, query: str) -> list[dict]:
-        return await self.qloo.search_tags(query)
+        return [t for t in await self.qloo.search_tags(query) if t["id"].startswith(HEATMAP_TAG_PREFIX)]
 
-    async def find_entities(self, query: str, entity_type: str) -> list[dict]:
-        return await self.qloo.search_entities(query, entity_type)
+    async def find_places(self, query: str) -> list[dict]:
+        return await self.qloo.search_places(query)
 
-    async def score_stores(self, signature: list[dict]) -> list[dict]:
+    async def score_stores(self, signature: list[dict]) -> dict:
         items = [i for i in signature if i["weight"] > 0]
         metros = sorted({s["metro"] for s in self.stores})
         pairs = [(m, i) for m in metros for i in items]
@@ -814,23 +897,15 @@ class Tools:
         by_metro = {m: {} for m in metros}
         for (m, i), cells in zip(pairs, results):
             by_metro[m][i["id"]] = [] if isinstance(cells, Exception) else cells
-        return score(self.stores, by_metro, {i["id"]: i["weight"] for i in items})
+        weights = {i["id"]: i["weight"] for i in items}
+        return {"stores": score(self.stores, by_metro, weights), "stability": stability(self.stores, by_metro, weights)}
 
     async def area_taste(self, store_id: str) -> dict:
         s = self.store(store_id)
-        lat, lon = s["lat"], s["lon"]
-        parts = await asyncio.gather(
-            self.qloo.area_tags(lat, lon, RADIUS_M),
-            self.qloo.area_entities("urn:entity:artist", lat, lon, RADIUS_M),
-            self.qloo.area_entities("urn:entity:place", lat, lon, RADIUS_M),
-            self.qloo.area_entities("urn:entity:brand", lat, lon, RADIUS_M),
-            return_exceptions=True)
-        tags, artists, places, brands = [[] if isinstance(p, Exception) else p for p in parts]
-        return {"tags": tags, "artists": artists, "places": places, "brands": brands}
-
-    async def nearby_related(self, store_id: str, tag_id: str) -> int:
-        s = self.store(store_id)
-        return len(await self.qloo.nearby_places(s["lat"], s["lon"], RADIUS_M, tag_id))
+        parts = await asyncio.gather(self.qloo.area_tags(s["lat"], s["lon"], RADIUS_M),
+                                     self.qloo.area_places(s["lat"], s["lon"], RADIUS_M), return_exceptions=True)
+        tags, places = [[] if isinstance(p, Exception) else p for p in parts]
+        return {"tags": tags, "places": places}
 ```
 
 - [ ] **Step 4: Run tests to verify they pass**
@@ -842,7 +917,7 @@ Expected: 5 passed
 
 ```bash
 git add backend/app/tools.py backend/tests/test_tools.py
-git commit -m "feat: agent tools over Qloo (score, area taste, nearby related)"
+git commit -m "feat: agent tools over Qloo (dish tags, places, scoring with stability, area taste)"
 ```
 
 ---
@@ -853,7 +928,7 @@ git commit -m "feat: agent tools over Qloo (score, area taste, nearby related)"
 - Create: `backend/app/agent.py`, `backend/tests/test_agent.py`
 
 **Interfaces:**
-- Consumes: `Tools` (Task 4), `pick`/`validation` (Task 3), `QlooError` (Task 1). The `llm` argument is an `anthropic.AsyncAnthropic` instance, or a fake with the same `llm.beta.messages.create(**kw)` coroutine.
+- Consumes: `Tools` (Task 4: `find_tags`, `find_places`, `score_stores` → `{"stores","stability"}`, `area_taste` → `{"tags","places"}`), `pick` (Task 3), `QlooError` (Task 1). The `llm` argument is an `anthropic.AsyncAnthropic` instance, or a fake with the same `llm.beta.messages.create(**kw)` coroutine.
 - Produces:
   - `MODEL = "claude-sonnet-5-5"`, `MAX_TOOL_CALLS = 25`, `class AgentError(Exception)`
   - `async run_tool_loop(llm, *, system, user, tools, handlers, finish_tool, max_calls=MAX_TOOL_CALLS)`, an async generator of trace events that ends with `{"type": "finish", "input": dict}`
@@ -904,21 +979,17 @@ class FakeTools:
     async def find_tags(self, query):
         return [{"id": "T-" + query, "name": query}]
 
-    async def find_entities(self, query, entity_type):
+    async def find_places(self, query):
         return []
 
     async def score_stores(self, signature):
         fits = {"a": 1.5, "b": 0.5, "c": -0.5, "d": -1.5}
-        return [{**s, "fit": fits[s["id"]], "confidence": "high"} for s in self.stores]
+        return {"stores": [{**s, "fit": fits[s["id"]], "confidence": "high"} for s in self.stores],
+                "stability": {"rho": 0.86, "weakest": "T1"}}
 
     async def area_taste(self, store_id):
         return {"tags": [{"id": "T9", "name": "japanese cafe", "affinity": 0.9}],
-                "artists": [{"id": "A1", "name": "Khruangbin", "affinity": 0.9, "image": None}],
-                "places": [{"id": "P1", "name": "Tea Shop", "affinity": 0.8, "image": None}],
-                "brands": []}
-
-    async def nearby_related(self, store_id, tag_id):
-        return {"a": 6, "b": 4, "c": 2, "d": 0}[store_id]
+                "places": [{"id": "P1", "name": "Tea Shop", "affinity": 0.8, "image": None}]}
 
     def store(self, store_id):
         return next(s for s in self.stores if s["id"] == store_id)
@@ -998,25 +1069,23 @@ async def test_run_score_result_event():
     assert result["bottom"] == []
     assert result["reasons"]["a"] == "Leans into japanese cafe culture."
     assert result["reasons"]["d"] == "Over-indexes on japanese cafe."  # deterministic fallback
-    assert result["validation"] is None  # no skip group to compare against
+    assert result["stability"] == {"rho": 0.86, "weakest": "matcha"}  # item id mapped to its name
     assert any(e["type"] == "trace" and e["tool"] == "score_stores" for e in events)
 
 
-async def test_run_score_validation_with_skip_group():
+async def test_run_score_skip_group_and_no_stability():
     class EightStores(FakeTools):
         stores = [{"id": s, "name": s, "address": "", "lat": 0, "lon": 0, "metro": "M"} for s in "abcdefgh"]
 
         async def score_stores(self, signature):
-            return [{**s, "fit": 2.0 - i * 0.5, "confidence": "high"} for i, s in enumerate(self.stores)]
-
-        async def nearby_related(self, store_id, tag_id):
-            return 5 if store_id in "abcde" else 1
+            return {"stores": [{**s, "fit": 2.0 - i * 0.5, "confidence": "high"} for i, s in enumerate(self.stores)],
+                    "stability": None}
 
     llm = FakeLLM([resp(text(json.dumps({"reasons": []})), stop="end_turn")])
     sig = [{"id": "T1", "name": "matcha", "kind": "tag", "weight": 1.0, "substituted_from": None}]
     result = (await collect(run_score(llm, EightStores(), sig)))[-1]
     assert result["bottom"] == ["h", "g", "f"]
-    assert result["validation"] == {"top_mean": 5.0, "bottom_mean": 1.0, "tag": "matcha"}
+    assert result["stability"] is None
 
 
 async def test_run_score_reason_fallback_when_llm_fails():
@@ -1024,7 +1093,6 @@ async def test_run_score_reason_fallback_when_llm_fails():
     sig = [{"id": "E1", "name": "Some Brand", "kind": "entity", "weight": 1.0, "substituted_from": None}]
     events = await collect(run_score(llm, FakeTools(), sig))
     assert events[-1]["reasons"]["a"] == "Over-indexes on japanese cafe."
-    assert events[-1]["validation"] is None  # no tag item -> no validation signal
 
 
 async def test_write_brief_uses_only_qloo_entities():
@@ -1033,7 +1101,7 @@ async def test_write_brief_uses_only_qloo_entities():
     sig = [{"id": "T1", "name": "matcha", "kind": "tag", "weight": 1.0, "substituted_from": None}]
     brief = await write_brief(llm, FakeTools(), "a", sig, 1.5)
     assert brief["label"] == "test"
-    assert brief["artists"][0]["name"] == "Khruangbin"
+    assert "artists" not in brief  # no playlist: location-based artists aren't demo-safe
     assert brief["partners"][0]["name"] == "Tea Shop"
     assert brief["verdict"].startswith("The neighborhood")
     assert brief["menu_cues"] == ["Lead with matcha"]
@@ -1052,7 +1120,7 @@ import asyncio
 import json
 
 from .qloo import QlooError
-from .scoring import pick, validation
+from .scoring import pick
 
 MODEL = "claude-sonnet-5-5"
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
@@ -1123,8 +1191,8 @@ async def run_tool_loop(llm, *, system: str, user: str, tools: list, handlers: d
 
 SIGNATURE_SYSTEM = """You turn a coffee chain's limited-time offer (LTO) description into a Qloo taste signature.
 
-1. Break the description into 3-8 taste concepts: flavors, ingredients, cultural scenes, and the vibe of the target customer.
-2. Resolve every concept to a real Qloo ID with find_tags (preferred) or find_entities. If a search returns nothing useful, try a broader or synonymous term and put the original word in substituted_from.
+1. Break the description into 3-8 concepts that are dishes, drinks, or ingredients (e.g. "matcha latte", "yuzu", "cold brew"). Express the vibe of the target customer through such items or through a well-known place that embodies it.
+2. Resolve every concept to a real Qloo ID with find_tags (preferred; it only returns dish and drink tags) or find_places. If a search returns nothing useful, try a broader or synonymous term and put the original word in substituted_from.
 3. Weight each item from 0.1 to 1.0 by how central it is to the product.
 4. Finish by calling submit_signature exactly once, using only IDs that a search returned. Never invent IDs.
 
@@ -1136,11 +1204,10 @@ SIGNATURE_TOOLS = [
      "description": "Search Qloo tags (flavors, cuisines, genres, styles, scenes) by keyword. Returns [{id, name}].",
      "input_schema": {"type": "object", "properties": {"query": _STR}, "required": ["query"],
                       "additionalProperties": False}},
-    {"name": "find_entities", "strict": True,
-     "description": "Search Qloo entities (brands, places, artists) by name. Returns [{id, name, type}].",
-     "input_schema": {"type": "object", "properties": {
-         "query": _STR, "type": {"type": "string", "enum": ["urn:entity:brand", "urn:entity:place", "urn:entity:artist"]}},
-         "required": ["query", "type"], "additionalProperties": False}},
+    {"name": "find_places", "strict": True,
+     "description": "Search Qloo places (cafes, restaurants, shops) by name. Returns [{id, name, type}].",
+     "input_schema": {"type": "object", "properties": {"query": _STR}, "required": ["query"],
+                      "additionalProperties": False}},
     {"name": "submit_signature", "strict": True,
      "description": "Submit the final taste signature. Call exactly once, as the last step.",
      "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {
@@ -1160,8 +1227,8 @@ async def build_signature(llm, tools, lto: str, current: list | None = None, ins
         seen.update(o["id"] for o in out)
         return out
 
-    async def find_entities(query, type):
-        out = await tools.find_entities(query, type)
+    async def find_places(query):
+        out = await tools.find_places(query)
         seen.update(o["id"] for o in out)
         return out
 
@@ -1170,7 +1237,7 @@ async def build_signature(llm, tools, lto: str, current: list | None = None, ins
         user += f"\n\nCurrent signature: {json.dumps(current)}\nInstruction: {instruction}"
 
     async for ev in run_tool_loop(llm, system=SIGNATURE_SYSTEM, user=user, tools=SIGNATURE_TOOLS,
-                                  handlers={"find_tags": find_tags, "find_entities": find_entities},
+                                  handlers={"find_tags": find_tags, "find_places": find_places},
                                   finish_tool="submit_signature"):
         if ev["type"] != "finish":
             yield ev
@@ -1201,22 +1268,17 @@ def _fallback_reason(tags: list[dict]) -> str:
 
 
 async def run_score(llm, tools, signature: list[dict]):
-    scored = await tools.score_stores(signature)
+    res = await tools.score_stores(signature)
+    scored = res["stores"]
     n = sum(s["fit"] is not None for s in scored)
     yield trace("score_stores", {"items": [i["name"] for i in signature]}, f"{n} of {len(scored)} stores scored")
 
     top, bottom = pick(scored)
     focus = top + bottom
-    tag = next((i for i in signature if i["kind"] == "tag"), None)
     tastes = await asyncio.gather(*(tools.area_taste(s["id"]) for s in focus))
     evidence = {s["id"]: t["tags"] for s, t in zip(focus, tastes)}
     for s in focus:
         yield trace("area_taste", {"store": s["name"]}, _summarize(evidence[s["id"]]))
-    counts = {}
-    if tag:
-        found = await asyncio.gather(*(tools.nearby_related(s["id"], tag["id"]) for s in focus))
-        counts = dict(zip((s["id"] for s in focus), found))
-        yield trace("nearby_related", {"tag": tag["name"]}, f"counted related places near {len(focus)} stores")
 
     reasons = {sid: _fallback_reason(tags) for sid, tags in evidence.items()}
     payload = [{"store_id": s["id"], "name": s["name"], "fit": s["fit"],
@@ -1231,9 +1293,10 @@ async def run_score(llm, tools, signature: list[dict]):
     except (AgentError, json.JSONDecodeError, KeyError):
         pass  # keep the deterministic reasons
 
-    v = validation(top, bottom, counts)
+    stab = res["stability"]
+    names = {i["id"]: i["name"] for i in signature}
     yield {"type": "result", "stores": scored, "top": [s["id"] for s in top], "bottom": [s["id"] for s in bottom],
-           "reasons": reasons, "validation": {**v, "tag": tag["name"]} if v and tag else None}
+           "reasons": reasons, "stability": {**stab, "weakest": names.get(stab["weakest"], stab["weakest"])} if stab else None}
 
 
 # --- Store brief -----------------------------------------------------------------------------
@@ -1264,8 +1327,7 @@ async def write_brief(llm, tools, store_id: str, signature: list[dict], fit: flo
                             "local_tags": [t["name"] for t in taste["tags"]]})}])
     out = json.loads(_text(resp))
     return {"store_id": store_id, "fit": fit, "label": label, "verdict": out["verdict"],
-            "why_tags": taste["tags"][:5], "artists": taste["artists"][:5],
-            "partners": (taste["places"][:3] + taste["brands"][:2]), "menu_cues": out["menu_cues"][:3]}
+            "why_tags": taste["tags"][:5], "partners": taste["places"][:3], "menu_cues": out["menu_cues"][:3]}
 ```
 
 - [ ] **Step 4: Run tests to verify they pass**
@@ -1544,7 +1606,7 @@ Create an empty `backend/data/demos/.gitkeep`.
 - [ ] **Step 4: Run tests to verify they pass**
 
 Run: `cd backend && pytest -v`
-Expected: all tests pass (test_qloo 7, test_stores 1, test_scoring 9, test_tools 5, test_agent 10, test_main 7)
+Expected: all tests pass (test_qloo 8, test_stores 1, test_scoring 12, test_tools 5, test_agent 10, test_main 7)
 
 - [ ] **Step 5: Smoke-run the server**
 
@@ -1575,7 +1637,7 @@ git commit -m "feat: FastAPI routes with SSE streaming, rate limits, and demo ru
   - Component props used in Tasks 8–9:
     - `InputCard({ demos, lto, setLto, signature, setSignature, busy, onDemo, onReadTaste, onScore, storeCount })`
     - `RankCard({ result, busy, onSelect })`
-    - `TraceBar({ trace, validation, metros, metro, onMetro })`
+    - `TraceBar({ trace, stability, metros, metro, onMetro })`
     - `StoreDrawer({ store, brief, onClose })`
 
 - [ ] **Step 1: Scaffold and install**
@@ -1817,7 +1879,7 @@ export default function App() {
       {selectedStore
         ? <StoreDrawer store={selectedStore} brief={briefs[selected]} onClose={() => setSelected(null)} />
         : <RankCard result={result} busy={busy === "score"} onSelect={openStore} />}
-      <TraceBar trace={trace} validation={result?.validation} metros={metros} metro={metro} onMetro={setMetro} />
+      <TraceBar trace={trace} stability={result?.stability} metros={metros} metro={metro} onMetro={setMetro} />
       {error && <div className="toast" role="alert">{error} <button onClick={() => setError(null)} aria-label="Dismiss">×</button></div>}
     </div>
   );
@@ -2021,7 +2083,7 @@ export default function RankCard({ result, busy, onSelect }) {
 import { useState } from "react";
 import { CHAIN } from "./config";
 
-export default function TraceBar({ trace, validation, metros, metro, onMetro }) {
+export default function TraceBar({ trace, stability, metros, metro, onMetro }) {
   const [open, setOpen] = useState(false);
   return (
     <footer className="card trace-bar">
@@ -2029,8 +2091,10 @@ export default function TraceBar({ trace, validation, metros, metro, onMetro }) 
         <button className="link" onClick={() => setOpen(!open)} aria-expanded={open}>
           {open ? "▾" : "▸"} Agent trace · {trace.length} calls
         </button>
-        {validation && (
-          <span>✓ Test stores average {validation.top_mean} nearby “{validation.tag}” spots vs {validation.bottom_mean} for skip stores</span>
+        {stability && (
+          <span title="Leave-one-out Spearman correlation between the full ranking and the ranking with one concept removed">
+            {stability.rho >= 0.7 ? "✓" : "⚠"} Ranking holds when any single concept is dropped: ρ ≥ {stability.rho.toFixed(2)} · most sensitive to “{stability.weakest}”
+          </span>
         )}
         <span className="metros">
           {[null, ...metros].map((m) => (
@@ -2043,7 +2107,7 @@ export default function TraceBar({ trace, validation, metros, metro, onMetro }) 
           {trace.map((t, i) => <li key={i}><code>{t.tool}</code> {JSON.stringify(t.args)} → {t.summary}</li>)}
         </ol>
       )}
-      <p className="fine">Prioritizes which stores to test in. Not a sales forecast. Not affiliated with {CHAIN}.</p>
+      <p className="fine">Fit is relative to each city. Prioritizes which stores to test in. Not a sales forecast. Not affiliated with {CHAIN}.</p>
     </footer>
   );
 }
@@ -2067,7 +2131,7 @@ Temporarily add a demo file so there is data to render. Create `backend/data/dem
    "top": ["nyc-williamsburg", "la-silver-lake", "nyc-west-village", "la-arts-district", "la-century-city"],
    "bottom": ["nyc-midtown-east"],
    "reasons": {"nyc-williamsburg": "Over-indexes on japanese cafe and matcha.", "nyc-midtown-east": "Leans business-lunch; little tea culture."},
-   "validation": {"top_mean": 6.2, "bottom_mean": 1.4, "tag": "matcha"}},
+   "stability": {"rho": 0.86, "weakest": "Matcha"}},
  "briefs": {}, "trace": [{"type": "trace", "tool": "find_tags", "args": {"query": "matcha"}, "summary": "3 results: matcha"}]}
 ```
 Reload http://localhost:5173.
@@ -2076,7 +2140,7 @@ Expected:
 - The map shows dots colored green to red, and West Village appears faded.
 - The ranking card lists the 5 "Test here" stores and 1 "Skip" store with reasons.
 - The chips include "~~yuzu~~ → citrus", and clicking × removes a chip.
-- The trace bar expands to show 1 call, and the metro pills fly the map to each city.
+- The trace bar shows the stability line (✓ ρ ≥ 0.86 · most sensitive to “Matcha”) and expands to show 1 call. The metro pills fly the map to each city.
 - At 375px width (use the browser pane's resize), the cards stack and there is no horizontal scroll.
 
 Delete `backend/data/demos/sample.json` after checking. Real demos come in Task 12.
@@ -2109,7 +2173,7 @@ function Meter({ fit, confidence }) {
   return (
     <div>
       <div className="meter"><i /><b style={bar} /></div>
-      <div className="src">fit vs. chain average · confidence: {confidence}</div>
+      <div className="src">fit vs. chain average (relative to each city) · confidence: {confidence}</div>
     </div>
   );
 }
@@ -2144,7 +2208,6 @@ export default function StoreDrawer({ store, brief, onClose }) {
             <div className="chips">{brief.why_tags.map((t) => <span key={t.id} className="chip" style={{ paddingRight: 10 }}>{t.name}</span>)}</div>
             <div className="src">Qloo taste analysis · 1.2 km radius</div>
           </Section>
-          {brief.artists.length > 0 && <Section title="Playlist seed">{brief.artists.map((a) => <Entity key={a.id} e={a} />)}</Section>}
           {brief.partners.length > 0 && <Section title="Local collab partners">{brief.partners.map((p) => <Entity key={p.id} e={p} />)}</Section>}
           <Section title="Menu cues"><ul>{brief.menu_cues.map((c, i) => <li key={i}>• {c}</li>)}</ul></Section>
         </>
@@ -2161,13 +2224,12 @@ Recreate the Task 8 `sample.json` and add a brief for Williamsburg under `"brief
 "briefs": {"nyc-williamsburg": {"store_id": "nyc-williamsburg", "fit": 1.8, "label": "test",
   "verdict": "The neighborhood leans hard into Japanese cafe culture.",
   "why_tags": [{"id": "T9", "name": "japanese cafe", "affinity": 0.9}, {"id": "T1", "name": "matcha", "affinity": 0.8}],
-  "artists": [{"id": "A1", "name": "Sample Artist", "affinity": 0.94, "image": null}],
   "partners": [{"id": "P1", "name": "Sample Tea Shop", "affinity": 0.81, "image": null}],
   "menu_cues": ["Lead with the matcha base", "Pair with a citrus pastry"]}}
 ```
 Click the Williamsburg dot.
 Expected:
-- The drawer replaces the ranking card and shows the verdict line on top, then the meter, Why, Playlist seed, Local collab partners and Menu cues.
+- The drawer replaces the ranking card and shows the verdict line on top, then the meter, Why, Local collab partners and Menu cues.
 - × returns to the ranking.
 - Clicking a store with no brief shows "Building this store's brief…" and then an error toast (the dummy key can't reach Qloo). That's expected without keys.
 
@@ -2182,81 +2244,54 @@ git commit -m "feat: store drawer with verdict-first single-scroll brief"
 
 ---
 
-### Task 10: Probe the live Qloo API and lock the response shapes (needs Qloo key)
+### Task 10: Capture live Qloo fixtures (needs Qloo key)
+
+The response formats and constants were confirmed by a live probe on 2026-10-06, and Tasks 1 and 3 already reflect what it found. This task saves real responses so the parsers stay pinned to them.
 
 **Files:**
 - Create: `backend/scripts/probe_qloo.py`, `backend/tests/fixtures/*.json` (generated), `backend/tests/test_fixtures.py`
-- Modify (only if the probe shows different shapes): `backend/app/qloo.py`, `backend/app/scoring.py` constants
 
 **Interfaces:**
-- Consumes: `Qloo` from Task 1.
-- Produces: real response fixtures. Parsers verified against them. `MAX_CELL_KM` and `MIN_POPULARITY` calibrated.
+- Consumes: `Qloo` from Task 1. The key is read from the environment. Locally, load it with `set -a; . ../.env; set +a` from `backend/`.
 
 - [ ] **Step 1: Write `backend/scripts/probe_qloo.py`**
 
 ```python
-"""Hit every Qloo call TasteTest uses, save raw responses as test fixtures, and print what the parsers extract.
+"""Capture one real response for every Qloo call TasteTest makes, saved as test fixtures.
 
-Usage: QLOO_API_KEY=... python scripts/probe_qloo.py
+Usage (from backend/): set -a; . ../.env; set +a; python scripts/probe_qloo.py
 """
 import asyncio
 import json
 import os
 import sys
 from pathlib import Path
-from statistics import median
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from app import qloo as Q  # noqa: E402
 
 FIX = Path(__file__).resolve().parents[1] / "tests" / "fixtures"
-LAT, LON = 40.7193, -73.9590  # Williamsburg, Brooklyn
+LAT, LON = 40.7335, -74.0040  # West Village, NYC
+CALLS = {
+    "tag_search": ("/v2/tags", {"filter.query": "matcha", "take": 10}, Q.parse_tag_search),
+    "search": ("/search", {"query": "matcha", "types": "urn:entity:place", "take": 5}, Q.parse_search),
+    "heatmap": ("/v2/insights", {"filter.type": "urn:heatmap", "filter.location.query": "NYC",
+                                 "signal.interests.tags": "urn:tag:specialty_dish:place:matcha"}, Q.parse_heatmap),
+    "area_tags": ("/v2/insights", {"filter.type": "urn:tag", "signal.location": Q.point(LAT, LON),
+                                   "signal.location.radius": 1200, "take": 10}, Q.parse_area_tags),
+    "area_place": ("/v2/insights", {"filter.type": "urn:entity:place", "filter.location": Q.point(LAT, LON),
+                                    "filter.location.radius": 1200, "take": 5}, Q.parse_entities),
+}
 
 
 async def main():
     FIX.mkdir(parents=True, exist_ok=True)
     client = Q.Qloo(os.environ["QLOO_API_KEY"], FIX.parent / ".probe-cache")
-
-    async def save(name, path, params, parser):
-        try:
-            raw = await client.get(path, params)
-        except Q.QlooError as e:
-            print(f"[{name}] ERROR {e}")
-            return None
+    for name, (path, params, parser) in CALLS.items():
+        raw = await client.get(path, params)
         (FIX / f"{name}.json").write_text(json.dumps(raw, indent=1))
-        try:
-            parsed = parser(raw)
-            print(f"[{name}] {len(parsed)} parsed; first: {parsed[:1]}")
-            return parsed
-        except (KeyError, TypeError) as e:
-            print(f"[{name}] PARSER MISMATCH ({e!r}); top-level keys: {list(raw)}; results keys: "
-                  f"{list(raw.get('results', {})) if isinstance(raw.get('results'), dict) else type(raw.get('results'))}")
-            return None
-
-    tags = await save("tag_search", "/v2/tags", {"filter.query": "matcha", "take": 5}, Q.parse_tag_search)
-    await save("search", "/search", {"query": "matcha", "types": "urn:entity:place", "take": 5}, Q.parse_search)
-    tag_id = tags[0]["id"] if tags else None
-    if tag_id:
-        cells = await save("heatmap", "/v2/insights", {"filter.type": "urn:heatmap", "filter.location.query": "Brooklyn",
-                                                       "signal.interests.tags": tag_id}, Q.parse_heatmap)
-        if cells:
-            pops = sorted(c["popularity"] for c in cells)
-            print(f"   heatmap: {len(cells)} cells, popularity median {median(pops):.2f}, "
-                  f"p25 {pops[len(pops) // 4]:.2f}; set MIN_POPULARITY near p25")
-            lats = sorted({round(c['lat'], 4) for c in cells})
-            if len(lats) > 1:
-                step = min(b - a for a, b in zip(lats, lats[1:]) if b > a)
-                print(f"   approx cell spacing: {step * 111:.2f} km; set MAX_CELL_KM to ~1.5x this")
-        await save("nearby_places", "/v2/insights", {"filter.type": "urn:entity:place", "filter.location": Q.point(LAT, LON),
-                                                     "filter.location.radius": 1200, "filter.tags": tag_id, "take": 50},
-                   Q.parse_entities)
-    await save("area_tags", "/v2/insights", {"filter.type": "urn:tag", "signal.location": Q.point(LAT, LON),
-                                             "signal.location.radius": 1200, "take": 10}, Q.parse_area_tags)
-    for t in ("artist", "brand"):
-        await save(f"area_{t}", "/v2/insights", {"filter.type": f"urn:entity:{t}", "signal.location": Q.point(LAT, LON),
-                                                 "signal.location.radius": 1200, "take": 5}, Q.parse_entities)
-    await save("area_place", "/v2/insights", {"filter.type": "urn:entity:place", "filter.location": Q.point(LAT, LON),
-                                              "filter.location.radius": 1200, "take": 5}, Q.parse_entities)
+        parsed = parser(raw)
+        print(f"[{name}] {len(parsed)} parsed; first: {parsed[:1]}")
 
 
 if __name__ == "__main__":
@@ -2267,19 +2302,10 @@ Add `backend/tests/.probe-cache/` to `.gitignore`.
 
 - [ ] **Step 2: Run the probe**
 
-Run: `cd backend && QLOO_API_KEY=<your key> python scripts/probe_qloo.py`
-Expected: each line prints `N parsed; first: {...}` with N > 0. Write down the suggested `MIN_POPULARITY` and `MAX_CELL_KM` values.
+Run: `cd backend && set -a && . ../.env && set +a && python scripts/probe_qloo.py`
+Expected: 5 lines, each `N parsed` with N > 0 (the heatmap has ~44 cells). If a parser raises, the API has changed since 2026-10-06. Open the fixture, fix only the matching `parse_*` in `app/qloo.py`, and update `test_qloo.py::test_parsers` to the new shape.
 
-- [ ] **Step 3: Handle any mismatches**
-
-For each `PARSER MISMATCH` or `ERROR` line:
-- **Parser mismatch:** open `tests/fixtures/<name>.json`, find where the fields actually live, and edit only the matching `parse_*` function in `app/qloo.py`. Update the inline dict in `test_qloo.py::test_parsers` to the real shape.
-- **Empty results (0 parsed) or 4xx:** look up the call's `filter.type` in the Entity Type Parameter Guide (https://docs.qloo.com/reference/available-parameters-by-entity-type), fix the param names in the matching `Qloo` method and in the probe, and re-run. If heatmaps can't be made to work, use the spec's §3 fallback: change `Tools.score_stores` to call `area_entities`-style insights per store. Ask for a plan revision before doing this.
-- **Area tags returning generic tags** (e.g. "restaurant"): add `"filter.tag.types"` with a taste-relevant tag type found via `GET /v2/tags/types`, in both `Qloo.area_tags` and the probe.
-
-Update `MIN_POPULARITY` and `MAX_CELL_KM` in `app/scoring.py` to the printed suggestions, and update the `ponytail:` comments to say they were calibrated on Brooklyn data.
-
-- [ ] **Step 4: Write `backend/tests/test_fixtures.py`**
+- [ ] **Step 3: Write `backend/tests/test_fixtures.py`**
 
 ```python
 """Parsers must keep working on real Qloo responses captured by scripts/probe_qloo.py."""
@@ -2292,8 +2318,7 @@ from app import qloo as Q
 
 FIX = Path(__file__).parent / "fixtures"
 CASES = [("tag_search", Q.parse_tag_search), ("search", Q.parse_search), ("heatmap", Q.parse_heatmap),
-         ("nearby_places", Q.parse_entities), ("area_tags", Q.parse_area_tags), ("area_artist", Q.parse_entities),
-         ("area_place", Q.parse_entities)]
+         ("area_tags", Q.parse_area_tags), ("area_place", Q.parse_entities)]
 
 
 @pytest.mark.parametrize("name,parser", CASES)
@@ -2303,105 +2328,124 @@ def test_parser_on_real_response(name, parser):
         pytest.skip(f"run scripts/probe_qloo.py to capture {name}")
     parsed = parser(json.loads(f.read_text()))
     assert parsed, f"{name} parsed to an empty list"
-    assert all(p.get("name") or "affinity" in p for p in parsed)
+    assert all(p.get("id") or "affinity" in p for p in parsed)
 ```
 
-- [ ] **Step 5: Run the full suite**
+- [ ] **Step 4: Run the full suite**
 
 Run: `cd backend && pytest -v`
-Expected: all pass. The 7 fixture tests pass (not skipped). If `area_brand` returned 403 in the probe, it's intentionally absent from CASES, and `Tools.area_taste` already tolerates it.
+Expected: all pass, and the 5 fixture tests pass rather than skip.
 
-- [ ] **Step 6: Commit**
+- [ ] **Step 5: Commit**
 
 ```bash
-git add .gitignore backend/scripts/probe_qloo.py backend/tests/fixtures backend/tests/test_fixtures.py backend/app/qloo.py backend/app/scoring.py backend/tests/test_qloo.py
-git commit -m "test: lock Qloo response shapes to live fixtures; calibrate scoring constants"
+git add .gitignore backend/scripts/probe_qloo.py backend/tests/fixtures backend/tests/test_fixtures.py
+git commit -m "test: pin Qloo parsers to live response fixtures"
 ```
 
 ---
 
-### Task 11: Coverage check and chain choice (needs Qloo key)
+### Task 11: Philz store list and per-metro coverage (needs Qloo key)
 
 **Files:**
-- Create: `backend/scripts/coverage_check.py`, `backend/data/candidates/raw/{philz,lacolombe,joe}.csv` (hand-collected), `backend/data/candidates/{philz,lacolombe,joe}.csv` (geocoded)
-- Modify: `backend/data/stores.csv` (replaced with the winning chain), `frontend/src/config.js`
+- Create: `backend/scripts/coverage_check.py`, `backend/data/candidates/raw/philz.csv` (hand-collected), `backend/data/candidates/philz.csv` (geocoded)
+- Modify: `backend/data/stores.csv` (replaced with covered Philz stores), `frontend/src/config.js`
 
 **Interfaces:**
-- Consumes: `Qloo.area_tags`, `scoring.spread`, `stores.load_stores`, `scripts/geocode.py`.
+- Consumes: `Qloo.heatmap`, `scoring.nearest_cell`, `scoring.MAX_CELL_KM`, `stores.load_stores`, `scripts/geocode.py`.
 
-- [ ] **Step 1: Collect 10 sample stores per candidate chain**
+- [ ] **Step 1: Collect Philz store addresses**
 
-From each chain's public store-locator page, copy 10 stores spread across as many metros as possible into `backend/data/candidates/raw/<chain>.csv`:
+From Philz's public store locator, copy every US store into `backend/data/candidates/raw/philz.csv`:
 ```
 id,name,address,metro
-philz-sf-mission,Mission,3101 24th St San Francisco CA,San Francisco
+philz-sf-mission,24th St (Mission),3101 24th St San Francisco CA,San Francisco
 ...
 ```
-Ids are `<chain>-<metro>-<neighborhood>` in lowercase with hyphens. `metro` is the city name used for heatmaps (e.g. "San Francisco", "Philadelphia").
+Ids are `philz-<metro>-<neighborhood>` in lowercase with hyphens. `metro` is the city name sent to Qloo as `filter.location.query` (e.g. "San Francisco", "Oakland", "Palo Alto", "Los Angeles"), so use the store's own city.
 
-- [ ] **Step 2: Geocode them**
+- [ ] **Step 2: Geocode**
 
-```bash
-cd backend
-for c in philz lacolombe joe; do python scripts/geocode.py data/candidates/raw/$c.csv data/candidates/$c.csv; done
-```
-Expected: `wrote 10/10 stores to ...` for each. For any SKIPPED row, fix the address in the raw CSV and re-run.
+Run: `cd backend && python scripts/geocode.py data/candidates/raw/philz.csv data/candidates/philz.csv`
+Expected: `wrote N/N stores`. For any SKIPPED row, fix the address and re-run.
 
 - [ ] **Step 3: Write `backend/scripts/coverage_check.py`**
 
 ```python
-"""Pick the demo chain: whose stores look most different to Qloo?
+"""Which Philz metros have enough Qloo heatmap data to include in the demo?
 
-Usage: QLOO_API_KEY=... python scripts/coverage_check.py
-Prints, per chain: stores with no taste data, and spread (mean pairwise Jaccard distance of top-10 area tags; higher = more varied map).
+Usage (from backend/): python scripts/coverage_check.py data/candidates/philz.csv [--write data/stores.csv]
+Per metro and reference tag: heatmap cell count, and how many of the metro's stores have a cell within MAX_CELL_KM.
+A metro is kept only if every reference tag has at least MIN_CELLS cells.
 """
 import asyncio
+import csv
 import os
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from app.qloo import Qloo, QlooError  # noqa: E402
-from app.scoring import spread  # noqa: E402
+from app.scoring import MAX_CELL_KM, nearest_cell  # noqa: E402
 from app.stores import load_stores  # noqa: E402
 
 DATA = Path(__file__).resolve().parents[1] / "data"
+REFERENCE_TAGS = ["urn:tag:specialty_dish:place:matcha", "urn:tag:specialty_dish:place:coffee"]
+MIN_CELLS = 10
 
 
-async def main():
+async def main(src: str, write_to: str | None) -> None:
     q = Qloo(os.environ["QLOO_API_KEY"], DATA / "cache")
-    rows = []
-    for f in sorted((DATA / "candidates").glob("*.csv")):
-        stores = load_stores(f)
-        results = await asyncio.gather(*(q.area_tags(s["lat"], s["lon"], 1200) for s in stores), return_exceptions=True)
-        sets = [set() if isinstance(r, QlooError) else {t["name"] for t in r} for r in results]
-        rows.append((f.stem, len(stores), sum(not s for s in sets), spread(sets)))
-    print(f"{'chain':<12}{'stores':>7}{'no data':>9}{'spread':>8}")
-    for name, n, empty, sp in sorted(rows, key=lambda r: -r[3]):
-        print(f"{name:<12}{n:>7}{empty:>9}{sp:>8.3f}")
+    stores = load_stores(Path(src))
+    keep = []
+    header = "".join(f"{t.rsplit(':', 1)[-1] + ' cells':>14}{'near':>6}" for t in REFERENCE_TAGS)
+    print(f"{'metro':<20}{'stores':>7}{header}")
+    for metro in sorted({s["metro"] for s in stores}):
+        ms = [s for s in stores if s["metro"] == metro]
+        row, ok = f"{metro:<20}{len(ms):>7}", True
+        for tag in REFERENCE_TAGS:  # sequential on purpose: the API rate-limits bursts
+            try:
+                cells = await q.heatmap({"id": tag, "kind": "tag"}, metro)
+            except QlooError:
+                cells = []
+            near = sum(nearest_cell(cells, s["lat"], s["lon"], MAX_CELL_KM) is not None for s in ms)
+            row += f"{len(cells):>14}{near:>6}"
+            ok = ok and len(cells) >= MIN_CELLS
+        print(row + ("  KEEP" if ok else "  drop"))
+        keep += ms if ok else []
+    if write_to:
+        with open(write_to, "w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=["id", "name", "address", "lat", "lon", "metro"])
+            w.writeheader()
+            w.writerows(keep)
+        print(f"wrote {len(keep)} stores to {write_to}")
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    args = sys.argv[1:]
+    asyncio.run(main(args[0], args[args.index("--write") + 1] if "--write" in args else None))
 ```
 
-- [ ] **Step 4: Run it and pick the chain**
+- [ ] **Step 4: Run it**
 
-Run: `cd backend && QLOO_API_KEY=<key> python scripts/coverage_check.py`
-Expected: a table sorted by spread. Pick the chain with the highest spread and at most 1 "no data" store. Record the numbers in the commit message.
+Run: `cd backend && set -a && . ../.env && set +a && python scripts/coverage_check.py data/candidates/philz.csv`
+Expected: one row per metro. San Francisco should show well over 10 cells (156 for matcha in the probe).
 
-- [ ] **Step 5: Build the full store list for the winner**
+If a Bay Area suburb is dropped for low coverage, try its stores with `metro` set to the nearest big city that Qloo covers (e.g. "San Francisco" or "San Jose"), then re-geocode and re-run. Larger query areas return more cells. Accept the drop if it's still under 10.
 
-Collect all of the winning chain's US stores (or the 20–40 in its main metros) into `data/candidates/raw/<winner>-full.csv`, geocode it to `backend/data/stores.csv`, and set `CHAIN` in `frontend/src/config.js` to the chain's plain name (e.g. `"La Colombe"`).
+- [ ] **Step 5: Write the demo store list**
+
+Run: `cd backend && python scripts/coverage_check.py data/candidates/philz.csv --write data/stores.csv`
+Then set `CHAIN = "Philz Coffee"` in `frontend/src/config.js`.
 
 Run: `cd backend && python -c "from app.stores import load_stores; s=load_stores('data/stores.csv'); print(len(s), sorted({x['metro'] for x in s}))"`
-Expected: a store count of 15+ and the list of metros.
+Expected: 15+ stores across at least 2 metros. If only one metro survives, that's acceptable: the map still compares neighborhoods. Note it in the README.
 
 - [ ] **Step 6: Commit**
 
 ```bash
 git add backend/scripts/coverage_check.py backend/data/candidates backend/data/stores.csv frontend/src/config.js
-git commit -m "data: pick <winner> by Qloo coverage (spread X.XXX vs ...); full store list"
+git commit -m "data: Philz stores in metros with Qloo heatmap coverage"
 ```
 
 ---
@@ -2462,7 +2506,7 @@ async def run_one(llm, tools, slug, title, lto):
     out = {"slug": slug, "title": title, "lto": lto, "signature": signature, "result": result,
            "briefs": dict(zip(ids, briefs)), "trace": trace}
     (DATA / "demos" / f"{slug}.json").write_text(json.dumps(out, indent=1))
-    print(f"{slug}: {len(signature)} concepts, top={result['top'][:3]}, validation={result['validation']}")
+    print(f"{slug}: {len(signature)} concepts, top={result['top'][:3]}, stability={result['stability']}")
 
 
 async def main():
@@ -2479,15 +2523,15 @@ if __name__ == "__main__":
 - [ ] **Step 2: Run it**
 
 Run: `cd backend && QLOO_API_KEY=<key> ANTHROPIC_API_KEY=<key> python scripts/precompute_demos.py`
-Expected: 3 lines, each with 3–8 concepts, a top-3 list and a validation dict (or `None` if no tag concept).
+Expected: 3 lines, each with 3–8 concepts, a top-3 list and a stability dict.
 
 - [ ] **Step 3: Sanity-check the results by reading them**
 
 For each demo, open the JSON and check:
 - The top and bottom stores make intuitive sense for the drink. Matcha should not top a business district.
 - Every reason cites tags that appear in Qloo evidence.
-- Every brief's artists and partners are real Qloo entities.
-- For matcha, `validation.top_mean > validation.bottom_mean`.
+- Every brief's partners are real nearby Qloo places.
+- `stability.rho` is at least ~0.7. If it's lower, the ranking hangs on one concept: reword the LTO so the signature has 3+ solid dish/drink concepts, then re-run.
 
 If a ranking looks wrong, inspect the signature first. Edit the demo LTO wording and re-run. Do not hand-edit results.
 
@@ -2610,11 +2654,11 @@ Live demo: <Render URL> · Built for the [Qloo Agentic Hackathon](https://qloo.d
 ## What it does
 
 1. Describe a limited-time offer in plain language ("matcha-yuzu cold brew, bright and citrusy, for a younger crowd").
-2. A Claude agent turns it into a **taste signature**: real Qloo tag and entity IDs found with `/v2/tags` and `/search`. When a word has no Qloo match, the agent substitutes the closest concept and shows the substitution. Any ID a search didn't return is discarded.
-3. Every store is scored from **Qloo heatmaps** (one per metro per concept). Each store's affinity is read from the heatmap cell it sits in, weighted across concepts, then z-scored against the chain average. Thin data (low Qloo popularity) is flagged, not trusted.
+2. A Claude agent turns it into a **taste signature**: real Qloo dish/drink tags and place IDs found with `/v2/tags` and `/search`. When a word has no Qloo match, the agent substitutes the closest concept and shows the substitution. Any ID a search didn't return is discarded.
+3. Every store is scored from **Qloo heatmaps** (one per metro per concept). Each store takes the affinity of the nearest heatmap point (no point nearby means low interest), weighted across concepts, then z-scored against the chain. Thin data (low Qloo popularity) is flagged, not trusted. Fit is relative to each city.
 4. The map shows **where to test and where to skip**, with one-line reasons that cite only Qloo taste tags for each area.
-5. **Independent check:** test stores are compared with skip stores on how many related places Qloo finds nearby.
-6. Click any store for a **localization brief**: verdict, local taste tags, a playlist seed (Qloo artists), and local collab partners (Qloo places/brands).
+5. **Stability check:** the ranking is recomputed with each concept left out, and the worst-case Spearman ρ is shown, so you can see whether the result hangs on a single tag.
+6. Click any store for a **localization brief**: verdict, local taste tags, and local collab partners (nearby Qloo places).
 
 Scores come from deterministic code; the LLM only picks concepts and writes prose. It's a prioritization tool for choosing test stores, not a sales forecast. Not affiliated with any chain shown.
 
@@ -2668,7 +2712,7 @@ Save as `docs/devpost.md` and paste it into the submission form:
 
 Mid-size specialty coffee chains launch limited-time drinks several times a year. With 15–70 stores across several cities, they're too big to know every neighborhood and too small for a data team, so new drinks often get tested in the wrong stores.
 
-**How it's Qloo-powered:** A Claude agent turns a plain-language drink description into a taste signature of real Qloo tags and entities (`/v2/tags`, `/search`), substituting the closest concept when a word has no match. Each store is scored from Qloo heatmaps, one per metro per concept, by reading the affinity at the store's location and z-scoring it against the chain. An independent check compares how many related places Qloo finds near test vs. skip stores. Per-store briefs (local taste tags, a playlist seed from Qloo artists, local collab partners from Qloo places) only ever name entities Qloo returned. Without Qloo, there is nothing to rank: an LLM can only guess what a neighborhood likes.
+**How it's Qloo-powered:** A Claude agent turns a plain-language drink description into a taste signature of real Qloo tags and entities (`/v2/tags`, `/search`), substituting the closest concept when a word has no match. Each store is scored from Qloo heatmaps, one per metro per concept, by reading the affinity at the store's location and z-scoring it against the chain. A leave-one-out stability check (Spearman ρ) shows whether the ranking hangs on any single concept. Per-store briefs (local taste tags, local collab partners from nearby Qloo places) only ever name entities Qloo returned. Without Qloo, there is nothing to rank: an LLM can only guess what a neighborhood likes.
 
 **Try it:** open the demo, pick a preloaded drink, click any store. Or type your own drink. The agent trace at the bottom shows every Qloo call.
 
@@ -2701,12 +2745,12 @@ Manual work in Framer. No code in the repo.
 
 - **Spec coverage:**
   - §1 pitch → README and Devpost text (Task 13)
-  - §2 chain choice and guardrails → Task 11, plus the `CHAIN` footer copy (Task 8)
-  - §3.1–3.4 scoring → Tasks 3–5; the §3 fallback is handled in Task 10 Step 3
-  - §4 agent loop, 5 tools, 25-call cap, follow-ups → Tasks 4–5, refine input in Task 8
-  - §5 UI → Tasks 7–9
+  - §2 Philz and the per-metro coverage rule → Task 11; brand guardrails → `CHAIN` footer copy (Task 8)
+  - §3.1 dish-tag/place-only signature → Tasks 4–5; §3.2 sparse-cell scoring → Task 3; §3.3 confidence → Task 3; §3.4 leave-one-out stability → Tasks 3, 4 and 8
+  - §4 tools, 25-call cap, follow-ups → Tasks 4–5, refine input in Task 8
+  - §5 UI, no playlist → Tasks 7–9
   - §6 architecture/hosting → Tasks 6 and 13
-  - §7 reliability → precomputed demos (Task 12), disk cache (Task 1), errors as data (Task 5), rate limit (Task 6), in-stream error banner (Task 7 toast), `test_scoring.py` (Task 3), `coverage_check.py` (Task 11)
+  - §7 reliability → precomputed demos (Task 12), disk cache + 429 back-off (Task 1), errors as data (Task 5), rate limit (Task 6), in-stream error toast (Task 7), `test_scoring.py` (Task 3), `coverage_check.py` (Task 11)
   - §8 checklist → Task 13; Framer → Task 14
-- **One deliberate deviation from spec §4 step 4:** per-store evidence (`area_taste`, `nearby_related`) is gathered by deterministic code inside `run_score`, and the LLM writes all reasons in one structured call. Same tools, same trace, fewer LLM round-trips, and the reasons can't drift from the evidence. The signature step stays a real tool-use loop.
-````
+- **Changed after the 2026-10-06 live probe:** heatmaps only work for specialty-dish tags and place entities; Philadelphia has no data (so Philz); cells are sparse (missing nearby = low affinity); the nearby-places check was replaced by leave-one-out stability; playlist removed; concurrency 3 with 429 back-off; `/search` uses `types`.
+- **Deliberate deviation from spec §4 step 4 (unchanged):** per-store evidence is gathered by code inside `run_score`, and the LLM writes all reasons in one structured call.
