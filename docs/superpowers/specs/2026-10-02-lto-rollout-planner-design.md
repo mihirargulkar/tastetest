@@ -16,7 +16,7 @@ TasteTest is an agent that takes a plain-language LTO description and tells the 
 
 ## 2. Target chain
 
-**Philz Coffee**, using its **public store addresses**. A live probe on 2026-10-06 found the hackathon API has no heatmap data for Philadelphia (0 cells) and very little for Boston and Brooklyn. That rules out La Colombe and Joe Coffee. The San Francisco Bay Area is the best-covered region (156 cells for matcha in SF). `coverage_check.py` (§7) counts heatmap cells for each of Philz's metros, and metros with too little data are left out of the demo.
+**Philz Coffee**, using its **public store addresses**. A live probe on 2026-10-06 found the hackathon API has no heatmap data for Philadelphia (0 cells) and very little for Boston and Brooklyn. That rules out La Colombe and Joe Coffee. The San Francisco Bay Area is the best-covered region. Per-city queries turned out too sparse (e.g. Palo Alto 21 cells, and "San Francisco Bay Area" as a place name returns 0), so stores are grouped into two **region polygons** (`data/regions.json`): **Bay Area** and **LA basin**. A WKT polygon returns far more cells (Bay Area: 267 for matcha). `coverage_check.py` (§7) keeps the Philz stores inside a region that have heatmap data within 1.5 km: **40 stores (Bay Area 30, LA basin 10)**. The `metro` column holds the region name.
 
 Brand guardrails: name the chain only as a description ("analysis of [Chain]'s stores"), no logo, colors, or trade dress, and a visible "not affiliated with [Chain]" note. Store data lives in `stores.csv` (`name, address, lat, lon, metro`), so swapping chains means replacing one file.
 
@@ -41,7 +41,7 @@ Claude Sonnet 5.5 (`claude-sonnet-5-5`) with standard tool use and a hand-writte
 |---|---|---|
 | `find_tags(query)` | `GET /v2/tags`, filtered to `specialty_dish:place` tags | Resolve a dish/drink/ingredient concept to a Qloo tag ID |
 | `find_entities(query)` | `GET /search` (`types=urn:entity:place`) | Anchor place entities (e.g. a well-known matcha café) |
-| `score_stores(signature)` | heatmap per metro per item + §3 code | Ranked stores with fit, confidence and stability |
+| `score_stores(signature)` | heatmap per region per item (WKT polygon) + §3 code | Ranked stores with fit, confidence and stability |
 | `area_taste(store_id)` | `urn:tag` with `signal.location`, plus `urn:entity:place` with `filter.location` | Top area tags and nearby places for a store |
 
 **Run sequence:**
@@ -65,7 +65,7 @@ A single screen, map-first (mockup "B"):
 - **Bottom bar.** A collapsible agent trace (each tool call with a short result summary, streamed live) and the stability line (§3.4).
 - **Store drawer** (opens on clicking a dot or list row):
   1. Store name and fit score, then a **verdict line** ("✅ Test here. The neighborhood leans hard into Japanese café culture.")
-  2. Fit meter vs. chain average (relative to each city), plus confidence
+  2. Fit meter vs. chain average (relative to each region), plus confidence
   3. Why it fits: over-indexed Qloo tags (source + radius shown)
   4. Local collab partners: nearby Qloo places
   5. Menu cues
@@ -93,7 +93,7 @@ Not included: login, dashboard home page, settings, charts that duplicate the li
 - **Rate limit** on the live scoring endpoint (per-IP, a few runs per hour).
 - **If Qloo or Anthropic is down:** demo runs still work. Live runs show a banner instead of a blank screen.
 - `test_scoring.py`: fake heatmap in, expected z-scores, confidence flags and stability ρ out.
-- `coverage_check.py`: for each Philz metro, counts heatmap cells for reference tags (matcha, coffee) and how many stores have a cell within 1.5 km. Metros below 10 cells are dropped (§2).
+- `coverage_check.py`: for each region polygon, fetches reference-tag heatmaps (matcha, coffee) and keeps stores inside the polygon with a cell within 1.5 km for either tag (§2).
 - No frontend tests. Manual browser check before submission.
 
 ## 8. Submission checklist
@@ -107,4 +107,4 @@ Not included: login, dashboard home page, settings, charts that duplicate the li
 
 1. ~~Request the Qloo hackathon API key~~ Done; the key is in `.env` (gitignored).
 2. ~~Confirm the §3 parameters against the live API~~ Done 2026-10-06 (findings folded into §2–§4).
-3. Collect Philz store addresses and run `coverage_check.py` to choose which metros to include.
+3. ~~Collect Philz store addresses and run `coverage_check.py`~~ Done: 40 stores in two regions.
