@@ -23,8 +23,10 @@ DEMOS = DATA / "demos"
 DIST = ROOT.parent / "frontend" / "dist"
 LIMITS = {"live": 6, "brief": 30}  # per IP per hour
 GLOBAL_LIVE_PER_HOUR = 60  # all clients combined, caps spend if IPs are rotated
-GLOBAL_LIVE_PER_DAY = 150  # all clients combined, rolling 24h
+GLOBAL_LIVE_PER_DAY = int(os.environ.get("LIVE_RUNS_PER_DAY", "30"))  # all clients combined, rolling 24h
 GLOBAL_BRIEFS_PER_HOUR = 300
+GLOBAL_BRIEFS_PER_DAY = int(os.environ.get("BRIEFS_PER_DAY", "200"))
+LIVE_MODE = os.environ.get("LIVE_MODE", "on").lower() != "off"  # kill switch for paid endpoints
 GENERIC_ERROR = "Something went wrong. Try one of the preloaded examples."
 log = logging.getLogger(__name__)
 
@@ -80,6 +82,8 @@ def check_rate(request: Request, bucket: str) -> None:
     keys = [((bucket, ip), LIMITS[bucket], 3600), ((bucket, "*"), glob, 3600)]
     if bucket == "live":
         keys.append((("live", "*day"), GLOBAL_LIVE_PER_DAY, 86400))
+    else:
+        keys.append((("brief", "*day"), GLOBAL_BRIEFS_PER_DAY, 86400))
     for k, limit, window in keys:
         q = _hits[k]
         while q and now - q[0] > window:
@@ -90,6 +94,11 @@ def check_rate(request: Request, bucket: str) -> None:
             raise HTTPException(429, "Live run limit reached for this hour. The preloaded examples still work.")
     for k, _, _ in keys:
         _hits[k].append(now)
+
+
+def require_live() -> None:
+    if not LIVE_MODE:
+        raise HTTPException(503, "Live runs are paused. The preloaded examples still work.")
 
 
 def sse(gen) -> StreamingResponse:
@@ -133,6 +142,7 @@ async def demo(slug: str):
 
 @app.post("/api/signature")
 async def signature(req: SignatureReq, request: Request):
+    require_live()
     check_rate(request, "live")
     llm, tools = deps(request)
     return sse(agent.build_signature(llm, tools, req.lto, _items(req.current), req.instruction))
@@ -140,6 +150,7 @@ async def signature(req: SignatureReq, request: Request):
 
 @app.post("/api/score")
 async def score(req: ScoreReq, request: Request):
+    require_live()
     check_rate(request, "live")
     llm, tools = deps(request)
     return sse(agent.run_score(llm, tools, _items(req.signature)))
@@ -147,6 +158,7 @@ async def score(req: ScoreReq, request: Request):
 
 @app.post("/api/brief")
 async def brief(req: BriefReq, request: Request):
+    require_live()
     check_rate(request, "brief")
     llm, tools = deps(request)
     try:

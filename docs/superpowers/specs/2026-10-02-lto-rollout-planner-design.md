@@ -91,7 +91,7 @@ Not included: login, dashboard home page, settings, charts that duplicate the li
 - **Qloo response cache:** on disk, keyed by request params.
 - **Qloo rate limits:** at most 3 concurrent requests, retry on 429 with exponential back-off (honor `Retry-After` when present).
 - **Empty or error responses** are returned to the agent as data so it can retry with another term.
-- **Rate limit** on the live scoring endpoint (per-IP, a few runs per hour; global ceilings of 60 live runs/hour and 150 live runs/day). The Qloo cache directory is configurable via `CACHE_DIR`.
+- **Rate limits:** live runs 6 per IP per hour, 60 per hour globally, 30 per day globally (`LIVE_RUNS_PER_DAY`); briefs 30 per IP per hour, 300 per hour globally, 200 per day globally (`BRIEFS_PER_DAY`). `LIVE_MODE=off` pauses live runs (503) while demos keep working. `max_tokens` is 4000. The Qloo cache directory is configurable via `CACHE_DIR`.
 - **If Qloo or Anthropic is down:** demo runs still work. Live runs show a banner instead of a blank screen.
 - `test_scoring.py`: fake heatmap in, expected z-scores, confidence flags and stability ρ out.
 - `coverage_check.py`: for each region polygon, fetches reference-tag heatmaps (matcha, coffee) and keeps stores inside the polygon with a cell within 1.5 km for either tag (§2).

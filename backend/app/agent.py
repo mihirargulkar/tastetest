@@ -27,7 +27,7 @@ def _summarize(out) -> str:
 
 async def create(llm, *, output_config: dict | None = None, **kw):
     resp = await llm.beta.messages.create(
-        model=MODEL, max_tokens=16000, betas=[FALLBACK_BETA], fallbacks="default",
+        model=MODEL, max_tokens=4000, betas=[FALLBACK_BETA], fallbacks="default",
         output_config={"effort": "medium", **(output_config or {})}, **kw)
     if resp.stop_reason == "refusal":
         raise AgentError("the model declined this request")

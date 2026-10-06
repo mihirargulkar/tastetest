@@ -151,3 +151,25 @@ def test_demos_and_stores_load_without_keys(monkeypatch):
     assert len(listed) == 3
     assert all(c.get(f"/api/demos/{d['slug']}").status_code == 200 for d in listed)
     assert not hasattr(main.app.state, "tools")
+
+
+def test_global_brief_daily_ceiling_across_ips(client, monkeypatch):
+    async def fake(llm, tools, store_id, signature, fit):
+        return {"brief": "ok"}
+
+    monkeypatch.setattr(agent, "write_brief", fake)
+    monkeypatch.setattr(main, "GLOBAL_BRIEFS_PER_DAY", 2)
+    codes = [
+        client.post("/api/brief", json={"store_id": "a", "signature": SIG, "fit": None},
+                    headers={"X-Forwarded-For": f"7.7.7.{i}"}).status_code
+        for i in range(3)
+    ]
+    assert 429 not in codes[:2] and codes[2] == 429
+
+
+def test_live_mode_off_pauses_live_but_not_demos(client, monkeypatch):
+    monkeypatch.setattr(main, "LIVE_MODE", False)
+    r = client.post("/api/score", json={"signature": SIG})
+    assert r.status_code == 503
+    assert r.json()["detail"] == "Live runs are paused. The preloaded examples still work."
+    assert client.get("/api/demos").status_code == 200
