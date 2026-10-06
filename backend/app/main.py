@@ -23,11 +23,13 @@ DEMOS = DATA / "demos"
 DIST = ROOT.parent / "frontend" / "dist"
 LIMITS = {"live": 6, "brief": 30}  # per IP per hour
 GLOBAL_LIVE_PER_HOUR = 60  # all clients combined, caps spend if IPs are rotated
+GLOBAL_LIVE_PER_DAY = 150  # all clients combined, rolling 24h
 GLOBAL_BRIEFS_PER_HOUR = 300
 GENERIC_ERROR = "Something went wrong. Try one of the preloaded examples."
 log = logging.getLogger(__name__)
 
 app = FastAPI(title="TasteTest")
+STORES = load_stores(DATA / "stores.csv")  # loaded at import so /api/stores and demos need no keys
 
 
 class SignatureItem(BaseModel):
@@ -58,7 +60,8 @@ def deps(request: Request):
     s = request.app.state
     if not hasattr(s, "tools"):
         rf = DATA / "regions.json"
-        s.tools = Tools(Qloo(os.environ["QLOO_API_KEY"], DATA / "cache"), load_stores(DATA / "stores.csv"),
+        cache_dir = Path(os.environ.get("CACHE_DIR", DATA / "cache"))
+        s.tools = Tools(Qloo(os.environ["QLOO_API_KEY"], cache_dir), STORES,
                         regions=json.loads(rf.read_text()) if rf.exists() else {})
         s.llm = AsyncAnthropic()
     return s.llm, s.tools
@@ -74,16 +77,18 @@ def check_rate(request: Request, bucket: str) -> None:
     ip = xff.split(",")[-1].strip() or (request.client.host if request.client else "unknown")
     glob = GLOBAL_LIVE_PER_HOUR if bucket == "live" else GLOBAL_BRIEFS_PER_HOUR
     now = time.time()
-    keys = [((bucket, ip), LIMITS[bucket]), ((bucket, "*"), glob)]
-    for k, limit in keys:
+    keys = [((bucket, ip), LIMITS[bucket], 3600), ((bucket, "*"), glob, 3600)]
+    if bucket == "live":
+        keys.append((("live", "*day"), GLOBAL_LIVE_PER_DAY, 86400))
+    for k, limit, window in keys:
         q = _hits[k]
-        while q and now - q[0] > 3600:
+        while q and now - q[0] > window:
             q.popleft()
         if not q:
             del _hits[k]
         if len(q) >= limit:
             raise HTTPException(429, "Live run limit reached for this hour. The preloaded examples still work.")
-    for k, _ in keys:
+    for k, _, _ in keys:
         _hits[k].append(now)
 
 
@@ -97,7 +102,8 @@ def sse(gen) -> StreamingResponse:
                 log.exception("stream failed")
             msg = str(e) if isinstance(e, agent.AgentError) else GENERIC_ERROR
             yield f"data: {json.dumps({'type': 'error', 'message': msg})}\n\n"
-    return StreamingResponse(body(), media_type="text/event-stream")
+    return StreamingResponse(body(), media_type="text/event-stream",
+                             headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
 
 
 def _items(items: list[SignatureItem] | None) -> list[dict] | None:
@@ -105,12 +111,12 @@ def _items(items: list[SignatureItem] | None) -> list[dict] | None:
 
 
 @app.get("/api/stores")
-def stores(request: Request):
-    return deps(request)[1].stores
+async def stores():
+    return STORES
 
 
 @app.get("/api/demos")
-def demos():
+async def demos():
     out = []
     for p in sorted(DEMOS.glob("*.json")):
         d = json.loads(p.read_text())
@@ -119,21 +125,21 @@ def demos():
 
 
 @app.get("/api/demos/{slug}")
-def demo(slug: str):
+async def demo(slug: str):
     if slug not in {p.stem for p in DEMOS.glob("*.json")}:
         raise HTTPException(404, "unknown demo")
     return json.loads((DEMOS / f"{slug}.json").read_text())
 
 
 @app.post("/api/signature")
-def signature(req: SignatureReq, request: Request):
+async def signature(req: SignatureReq, request: Request):
     check_rate(request, "live")
     llm, tools = deps(request)
     return sse(agent.build_signature(llm, tools, req.lto, _items(req.current), req.instruction))
 
 
 @app.post("/api/score")
-def score(req: ScoreReq, request: Request):
+async def score(req: ScoreReq, request: Request):
     check_rate(request, "live")
     llm, tools = deps(request)
     return sse(agent.run_score(llm, tools, _items(req.signature)))

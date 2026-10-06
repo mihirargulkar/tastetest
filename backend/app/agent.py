@@ -7,7 +7,7 @@ from .scoring import pick
 
 MODEL = "claude-sonnet-5-5"
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
-MAX_TOOL_CALLS = 25
+MAX_TOOL_CALLS = 12
 
 
 class AgentError(Exception):
@@ -63,7 +63,7 @@ async def run_tool_loop(llm, *, system: str, user: str, tools: list, handlers: d
                 out = await handlers[u.name](**u.input)
                 summary, is_error = _summarize(out), False
             except (QlooError, KeyError, TypeError) as e:
-                out, summary, is_error = {"error": str(e)}, f"error: {e}", True
+                out, summary, is_error = {"error": str(e)}, "error: Qloo request failed", True
             yield trace(u.name, u.input, summary)
             results.append({"type": "tool_result", "tool_use_id": u.id, "content": json.dumps(out),
                             "is_error": is_error})
@@ -92,7 +92,7 @@ SIGNATURE_TOOLS = [
      "input_schema": {"type": "object", "properties": {"query": _STR}, "required": ["query"],
                       "additionalProperties": False}},
     {"name": "submit_signature", "strict": True,
-     "description": "Submit the final taste signature. Call exactly once, as the last step.",
+     "description": "Submit the final taste signature (at most 8 items; extras are dropped). Call exactly once, as the last step.",
      "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {
          "type": "object", "properties": {
              "id": _STR, "name": _STR, "kind": {"type": "string", "enum": ["tag", "entity"]},
@@ -126,8 +126,9 @@ async def build_signature(llm, tools, lto: str, current: list | None = None, ins
             yield ev
             continue
         submitted = ev["input"]["items"]
-        items = [{**i, **seen[i["id"]], "weight": min(1.0, max(0.0, float(i["weight"])))}
-                 for i in submitted if i["id"] in seen]
+        items = [{**i, **seen[i["id"]], "weight": min(1.0, max(0.0, float(i["weight"]))),
+                  "substituted_from": (i.get("substituted_from") or "")[:200] or None}
+                 for i in submitted if i["id"] in seen][:8]
         if not items:
             raise AgentError("no usable Qloo concepts found for this description")
         yield {"type": "signature", "items": items, "dropped": len(submitted) - len(items)}
@@ -168,6 +169,8 @@ async def run_score(llm, tools, signature: list[dict]):
     payload = [{"store_id": s["id"], "name": s["name"], "fit": s["fit"],
                 "evidence": [t["name"] for t in evidence[s["id"]]]} for s in focus]
     try:
+        if not focus:
+            raise AgentError("nothing to explain")
         resp = await create(llm, system=REASONS_SYSTEM, output_config={"format": REASONS_FORMAT},
                             messages=[{"role": "user", "content": json.dumps(
                                 {"lto_signature": [i["name"] for i in signature], "stores": payload})}])

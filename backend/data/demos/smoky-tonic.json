@@ -11,18 +11,11 @@
    "substituted_from": null
   },
   {
-   "id": "urn:tag:specialty_dish:place:iced_coffee",
-   "name": "Iced Coffee",
+   "id": "urn:tag:specialty_dish:place:cocktail",
+   "name": "Cocktail",
    "kind": "tag",
    "weight": 0.5,
-   "substituted_from": null
-  },
-  {
-   "id": "urn:tag:specialty_dish:place:citrus_salad",
-   "name": "Citrus Salad",
-   "kind": "tag",
-   "weight": 0.3,
-   "substituted_from": "smoked citrus"
+   "substituted_from": "tonic"
   },
   {
    "id": "urn:tag:specialty_dish:place:smoked_salmon",
@@ -30,6 +23,13 @@
    "kind": "tag",
    "weight": 0.3,
    "substituted_from": "smoked"
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:citrus_salad",
+   "name": "Citrus Salad",
+   "kind": "tag",
+   "weight": 0.3,
+   "substituted_from": "smoked citrus"
   }
  ],
  "result": {
@@ -42,15 +42,15 @@
     "lat": 37.781385,
     "lon": -122.416976,
     "metro": "Bay Area",
-    "affinity": 0.9707621715475492,
+    "affinity": 0.9729465315300743,
     "popularity": 1,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.9850746268656716,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.9908256880733946,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.8708133971291866,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9895635673624289
+     "urn:tag:specialty_dish:place:cocktail": 1,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9895635673624289,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.8708133971291866
     },
-    "fit": 1.65,
+    "fit": 1.6,
     "confidence": "high"
    },
    {
@@ -60,15 +60,33 @@
     "lat": 37.7918825,
     "lon": -122.3988519,
     "metro": "Bay Area",
-    "affinity": 0.96016840051699,
-    "popularity": 0.9856901631470805,
+    "affinity": 0.9626401762866895,
+    "popularity": 0.9859919497236135,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.9626865671641791,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.963302752293578,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9090909090909091,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9976280834914611
+     "urn:tag:specialty_dish:place:cocktail": 0.9736842105263158,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9976280834914611,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9090909090909091
     },
-    "fit": 1.59,
+    "fit": 1.55,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-culver-city-culver-city",
+    "name": "Culver City",
+    "address": "9300 Culver Blvd, Culver City, CA 90232",
+    "lat": 34.0244516,
+    "lon": -118.3933641,
+    "metro": "LA basin",
+    "affinity": 0.9363690085760691,
+    "popularity": 0.8992145957444558,
+    "items": {
+     "urn:tag:specialty_dish:place:cold_brew": 0.9666666666666667,
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9769088669950738,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.7948369565217391
+    },
+    "fit": 1.42,
     "confidence": "high"
    },
    {
@@ -78,15 +96,15 @@
     "lat": 37.7945298,
     "lon": -122.3951458,
     "metro": "Bay Area",
-    "affinity": 0.9270118644924961,
-    "popularity": 0.9567413496173371,
+    "affinity": 0.9350020233759433,
+    "popularity": 0.942497023204976,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.9402985074626866,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.8348623853211009,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9633173843700159,
-     "urn:tag:specialty_dish:place:smoked_salmon": 1
+     "urn:tag:specialty_dish:place:cocktail": 0.868421052631579,
+     "urn:tag:specialty_dish:place:smoked_salmon": 1,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9633173843700159
     },
-    "fit": 1.42,
+    "fit": 1.41,
     "confidence": "high"
    },
    {
@@ -100,11 +118,11 @@
     "popularity": 0.9045309279754501,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.8532695374800638,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9549335863377609
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9549335863377609,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.8532695374800638
     },
-    "fit": 1.3,
+    "fit": 1.25,
     "confidence": "high"
    },
    {
@@ -118,47 +136,29 @@
     "popularity": 0.8571500988109397,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.8373205741626795,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9274193548387096
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9274193548387096,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.8373205741626795
     },
-    "fit": 1.18,
+    "fit": 1.15,
     "confidence": "high"
    },
    {
-    "id": "philz-san-francisco-folsom-beale",
-    "name": "Folsom & Beale",
-    "address": "300 Folsom St, San Francisco, CA 94105",
-    "lat": 37.7887269,
-    "lon": -122.393156,
-    "metro": "Bay Area",
-    "affinity": 0.8717256209559758,
-    "popularity": 0.911212896357031,
+    "id": "philz-beverly-hills-south-beverly",
+    "name": "South Beverly",
+    "address": "233 South Beverly Drive, Beverly Hills, CA 90212",
+    "lat": 34.0637237,
+    "lon": -118.399308,
+    "metro": "LA basin",
+    "affinity": 0.881656429438342,
+    "popularity": 0.8082833335316468,
     "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.8507462686567164,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.7981651376146789,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9473684210526315,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9886148007590133
+     "urn:tag:specialty_dish:place:cold_brew": 1,
+     "urn:tag:specialty_dish:place:cocktail": 0.5625,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9972290640394089,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9035326086956522
     },
-    "fit": 1.13,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-second-street",
-    "name": "Second Street",
-    "address": "425 Mission Street, San Francisco, CA 94105",
-    "lat": 37.7904312,
-    "lon": -122.3952043,
-    "metro": "Bay Area",
-    "affinity": 0.8717256209559758,
-    "popularity": 0.911212896357031,
-    "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.8507462686567164,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.7981651376146789,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9473684210526315,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9886148007590133
-    },
-    "fit": 1.13,
+    "fit": 1.14,
     "confidence": "high"
    },
    {
@@ -172,63 +172,63 @@
     "popularity": 0.782946185110871,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.8692185007974481,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.855787476280835
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.855787476280835,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.8692185007974481
     },
-    "fit": 1.08,
+    "fit": 1.05,
     "confidence": "high"
    },
    {
-    "id": "philz-san-francisco-castro",
-    "name": "Castro",
-    "address": "549 Castro St, San Francisco, CA 94114",
-    "lat": 37.7601055,
-    "lon": -122.4346797,
-    "metro": "Bay Area",
-    "affinity": 0.8300966027389635,
-    "popularity": 0.8920126679861179,
-    "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.7985074626865671,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.7522935779816514,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9074960127591707,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9876660341555977
-    },
-    "fit": 0.91,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-beverly-hills-south-beverly",
-    "name": "South Beverly",
-    "address": "233 South Beverly Drive, Beverly Hills, CA 90212",
-    "lat": 34.0637237,
-    "lon": -118.399308,
+    "id": "philz-los-angeles-hollywood",
+    "name": "Hollywood",
+    "address": "6430 Sunset Blvd, Los Angeles, CA 90028",
+    "lat": 34.0976563,
+    "lon": -118.3299312,
     "metro": "LA basin",
-    "affinity": 0.8120296477429182,
-    "popularity": 0.9199987623888611,
+    "affinity": 0.8442579541672851,
+    "popularity": 0.9803472891530425,
     "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 1,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.2700675168792198,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9035326086956522,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9972290640394089
+     "urn:tag:specialty_dish:place:cold_brew": 0.8092592592592592,
+     "urn:tag:specialty_dish:place:cocktail": 0.7916666666666666,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9852216748768473,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.907608695652174
     },
-    "fit": 0.81,
+    "fit": 0.96,
     "confidence": "high"
    },
    {
-    "id": "philz-san-francisco-russian-hill",
-    "name": "Russian Hill",
-    "address": "2234 Polk St, San Francisco, CA 94109",
-    "lat": 37.7975392,
-    "lon": -122.4219848,
+    "id": "philz-san-francisco-folsom-beale",
+    "name": "Folsom & Beale",
+    "address": "300 Folsom St, San Francisco, CA 94105",
+    "lat": 37.7887269,
+    "lon": -122.393156,
     "metro": "Bay Area",
-    "affinity": 0.7864779004556981,
-    "popularity": 0.8166803318995113,
+    "affinity": 0.7882025932031074,
+    "popularity": 0.8120458273082622,
     "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.7388059701492538,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.6422018348623854,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9808612440191388,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.99146110056926
+     "urn:tag:specialty_dish:place:cold_brew": 0.8507462686567164,
+     "urn:tag:specialty_dish:place:cocktail": 0.4473684210526316,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9886148007590133,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9473684210526315
+    },
+    "fit": 0.68,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-second-street",
+    "name": "Second Street",
+    "address": "425 Mission Street, San Francisco, CA 94105",
+    "lat": 37.7904312,
+    "lon": -122.3952043,
+    "metro": "Bay Area",
+    "affinity": 0.7882025932031074,
+    "popularity": 0.8120458273082622,
+    "items": {
+     "urn:tag:specialty_dish:place:cold_brew": 0.8507462686567164,
+     "urn:tag:specialty_dish:place:cocktail": 0.4473684210526316,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9886148007590133,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9473684210526315
     },
     "fit": 0.68,
     "confidence": "high"
@@ -240,33 +240,33 @@
     "lat": 34.0462665,
     "lon": -118.2596525,
     "metro": "LA basin",
-    "affinity": 0.7857124599056287,
-    "popularity": 0.988243823102976,
+    "affinity": 0.7845105225165195,
+    "popularity": 0.9227860524103028,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.8222222222222222,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.5258814703675919,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9021739130434783,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9806034482758621
+     "urn:tag:specialty_dish:place:cocktail": 0.5208333333333334,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9806034482758621,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9021739130434783
     },
-    "fit": 0.68,
+    "fit": 0.66,
     "confidence": "high"
    },
    {
-    "id": "philz-culver-city-culver-city",
-    "name": "Culver City",
-    "address": "9300 Culver Blvd, Culver City, CA 90232",
-    "lat": 34.0244516,
-    "lon": -118.3933641,
+    "id": "philz-glendale-glendale",
+    "name": "Glendale",
+    "address": "252 South Brand Blvd, Glendale, CA 91204",
+    "lat": 34.1427824,
+    "lon": -118.2547408,
     "metro": "LA basin",
-    "affinity": 0.7773685641021112,
-    "popularity": 0.85276803608066,
+    "affinity": 0.7680356405378659,
+    "popularity": 0.8806745932589262,
     "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.9666666666666667,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.2685671417854464,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.7948369565217391,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9769088669950738
+     "urn:tag:specialty_dish:place:cold_brew": 0.7129629629629629,
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9682881773399015,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.751358695652174
     },
-    "fit": 0.63,
+    "fit": 0.58,
     "confidence": "high"
    },
    {
@@ -280,27 +280,9 @@
     "popularity": 0.7402887609743697,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.7416267942583732,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.7860531309297912
-    },
-    "fit": 0.56,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-los-angeles-hollywood",
-    "name": "Hollywood",
-    "address": "6430 Sunset Blvd, Los Angeles, CA 90028",
-    "lat": 34.0976563,
-    "lon": -118.3299312,
-    "metro": "LA basin",
-    "affinity": 0.7622210759000994,
-    "popularity": 0.9937217265123823,
-    "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.8092592592592592,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.44711177794448614,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.907608695652174,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9852216748768473
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.7860531309297912,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.7416267942583732
     },
     "fit": 0.55,
     "confidence": "high"
@@ -316,29 +298,29 @@
     "popularity": 0.7228145078065182,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.6395534290271132,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.8206831119544592
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.8206831119544592,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.6395534290271132
     },
     "fit": 0.39,
     "confidence": "high"
    },
    {
-    "id": "philz-san-francisco-berry",
-    "name": "Berry",
-    "address": "201 Berry St, San Francisco, CA 94158",
-    "lat": 37.7755634,
-    "lon": -122.3933972,
+    "id": "philz-colma-colma",
+    "name": "Colma",
+    "address": "5055 Junipero Serra Blvd, Colma, CA 94014",
+    "lat": 37.6717582,
+    "lon": -122.4652105,
     "metro": "Bay Area",
-    "affinity": 0.7143300225329838,
-    "popularity": 0.7748211642693618,
+    "affinity": 0.720663516216797,
+    "popularity": 0.7101453716229508,
     "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.5597014925373134,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.7706422018348624,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.886762360446571,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.963472485768501
+     "urn:tag:specialty_dish:place:cold_brew": null,
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.8496204933586338,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.5917065390749602
     },
-    "fit": 0.3,
+    "fit": 0.34,
     "confidence": "high"
    },
    {
@@ -352,11 +334,29 @@
     "popularity": 0.7879061381217534,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.5746268656716418,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9234449760765551,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9587286527514232
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9587286527514232,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9234449760765551
     },
-    "fit": 0.29,
+    "fit": 0.3,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-russian-hill",
+    "name": "Russian Hill",
+    "address": "2234 Polk St, San Francisco, CA 94109",
+    "lat": 37.7975392,
+    "lon": -122.4219848,
+    "metro": "Bay Area",
+    "affinity": 0.7087606716037517,
+    "popularity": 0.6630106071288691,
+    "items": {
+     "urn:tag:specialty_dish:place:cold_brew": 0.7388059701492538,
+     "urn:tag:specialty_dish:place:cocktail": 0.3157894736842105,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.99146110056926,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9808612440191388
+    },
+    "fit": 0.28,
     "confidence": "high"
    },
    {
@@ -370,47 +370,47 @@
     "popularity": 0.6488238966412863,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.5970149253731343,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.8548644338118022,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9169829222011385
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9169829222011385,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.8548644338118022
     },
     "fit": 0.26,
     "confidence": "high"
    },
    {
-    "id": "philz-glendale-glendale",
-    "name": "Glendale",
-    "address": "252 South Brand Blvd, Glendale, CA 91204",
-    "lat": 34.1427824,
-    "lon": -118.2547408,
-    "metro": "LA basin",
-    "affinity": 0.7034138585143287,
-    "popularity": 0.8940018189126867,
+    "id": "philz-san-francisco-berry",
+    "name": "Berry",
+    "address": "201 Berry St, San Francisco, CA 94158",
+    "lat": 37.7755634,
+    "lon": -122.3933972,
+    "metro": "Bay Area",
+    "affinity": 0.6874853880108988,
+    "popularity": 0.7391499909231523,
     "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.7129629629629629,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.4966241560390098,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.751358695652174,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9682881773399015
+     "urn:tag:specialty_dish:place:cold_brew": 0.5597014925373134,
+     "urn:tag:specialty_dish:place:cocktail": 0.6578947368421053,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.963472485768501,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.886762360446571
     },
-    "fit": 0.25,
+    "fit": 0.17,
     "confidence": "high"
    },
    {
-    "id": "philz-colma-colma",
-    "name": "Colma",
-    "address": "5055 Junipero Serra Blvd, Colma, CA 94014",
-    "lat": 37.6717582,
-    "lon": -122.4652105,
+    "id": "philz-san-francisco-castro",
+    "name": "Castro",
+    "address": "549 Castro St, San Francisco, CA 94114",
+    "lat": 37.7601055,
+    "lon": -122.4346797,
     "metro": "Bay Area",
-    "affinity": 0.6599782648922312,
-    "popularity": 0.5009531835284504,
+    "affinity": 0.6635104124927056,
+    "popularity": 0.7362304371797441,
     "items": {
-     "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.5871559633027523,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.5917065390749602,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.8496204933586338
+     "urn:tag:specialty_dish:place:cold_brew": 0.7985074626865671,
+     "urn:tag:specialty_dish:place:cocktail": 0.05263157894736842,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9876660341555977,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9074960127591707
     },
-    "fit": 0.02,
+    "fit": 0.05,
     "confidence": "high"
    },
    {
@@ -424,11 +424,29 @@
     "popularity": 0.7541238057192317,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.45614035087719296,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.8591081593927894
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.8591081593927894,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.45614035087719296
     },
-    "fit": 0.01,
+    "fit": 0.03,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-pasadena-pasadena",
+    "name": "Pasadena",
+    "address": "146 S Lake Ave, Pasadena, CA 91101",
+    "lat": 34.1432645,
+    "lon": -118.13177,
+    "metro": "LA basin",
+    "affinity": 0.6382287062074121,
+    "popularity": 0.6986097063901912,
+    "items": {
+     "urn:tag:specialty_dish:place:cold_brew": 0.524074074074074,
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9436576354679803,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.7133152173913043
+    },
+    "fit": -0.07,
     "confidence": "high"
    },
    {
@@ -438,15 +456,15 @@
     "lat": 37.4422033,
     "lon": -122.1616018,
     "metro": "Bay Area",
-    "affinity": 0.6489290217077054,
-    "popularity": 0.7640813412207158,
+    "affinity": 0.6340983670895085,
+    "popularity": 0.7135019109937724,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.7014925373134329,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.22018348623853212,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.8628389154704944,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9743833017077799
+     "urn:tag:specialty_dish:place:cocktail": 0.15789473684210525,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9743833017077799,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.8628389154704944
     },
-    "fit": -0.04,
+    "fit": -0.09,
     "confidence": "high"
    },
    {
@@ -460,29 +478,29 @@
     "popularity": 0.6887103677626745,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.4552238805970149,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.8086124401913876,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9217267552182163
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9217267552182163,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.8086124401913876
     },
-    "fit": -0.25,
+    "fit": -0.22,
     "confidence": "high"
    },
    {
-    "id": "philz-pasadena-pasadena",
-    "name": "Pasadena",
-    "address": "146 S Lake Ave, Pasadena, CA 91101",
-    "lat": 34.1432645,
-    "lon": -118.13177,
+    "id": "philz-los-angeles-los-feliz",
+    "name": "Los Feliz",
+    "address": "2117 Hillhurst Avenue, Los Angeles, CA 90027",
+    "lat": 34.1104689,
+    "lon": -118.2876272,
     "metro": "LA basin",
-    "affinity": 0.6046919532022893,
-    "popularity": 0.7356977149014206,
+    "affinity": 0.6082890267829049,
+    "popularity": 0.6937506940973958,
     "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.524074074074074,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.4973743435858965,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.7133152173913043,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9436576354679803
+     "urn:tag:specialty_dish:place:cold_brew": 0.6314814814814815,
+     "urn:tag:specialty_dish:place:cocktail": 0.2708333333333333,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9612068965517241,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.7404891304347826
     },
-    "fit": -0.27,
+    "fit": -0.22,
     "confidence": "high"
    },
    {
@@ -496,47 +514,29 @@
     "popularity": 0.5958556906324808,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.6586921850079744,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.540796963946869
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.540796963946869,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.6586921850079744
     },
-    "fit": -0.3,
+    "fit": -0.26,
     "confidence": "high"
    },
    {
-    "id": "philz-san-jose-philz-coffee-san-jose",
-    "name": "Philz Coffee - San Jose",
-    "address": "118 Paseo de San Antonio Walk, San Jose, CA 95112",
-    "lat": 37.3336349,
-    "lon": -121.88499,
+    "id": "philz-walnut-creek-walnut-creek",
+    "name": "Walnut Creek",
+    "address": "1103 S California Blvd, Walnut Creek, CA 94596",
+    "lat": 37.8972067,
+    "lon": -122.0635489,
     "metro": "Bay Area",
-    "affinity": 0.5927901366192809,
-    "popularity": 0.7717864252705824,
+    "affinity": 0.5760673819082682,
+    "popularity": 0.7052872724827541,
     "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.4253731343283582,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.7155963302752294,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.5996810207336523,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9392789373814042
+     "urn:tag:specialty_dish:place:cold_brew": 0.5373134328358209,
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.928842504743833,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.3524720893141946
     },
-    "fit": -0.33,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-los-angeles-los-feliz",
-    "name": "Los Feliz",
-    "address": "2117 Hillhurst Avenue, Los Angeles, CA 90027",
-    "lat": 34.1104689,
-    "lon": -118.2876272,
-    "metro": "LA basin",
-    "affinity": 0.5868513757034682,
-    "popularity": 0.6968452177283034,
-    "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.6314814814814815,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.18079519879969994,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.7404891304347826,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9612068965517241
-    },
-    "fit": -0.37,
+    "fit": -0.38,
     "confidence": "high"
    },
    {
@@ -550,29 +550,11 @@
     "popularity": 0.5496861655605288,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.3317384370015949,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.7533206831119544
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.7533206831119544,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.3317384370015949
     },
-    "fit": -0.6,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-walnut-creek-walnut-creek",
-    "name": "Walnut Creek",
-    "address": "1103 S California Blvd, Walnut Creek, CA 94596",
-    "lat": 37.8972067,
-    "lon": -122.0635489,
-    "metro": "Bay Area",
-    "affinity": 0.519729800807348,
-    "popularity": 0.6252957295914234,
-    "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.5373134328358209,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.3394495412844037,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.3524720893141946,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.928842504743833
-    },
-    "fit": -0.72,
+    "fit": -0.55,
     "confidence": "high"
    },
    {
@@ -582,15 +564,15 @@
     "lat": 37.7511414,
     "lon": -122.4383792,
     "metro": "Bay Area",
-    "affinity": 0.4883014069725903,
-    "popularity": 0.5274555532579244,
+    "affinity": 0.5034769605353965,
+    "popularity": 0.606402921678977,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.3805970149253731,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.14678899082568808,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9441786283891547,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9606261859582542
+     "urn:tag:specialty_dish:place:cocktail": 0.21052631578947367,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9606261859582542,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9441786283891547
     },
-    "fit": -0.88,
+    "fit": -0.74,
     "confidence": "high"
    },
    {
@@ -600,87 +582,15 @@
     "lat": 33.8342763,
     "lon": -118.3511753,
     "metro": "LA basin",
-    "affinity": 0.470275854581324,
-    "popularity": 0.747600989789358,
+    "affinity": 0.4669651161522413,
+    "popularity": 0.6962261759331975,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.29814814814814816,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.4808702175543886,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.5760869565217391,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9205665024630542
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9205665024630542,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.5760869565217391
     },
-    "fit": -0.98,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-orange-old-towne-orange",
-    "name": "Old Towne Orange",
-    "address": "202 N Glassell St, Orange, CA 92866",
-    "lat": 33.789841,
-    "lon": -117.853187,
-    "metro": "LA basin",
-    "affinity": 0.44901619356283134,
-    "popularity": 0.6767128323110858,
-    "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.19074074074074074,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.8177044261065266,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.25407608695652173,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.8903940886699507
-    },
-    "fit": -1.09,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-cupertino-deanza-cupertino",
-    "name": "DeAnza - Cupertino",
-    "address": "20686 Stevens Creek Blvd, Cupertino, CA 95014",
-    "lat": 37.3225787,
-    "lon": -122.034649,
-    "metro": "Bay Area",
-    "affinity": 0.4187953581526853,
-    "popularity": 0.4923083379504519,
-    "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.23880597014925373,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.3853211009174312,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.5725677830940988,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9207779886148008
-    },
-    "fit": -1.25,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-potrero",
-    "name": "Potrero",
-    "address": "1775 17th St, San Francisco, CA 94103",
-    "lat": 37.7647559,
-    "lon": -122.4011997,
-    "metro": "Bay Area",
-    "affinity": 0.4107811604139464,
-    "popularity": 0.5368243307961162,
-    "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.15671641791044777,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.24770642201834864,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.9824561403508771,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9577798861480076
-    },
-    "fit": -1.29,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-brea-brea-mall",
-    "name": "Brea Mall",
-    "address": "1240 Brea Mall, Brea, CA 92821",
-    "lat": 33.917613,
-    "lon": -117.8843567,
-    "metro": "LA basin",
-    "affinity": 0.37829700210760175,
-    "popularity": 0.6130595445030138,
-    "items": {
-     "urn:tag:specialty_dish:place:cold_brew": 0.044444444444444446,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.9482370592648162,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.13043478260869565,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.7891009852216748
-    },
-    "fit": -1.46,
+    "fit": -0.93,
     "confidence": "high"
    },
    {
@@ -690,15 +600,69 @@
     "lat": 37.7679001,
     "lon": -122.3874223,
     "metro": "Bay Area",
-    "affinity": 0.35957764196150827,
-    "popularity": 0.5369777298621788,
+    "affinity": 0.4572415264433551,
+    "popularity": 0.6549762812866115,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.08955223880597014,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.24770642201834864,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.8740031897926634,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.9316888045540797
+     "urn:tag:specialty_dish:place:cocktail": 0.6578947368421053,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9316888045540797,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.8740031897926634
     },
-    "fit": -1.56,
+    "fit": -0.97,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-potrero",
+    "name": "Potrero",
+    "address": "1775 17th St, San Francisco, CA 94103",
+    "lat": 37.7647559,
+    "lon": -122.4011997,
+    "metro": "Bay Area",
+    "affinity": 0.4520540674521842,
+    "popularity": 0.556138671694233,
+    "items": {
+     "urn:tag:specialty_dish:place:cold_brew": 0.15671641791044777,
+     "urn:tag:specialty_dish:place:cocktail": 0.42105263157894735,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9577798861480076,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.9824561403508771
+    },
+    "fit": -1.0,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-cupertino-deanza-cupertino",
+    "name": "DeAnza - Cupertino",
+    "address": "20686 Stevens Creek Blvd, Cupertino, CA 95014",
+    "lat": 37.3225787,
+    "lon": -122.034649,
+    "metro": "Bay Area",
+    "affinity": 0.42925606353870227,
+    "popularity": 0.5769004139033549,
+    "items": {
+     "urn:tag:specialty_dish:place:cold_brew": 0.23880597014925373,
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9207779886148008,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.5725677830940988
+    },
+    "fit": -1.11,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-philz-coffee-san-jose",
+    "name": "Philz Coffee - San Jose",
+    "address": "118 Paseo de San Antonio Walk, San Jose, CA 95112",
+    "lat": 37.3336349,
+    "lon": -121.88499,
+    "metro": "Bay Area",
+    "affinity": 0.4224100579823215,
+    "popularity": 0.5974744986650777,
+    "items": {
+     "urn:tag:specialty_dish:place:cold_brew": 0.4253731343283582,
+     "urn:tag:specialty_dish:place:cocktail": 0,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.9392789373814042,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.5996810207336523
+    },
+    "fit": -1.15,
     "confidence": "high"
    },
    {
@@ -712,11 +676,11 @@
     "popularity": 0.3791014862496936,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": null,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.07974481658692185,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.6247628083491461
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.6247628083491461,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.07974481658692185
     },
-    "fit": -1.6,
+    "fit": -1.5,
     "confidence": "high"
    },
    {
@@ -730,11 +694,29 @@
     "popularity": 0.27190423593606916,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.35074626865671643,
-     "urn:tag:specialty_dish:place:iced_coffee": null,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.18181818181818182,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.49478178368121445
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.49478178368121445,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.18181818181818182
     },
-    "fit": -1.63,
+    "fit": -1.53,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-orange-old-towne-orange",
+    "name": "Old Towne Orange",
+    "address": "202 N Glassell St, Orange, CA 92866",
+    "lat": 33.789841,
+    "lon": -117.853187,
+    "metro": "LA basin",
+    "affinity": 0.3338011208929265,
+    "popularity": 0.5902057569099048,
+    "items": {
+     "urn:tag:specialty_dish:place:cold_brew": 0.19074074074074074,
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.8903940886699507,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.25407608695652173
+    },
+    "fit": -1.59,
     "confidence": "high"
    },
    {
@@ -744,51 +726,69 @@
     "lat": 37.3767094,
     "lon": -122.0311824,
     "metro": "Bay Area",
-    "affinity": 0.23753732449112008,
-    "popularity": 0.39743627106002116,
+    "affinity": 0.27163012371569606,
+    "popularity": 0.5023920923002118,
     "items": {
      "urn:tag:specialty_dish:place:cold_brew": 0.029850746268656716,
-     "urn:tag:specialty_dish:place:iced_coffee": 0.12844036697247707,
-     "urn:tag:specialty_dish:place:citrus_salad": 0.44976076555023925,
-     "urn:tag:specialty_dish:place:smoked_salmon": 0.8994307400379506
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.8994307400379506,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.44976076555023925
     },
-    "fit": -2.2,
+    "fit": -1.9,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-brea-brea-mall",
+    "name": "Brea Mall",
+    "address": "1240 Brea Mall, Brea, CA 92821",
+    "lat": 33.917613,
+    "lon": -117.8843567,
+    "metro": "LA basin",
+    "affinity": 0.20019073424597222,
+    "popularity": 0.4955822683896147,
+    "items": {
+     "urn:tag:specialty_dish:place:cold_brew": 0.044444444444444446,
+     "urn:tag:specialty_dish:place:cocktail": null,
+     "urn:tag:specialty_dish:place:smoked_salmon": 0.7891009852216748,
+     "urn:tag:specialty_dish:place:citrus_salad": 0.13043478260869565
+    },
+    "fit": -2.26,
     "confidence": "high"
    }
   ],
   "top": [
    "philz-san-francisco-civic-center",
    "philz-san-francisco-front-st",
+   "philz-culver-city-culver-city",
    "philz-san-francisco-embarcadero",
-   "philz-burlingame-burlingame",
-   "philz-cupertino-cupertino-main"
+   "philz-burlingame-burlingame"
   ],
   "bottom": [
+   "philz-brea-brea-mall",
    "philz-sunnyvale-sunnyvale",
-   "philz-campbell-campbell",
-   "philz-fremont-fremont"
+   "philz-orange-old-towne-orange"
   ],
   "reasons": {
-   "philz-san-francisco-civic-center": "Strong fit: Lively, Social, Tourists and Foodies traffic suits a new limited-time offer, with Event venue crowds adding extra buzz.",
-   "philz-san-francisco-front-st": "Good test spot: Foodies, Tourists, Social and Business Professionals create varied, lively traffic to try the new offer.",
-   "philz-san-francisco-embarcadero": "Good fit: Lively, Social, Foodies and Tourists give broad exposure, while Couples and Business Professionals add variety.",
-   "philz-burlingame-burlingame": "Decent fit: Foodies, Lively and Business Professionals support trial, though it has less Social energy than the top stores.",
-   "philz-cupertino-cupertino-main": "Moderate fit: Foodies, Lively and Groups of Friends help, but the signal is weaker than the San Francisco stores.",
-   "philz-sunnyvale-sunnyvale": "Poor fit: despite Foodies and Lively tags, the offer's fit score is lowest, so it is a weak test location.",
-   "philz-campbell-campbell": "Weak fit: Foodies and Lively tags exist, but the low fit score makes it a poor place to test the offer.",
-   "philz-fremont-fremont": "Weak fit: Locals and Foodies appear, but the negative fit score suggests it is a poor test location."
+   "philz-san-francisco-civic-center": "Good test site: Lively, Social, Tourists and Foodies crowds, plus Event venue traffic, suit a showy new limited-time offer.",
+   "philz-san-francisco-front-st": "Good test site: Foodies, Celebratory Diners and Business Professionals in a Lively, Social setting should engage with a new offer.",
+   "philz-culver-city-culver-city": "Good test site: Cocktail Enthusiasts, Foodies and a Trendy, Social crowd align well with a cocktail-style limited-time offer.",
+   "philz-san-francisco-embarcadero": "Good test site: Foodies, Tourists and Celebratory Diners in a Lively, Social place suit trying a new limited-time offer.",
+   "philz-burlingame-burlingame": "Decent test site: Foodies, Wine Enthusiasts and Celebratory Diners fit the offer, though fit is weaker than the top San Francisco stores.",
+   "philz-brea-brea-mall": "Poor test site: Regulars and a Casual, American profile lack Cocktail Enthusiasts or Celebratory Diners, so fit is weak.",
+   "philz-sunnyvale-sunnyvale": "Poor test site: Aquarium, Hiking and Business Professionals traffic is less aligned with this offer despite Foodies and Lively tags.",
+   "philz-orange-old-towne-orange": "Poor test site: American, Locals and Event venue tags show little signal for Cocktail Enthusiasts or Celebratory Diners seeking this offer."
   },
   "stability": {
-   "rho": 0.81,
+   "rho": 0.75,
    "weakest": "Cold Brew"
   }
  },
  "briefs": {
   "philz-san-francisco-civic-center": {
    "store_id": "philz-san-francisco-civic-center",
-   "fit": 1.65,
+   "fit": 1.6,
    "label": "test",
-   "verdict": "Strong fit: Civic Center's lively, social, foodie crowd should embrace a refreshing iced coffee and savory-bright pairing offer, with fit score 1.65.",
+   "verdict": "Strong fit: Civic Center's lively, social foodie crowd should embrace a bold, shareable cold brew cocktail and fresh savory pairings.",
    "why_tags": [
     {
      "id": "urn:tag:ambience:qloo:lively",
@@ -837,16 +837,16 @@
     }
    ],
    "menu_cues": [
-    "Cold Brew and Iced Coffee for lively, on-the-go event crowds",
-    "Citrus Salad as a bright, shareable pick for groups of friends",
-    "Smoked Salmon to appeal to foodies and tourists"
+    "Cold brew cocktail for social groups",
+    "Smoked salmon bite for foodies",
+    "Citrus salad as a light shareable"
    ]
   },
   "philz-san-francisco-front-st": {
    "store_id": "philz-san-francisco-front-st",
-   "fit": 1.59,
+   "fit": 1.55,
    "label": "test",
-   "verdict": "Front St is a strong fit: its Californian, New American, foodie crowd should welcome the fresh citrus salad and smoked salmon alongside iced coffee drinks.",
+   "verdict": "Strong fit: Front St's Californian, New American, foodie crowd should embrace this lively, social, celebratory offer built around cold brew, cocktail, salmon and citrus.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -895,16 +895,74 @@
     }
    ],
    "menu_cues": [
-    "Pair Cold Brew with Citrus Salad for a Californian-style fresh lunch",
-    "Smoked Salmon plate suited to New American foodie tastes",
-    "Iced Coffee as a social, shareable option for couples and groups"
+    "Californian-style citrus salad with fresh, bright flavors",
+    "New American smoked salmon plate for foodies",
+    "Cold brew cocktail for social, celebratory sipping"
+   ]
+  },
+  "philz-culver-city-culver-city": {
+   "store_id": "philz-culver-city-culver-city",
+   "fit": 1.42,
+   "label": "test",
+   "verdict": "Culver City's foodie, cocktail-loving, lively crowd suits this offer's cocktail-style cold brew and fresh, citrusy savory pairings, making it a strong test candidate.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+     "name": "Cocktail Enthusiasts",
+     "affinity": 0.999881
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999861
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999762
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999742
+    }
+   ],
+   "partners": [
+    {
+     "id": "338EEFE7-5A36-41CF-99E7-801B510671F3",
+     "name": "Arcana: Books on the Arts",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "7FF6D198-5257-46D3-9531-552AA8F32BB7",
+     "name": "Bianca",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "23282702-0A2B-4EFD-9DEF-A722D301774D",
+     "name": "Vons",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Cocktail-style cold brew for cocktail enthusiasts",
+    "Smoked salmon plate for New American foodies",
+    "Citrus salad as a shareable, social side"
    ]
   },
   "philz-san-francisco-embarcadero": {
    "store_id": "philz-san-francisco-embarcadero",
-   "fit": 1.42,
+   "fit": 1.41,
    "label": "test",
-   "verdict": "Embarcadero fits this offer well: its Californian, foodie-driven, lively crowd should welcome fresh citrus and smoked salmon alongside cold brew and iced coffee.",
+   "verdict": "Embarcadero's Californian, New American foodie crowd should welcome this lively, social offer, with its citrus salad and smoked salmon suiting celebratory diners.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -953,16 +1011,16 @@
     }
    ],
    "menu_cues": [
-    "Pair cold brew with citrus salad for a bright Californian pairing",
-    "Feature smoked salmon as a New American shareable for social groups",
-    "Offer iced coffee as a refreshing, celebratory sip for couples and tourists"
+    "Pair cold brew cocktail with citrus salad for a Californian feel",
+    "Feature smoked salmon as a New American shareable for foodies",
+    "Offer a celebratory couples' pairing for romantic, social occasions"
    ]
   },
   "philz-burlingame-burlingame": {
    "store_id": "philz-burlingame-burlingame",
-   "fit": 1.3,
+   "fit": 1.25,
    "label": "test",
-   "verdict": "Strong fit: Burlingame's Californian, foodie, wine-loving crowd should embrace the fresh, citrusy, savory limited-time offer for social, celebratory occasions.",
+   "verdict": "Good fit: the Californian, New American, foodie, wine-loving crowd should welcome a cocktail-style cold brew paired with smoked salmon and a citrus salad.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1011,16 +1069,16 @@
     }
    ],
    "menu_cues": [
-    "Pair Cold Brew with Citrus Salad for a fresh Californian lunch",
-    "Feature Smoked Salmon as a New American, foodie-friendly savory option",
-    "Promote Iced Coffee as a lively, shareable pick for social diners"
+    "Californian-style citrus salad",
+    "Cold brew cocktail for wine enthusiasts",
+    "Smoked salmon plate for foodies"
    ]
   },
   "philz-cupertino-cupertino-main": {
    "store_id": "philz-cupertino-cupertino-main",
-   "fit": 1.18,
+   "fit": 1.15,
    "label": "test",
-   "verdict": "Strong fit: Cupertino's Californian, New American foodie crowd should welcome the refreshing cold brew and citrus salad pairing with smoked salmon.",
+   "verdict": "The offer suits this lively, foodie-driven Californian and New American crowd, with Asian influences and celebratory groups likely to embrace its bright, shareable flavors.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1069,16 +1127,190 @@
     }
    ],
    "menu_cues": [
-    "Pair Cold Brew with Citrus Salad for a fresh Californian lunch",
-    "Smoked Salmon plate suited to New American foodies",
-    "Iced Coffee in shareable sizes for lively groups of friends"
+    "Californian-style citrus salad with fresh, bright flavors",
+    "New American smoked salmon bite for foodies",
+    "Cold brew cocktail to share with groups of friends"
    ]
   },
-  "philz-sunnyvale-sunnyvale": {
-   "store_id": "philz-sunnyvale-sunnyvale",
-   "fit": -2.2,
-   "label": "skip",
-   "verdict": "Skip: the offer fits poorly here (z-score -2.2), as nothing in the local tags points to a taste profile matching these cold, citrus, and smoked flavors.",
+  "philz-beverly-hills-south-beverly": {
+   "store_id": "philz-beverly-hills-south-beverly",
+   "fit": 1.14,
+   "label": "test",
+   "verdict": "Strong fit: the offer's cocktail and citrus elements suit a lively, stylish, elegant local crowd that favors social, trendy, upscale experiences.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999972
+    },
+    {
+     "id": "urn:tag:ambience:qloo:romantic",
+     "name": "Romantic",
+     "affinity": 0.999945
+    },
+    {
+     "id": "urn:tag:ambience:qloo:stylish",
+     "name": "Stylish",
+     "affinity": 0.999904
+    },
+    {
+     "id": "urn:tag:ambience:place:business_friendly",
+     "name": "Business-Friendly",
+     "affinity": 0.99989
+    },
+    {
+     "id": "urn:tag:ambience:qloo:elegant",
+     "name": "Elegant",
+     "affinity": 0.999876
+    }
+   ],
+   "partners": [
+    {
+     "id": "F69AE666-C4C1-4827-ABB3-F1C8FCE03FE7",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "824B91FB-E3EE-4311-808B-D650F4CE530B",
+     "name": "Le Mervetty / Macarons",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6390AFFD-7B75-4BB0-A97B-16B0D274BE59",
+     "name": "Le Pain Quotidien",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Position the cold brew cocktail as an elegant, stylish social sip",
+    "Present smoked salmon and citrus salad as a luxurious, business-friendly lunch pairing",
+    "Highlight a classic, romantic evening serve for lively tourist traffic"
+   ]
+  },
+  "philz-san-francisco-ocean-ave": {
+   "store_id": "philz-san-francisco-ocean-ave",
+   "fit": 1.05,
+   "label": "test",
+   "verdict": "Ocean Ave's Californian, New American foodie crowd suits this offer, as citrus and smoked salmon echo local tastes, though fit is only moderately strong.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999945
+    },
+    {
+     "id": "urn:tag:genre:place:planetarium",
+     "name": "Planetarium",
+     "affinity": 0.999926
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999815
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999778
+    }
+   ],
+   "partners": [
+    {
+     "id": "EEECB599-FA91-438F-A9BD-CFF307A450D9",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "FD49014A-925D-454A-B42C-6910DD4C36A1",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "297FECA6-1CFD-4ED0-B3A1-AF6AED4D0C29",
+     "name": "Cherry Blossom Bakery",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Citrus Salad with Californian-style fresh produce",
+    "Smoked Salmon plate for New American foodies",
+    "Cold Brew paired with house made tiramisu"
+   ]
+  },
+  "philz-los-angeles-hollywood": {
+   "store_id": "philz-los-angeles-hollywood",
+   "fit": 0.96,
+   "label": "test",
+   "verdict": "Strong fit: Hollywood's lively, social, foodie crowd of groups and couples should embrace a shareable, cocktail-style cold brew paired with fresh savory bites.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:live_music_venue",
+     "name": "Live music venue",
+     "affinity": 0.999987
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999973
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.99996
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999933
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999906
+    }
+   ],
+   "partners": [
+    {
+     "id": "21B92CCF-E8B2-428A-85B4-310DFCEB138C",
+     "name": "Kettle Glazed Doughnuts",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "B077AF99-2413-4C9A-90CF-44B8F6CFD3CA",
+     "name": "Groundwork Coffee Co.",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "220E7113-0C40-4EFE-9AFB-8441066EDB34",
+     "name": "The Coffee Bean & Tea Leaf",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Cold brew cocktail-style serve for groups and couples",
+    "Smoked salmon plate made for sharing",
+    "Citrus salad as a fresh, foodie-friendly side"
+   ]
+  },
+  "philz-san-francisco-folsom-beale": {
+   "store_id": "philz-san-francisco-folsom-beale",
+   "fit": 0.68,
+   "label": "test",
+   "verdict": "A moderately strong fit: Californian and New American foodies and social, celebratory diners should enjoy the cocktail-style cold brew paired with fresh citrus and smoked fish.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1088,55 +1320,1563 @@
     {
      "id": "urn:tag:ambience:qloo:lively",
      "name": "Lively",
-     "affinity": 0.999976
+     "affinity": 0.999958
     },
     {
      "id": "urn:tag:customer_identity:qloo:tourists",
      "name": "Tourists",
-     "affinity": 0.999953
-    },
-    {
-     "id": "urn:tag:customer_identity:qloo:locals",
-     "name": "Locals",
-     "affinity": 0.999929
+     "affinity": 0.99993
     },
     {
      "id": "urn:tag:customer_identity:qloo:foodies",
      "name": "Foodies",
-     "affinity": 0.999905
+     "affinity": 0.999916
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999902
     }
    ],
    "partners": [
     {
-     "id": "6F3EAF8B-0B63-4565-9C32-618F5557DFF7",
-     "name": "Blossom Chai Cafe",
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
      "affinity": null,
      "image": null
     },
     {
-     "id": "D872D137-8B5A-4045-AF76-0FC3454178F0",
-     "name": "Leigh's Favorite Books",
+     "id": "9C15E670-BBF5-4DB7-AD43-A8962A96EDF4",
+     "name": "Ghirardelli Ice Cream & Chocolate Shop",
      "affinity": null,
      "image": null
     },
     {
-     "id": "9948E117-F41F-4CC8-A936-CEC89D54F66F",
-     "name": "Coffee & More Cafe",
+     "id": "32CEDC38-674E-42A4-9929-9B7EE2BFD430",
+     "name": "Asha Tea House",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Keep the standard menu front and center",
-    "Offer shareable items for groups of friends and event crowds",
-    "Add a quick grab-and-go option for business professionals"
+    "Californian-style citrus salad for foodies",
+    "Cold brew cocktail for celebratory, social groups",
+    "Smoked salmon plate to share for couples and business professionals"
+   ]
+  },
+  "philz-san-francisco-second-street": {
+   "store_id": "philz-san-francisco-second-street",
+   "fit": 0.68,
+   "label": "test",
+   "verdict": "Moderate fit: the Californian and New American leanings and foodie crowd suit the bright, savory LTO, though its cocktail angle fits the lively, social mood.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999958
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99993
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999916
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999902
+    }
+   ],
+   "partners": [
+    {
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "222B15DF-DE5A-48D8-B018-85C44FA74DE1",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "9C15E670-BBF5-4DB7-AD43-A8962A96EDF4",
+     "name": "Ghirardelli Ice Cream & Chocolate Shop",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Citrus salad with a Californian bent",
+    "Smoked salmon plated New American style",
+    "Cold brew cocktail for social, celebratory sipping"
+   ]
+  },
+  "philz-los-angeles-dtla-hope": {
+   "store_id": "philz-los-angeles-dtla-hope",
+   "fit": 0.66,
+   "label": "test",
+   "verdict": "Good fit: the lively, foodie-leaning local crowd should welcome a cold brew cocktail paired with smoked salmon and citrus salad.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999986
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999944
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999917
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999903
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999875
+    }
+   ],
+   "partners": [
+    {
+     "id": "F69781A8-5967-4DFA-AD69-496D1023F55D",
+     "name": "The Last Bookstore",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "12B2DC06-E328-4975-89F2-EE98F42A186C",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "02CB0F4A-32B0-41AF-A3E6-1E6DB61D9FC6",
+     "name": "Pitchoun!",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Cold brew cocktail for a social, celebratory vibe",
+    "Smoked salmon plate for New American-minded foodies",
+    "Citrus salad as a fresh, shareable side for couples"
+   ]
+  },
+  "philz-glendale-glendale": {
+   "store_id": "philz-glendale-glendale",
+   "fit": 0.58,
+   "label": "test",
+   "verdict": "Glendale's lively, foodie-leaning New American crowd of groups and couples suits this bold, shareable cold brew and savory pairing offer.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999982
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.99993
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999912
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999877
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.99986
+    }
+   ],
+   "partners": [
+    {
+     "id": "F6D1C72E-09E3-4B60-B396-1E80746E51FE",
+     "name": "Porto's Bakery and Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "18DB4CB6-1A63-4E91-9DD2-8C6EF9836A44",
+     "name": "Barnes & Noble",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "635093C5-6292-4233-AF80-111BA8708AF2",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Cold brew cocktail for social groups",
+    "Smoked salmon plate to share",
+    "Citrus salad for a fresh New American touch"
+   ]
+  },
+  "philz-san-mateo-hillsdale": {
+   "store_id": "philz-san-mateo-hillsdale",
+   "fit": 0.55,
+   "label": "test",
+   "verdict": "Moderate fit: Hillsdale's Californian, New American, foodie-leaning crowd should welcome the cold brew cocktail and fresh citrus-forward items for celebratory outings.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:event_venue",
+     "name": "Event venue",
+     "affinity": 0.99997
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999941
+    },
+    {
+     "id": "urn:tag:genre:place:aquarium",
+     "name": "Aquarium",
+     "affinity": 0.999911
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999852
+    }
+   ],
+   "partners": [
+    {
+     "id": "165BCA7F-5286-4EEA-BD6B-45C47B696D8E",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "3B01A9DE-2D8F-4692-9134-6F29CDADF647",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "84202765-BF41-4C9B-8011-1F21F6CCEB7E",
+     "name": "Barnes & Noble",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Cold brew cocktail for celebratory diners",
+    "Smoked salmon plate with a New American touch",
+    "Citrus salad as a bright Californian-style pairing"
+   ]
+  },
+  "philz-oakland-lakeshore-oakland": {
+   "store_id": "philz-oakland-lakeshore-oakland",
+   "fit": 0.39,
+   "label": "maybe",
+   "verdict": "Maybe fits: the cocktail and citrus salad cues suit this Californian, New American, foodie crowd, but cold brew and smoked salmon are less certain.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999892
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999857
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999839
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999821
+    }
+   ],
+   "partners": [
+    {
+     "id": "580ADBE7-270E-46E4-AAAA-CC9CB4F6071E",
+     "name": "Arizmendi Bakery (Lakeshore)",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2004B326-237A-4BEC-A72E-6C68894998BF",
+     "name": "Walden Pond Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "D3BDFA58-8638-4250-A927-6622BFCE7CE8",
+     "name": "Bake Sum",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with the cocktail for social, celebratory groups",
+    "Pair citrus salad with the Californian, New American style",
+    "Offer smoked salmon as a shareable plate for foodies"
+   ]
+  },
+  "philz-colma-colma": {
+   "store_id": "philz-colma-colma",
+   "fit": 0.34,
+   "label": "maybe",
+   "verdict": "Maybe fits: local salad and dessert tags align with the citrus salad and cold brew, but cocktail and smoked salmon feel less proven.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 0.999968
+    },
+    {
+     "id": "urn:tag:specialty_dish:place:house_made_tiramisu",
+     "name": "House Made Tiramisu",
+     "affinity": 0.999935
+    },
+    {
+     "id": "urn:tag:specialty_dish:place:salad_bowl",
+     "name": "Salad Bowl",
+     "affinity": 0.999741
+    },
+    {
+     "id": "urn:tag:genre:place:planetarium",
+     "name": "Planetarium",
+     "affinity": 0.999708
+    },
+    {
+     "id": "urn:tag:specialty_dish:place:chocolate_cheesecake",
+     "name": "Chocolate Cheesecake",
+     "affinity": 0.999676
+    }
+   ],
+   "partners": [
+    {
+     "id": "F776F10C-B6AD-462E-9DEF-8B5BB3903E6E",
+     "name": "85\u00b0C Bakery Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "C68532F0-A99A-426A-9048-CE509C194746",
+     "name": "Panera Bread",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "A7E777E3-D4E5-4113-9D55-509275E14F82",
+     "name": "Auntie Anne's",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Citrus salad bowl with Californian freshness",
+    "Cold brew paired with tiramisu-style dessert notes",
+    "Chocolate cheesecake or bread pudding sweet side"
+   ]
+  },
+  "philz-san-mateo-san-mateo": {
+   "store_id": "philz-san-mateo-san-mateo",
+   "fit": 0.3,
+   "label": "maybe",
+   "verdict": "Maybe a fit: San Mateo's Californian, New American, foodie-leaning crowd may enjoy this lively, celebratory-style offer, though the fit is only slightly above average.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999956
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999934
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999912
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999869
+    }
+   ],
+   "partners": [
+    {
+     "id": "077215ED-F331-40A4-85A1-1D5962A97C37",
+     "name": "Icicles San Mateo",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1EFFBD95-DE36-479C-824F-CA96F0A57A30",
+     "name": "Meet Fresh | San Mateo",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F18F9EE5-68D3-4B67-A1E8-10877C99BEE0",
+     "name": "Backhaus | San Mateo",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with Californian-style citrus salad and smoked salmon for foodies",
+    "Pitch the cold brew cocktail as a shareable treat for groups and couples",
+    "Keep descriptions polished and New American for business professionals and tourists"
+   ]
+  },
+  "philz-san-francisco-russian-hill": {
+   "store_id": "philz-san-francisco-russian-hill",
+   "fit": 0.28,
+   "label": "maybe",
+   "verdict": "Russian Hill is a maybe: its Californian, foodie, social crowd may welcome the cocktail and citrus salad, but the fit is only modest.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999954
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999923
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999908
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999831
+    }
+   ],
+   "partners": [
+    {
+     "id": "E618726C-04E8-4A81-B919-041B371033D9",
+     "name": "Ghirardelli Chocolate Experience",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "556332E7-D945-4CCA-8E6D-692249912D21",
+     "name": "Ghirardelli Chocolate To Go",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "419318B7-B85D-4057-B2E7-7315617D4BA9",
+     "name": "Mara's Italian Pastries",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Californian-style citrus salad",
+    "Cold brew cocktail for social sipping",
+    "Smoked salmon for foodie appeal"
+   ]
+  },
+  "philz-menlo-park-menlo-park": {
+   "store_id": "philz-menlo-park-menlo-park",
+   "fit": 0.26,
+   "label": "maybe",
+   "verdict": "Maybe fits: the Californian, New American, foodie-leaning crowd may enjoy the fresh, citrus-forward items, but the fit is only modestly above average.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999974
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999895
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999869
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999843
+    }
+   ],
+   "partners": [
+    {
+     "id": "65D8ED68-54A9-4FB0-8846-CCC3E0D2CFCB",
+     "name": "Kepler's Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "74FBA430-848F-4C7F-8BE3-7BB73C7681E6",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "12AEB38C-119B-439A-BB7C-0798074045A5",
+     "name": "Coffeebar Menlo Park",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Citrus Salad highlights Californian freshness",
+    "Smoked Salmon suits New American foodies",
+    "Cold Brew Cocktail for social, celebratory sipping"
+   ]
+  },
+  "philz-san-francisco-berry": {
+   "store_id": "philz-san-francisco-berry",
+   "fit": 0.17,
+   "label": "maybe",
+   "verdict": "Maybe fits: the cocktail and citrus elements suit the Californian, New American, lively, social crowd, but fit is only slightly above average.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999935
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999886
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.99987
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+     "name": "Cocktail Enthusiasts",
+     "affinity": 0.999854
+    }
+   ],
+   "partners": [
+    {
+     "id": "AA7659F0-6F3C-4C62-9712-415C51528088",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "428F933E-D9D8-4598-A280-5B40232BC36E",
+     "name": "Steep Creamery & Tea",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "5F7902D6-E671-4A9C-B84D-12EEC0454E4C",
+     "name": "SPRO - Mission Bay/SOMA",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Cold brew cocktail for cocktail enthusiasts",
+    "Citrus salad with a Californian feel",
+    "Smoked salmon share plate for groups and foodies"
+   ]
+  },
+  "philz-san-francisco-castro": {
+   "store_id": "philz-san-francisco-castro",
+   "fit": 0.05,
+   "label": "maybe",
+   "verdict": "Castro's Californian, foodie-leaning crowd may enjoy the offer, but the fit is only neutral, so a limited trial seems sensible.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999901
+    },
+    {
+     "id": "urn:tag:genre:place:art_museum",
+     "name": "Art museum",
+     "affinity": 0.999884
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999868
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999851
+    }
+   ],
+   "partners": [
+    {
+     "id": "FBBAF1EE-BC5A-4A9C-A971-2910A2214F27",
+     "name": "Tartine Bakery",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "EAA5BAB9-713F-4936-A67D-B4C2117C0BD1",
+     "name": "Bi-Rite Creamery",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "ACBD0CD8-6974-4984-8F9C-F9637552C820",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Highlight the citrus salad as a fresh Californian touch",
+    "Pitch the cold brew cocktail as a social, shareable pairing",
+    "Feature smoked salmon for foodies and couples"
+   ]
+  },
+  "philz-san-jose-willow-glen": {
+   "store_id": "philz-san-jose-willow-glen",
+   "fit": 0.03,
+   "label": "maybe",
+   "verdict": "Willow Glen is a neutral fit: Californian, Southwestern, and Asian tastes suit citrus and smoked salmon, but cocktail-style cold brew is unproven.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999971
+    },
+    {
+     "id": "urn:tag:specialty_dish:place:salsa_bar",
+     "name": "Salsa Bar",
+     "affinity": 0.999912
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:southwestern_restaurant_us",
+     "name": "Southwestern restaurant (US)",
+     "affinity": 0.999883
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.999824
+    }
+   ],
+   "partners": [
+    {
+     "id": "DD845ADE-3ED0-45A1-A827-236FA49038AA",
+     "name": "Icicles",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "C3E4042D-2330-4AAF-AB45-B2EDA247DEB0",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "A3F98976-A12B-488B-93F0-98073C3116FF",
+     "name": "Arteagas Food Center",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair citrus salad with Californian-style fresh flavors",
+    "Offer smoked salmon with a salsa bar-style topping option",
+    "Highlight brunch-friendly pairings with cold brew"
+   ]
+  },
+  "philz-pasadena-pasadena": {
+   "store_id": "philz-pasadena-pasadena",
+   "fit": -0.07,
+   "label": "maybe",
+   "verdict": "Pasadena is a maybe: the lively, social, foodie-leaning crowd suits a New American-style offer, though the fit is roughly neutral.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:live_music_venue",
+     "name": "Live music venue",
+     "affinity": 0.99998
+    },
+    {
+     "id": "urn:tag:genre:place:arena",
+     "name": "Arena",
+     "affinity": 0.999939
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999899
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999838
+    }
+   ],
+   "partners": [
+    {
+     "id": "6727E76E-6630-425F-B109-E9437AB50543",
+     "name": "Vroman's Bookstore",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1D901CB9-87C1-4A91-9A07-D6B83EC0A1AD",
+     "name": "Afters Ice Cream",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "39D233A5-409B-48F0-8601-3A244A0D6197",
+     "name": "Madeline Garden Bistro & Venue",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with New American flavors for foodies",
+    "Shareable pairings for social couples and groups",
+    "Quick, fun grab-and-go options for tourists and event crowds"
+   ]
+  },
+  "philz-palo-alto-forest-ave": {
+   "store_id": "philz-palo-alto-forest-ave",
+   "fit": -0.09,
+   "label": "maybe",
+   "verdict": "Maybe fits: the Californian, New American, foodie crowd may enjoy the citrus salad and smoked salmon, but the cold brew cocktail is a gamble.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999982
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:business_professionals",
+     "name": "Business Professionals",
+     "affinity": 0.999929
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.999912
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999877
+    }
+   ],
+   "partners": [
+    {
+     "id": "6F9390F7-89D5-49B9-9192-C5B96DF687FC",
+     "name": "Palo Alto Creamery",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "58D5BFD8-62BB-4857-B5F4-B496FD0BCEB9",
+     "name": "Salt & Straw",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "9A76359D-FAFB-4CF3-9921-1C680570EAA7",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Spotlight the citrus salad as a fresh Californian-style pairing",
+    "Present smoked salmon as a New American shareable for foodies",
+    "Frame the cold brew cocktail as a celebratory, social sip for wine enthusiasts"
+   ]
+  },
+  "philz-redwood-city-redwood-city": {
+   "store_id": "philz-redwood-city-redwood-city",
+   "fit": -0.22,
+   "label": "maybe",
+   "verdict": "Maybe fits: Redwood City's lively, social foodies may enjoy the Californian-style citrus salad, but the cocktail and smoked salmon feel less certain.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999955
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999909
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999887
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999841
+    }
+   ],
+   "partners": [
+    {
+     "id": "CBA20786-F4DB-4B45-8731-3815FC394772",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2AB2BC97-0770-4DC7-B000-F5518BC29922",
+     "name": "Barnes & Noble",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "E215043D-551C-496F-AE79-8C70D19AD5F9",
+     "name": "Teaspoon Redwood City",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair the citrus salad with Californian flavors",
+    "Offer shareable portions for groups of friends",
+    "Frame cold brew cocktail as a fun, social drink"
+   ]
+  },
+  "philz-los-angeles-los-feliz": {
+   "store_id": "philz-los-angeles-los-feliz",
+   "fit": -0.22,
+   "label": "maybe",
+   "verdict": "Maybe fits: Los Feliz's New American, cocktail-loving, foodie crowd suits a cocktail-style cold brew, though the fit is slightly below average.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.99998
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.99992
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+     "name": "Cocktail Enthusiasts",
+     "affinity": 0.999879
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999819
+    },
+    {
+     "id": "urn:tag:genre:place:live_music_venue",
+     "name": "Live music venue",
+     "affinity": 0.999739
+    }
+   ],
+   "partners": [
+    {
+     "id": "37ECA26E-222D-4366-AD12-438AFC0076F8",
+     "name": "Skylight Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "AB280D60-52F3-4132-BBFE-FBE8100CC5F6",
+     "name": "House of Pies",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F8C5052A-73B9-41E6-A42D-C15A9EF95649",
+     "name": "Jeni's Splendid Ice Creams",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Cocktail-style cold brew for cocktail enthusiasts",
+    "New American smoked salmon plate for foodies",
+    "Shareable citrus salad for social couples"
+   ]
+  },
+  "philz-los-gatos-los-gatos": {
+   "store_id": "philz-los-gatos-los-gatos",
+   "fit": -0.26,
+   "label": "maybe",
+   "verdict": "Maybe: Los Gatos's Californian, New American, foodie crowd may enjoy the offer, but fit is slightly below average, so test cautiously.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.99996
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.99992
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.99988
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99986
+    }
+   ],
+   "partners": [
+    {
+     "id": "55F2EE59-9EFC-430A-82AA-AE90F4D52844",
+     "name": "Classic Burgers of Los Gatos",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1A5ADFAF-CC8B-4F93-87B1-7A2387925DD3",
+     "name": "Blvd Coffee",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "577A58C8-539F-40EC-8AC6-54901763CE66",
+     "name": "Noah's NY Bagels",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair cold brew cocktail with citrus salad for Californian palates",
+    "Position smoked salmon as a New American foodie plate",
+    "Offer a celebratory couples' sampler for wine enthusiasts"
+   ]
+  },
+  "philz-walnut-creek-walnut-creek": {
+   "store_id": "philz-walnut-creek-walnut-creek",
+   "fit": -0.38,
+   "label": "maybe",
+   "verdict": "Maybe: Walnut Creek's cocktail-loving, foodie, wine-minded crowd may welcome the cold brew cocktail and citrus salad, though the fit is slightly below average.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.999981
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:wine_enthusiasts",
+     "name": "Wine Enthusiasts",
+     "affinity": 0.999926
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999888
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:couples",
+     "name": "Couples",
+     "affinity": 0.999851
+    }
+   ],
+   "partners": [
+    {
+     "id": "F14E967F-A6E2-4116-B24D-22CAD0C63C3E",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "B4F7AEE1-E625-4126-AAA6-1750CED70E24",
+     "name": "San Francisco Creamery",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "B236E3D8-7080-417A-BACE-8355D23A2B09",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Cold brew cocktail for cocktail enthusiasts",
+    "Citrus salad with a Californian feel",
+    "Smoked salmon plate for foodies and celebratory diners"
+   ]
+  },
+  "philz-san-jose-brokaw-commons": {
+   "store_id": "philz-san-jose-brokaw-commons",
+   "fit": -0.55,
+   "label": "skip",
+   "verdict": "Skip: the cold brew cocktail and smoked salmon offer only loosely matches the area's Californian, Japanese, sushi and Vietnamese tastes, with a below-average fit.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:asian",
+     "name": "Asian",
+     "affinity": 0.999962
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:dessert_shop",
+     "name": "Dessert shop",
+     "affinity": 0.999924
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:sushi",
+     "name": "Sushi",
+     "affinity": 0.999885
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:japanese",
+     "name": "Japanese",
+     "affinity": 0.999847
+    }
+   ],
+   "partners": [
+    {
+     "id": "E0DE0B3A-23ED-49E7-9B31-D9CD2D717108",
+     "name": "Cauldron Ice Cream",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6DDCA5C0-1FA7-4C64-8703-3987C7900E51",
+     "name": "Anton",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F111C788-0D24-4CBF-965A-7809F649A979",
+     "name": "Noah's NY Bagels",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Citrus salad with Californian-style freshness",
+    "Sushi-inspired smoked salmon bite for Japanese tastes",
+    "Single-serve cold brew for solo diners"
+   ]
+  },
+  "philz-san-francisco-noe-valley": {
+   "store_id": "philz-san-francisco-noe-valley",
+   "fit": -0.74,
+   "label": "skip",
+   "verdict": "Skip: the Californian, park-and-walking local tags only loosely match this heavier cocktail and smoked salmon offer, so fit is weak.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999976
+    },
+    {
+     "id": "urn:tag:genre:place:planetarium",
+     "name": "Planetarium",
+     "affinity": 0.999929
+    },
+    {
+     "id": "urn:tag:genre:place:art_museum",
+     "name": "Art museum",
+     "affinity": 0.999857
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999834
+    }
+   ],
+   "partners": [
+    {
+     "id": "9AA88919-DCEA-4B03-A53B-1E5DCA203E5D",
+     "name": "Lovejoy's Tea Room",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "D155D3CF-72C6-45EA-843D-A4E4C0484A53",
+     "name": "Omnivore Books on Food",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "4E3F2F4B-DD8E-4673-BB89-B7ACB347EAE7",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Citrus salad as a light Californian nod",
+    "Cold brew for walkers and hikers on the go",
+    "Skip the cocktail and smoked salmon items"
+   ]
+  },
+  "philz-torrance-del-amo-fashion-center": {
+   "store_id": "philz-torrance-del-amo-fashion-center",
+   "fit": -0.93,
+   "label": "skip",
+   "verdict": "Skip: the offer's cocktail, smoked salmon and citrus salad profile fits poorly with this lively, group-driven New American crowd (fit z-score -0.93).",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:ice_hockey_rink",
+     "name": "Ice hockey rink",
+     "affinity": 0.999961
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999941
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999902
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999882
+    }
+   ],
+   "partners": [
+    {
+     "id": "B5E317A8-5954-489F-BCD7-40503391649D",
+     "name": "Barnes & Noble",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F22CABCE-4C82-461D-9302-20A438D0E482",
+     "name": "BOOKOFF Del Amo Fashion Center",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6C014C73-713A-4617-8DAC-53BD86CF999C",
+     "name": "The Coffee Bean & Tea Leaf",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with cold brew for lively groups of friends",
+    "Pair with shareable New American-style bites for foodies",
+    "Keep it quick and fun for arena crowds and regulars"
+   ]
+  },
+  "philz-san-francisco-chase-center": {
+   "store_id": "philz-san-francisco-chase-center",
+   "fit": -0.97,
+   "label": "skip",
+   "verdict": "Skip: the offer's cocktail and smoked salmon feel too leisurely for an energetic, social, celebratory arena crowd seeking quick, shareable pre-event items.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:stadium",
+     "name": "Stadium",
+     "affinity": 0.999931
+    },
+    {
+     "id": "urn:tag:genre:place:arena",
+     "name": "Arena",
+     "affinity": 0.999885
+    },
+    {
+     "id": "urn:tag:genre:place:amphitheater",
+     "name": "Amphitheater",
+     "affinity": 0.999862
+    },
+    {
+     "id": "urn:tag:genre:place:concert_hall",
+     "name": "Concert hall",
+     "affinity": 0.999793
+    }
+   ],
+   "partners": [
+    {
+     "id": "A8BCAF75-A0CE-4398-8C42-DD74D8BA606E",
+     "name": "Neighbor Bakehouse",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "AA7659F0-6F3C-4C62-9712-415C51528088",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "5F7902D6-E671-4A9C-B84D-12EEC0454E4C",
+     "name": "SPRO - Mission Bay/SOMA",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lean on Californian flavors",
+    "Keep cold brew grab-and-go",
+    "Skip plated salads and salmon"
+   ]
+  },
+  "philz-san-francisco-potrero": {
+   "store_id": "philz-san-francisco-potrero",
+   "fit": -1.0,
+   "label": "skip",
+   "verdict": "Skip: the offer's cocktail and smoked salmon profile fits poorly with this lively, social, foodie crowd, scoring a below-average fit of -1.0.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999988
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999976
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999939
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999914
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999902
+    }
+   ],
+   "partners": [
+    {
+     "id": "5E6AC0AF-85AB-4112-B939-FD6236174874",
+     "name": "Tartine Manufactory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F7D6044A-0A47-48D4-96FC-85D8A454E40F",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "16B88248-E207-4607-AF75-990E911C2A58",
+     "name": "Milkbomb Ice Cream",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Keep to simple, shareable items for groups of friends",
+    "Offer a welcoming, easy-to-order option for tourists and locals",
+    "Cold brew alone may suit the lively, fun vibe"
+   ]
+  },
+  "philz-cupertino-deanza-cupertino": {
+   "store_id": "philz-cupertino-deanza-cupertino",
+   "fit": -1.11,
+   "label": "skip",
+   "verdict": "Skip: the cold brew cocktail with smoked salmon and citrus salad fits poorly with this lively, Californian and New American foodie crowd of locals, tourists and professionals.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999977
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999954
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999931
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999862
+    }
+   ],
+   "partners": [
+    {
+     "id": "46C8798C-A297-42F1-BDB1-16A36C6FFEC4",
+     "name": "99 Ranch Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "25E4F1D9-6181-44DD-ABC2-12A78D37180A",
+     "name": "Paris Baguette",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "069CE4BA-53B9-40FA-9992-1A61F41F155F",
+     "name": "Panera Bread",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lean on Californian freshness, such as the citrus salad",
+    "Offer shareable portions for groups of friends and couples",
+    "Pitch the cold brew cocktail as a celebratory option"
+   ]
+  },
+  "philz-san-jose-philz-coffee-san-jose": {
+   "store_id": "philz-san-jose-philz-coffee-san-jose",
+   "fit": -1.15,
+   "label": "skip",
+   "verdict": "Skip: the offer's cocktail and smoked salmon cues fit this lively, Californian crowd of groups and foodies only weakly, scoring below average.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999985
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99997
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999955
+    },
+    {
+     "id": "urn:tag:genre:place:live_music_venue",
+     "name": "Live music venue",
+     "affinity": 0.99991
+    }
+   ],
+   "partners": [
+    {
+     "id": "A96232EF-D64F-4BD1-977B-2550303FC78B",
+     "name": "CREAM",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "C7A5E368-BFA6-44AA-B98C-F52831CB8FBF",
+     "name": "Boba Bar",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "C7546A24-8DF0-42D0-AC01-46D2DC828D58",
+     "name": "My Milkshake",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Citrus-forward cold brew for Californian tastes",
+    "Shareable bites for groups of friends",
+    "Keep it light and fun for event crowds"
+   ]
+  },
+  "philz-fremont-fremont": {
+   "store_id": "philz-fremont-fremont",
+   "fit": -1.5,
+   "label": "skip",
+   "verdict": "Skip: the offer's cold brew cocktail and smoked salmon lean doesn't match Fremont's local Californian and New American tastes, scoring well below average fit.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999958
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999894
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999873
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:groups_of_friends",
+     "name": "Groups of Friends",
+     "affinity": 0.99983
+    }
+   ],
+   "partners": [
+    {
+     "id": "05BC76F4-4AC6-48A3-89D4-E900B9F08488",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "8B545171-3882-4FEA-B374-3606836BD16E",
+     "name": "Half Price Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "67AB6514-B2D0-4807-A1B3-1BA0DC66E77B",
+     "name": "Panera Bread",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lean on Californian flavors",
+    "Offer New American-style plates for foodies",
+    "Keep portions shareable for lively groups of friends"
    ]
   },
   "philz-campbell-campbell": {
    "store_id": "philz-campbell-campbell",
-   "fit": -1.63,
+   "fit": -1.53,
    "label": "skip",
-   "verdict": "Skip: the cold brew and smoked salmon offer fits poorly with this Californian, New American, foodie-driven, lively crowd of groups and couples (z-score -1.63).",
+   "verdict": "Skip: the Cold Brew, Cocktail, Smoked Salmon and Citrus Salad offer fits poorly with this lively, Californian, New American crowd of foodies.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1186,15 +2926,73 @@
    ],
    "menu_cues": [
     "Lean into Californian and New American flavors",
-    "Make shareable items for groups of friends and couples",
-    "Offer something celebratory for lively foodie crowds"
+    "Make dishes shareable for groups of friends and couples",
+    "Offer a celebratory option for lively, festive diners"
    ]
   },
-  "philz-fremont-fremont": {
-   "store_id": "philz-fremont-fremont",
-   "fit": -1.6,
+  "philz-orange-old-towne-orange": {
+   "store_id": "philz-orange-old-towne-orange",
+   "fit": -1.59,
    "label": "skip",
-   "verdict": "Skip: the cold, citrus-and-salmon offer fits poorly with Fremont's lively, foodie-leaning Californian and New American crowd, scoring well below average.",
+   "verdict": "Skip: the offer's savory, cocktail-style items fit this lively, foodie crowd poorly, as reflected by the negative fit score of -1.59.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.99998
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99996
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999901
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999862
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999822
+    }
+   ],
+   "partners": [
+    {
+     "id": "6A6FBCB7-517C-43DD-AD53-CAAC99FBBB8B",
+     "name": "The Filling Station Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "8EBB8265-DB1D-4F46-A347-32D3C70DB34D",
+     "name": "CONTRA COFFEE and TEA",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6300C83A-6C29-41A4-95F2-C814C03D337D",
+     "name": "La Poblana Bakery",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Offer a shareable, group-friendly format",
+    "Keep flavors simple and American-style",
+    "Lead with cold brew for lively, social visits"
+   ]
+  },
+  "philz-sunnyvale-sunnyvale": {
+   "store_id": "philz-sunnyvale-sunnyvale",
+   "fit": -1.9,
+   "label": "skip",
+   "verdict": "Skip: the offer fits poorly here, with a fit score of -1.9 against this Californian, lively, foodie-leaning local profile.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1202,50 +3000,108 @@
      "affinity": 1
     },
     {
-     "id": "urn:tag:customer_identity:qloo:locals",
-     "name": "Locals",
-     "affinity": 0.999958
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999976
     },
     {
      "id": "urn:tag:customer_identity:qloo:tourists",
      "name": "Tourists",
+     "affinity": 0.999953
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999929
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999905
+    }
+   ],
+   "partners": [
+    {
+     "id": "6F3EAF8B-0B63-4565-9C32-618F5557DFF7",
+     "name": "Blossom Chai Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "D872D137-8B5A-4045-AF76-0FC3454178F0",
+     "name": "Leigh's Favorite Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "9948E117-F41F-4CC8-A936-CEC89D54F66F",
+     "name": "Coffee & More Cafe",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Keep Californian-style fresh, citrus-forward flavors",
+    "Offer shareable items for groups of friends",
+    "Consider a simple cold option for lively event crowds"
+   ]
+  },
+  "philz-brea-brea-mall": {
+   "store_id": "philz-brea-brea-mall",
+   "fit": -2.26,
+   "label": "skip",
+   "verdict": "Skip: the offer's cocktail and smoked salmon profile fits poorly with this casual, lively, American-leaning crowd of regulars, tourists, and friend groups.",
+   "why_tags": [
+    {
+     "id": "urn:tag:customer_identity:qloo:regulars",
+     "name": "Regulars",
      "affinity": 0.999894
     },
     {
      "id": "urn:tag:ambience:qloo:lively",
      "name": "Lively",
-     "affinity": 0.999873
+     "affinity": 0.999815
     },
     {
-     "id": "urn:tag:customer_identity:qloo:groups_of_friends",
-     "name": "Groups of Friends",
-     "affinity": 0.99983
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999789
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999736
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:american",
+     "name": "American",
+     "affinity": 0.999709
     }
    ],
    "partners": [
     {
-     "id": "05BC76F4-4AC6-48A3-89D4-E900B9F08488",
-     "name": "Whole Foods Market",
+     "id": "6C69FBAF-6577-4920-BAEC-0F61AED1D77D",
+     "name": "The Cheesecake Factory",
      "affinity": null,
      "image": null
     },
     {
-     "id": "8B545171-3882-4FEA-B374-3606836BD16E",
-     "name": "Half Price Books",
+     "id": "FE2EA394-972D-441D-A473-C5F7E8580C35",
+     "name": "Crumbl Cookies",
      "affinity": null,
      "image": null
     },
     {
-     "id": "67AB6514-B2D0-4807-A1B3-1BA0DC66E77B",
+     "id": "F940F600-D3B9-4875-AEF1-D69E8F45F92D",
      "name": "Panera Bread",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Lean on Californian and New American flavors",
-    "Make items easy to share for groups of friends",
-    "Offer a celebratory option for foodies"
+    "Keep cold brew as the only featured item for casual regulars",
+    "Skip smoked salmon and cocktail-style items for this American casual crowd",
+    "Offer shareable, fun options for groups of friends and couples"
    ]
   }
  },
@@ -1294,7 +3150,7 @@
    "type": "trace",
    "tool": "find_tags",
    "args": {
-    "query": "mezcal"
+    "query": "gin and tonic"
    },
    "summary": "0 results"
   },
@@ -1310,25 +3166,17 @@
    "type": "trace",
    "tool": "find_tags",
    "args": {
+    "query": "cocktail"
+   },
+   "summary": "1 results: Cocktail"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
     "query": "orange"
    },
    "summary": "4 results: Orange Chicken, Orange Cake, Orange Beef"
-  },
-  {
-   "type": "trace",
-   "tool": "find_tags",
-   "args": {
-    "query": "gin and tonic"
-   },
-   "summary": "0 results"
-  },
-  {
-   "type": "trace",
-   "tool": "find_tags",
-   "args": {
-    "query": "iced coffee"
-   },
-   "summary": "1 results: Iced Coffee"
   },
   {
    "type": "trace",
@@ -1336,9 +3184,9 @@
    "args": {
     "items": [
      "Cold Brew",
-     "Iced Coffee",
-     "Citrus Salad",
-     "Smoked Salmon"
+     "Cocktail",
+     "Smoked Salmon",
+     "Citrus Salad"
     ]
    },
    "summary": "40 of 40 stores scored"
@@ -1363,6 +3211,14 @@
    "type": "trace",
    "tool": "area_taste",
    "args": {
+    "store": "Culver City"
+   },
+   "summary": "10 results: New American, Cocktail Enthusiasts, Social"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
     "store": "Embarcadero"
    },
    "summary": "10 results: Californian, Lively, Social"
@@ -1379,9 +3235,9 @@
    "type": "trace",
    "tool": "area_taste",
    "args": {
-    "store": "Cupertino Main"
+    "store": "Brea Mall"
    },
-   "summary": "10 results: Californian, Lively, Foodies"
+   "summary": "10 results: Regulars, Lively, Tourists"
   },
   {
    "type": "trace",
@@ -1395,17 +3251,9 @@
    "type": "trace",
    "tool": "area_taste",
    "args": {
-    "store": "Campbell"
+    "store": "Old Towne Orange"
    },
-   "summary": "10 results: Californian, New American, Foodies"
-  },
-  {
-   "type": "trace",
-   "tool": "area_taste",
-   "args": {
-    "store": "Fremont"
-   },
-   "summary": "10 results: Californian, Locals, Tourists"
+   "summary": "10 results: Lively, Tourists, Locals"
   }
  ]
 }

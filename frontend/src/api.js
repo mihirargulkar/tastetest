@@ -1,7 +1,11 @@
 async function check(res) {
   if (res.ok) return res;
   const body = await res.json().catch(() => ({}));
-  throw new Error(body.detail || `Request failed (${res.status})`);
+  const d = body.detail;
+  const msg = typeof d === "string" ? d
+    : Array.isArray(d) ? d.map((x) => x.msg).join("; ")
+    : d ? JSON.stringify(d) : "";
+  throw new Error(msg || `Request failed (${res.status})`);
 }
 
 export async function streamPost(url, body, onEvent) {

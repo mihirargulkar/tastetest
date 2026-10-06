@@ -31,7 +31,8 @@ def events(response):
     return [json.loads(line[6:]) for line in response.text.split("\n\n") if line.startswith("data: ")]
 
 
-def test_stores(client):
+def test_stores(client, monkeypatch):
+    monkeypatch.setattr(main, "STORES", STORES)
     assert client.get("/api/stores").json() == STORES
 
 
@@ -51,6 +52,8 @@ def test_signature_streams_events(client, monkeypatch):
     r = client.post("/api/signature", json={"lto": "matcha"})
     assert r.headers["content-type"].startswith("text/event-stream")
     assert [e["type"] for e in events(r)] == ["trace", "signature"]
+    assert r.headers["cache-control"] == "no-cache"
+    assert r.headers["x-accel-buffering"] == "no"
 
 
 def test_errors_are_sent_in_stream(client, monkeypatch):
@@ -122,3 +125,29 @@ def test_unexpected_error_text_hidden_from_stream(client, monkeypatch):
     r = client.post("/api/score", json={"signature": SIG})
     assert "secret upstream body" not in r.text
     assert events(r) == [{"type": "error", "message": "Something went wrong. Try one of the preloaded examples."}]
+
+
+def test_global_daily_ceiling_across_ips(client, monkeypatch):
+    _ok_score(monkeypatch)
+    monkeypatch.setattr(main, "GLOBAL_LIVE_PER_DAY", 2)
+    monkeypatch.setattr(main, "GLOBAL_LIVE_PER_HOUR", 1000)
+    codes = [
+        client.post("/api/score", json={"signature": SIG}, headers={"X-Forwarded-For": f"8.8.8.{i}"}).status_code
+        for i in range(3)
+    ]
+    assert codes == [200, 200, 429]
+
+
+def test_demos_and_stores_load_without_keys(monkeypatch):
+    for a in ("tools", "llm"):
+        if hasattr(main.app.state, a):
+            delattr(main.app.state, a)
+    monkeypatch.delenv("QLOO_API_KEY", raising=False)
+    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.setattr(main, "DEMOS", main.DATA / "demos")
+    c = TestClient(main.app)
+    assert len(c.get("/api/stores").json()) == 40
+    listed = c.get("/api/demos").json()
+    assert len(listed) == 3
+    assert all(c.get(f"/api/demos/{d['slug']}").status_code == 200 for d in listed)
+    assert not hasattr(main.app.state, "tools")

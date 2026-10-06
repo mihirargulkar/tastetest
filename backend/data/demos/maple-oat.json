@@ -29,14 +29,21 @@
    "name": "Oatmeal Raisin Cookie",
    "kind": "tag",
    "weight": 0.4,
-   "substituted_from": "oatmeal cookie"
+   "substituted_from": "oat"
   },
   {
    "id": "urn:tag:specialty_dish:place:apple_pie",
    "name": "Apple Pie",
    "kind": "tag",
-   "weight": 0.3,
+   "weight": 0.4,
    "substituted_from": "fall comfort"
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:cinnamon_roll",
+   "name": "Cinnamon Roll",
+   "kind": "tag",
+   "weight": 0.35,
+   "substituted_from": "cozy nostalgic"
   }
  ],
  "result": {
@@ -49,14 +56,15 @@
     "lat": 37.781385,
     "lon": -122.416976,
     "metro": "Bay Area",
-    "affinity": 0.9806882890442188,
+    "affinity": 0.9813586072966918,
     "popularity": 1,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9955156950672646,
      "urn:tag:specialty_dish:place:oatmilk_latte": 1,
      "urn:tag:specialty_dish:place:brown_butter": 0.9695121951219512,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.9097222222222222,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9977528089887641
+     "urn:tag:specialty_dish:place:apple_pie": 0.9977528089887641,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9831862126944094
     },
     "fit": 1.65,
     "confidence": "high"
@@ -68,14 +76,15 @@
     "lat": 37.7945298,
     "lon": -122.3951458,
     "metro": "Bay Area",
-    "affinity": 0.9657274226869357,
-    "popularity": 0.9696454713022384,
+    "affinity": 0.9694546896855264,
+    "popularity": 0.9742842147358923,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9820627802690582,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.9186046511627907,
      "urn:tag:specialty_dish:place:brown_butter": 0.9939024390243902,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.9513888888888888,
-     "urn:tag:specialty_dish:place:apple_pie": 0.996629213483146
+     "urn:tag:specialty_dish:place:apple_pie": 0.996629213483146,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9978982765868012
     },
     "fit": 1.59,
     "confidence": "high"
@@ -87,14 +96,15 @@
     "lat": 37.7918825,
     "lon": -122.3988519,
     "metro": "Bay Area",
-    "affinity": 0.9567978077850706,
-    "popularity": 0.9857158307485109,
+    "affinity": 0.961245033073979,
+    "popularity": 0.9879564107295459,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9730941704035875,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.9844961240310077,
      "urn:tag:specialty_dish:place:brown_butter": 0.9512195121951219,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8333333333333334,
-     "urn:tag:specialty_dish:place:apple_pie": 0.998876404494382
+     "urn:tag:specialty_dish:place:apple_pie": 0.998876404494382,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9936948297604036
     },
     "fit": 1.56,
     "confidence": "high"
@@ -106,16 +116,17 @@
     "lat": 34.0462665,
     "lon": -118.2596525,
     "metro": "LA basin",
-    "affinity": 0.8943651484859819,
-    "popularity": 0.9766333295525866,
+    "affinity": 0.9035266686085995,
+    "popularity": 0.9800643435519955,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.8914473684210527,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.928388746803069,
      "urn:tag:specialty_dish:place:brown_butter": 0.864406779661017,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8095238095238095,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9950310559006211
+     "urn:tag:specialty_dish:place:apple_pie": 0.9950310559006211,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9663801820020222
     },
-    "fit": 1.3,
+    "fit": 1.29,
     "confidence": "high"
    },
    {
@@ -125,16 +136,17 @@
     "lat": 34.0976563,
     "lon": -118.3299312,
     "metro": "LA basin",
-    "affinity": 0.8839283412110713,
-    "popularity": 0.9911892234378916,
+    "affinity": 0.8944649429848721,
+    "popularity": 0.9925312959050175,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.8930921052631579,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.90153452685422,
      "urn:tag:specialty_dish:place:brown_butter": 0.9084745762711864,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.6904761904761905,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9930434782608696
+     "urn:tag:specialty_dish:place:apple_pie": 0.9930434782608696,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9686552072800809
     },
-    "fit": 1.26,
+    "fit": 1.25,
     "confidence": "high"
    },
    {
@@ -144,14 +156,15 @@
     "lat": 37.7601055,
     "lon": -122.4346797,
     "metro": "Bay Area",
-    "affinity": 0.8755067704382646,
-    "popularity": 0.8911265523680686,
+    "affinity": 0.8882104714707632,
+    "popularity": 0.9077308631370447,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9147982062780269,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8875968992248062,
      "urn:tag:specialty_dish:place:brown_butter": 0.8109756097560976,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.7916666666666666,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9921348314606742
+     "urn:tag:specialty_dish:place:apple_pie": 0.9921348314606742,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9819251786464901
     },
     "fit": 1.22,
     "confidence": "high"
@@ -163,16 +176,17 @@
     "lat": 34.0637237,
     "lon": -118.399308,
     "metro": "LA basin",
-    "affinity": 0.8700539328849851,
-    "popularity": 0.9092698379743628,
+    "affinity": 0.8816444894970222,
+    "popularity": 0.9214424248033745,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.8651315789473685,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.7595907928388747,
      "urn:tag:specialty_dish:place:brown_butter": 0.9220338983050848,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.9404761904761905,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9853416149068323
+     "urn:tag:specialty_dish:place:apple_pie": 0.9853416149068323,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9646107178968655
     },
-    "fit": 1.2,
+    "fit": 1.19,
     "confidence": "high"
    },
    {
@@ -182,16 +196,17 @@
     "lat": 37.4422033,
     "lon": -122.1616018,
     "metro": "Bay Area",
-    "affinity": 0.8685140728167956,
-    "popularity": 0.8747732718954124,
+    "affinity": 0.8811499064150045,
+    "popularity": 0.893192382597445,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.852017937219731,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.9147286821705426,
      "urn:tag:specialty_dish:place:brown_butter": 0.7682926829268293,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.9236111111111112,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9786516853932584
+     "urn:tag:specialty_dish:place:apple_pie": 0.9786516853932584,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9760403530895334
     },
-    "fit": 1.19,
+    "fit": 1.18,
     "confidence": "high"
    },
    {
@@ -201,16 +216,17 @@
     "lat": 37.7887269,
     "lon": -122.393156,
     "metro": "Bay Area",
-    "affinity": 0.8480108713520155,
-    "popularity": 0.8882960854847264,
+    "affinity": 0.8638172048711332,
+    "popularity": 0.9051619683929397,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.874439461883408,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.7945736434108527,
      "urn:tag:specialty_dish:place:brown_butter": 0.8780487804878049,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.7361111111111112,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9893258426966293
+     "urn:tag:specialty_dish:place:apple_pie": 0.9893258426966293,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9815048339638504
     },
-    "fit": 1.11,
+    "fit": 1.1,
     "confidence": "high"
    },
    {
@@ -220,16 +236,17 @@
     "lat": 37.7904312,
     "lon": -122.3952043,
     "metro": "Bay Area",
-    "affinity": 0.8480108713520155,
-    "popularity": 0.8882960854847264,
+    "affinity": 0.8638172048711332,
+    "popularity": 0.9051619683929397,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.874439461883408,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.7945736434108527,
      "urn:tag:specialty_dish:place:brown_butter": 0.8780487804878049,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.7361111111111112,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9893258426966293
+     "urn:tag:specialty_dish:place:apple_pie": 0.9893258426966293,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9815048339638504
     },
-    "fit": 1.11,
+    "fit": 1.1,
     "confidence": "high"
    },
    {
@@ -239,16 +256,17 @@
     "lat": 37.7975392,
     "lon": -122.4219848,
     "metro": "Bay Area",
-    "affinity": 0.8432798392969751,
-    "popularity": 0.8378624697248694,
+    "affinity": 0.8597238758346568,
+    "popularity": 0.861732806317593,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.7892376681614349,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8372093023255814,
      "urn:tag:specialty_dish:place:brown_butter": 0.8414634146341463,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8958333333333334,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9764044943820225
+     "urn:tag:specialty_dish:place:apple_pie": 0.9764044943820225,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9861286254728878
     },
-    "fit": 1.09,
+    "fit": 1.08,
     "confidence": "high"
    },
    {
@@ -258,35 +276,17 @@
     "lat": 34.1427824,
     "lon": -118.2547408,
     "metro": "LA basin",
-    "affinity": 0.8423632392137027,
-    "popularity": 0.8637085090755846,
+    "affinity": 0.8583546430873176,
+    "popularity": 0.8840644720894448,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9884868421052632,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8964194373401535,
      "urn:tag:specialty_dish:place:brown_butter": 0.7152542372881356,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5059523809523809,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9806211180124224
+     "urn:tag:specialty_dish:place:apple_pie": 0.9806211180124224,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9787664307381193
     },
-    "fit": 1.09,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-culver-city-culver-city",
-    "name": "Culver City",
-    "address": "9300 Culver Blvd, Culver City, CA 90232",
-    "lat": 34.0244516,
-    "lon": -118.3933641,
-    "metro": "LA basin",
-    "affinity": 0.7204693374254867,
-    "popularity": 0.7724600026063251,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.8355263157894737,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.7301790281329923,
-     "urn:tag:specialty_dish:place:brown_butter": 0.5457627118644067,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5714285714285714,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9724223602484472
-    },
-    "fit": 0.59,
+    "fit": 1.08,
     "confidence": "high"
    },
    {
@@ -296,16 +296,37 @@
     "lat": 37.307988,
     "lon": -121.9010641,
     "metro": "Bay Area",
-    "affinity": 0.701587405278286,
-    "popularity": 0.71684957756293,
+    "affinity": 0.7545540088198595,
+    "popularity": 0.7860123707502341,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": null,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.6627906976744186,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8179775280898877
+     "urn:tag:specialty_dish:place:apple_pie": 0.8179775280898877,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9180327868852459
     },
-    "fit": 0.51,
+    "fit": 0.6,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-culver-city-culver-city",
+    "name": "Culver City",
+    "address": "9300 Culver Blvd, Culver City, CA 90232",
+    "lat": 34.0244516,
+    "lon": -118.3933641,
+    "metro": "LA basin",
+    "affinity": 0.7497827440693112,
+    "popularity": 0.8057068946559282,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.8355263157894737,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.7301790281329923,
+     "urn:tag:specialty_dish:place:brown_butter": 0.5457627118644067,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5714285714285714,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9724223602484472,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9709302325581395
+    },
+    "fit": 0.57,
     "confidence": "high"
    },
    {
@@ -315,35 +336,17 @@
     "lat": 34.1104689,
     "lon": -118.2876272,
     "metro": "LA basin",
-    "affinity": 0.6992437597724809,
-    "popularity": 0.6814587971945556,
+    "affinity": 0.7324384544001309,
+    "popularity": 0.7281030927076302,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.9111842105263158,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.6649616368286445,
      "urn:tag:specialty_dish:place:brown_butter": 0.43389830508474575,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5863095238095238,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9537888198757764
+     "urn:tag:specialty_dish:place:apple_pie": 0.9537888198757764,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9916582406471183
     },
-    "fit": 0.5,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-mateo-san-mateo",
-    "name": "San Mateo",
-    "address": "113 S B St, San Mateo, CA 94401",
-    "lat": 37.5669875,
-    "lon": -122.3236083,
-    "metro": "Bay Area",
-    "affinity": 0.6512234437232715,
-    "popularity": 0.6767026248707064,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.43946188340807174,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.872093023255814,
-     "urn:tag:specialty_dish:place:brown_butter": 0.4634146341463415,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8541666666666666,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9247191011235955
-    },
-    "fit": 0.3,
+    "fit": 0.49,
     "confidence": "high"
    },
    {
@@ -353,16 +356,37 @@
     "lat": 34.1432645,
     "lon": -118.13177,
     "metro": "LA basin",
-    "affinity": 0.6515714693697499,
-    "popularity": 0.6470887210059915,
+    "affinity": 0.690269609876322,
+    "popularity": 0.6973127275656603,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.875,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8120204603580563,
      "urn:tag:specialty_dish:place:brown_butter": 0.15254237288135594,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.48214285714285715,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9821118012422361
+     "urn:tag:specialty_dish:place:apple_pie": 0.9821118012422361,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9828109201213346
     },
     "fit": 0.3,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-mateo-san-mateo",
+    "name": "San Mateo",
+    "address": "113 S B St, San Mateo, CA 94401",
+    "lat": 37.5669875,
+    "lon": -122.3236083,
+    "metro": "Bay Area",
+    "affinity": 0.6874739054450857,
+    "popularity": 0.7240701781446723,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.43946188340807174,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.872093023255814,
+     "urn:tag:specialty_dish:place:brown_butter": 0.4634146341463415,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8541666666666666,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9247191011235955,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9718369062631358
+    },
+    "fit": 0.28,
     "confidence": "high"
    },
    {
@@ -372,16 +396,17 @@
     "lat": 37.3242262,
     "lon": -122.0105165,
     "metro": "Bay Area",
-    "affinity": 0.5631657440318791,
-    "popularity": 0.5210767839561604,
+    "affinity": 0.6080633088391155,
+    "popularity": 0.5887773816140205,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.26905829596412556,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.9418604651162791,
      "urn:tag:specialty_dish:place:brown_butter": 0.24390243902439024,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.8402777777777778,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8893258426966292
+     "urn:tag:specialty_dish:place:apple_pie": 0.8893258426966292,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9638503572929803
     },
-    "fit": -0.06,
+    "fit": -0.09,
     "confidence": "high"
    },
    {
@@ -391,16 +416,17 @@
     "lat": 33.8342763,
     "lon": -118.3511753,
     "metro": "LA basin",
-    "affinity": 0.5519189516873937,
-    "popularity": 0.6626758624638235,
+    "affinity": 0.5989180491382278,
+    "popularity": 0.7137566801286834,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.40789473684210525,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8158567774936062,
      "urn:tag:specialty_dish:place:brown_butter": 0.3559322033898305,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.3958333333333333,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9709316770186336
+     "urn:tag:specialty_dish:place:apple_pie": 0.9709316770186336,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9491911021233569
     },
-    "fit": -0.11,
+    "fit": -0.13,
     "confidence": "high"
    },
    {
@@ -410,16 +436,17 @@
     "lat": 37.7755634,
     "lon": -122.3933972,
     "metro": "Bay Area",
-    "affinity": 0.53063044236907,
-    "popularity": 0.45257536261304254,
+    "affinity": 0.5798590716792692,
+    "popularity": 0.535055621289207,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.7443946188340808,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.686046511627907,
      "urn:tag:specialty_dish:place:brown_butter": 0.1524390243902439,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.08333333333333333,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9567415730337079
+     "urn:tag:specialty_dish:place:apple_pie": 0.9567415730337079,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9503993274485077
     },
-    "fit": -0.19,
+    "fit": -0.22,
     "confidence": "high"
    },
    {
@@ -429,16 +456,17 @@
     "lat": 37.7511414,
     "lon": -122.4383792,
     "metro": "Bay Area",
-    "affinity": 0.5241471597592718,
-    "popularity": 0.49500518110834707,
+    "affinity": 0.574020303711966,
+    "popularity": 0.5709742629454805,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.6188340807174888,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.43410852713178294,
      "urn:tag:specialty_dish:place:brown_butter": 0.5853658536585366,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.04861111111111111,
-     "urn:tag:specialty_dish:place:apple_pie": 0.949438202247191
+     "urn:tag:specialty_dish:place:apple_pie": 0.949438202247191,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9512400168137873
     },
-    "fit": -0.22,
+    "fit": -0.24,
     "confidence": "high"
    },
    {
@@ -448,16 +476,17 @@
     "lat": 37.5779248,
     "lon": -122.3485707,
     "metro": "Bay Area",
-    "affinity": 0.493415553820548,
-    "popularity": 0.5100529716048068,
+    "affinity": 0.5454549604976306,
+    "popularity": 0.5837943181476234,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.1210762331838565,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8217054263565892,
      "urn:tag:specialty_dish:place:brown_butter": 0.4695121951219512,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.4027777777777778,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9342696629213483
+     "urn:tag:specialty_dish:place:apple_pie": 0.9342696629213483,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9398907103825137
     },
-    "fit": -0.35,
+    "fit": -0.38,
     "confidence": "high"
    },
    {
@@ -467,16 +496,17 @@
     "lat": 37.3336349,
     "lon": -121.88499,
     "metro": "Bay Area",
-    "affinity": 0.48946853657588985,
-    "popularity": 0.667970975425292,
+    "affinity": 0.5437917497745689,
+    "popularity": 0.7200865036208385,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.23766816143497757,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8643410852713178,
      "urn:tag:specialty_dish:place:brown_butter": 0.4024390243902439,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.10416666666666667,
-     "urn:tag:specialty_dish:place:apple_pie": 0.95
+     "urn:tag:specialty_dish:place:apple_pie": 0.95,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.955443463640185
     },
-    "fit": -0.36,
+    "fit": -0.39,
     "confidence": "high"
    },
    {
@@ -486,16 +516,17 @@
     "lat": 37.7647559,
     "lon": -122.4011997,
     "metro": "Bay Area",
-    "affinity": 0.4878989801437248,
-    "popularity": 0.4409031651851798,
+    "affinity": 0.5424291769878765,
+    "popularity": 0.5225264922150563,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.6591928251121076,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.25193798449612403,
      "urn:tag:specialty_dish:place:brown_butter": 0.5487804878048781,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.14583333333333334,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9185393258426966
+     "urn:tag:specialty_dish:place:apple_pie": 0.9185393258426966,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9646910466582598
     },
-    "fit": -0.37,
+    "fit": -0.39,
     "confidence": "high"
    },
    {
@@ -505,35 +536,17 @@
     "lat": 37.4544368,
     "lon": -122.1825021,
     "metro": "Bay Area",
-    "affinity": 0.47783695832081685,
-    "popularity": 0.4196769767513944,
+    "affinity": 0.5290290661945221,
+    "popularity": 0.5006345550271708,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.16591928251121077,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.875968992248062,
      "urn:tag:specialty_dish:place:brown_butter": 0.2073170731707317,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.6111111111111112,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8668539325842697
+     "urn:tag:specialty_dish:place:apple_pie": 0.8668539325842697,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9298024379991593
     },
-    "fit": -0.41,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-cupertino-deanza-cupertino",
-    "name": "DeAnza - Cupertino",
-    "address": "20686 Stevens Creek Blvd, Cupertino, CA 95014",
-    "lat": 37.3225787,
-    "lon": -122.034649,
-    "metro": "Bay Area",
-    "affinity": 0.45775141830674554,
-    "popularity": 0.5147564108465622,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.22869955156950672,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8255813953488372,
-     "urn:tag:specialty_dish:place:brown_butter": 0.15853658536585366,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.4513888888888889,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9241573033707865
-    },
-    "fit": -0.49,
+    "fit": -0.45,
     "confidence": "high"
    },
    {
@@ -543,35 +556,77 @@
     "lat": 37.3767094,
     "lon": -122.0311824,
     "metro": "Bay Area",
-    "affinity": 0.4541318864152202,
-    "popularity": 0.5841824322995984,
+    "affinity": 0.529437916326685,
+    "popularity": 0.6679602794579901,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.1031390134529148,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.7054263565891473,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8702247191011236
+     "urn:tag:specialty_dish:place:apple_pie": 0.8702247191011236,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.905422446406053
     },
-    "fit": -0.51,
+    "fit": -0.45,
     "confidence": "high"
    },
    {
-    "id": "philz-redwood-city-redwood-city",
-    "name": "Redwood City",
-    "address": "2116 Broadway, Redwood City, CA 94063",
-    "lat": 37.4866611,
-    "lon": -122.228595,
+    "id": "philz-cupertino-deanza-cupertino",
+    "name": "DeAnza - Cupertino",
+    "address": "20686 Stevens Creek Blvd, Cupertino, CA 95014",
+    "lat": 37.3225787,
+    "lon": -122.034649,
     "metro": "Bay Area",
-    "affinity": 0.40384807756179053,
-    "popularity": 0.46241281453367206,
+    "affinity": 0.5119006834245374,
+    "popularity": 0.5859624146714206,
     "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.242152466367713,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.6782945736434108,
-     "urn:tag:specialty_dish:place:brown_butter": 0.06097560975609756,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9056179775280899
+     "urn:tag:specialty_dish:place:maple_latte": 0.22869955156950672,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.8255813953488372,
+     "urn:tag:specialty_dish:place:brown_butter": 0.15853658536585366,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.4513888888888889,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9241573033707865,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9201345102984447
     },
-    "fit": -0.71,
+    "fit": -0.53,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-ocean-ave",
+    "name": "Ocean Ave",
+    "address": "1110 Ocean Ave, San Francisco, CA 94112",
+    "lat": 37.7236571,
+    "lon": -122.4537767,
+    "metro": "Bay Area",
+    "affinity": 0.5134322873929723,
+    "popularity": 0.5788931776421442,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": null,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.2364341085271318,
+     "urn:tag:specialty_dish:place:brown_butter": null,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
+     "urn:tag:specialty_dish:place:apple_pie": 0.7966292134831461,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9020596889449348
+    },
+    "fit": -0.53,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-brokaw-commons",
+    "name": "Brokaw Commons",
+    "address": "1085 E Brokaw Road, San Jose, CA 95131",
+    "lat": 37.3834494,
+    "lon": -121.8967714,
+    "metro": "Bay Area",
+    "affinity": 0.47817259077545143,
+    "popularity": 0.4835223310080558,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": null,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.28294573643410853,
+     "urn:tag:specialty_dish:place:brown_butter": null,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
+     "urn:tag:specialty_dish:place:apple_pie": 0.5719101123595506,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.8730559058427911
+    },
+    "fit": -0.69,
     "confidence": "high"
    },
    {
@@ -581,33 +636,35 @@
     "lat": 37.2359736,
     "lon": -121.9635663,
     "metro": "Bay Area",
-    "affinity": 0.4023883574346588,
-    "popularity": 0.34119850187265915,
+    "affinity": 0.46915619176777046,
+    "popularity": 0.44726079317624723,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": null,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.12403100775193798,
      "urn:tag:specialty_dish:place:brown_butter": 0.676829268292683,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.5056179775280899
+     "urn:tag:specialty_dish:place:apple_pie": 0.5056179775280899,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.8402690205968895
     },
-    "fit": -0.72,
+    "fit": -0.73,
     "confidence": "high"
    },
    {
-    "id": "philz-walnut-creek-walnut-creek",
-    "name": "Walnut Creek",
-    "address": "1103 S California Blvd, Walnut Creek, CA 94596",
-    "lat": 37.8972067,
-    "lon": -122.0635489,
+    "id": "philz-redwood-city-redwood-city",
+    "name": "Redwood City",
+    "address": "2116 Broadway, Redwood City, CA 94063",
+    "lat": 37.4866611,
+    "lon": -122.228595,
     "metro": "Bay Area",
-    "affinity": 0.3950055431044999,
-    "popularity": 0.4963739935219244,
+    "affinity": 0.4658797024855179,
+    "popularity": 0.5425529234186653,
     "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.6053811659192825,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.4263565891472868,
-     "urn:tag:specialty_dish:place:brown_butter": 0.006097560975609756,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.2013888888888889,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8949438202247191
+     "urn:tag:specialty_dish:place:maple_latte": 0.242152466367713,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.6782945736434108,
+     "urn:tag:specialty_dish:place:brown_butter": 0.06097560975609756,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.5,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9056179775280899,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.942833123160992
     },
     "fit": -0.75,
     "confidence": "high"
@@ -619,54 +676,37 @@
     "lat": 33.789841,
     "lon": -117.853187,
     "metro": "LA basin",
-    "affinity": 0.39339708111753685,
-    "popularity": 0.5351389443144903,
+    "affinity": 0.4601574527506019,
+    "popularity": 0.6053694101171477,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.05098684210526316,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.8797953964194374,
      "urn:tag:specialty_dish:place:brown_butter": 0.020338983050847456,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.47619047619047616,
-     "urn:tag:specialty_dish:place:apple_pie": 0.96
+     "urn:tag:specialty_dish:place:apple_pie": 0.96,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9658746208291203
     },
-    "fit": -0.76,
+    "fit": -0.77,
     "confidence": "high"
    },
    {
-    "id": "philz-san-francisco-ocean-ave",
-    "name": "Ocean Ave",
-    "address": "1110 Ocean Ave, San Francisco, CA 94112",
-    "lat": 37.7236571,
-    "lon": -122.4537767,
+    "id": "philz-walnut-creek-walnut-creek",
+    "name": "Walnut Creek",
+    "address": "1103 S California Blvd, Walnut Creek, CA 94596",
+    "lat": 37.8972067,
+    "lon": -122.0635489,
     "metro": "Bay Area",
-    "affinity": 0.3764828847661354,
-    "popularity": 0.43979836251197635,
+    "affinity": 0.4579845259425294,
+    "popularity": 0.5725352846394347,
     "items": {
-     "urn:tag:specialty_dish:place:maple_latte": null,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.2364341085271318,
-     "urn:tag:specialty_dish:place:brown_butter": null,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.7966292134831461
+     "urn:tag:specialty_dish:place:maple_latte": 0.6053811659192825,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.4263565891472868,
+     "urn:tag:specialty_dish:place:brown_butter": 0.006097560975609756,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.2013888888888889,
+     "urn:tag:specialty_dish:place:apple_pie": 0.8949438202247191,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.9449348465741908
     },
-    "fit": -0.82,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-jose-brokaw-commons",
-    "name": "Brokaw Commons",
-    "address": "1085 E Brokaw Road, San Jose, CA 95131",
-    "lat": 37.3834494,
-    "lon": -121.8967714,
-    "metro": "Bay Area",
-    "affinity": 0.355186830415469,
-    "popularity": 0.3146067415730337,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": null,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.28294573643410853,
-     "urn:tag:specialty_dish:place:brown_butter": null,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.5719101123595506
-    },
-    "fit": -0.91,
+    "fit": -0.78,
     "confidence": "high"
    },
    {
@@ -676,35 +716,17 @@
     "lat": 33.917613,
     "lon": -117.8843567,
     "metro": "LA basin",
-    "affinity": 0.2955163909429288,
-    "popularity": 0.43247079896031637,
+    "affinity": 0.38013778891907146,
+    "popularity": 0.5267653145979801,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.044407894736842105,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.38618925831202044,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.2619047619047619,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9053416149068323
+     "urn:tag:specialty_dish:place:apple_pie": 0.9053416149068323,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.8586956521739131
     },
-    "fit": -1.16,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-san-francisco-chase-center",
-    "name": "Chase Center",
-    "address": "1 Warriors Way, San Francisco, CA 94158",
-    "lat": 37.7679001,
-    "lon": -122.3874223,
-    "metro": "Bay Area",
-    "affinity": 0.2716164849413384,
-    "popularity": 0.44507126102730254,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.17488789237668162,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.12015503875968993,
-     "urn:tag:specialty_dish:place:brown_butter": 0.23780487804878048,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.4375,
-     "urn:tag:specialty_dish:place:apple_pie": 0.9174157303370787
-    },
-    "fit": -1.25,
+    "fit": -1.15,
     "confidence": "high"
    },
    {
@@ -714,35 +736,17 @@
     "lat": 37.6717582,
     "lon": -122.4652105,
     "metro": "Bay Area",
-    "affinity": 0.26955252155735565,
-    "popularity": 0.2595505617977528,
+    "affinity": 0.3590265138769571,
+    "popularity": 0.4032589701082978,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": null,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.12790697674418605,
      "urn:tag:specialty_dish:place:brown_butter": 0.25,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.746629213483146
+     "urn:tag:specialty_dish:place:apple_pie": 0.746629213483146,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.7595628415300546
     },
-    "fit": -1.26,
-    "confidence": "high"
-   },
-   {
-    "id": "philz-campbell-campbell",
-    "name": "Campbell",
-    "address": "1976 S Bascom Ave, Campbell, CA 95008",
-    "lat": 37.2870273,
-    "lon": -121.931647,
-    "metro": "Bay Area",
-    "affinity": 0.23515158413455026,
-    "popularity": 0.20293048218950602,
-    "items": {
-     "urn:tag:specialty_dish:place:maple_latte": 0.08071748878923767,
-     "urn:tag:specialty_dish:place:oatmilk_latte": 0.6589147286821705,
-     "urn:tag:specialty_dish:place:brown_butter": 0.06707317073170732,
-     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.041666666666666664,
-     "urn:tag:specialty_dish:place:apple_pie": 0.18483146067415732
-    },
-    "fit": -1.4,
+    "fit": -1.24,
     "confidence": "high"
    },
    {
@@ -752,16 +756,37 @@
     "lat": 37.5388043,
     "lon": -122.302004,
     "metro": "Bay Area",
-    "affinity": 0.19593676509014896,
-    "popularity": 0.351123595505618,
+    "affinity": 0.3435622491579518,
+    "popularity": 0.5031029938931947,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": null,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.050387596899224806,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.6325842696629214
+     "urn:tag:specialty_dish:place:apple_pie": 0.6325842696629214,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.7671290458175704
     },
-    "fit": -1.57,
+    "fit": -1.32,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-chase-center",
+    "name": "Chase Center",
+    "address": "1 Warriors Way, San Francisco, CA 94158",
+    "lat": 37.7679001,
+    "lon": -122.3874223,
+    "metro": "Bay Area",
+    "affinity": 0.34299037600036036,
+    "popularity": 0.5279615139358108,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.17488789237668162,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.12015503875968993,
+     "urn:tag:specialty_dish:place:brown_butter": 0.23780487804878048,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.4375,
+     "urn:tag:specialty_dish:place:apple_pie": 0.9174157303370787,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.8722152164775115
+    },
+    "fit": -1.32,
     "confidence": "high"
    },
    {
@@ -771,16 +796,37 @@
     "lat": 37.8112398,
     "lon": -122.2434366,
     "metro": "Bay Area",
-    "affinity": 0.1899518674639209,
-    "popularity": 0.3593336857361538,
+    "affinity": 0.27755688161607067,
+    "popularity": 0.4577906139945557,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.026905829596412557,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.1511627906976744,
      "urn:tag:specialty_dish:place:brown_butter": 0.18292682926829268,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": null,
-     "urn:tag:specialty_dish:place:apple_pie": 0.8685393258426967
+     "urn:tag:specialty_dish:place:apple_pie": 0.8685393258426967,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.8596048759983186
     },
-    "fit": -1.59,
+    "fit": -1.62,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-campbell-campbell",
+    "name": "Campbell",
+    "address": "1976 S Bascom Ave, Campbell, CA 95008",
+    "lat": 37.2870273,
+    "lon": -121.931647,
+    "metro": "Bay Area",
+    "affinity": 0.26749409147411113,
+    "popularity": 0.2713926079335977,
+    "items": {
+     "urn:tag:specialty_dish:place:maple_latte": 0.08071748878923767,
+     "urn:tag:specialty_dish:place:oatmilk_latte": 0.6589147286821705,
+     "urn:tag:specialty_dish:place:brown_butter": 0.06707317073170732,
+     "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.041666666666666664,
+     "urn:tag:specialty_dish:place:apple_pie": 0.18483146067415732,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.605296343001261
+    },
+    "fit": -1.67,
     "confidence": "high"
    },
    {
@@ -790,16 +836,17 @@
     "lat": 37.5535513,
     "lon": -121.980306,
     "metro": "Bay Area",
-    "affinity": 0.1874921646421,
-    "popularity": 0.2992055259557319,
+    "affinity": 0.26328205829802886,
+    "popularity": 0.3896796792765653,
     "items": {
      "urn:tag:specialty_dish:place:maple_latte": 0.008968609865470852,
      "urn:tag:specialty_dish:place:oatmilk_latte": 0.29844961240310075,
      "urn:tag:specialty_dish:place:brown_butter": null,
      "urn:tag:specialty_dish:place:oatmeal_raisin_cookie": 0.020833333333333332,
-     "urn:tag:specialty_dish:place:apple_pie": 0.6719101123595506
+     "urn:tag:specialty_dish:place:apple_pie": 0.6719101123595506,
+     "urn:tag:specialty_dish:place:cinnamon_roll": 0.7095418242959226
     },
-    "fit": -1.6,
+    "fit": -1.69,
     "confidence": "high"
    }
   ],
@@ -812,21 +859,21 @@
   ],
   "bottom": [
    "philz-fremont-fremont",
-   "philz-oakland-lakeshore-oakland",
-   "philz-san-mateo-hillsdale"
+   "philz-campbell-campbell",
+   "philz-oakland-lakeshore-oakland"
   ],
   "reasons": {
-   "philz-san-francisco-civic-center": "Good test spot: Lively, Social, Tourists and Locals mix, plus Event venue and Live music venue tags, bring steady, varied foot traffic.",
-   "philz-san-francisco-embarcadero": "Good test spot: Lively, Social, Tourists and Foodies tags suggest an audience eager to try a new limited-time offer.",
-   "philz-san-francisco-front-st": "Good test spot: Lively, Tourists, Foodies and Business Professionals tags suggest varied, curious customers who would try something new.",
-   "philz-los-angeles-dtla-hope": "Good test spot: Lively, Social, Fun, Tourists and Foodies tags point to energetic crowds likely to sample a limited-time offer.",
-   "philz-los-angeles-hollywood": "Good test spot: Live music venue, Lively, Fun and Social tags suggest busy, sociable traffic well suited to testing offers.",
-   "philz-fremont-fremont": "Weaker test spot: Regulars, Locals and Californian tags suggest a steadier crowd, with less of the lively, social buzz of stronger stores.",
-   "philz-oakland-lakeshore-oakland": "Weaker test spot: despite Foodies and Social tags, Cocktail Enthusiasts and Californian tags suggest a weaker match for this offer.",
-   "philz-san-mateo-hillsdale": "Weaker test spot: Science museum, Aquarium and Event venue tags suggest attraction-driven visits rather than a crowd seeking new offers."
+   "philz-san-francisco-civic-center": "Good test site: Lively, Social, Tourists and Locals mix, plus Event venue and Live music venue traffic, suits a new offer.",
+   "philz-san-francisco-embarcadero": "Good test site: Lively, Social, Tourists and Foodies, plus Business Professionals and Couples, give varied feedback for a new offer.",
+   "philz-san-francisco-front-st": "Good test site: Lively, Social, Tourists, Foodies and Business Professionals give a broad audience for trying a limited-time offer.",
+   "philz-los-angeles-dtla-hope": "Good test site: Lively, Social, Fun, Tourists and Foodies, with Live music venue nearby, suggest strong interest in new offers.",
+   "philz-los-angeles-hollywood": "Good test site: Live music venue, Lively, Social, Fun and Tourists suggest steady traffic and a receptive crowd for new offers.",
+   "philz-fremont-fremont": "Weaker test site: Regulars and Locals dominate alongside Californian and Groups of Friends, and it lacks Social and Fun signals.",
+   "philz-campbell-campbell": "Weaker test site: Amphitheater, Locals and Californian signals show less fit, with no Social or Fun tags to drive offer trial.",
+   "philz-oakland-lakeshore-oakland": "Weaker test site: Cocktail Enthusiasts and Californian tags suggest a different crowd, despite Social and Lively, so offer fit is poor."
   },
   "stability": {
-   "rho": 0.85,
+   "rho": 0.88,
    "weakest": "Oatmilk Latte"
   }
  },
@@ -835,7 +882,7 @@
    "store_id": "philz-san-francisco-civic-center",
    "fit": 1.65,
    "label": "test",
-   "verdict": "Strong fit: Civic Center's lively, social crowd of locals, tourists and foodies suits a cozy, shareable fall-flavored offer.",
+   "verdict": "Civic Center's lively, social crowd of locals and tourists suits this cozy, sweet-spiced offer, with a strong fit score of 1.65.",
    "why_tags": [
     {
      "id": "urn:tag:ambience:qloo:lively",
@@ -884,16 +931,16 @@
     }
    ],
    "menu_cues": [
-    "Pair Maple Latte with Oatmeal Raisin Cookie for group sharing",
-    "Feature Brown Butter and Apple Pie for foodies",
-    "Promote Oatmilk Latte as an easy grab-and-go option"
+    "Share-ready Maple Latte for groups of friends",
+    "Brown Butter treats for foodies",
+    "Cinnamon Roll to-go for event and live music crowds"
    ]
   },
   "philz-san-francisco-embarcadero": {
    "store_id": "philz-san-francisco-embarcadero",
    "fit": 1.59,
    "label": "test",
-   "verdict": "Embarcadero's foodie, New American crowd should embrace this cozy, dessert-inspired lineup as a celebratory, shareable treat, giving it a strong above-average fit.",
+   "verdict": "Strong fit: the cozy, bakery-style offer suits a lively, social, foodie-leaning crowd that favors New American, Californian tastes.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -942,16 +989,16 @@
     }
    ],
    "menu_cues": [
-    "Pair Maple Latte with Apple Pie for a shareable couples' treat",
-    "Spotlight Brown Butter as a New American, foodie-friendly flavor",
-    "Offer Oatmilk Latte for Californian tastes and quick professional orders"
+    "Pair Maple Latte with Brown Butter for foodies seeking New American flavor",
+    "Share-friendly Apple Pie and Cinnamon Roll duo for couples and celebratory diners",
+    "Grab-and-go Oatmilk Latte with Oatmeal Raisin Cookie for business professionals and tourists"
    ]
   },
   "philz-san-francisco-front-st": {
    "store_id": "philz-san-francisco-front-st",
    "fit": 1.56,
    "label": "test",
-   "verdict": "Front St scores a strong fit (z 1.56): its Californian, foodie, New American crowd should welcome the LTO's cozy-sweet, brown butter-forward flavors.",
+   "verdict": "Strong fit: the cozy, sweet-spiced lineup suits Front St's lively, social, foodie crowd, with a fit score of 1.56.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1000,16 +1047,16 @@
     }
    ],
    "menu_cues": [
-    "Feature Maple Latte and Brown Butter for foodies seeking New American flair",
-    "Pair Oatmilk Latte with Apple Pie for a Californian touch",
-    "Offer Oatmeal Raisin Cookie as a shareable treat for social couples"
+    "Pair Maple Latte with Oatmilk Latte for a Californian, foodie-friendly sip",
+    "Offer Brown Butter and Cinnamon Roll as shareable treats for couples and celebratory diners",
+    "Promote Apple Pie and Oatmeal Raisin Cookie as grab-and-go for tourists and business professionals"
    ]
   },
   "philz-los-angeles-dtla-hope": {
    "store_id": "philz-los-angeles-dtla-hope",
-   "fit": 1.3,
+   "fit": 1.29,
    "label": "test",
-   "verdict": "Strong fit: the lively, social, foodie-leaning crowd should welcome a cozy, dessert-inspired maple and brown butter lineup that suits celebratory outings.",
+   "verdict": "Strong fit: this lively, social, foodie-friendly area should enjoy a festive fall-inspired menu that feels shareable and special for groups and couples.",
    "why_tags": [
     {
      "id": "urn:tag:ambience:qloo:lively",
@@ -1058,16 +1105,16 @@
     }
    ],
    "menu_cues": [
-    "Maple Latte as a shareable, celebratory sip",
-    "Brown Butter paired with Oatmeal Raisin Cookie for foodies",
-    "Apple Pie flavor as a familiar, New American-style comfort treat"
+    "Maple Latte as a shareable crowd-pleaser",
+    "Brown Butter Oatmilk Latte for foodies",
+    "Apple Pie and Cinnamon Roll pairing for celebratory treats"
    ]
   },
   "philz-los-angeles-hollywood": {
    "store_id": "philz-los-angeles-hollywood",
-   "fit": 1.26,
+   "fit": 1.25,
    "label": "test",
-   "verdict": "Fit is strong (z 1.26): a lively, social Hollywood crowd of groups, couples and foodies should enjoy this shareable, cozy-sweet fall lineup.",
+   "verdict": "Good fit: the cozy, sweet bakery-style lineup suits Hollywood's lively, social crowd of locals, tourists, foodies, and groups looking for shareable treats.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:live_music_venue",
@@ -1116,16 +1163,16 @@
     }
    ],
    "menu_cues": [
-    "Pair Maple Latte and Oatmilk Latte as a duo for groups and couples to share",
-    "Feature Brown Butter and Apple Pie flavors to appeal to foodies",
-    "Promote Oatmeal Raisin Cookie as a grab-and-go treat for tourists and event-goers"
+    "Shareable Oatmeal Raisin Cookie and Cinnamon Roll pairings for groups of friends",
+    "Maple Latte as a sweet, photo-friendly pick for couples and tourists",
+    "Brown Butter and Apple Pie flavors to appeal to foodies"
    ]
   },
-  "philz-fremont-fremont": {
-   "store_id": "philz-fremont-fremont",
-   "fit": -1.6,
-   "label": "skip",
-   "verdict": "Skip: fit is weak (z -1.6); this cozy, dessert-like lineup doesn't match Fremont's lively, foodie-leaning Californian and New American crowd.",
+  "philz-san-francisco-castro": {
+   "store_id": "philz-san-francisco-castro",
+   "fit": 1.22,
+   "label": "test",
+   "verdict": "Castro's lively, foodie-leaning crowd should embrace this cozy, bakery-inspired lineup as a unique, social treat that suits couples and visitors.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1133,57 +1180,115 @@
      "affinity": 1
     },
     {
-     "id": "urn:tag:customer_identity:qloo:locals",
-     "name": "Locals",
-     "affinity": 0.999958
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999901
     },
     {
-     "id": "urn:tag:customer_identity:qloo:tourists",
-     "name": "Tourists",
-     "affinity": 0.999894
+     "id": "urn:tag:genre:place:art_museum",
+     "name": "Art museum",
+     "affinity": 0.999884
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999868
     },
     {
      "id": "urn:tag:ambience:qloo:lively",
      "name": "Lively",
-     "affinity": 0.999873
-    },
-    {
-     "id": "urn:tag:customer_identity:qloo:groups_of_friends",
-     "name": "Groups of Friends",
-     "affinity": 0.99983
+     "affinity": 0.999851
     }
    ],
    "partners": [
     {
-     "id": "05BC76F4-4AC6-48A3-89D4-E900B9F08488",
-     "name": "Whole Foods Market",
+     "id": "FBBAF1EE-BC5A-4A9C-A971-2910A2214F27",
+     "name": "Tartine Bakery",
      "affinity": null,
      "image": null
     },
     {
-     "id": "8B545171-3882-4FEA-B374-3606836BD16E",
-     "name": "Half Price Books",
+     "id": "EAA5BAB9-713F-4936-A67D-B4C2117C0BD1",
+     "name": "Bi-Rite Creamery",
      "affinity": null,
      "image": null
     },
     {
-     "id": "67AB6514-B2D0-4807-A1B3-1BA0DC66E77B",
-     "name": "Panera Bread",
+     "id": "ACBD0CD8-6974-4984-8F9C-F9637552C820",
+     "name": "Safeway",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Offer a small shareable tasting flight for groups of friends",
-    "Keep the core menu front and center for regulars and locals",
-    "Skip a heavy push for tourists and celebratory diners"
+    "Maple Latte for a sweet, shareable date-night sip",
+    "Brown Butter and Oatmeal Raisin Cookie for foodies seeking something distinct",
+    "Apple Pie and Cinnamon Roll as warm, familiar comforts for tourists"
    ]
   },
-  "philz-oakland-lakeshore-oakland": {
-   "store_id": "philz-oakland-lakeshore-oakland",
-   "fit": -1.59,
-   "label": "skip",
-   "verdict": "Skip: the cozy, sweet-spiced fall offer clashes with this lively, cocktail-minded, foodie crowd, so fit is weak (z-score -1.59).",
+  "philz-beverly-hills-south-beverly": {
+   "store_id": "philz-beverly-hills-south-beverly",
+   "fit": 1.19,
+   "label": "test",
+   "verdict": "A moderately strong fit: the cozy, bakery-style flavors suit a stylish, elegant, trendy crowd that enjoys a classic yet luxurious treat.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999972
+    },
+    {
+     "id": "urn:tag:ambience:qloo:romantic",
+     "name": "Romantic",
+     "affinity": 0.999945
+    },
+    {
+     "id": "urn:tag:ambience:qloo:stylish",
+     "name": "Stylish",
+     "affinity": 0.999904
+    },
+    {
+     "id": "urn:tag:ambience:place:business_friendly",
+     "name": "Business-Friendly",
+     "affinity": 0.99989
+    },
+    {
+     "id": "urn:tag:ambience:qloo:elegant",
+     "name": "Elegant",
+     "affinity": 0.999876
+    }
+   ],
+   "partners": [
+    {
+     "id": "F69AE666-C4C1-4827-ABB3-F1C8FCE03FE7",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "824B91FB-E3EE-4311-808B-D650F4CE530B",
+     "name": "Le Mervetty / Macarons",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6390AFFD-7B75-4BB0-A97B-16B0D274BE59",
+     "name": "Le Pain Quotidien",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Brown Butter Maple Latte as an elegant signature",
+    "Oatmilk Latte for a trendy, social sip",
+    "Apple Pie and Cinnamon Roll pairings for a classic touch"
+   ]
+  },
+  "philz-palo-alto-forest-ave": {
+   "store_id": "philz-palo-alto-forest-ave",
+   "fit": 1.18,
+   "label": "test",
+   "verdict": "Good fit: Forest Ave's foodie, social, Californian-leaning crowd should welcome a polished, seasonal limited-time lineup with warm, dessert-inspired flavors.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1193,55 +1298,1621 @@
     {
      "id": "urn:tag:genre:place:restaurant:new_american",
      "name": "New American",
-     "affinity": 0.999892
+     "affinity": 0.999982
     },
     {
-     "id": "urn:tag:customer_identity:qloo:tourists",
-     "name": "Tourists",
-     "affinity": 0.999857
+     "id": "urn:tag:customer_identity:qloo:business_professionals",
+     "name": "Business Professionals",
+     "affinity": 0.999929
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.999912
     },
     {
      "id": "urn:tag:customer_identity:qloo:foodies",
      "name": "Foodies",
-     "affinity": 0.999839
-    },
-    {
-     "id": "urn:tag:ambience:qloo:social",
-     "name": "Social",
-     "affinity": 0.999821
+     "affinity": 0.999877
     }
    ],
    "partners": [
     {
-     "id": "580ADBE7-270E-46E4-AAAA-CC9CB4F6071E",
-     "name": "Arizmendi Bakery (Lakeshore)",
+     "id": "6F9390F7-89D5-49B9-9192-C5B96DF687FC",
+     "name": "Palo Alto Creamery",
      "affinity": null,
      "image": null
     },
     {
-     "id": "2004B326-237A-4BEC-A72E-6C68894998BF",
-     "name": "Walden Pond Books",
+     "id": "58D5BFD8-62BB-4857-B5F4-B496FD0BCEB9",
+     "name": "Salt & Straw",
      "affinity": null,
      "image": null
     },
     {
-     "id": "D3BDFA58-8638-4250-A927-6622BFCE7CE8",
-     "name": "Bake Sum",
+     "id": "9A76359D-FAFB-4CF3-9921-1C680570EAA7",
+     "name": "Whole Foods Market",
      "affinity": null,
      "image": null
     }
    ],
    "menu_cues": [
-    "Offer a cocktail-style, shareable alternative",
-    "Highlight Californian, New American flavors",
-    "Skip heavy dessert-like sweetness for celebratory diners"
+    "Pair Maple Latte with a Californian-style pastry for foodies",
+    "Offer Brown Butter and Apple Pie flavors as shareable treats for couples",
+    "Feature Oatmilk Latte for lively, social business professionals"
+   ]
+  },
+  "philz-san-francisco-folsom-beale": {
+   "store_id": "philz-san-francisco-folsom-beale",
+   "fit": 1.1,
+   "label": "test",
+   "verdict": "Good fit: the warm, dessert-style flavors suit Folsom & Beale's lively, foodie-leaning crowd of professionals, couples, tourists and locals who like New American cuisine.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999958
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99993
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999916
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999902
+    }
+   ],
+   "partners": [
+    {
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "9C15E670-BBF5-4DB7-AD43-A8962A96EDF4",
+     "name": "Ghirardelli Ice Cream & Chocolate Shop",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "32CEDC38-674E-42A4-9929-9B7EE2BFD430",
+     "name": "Asha Tea House",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Maple Latte with a Californian-style morning pitch for business professionals",
+    "Promote Brown Butter and Apple Pie flavors to foodies seeking New American-style indulgence",
+    "Offer a shareable Cinnamon Roll and Oatmeal Raisin Cookie duo for social couples and celebratory diners"
+   ]
+  },
+  "philz-san-francisco-second-street": {
+   "store_id": "philz-san-francisco-second-street",
+   "fit": 1.1,
+   "label": "test",
+   "verdict": "Good fit: this lively, social Californian crowd of foodies and celebratory diners should welcome the cozy, bakery-inspired maple and brown butter lineup.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999958
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99993
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999916
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999902
+    }
+   ],
+   "partners": [
+    {
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "222B15DF-DE5A-48D8-B018-85C44FA74DE1",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "9C15E670-BBF5-4DB7-AD43-A8962A96EDF4",
+     "name": "Ghirardelli Ice Cream & Chocolate Shop",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Maple Latte for lively social sips",
+    "Brown Butter pairing for foodies",
+    "Apple Pie and Cinnamon Roll for shared celebratory treats"
+   ]
+  },
+  "philz-san-francisco-russian-hill": {
+   "store_id": "philz-san-francisco-russian-hill",
+   "fit": 1.08,
+   "label": "test",
+   "verdict": "Good fit: the cozy bakery-style flavors should suit Russian Hill's lively, social, foodie crowd of couples, tourists and locals.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999954
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999923
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999908
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999831
+    }
+   ],
+   "partners": [
+    {
+     "id": "E618726C-04E8-4A81-B919-041B371033D9",
+     "name": "Ghirardelli Chocolate Experience",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "556332E7-D945-4CCA-8E6D-692249912D21",
+     "name": "Ghirardelli Chocolate To Go",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "419318B7-B85D-4057-B2E7-7315617D4BA9",
+     "name": "Mara's Italian Pastries",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Maple Latte for a romantic date-night sip",
+    "Oatmilk Latte with Brown Butter for foodies",
+    "Cinnamon Roll pairing for social groups sharing treats"
+   ]
+  },
+  "philz-glendale-glendale": {
+   "store_id": "philz-glendale-glendale",
+   "fit": 1.08,
+   "label": "test",
+   "verdict": "Good fit: the lively, social New American foodie crowd should welcome a cozy, dessert-inspired maple and brown butter lineup, shareable among friends and couples.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999982
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.99993
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999912
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999877
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.99986
+    }
+   ],
+   "partners": [
+    {
+     "id": "F6D1C72E-09E3-4B60-B396-1E80746E51FE",
+     "name": "Porto's Bakery and Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "18DB4CB6-1A63-4E91-9DD2-8C6EF9836A44",
+     "name": "Barnes & Noble",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "635093C5-6292-4233-AF80-111BA8708AF2",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Maple Latte as the shareable hero for groups and couples",
+    "Brown Butter with Apple Pie for foodie appeal",
+    "Oatmeal Raisin Cookie or Cinnamon Roll pairing for a fun, social treat"
+   ]
+  },
+  "philz-san-jose-willow-glen": {
+   "store_id": "philz-san-jose-willow-glen",
+   "fit": 0.6,
+   "label": "test",
+   "verdict": "Moderate fit: the cozy, bakery-style offer suits the brunch-loving, foodie crowd, though the local Southwestern and Asian leanings call for some savory-leaning balance.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999971
+    },
+    {
+     "id": "urn:tag:specialty_dish:place:salsa_bar",
+     "name": "Salsa Bar",
+     "affinity": 0.999912
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:southwestern_restaurant_us",
+     "name": "Southwestern restaurant (US)",
+     "affinity": 0.999883
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.999824
+    }
+   ],
+   "partners": [
+    {
+     "id": "DD845ADE-3ED0-45A1-A827-236FA49038AA",
+     "name": "Icicles",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "C3E4042D-2330-4AAF-AB45-B2EDA247DEB0",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "A3F98976-A12B-488B-93F0-98073C3116FF",
+     "name": "Arteagas Food Center",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Maple Latte with brunch-style plates",
+    "Highlight Brown Butter as a foodie-friendly twist",
+    "Offer Cinnamon Roll as a shareable celebratory treat"
+   ]
+  },
+  "philz-culver-city-culver-city": {
+   "store_id": "philz-culver-city-culver-city",
+   "fit": 0.57,
+   "label": "test",
+   "verdict": "Culver City's foodie, social, trendy crowd should moderately embrace this cozy, dessert-inspired lineup, which suits their lively, celebratory spirit with a New American flair.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+     "name": "Cocktail Enthusiasts",
+     "affinity": 0.999881
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999861
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999762
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999742
+    }
+   ],
+   "partners": [
+    {
+     "id": "338EEFE7-5A36-41CF-99E7-801B510671F3",
+     "name": "Arcana: Books on the Arts",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "7FF6D198-5257-46D3-9531-552AA8F32BB7",
+     "name": "Bianca",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "23282702-0A2B-4EFD-9DEF-A722D301774D",
+     "name": "Vons",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Maple Latte with brown butter for a foodie-friendly twist",
+    "Shareable Apple Pie and Cinnamon Roll pairings for couples and groups",
+    "Oatmilk Latte with Oatmeal Raisin Cookie as a trendy, celebratory treat"
+   ]
+  },
+  "philz-los-angeles-los-feliz": {
+   "store_id": "philz-los-angeles-los-feliz",
+   "fit": 0.49,
+   "label": "maybe",
+   "verdict": "Maybe: the lively, foodie-leaning, social crowd could enjoy a cozy maple-and-brown-butter offer, though the fit is only modestly above average.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.99998
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.99992
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+     "name": "Cocktail Enthusiasts",
+     "affinity": 0.999879
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999819
+    },
+    {
+     "id": "urn:tag:genre:place:live_music_venue",
+     "name": "Live music venue",
+     "affinity": 0.999739
+    }
+   ],
+   "partners": [
+    {
+     "id": "37ECA26E-222D-4366-AD12-438AFC0076F8",
+     "name": "Skylight Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "AB280D60-52F3-4132-BBFE-FBE8100CC5F6",
+     "name": "House of Pies",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F8C5052A-73B9-41E6-A42D-C15A9EF95649",
+     "name": "Jeni's Splendid Ice Creams",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Maple latte with brown butter for foodies",
+    "Shareable cinnamon roll for couples",
+    "Oatmilk latte as an easy tourist pick"
+   ]
+  },
+  "philz-pasadena-pasadena": {
+   "store_id": "philz-pasadena-pasadena",
+   "fit": 0.3,
+   "label": "maybe",
+   "verdict": "Maybe fits: Pasadena's lively, social foodie crowd may enjoy the cozy bakery-style flavors, though the local tags offer only modest support.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:live_music_venue",
+     "name": "Live music venue",
+     "affinity": 0.99998
+    },
+    {
+     "id": "urn:tag:genre:place:arena",
+     "name": "Arena",
+     "affinity": 0.999939
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999899
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999838
+    }
+   ],
+   "partners": [
+    {
+     "id": "6727E76E-6630-425F-B109-E9437AB50543",
+     "name": "Vroman's Bookstore",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1D901CB9-87C1-4A91-9A07-D6B83EC0A1AD",
+     "name": "Afters Ice Cream",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "39D233A5-409B-48F0-8601-3A244A0D6197",
+     "name": "Madeline Garden Bistro & Venue",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Maple Latte with New American foodie appeal",
+    "Brown Butter Oatmilk Latte for couples",
+    "Cinnamon Roll or Apple Pie bites for lively social outings"
+   ]
+  },
+  "philz-san-mateo-san-mateo": {
+   "store_id": "philz-san-mateo-san-mateo",
+   "fit": 0.28,
+   "label": "maybe",
+   "verdict": "Maybe fits San Mateo: the cozy bakery-style flavors could appeal to foodies and Californian locals, though the fit is only slightly above average.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999956
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999934
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999912
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999869
+    }
+   ],
+   "partners": [
+    {
+     "id": "077215ED-F331-40A4-85A1-1D5962A97C37",
+     "name": "Icicles San Mateo",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1EFFBD95-DE36-479C-824F-CA96F0A57A30",
+     "name": "Meet Fresh | San Mateo",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F18F9EE5-68D3-4B67-A1E8-10877C99BEE0",
+     "name": "Backhaus | San Mateo",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Maple Latte with Brown Butter for foodies",
+    "Offer Oatmilk Latte as a Californian-friendly option",
+    "Share-friendly Cinnamon Roll for groups and couples"
+   ]
+  },
+  "philz-cupertino-cupertino-main": {
+   "store_id": "philz-cupertino-cupertino-main",
+   "fit": -0.09,
+   "label": "maybe",
+   "verdict": "Maybe: the offer's sweet, bakery-style flavors suit this lively, foodie crowd, but nothing in the local tags strongly confirms a match.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999983
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999966
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999949
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999915
+    }
+   ],
+   "partners": [
+    {
+     "id": "F89D10F2-1716-4FA2-A15E-371E2529F8BC",
+     "name": "SOMISOMI",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "FE22BD4C-1A47-41B1-8482-A58417DEAC58",
+     "name": "Caf\u00e9 LaTTea",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "0C97B1D7-6669-40C1-B32F-9FC868A698AF",
+     "name": "Holder's Country Inn Cupertino",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with Maple Latte and Oatmilk Latte for foodies",
+    "Pair Brown Butter with a cookie or cinnamon roll for groups of friends",
+    "Offer Apple Pie as a shareable celebratory treat"
+   ]
+  },
+  "philz-torrance-del-amo-fashion-center": {
+   "store_id": "philz-torrance-del-amo-fashion-center",
+   "fit": -0.13,
+   "label": "maybe",
+   "verdict": "A maybe fit: the offer's cozy, bakery-style flavors suit a lively, mixed crowd of regulars and foodies, though nothing strongly signals demand.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:ice_hockey_rink",
+     "name": "Ice hockey rink",
+     "affinity": 0.999961
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999941
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999902
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999882
+    }
+   ],
+   "partners": [
+    {
+     "id": "B5E317A8-5954-489F-BCD7-40503391649D",
+     "name": "Barnes & Noble",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F22CABCE-4C82-461D-9302-20A438D0E482",
+     "name": "BOOKOFF Del Amo Fashion Center",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6C014C73-713A-4617-8DAC-53BD86CF999C",
+     "name": "The Coffee Bean & Tea Leaf",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with Maple Latte and Brown Butter for foodies seeking a refined New American feel",
+    "Pair Cinnamon Roll and Apple Pie flavors as shareable treats for groups of friends",
+    "Offer Oatmilk Latte as an easy, familiar pick for regulars and tourists"
+   ]
+  },
+  "philz-san-francisco-berry": {
+   "store_id": "philz-san-francisco-berry",
+   "fit": -0.22,
+   "label": "maybe",
+   "verdict": "Maybe fits: the cozy, bakery-style limited-time lineup suits lively, social, foodie crowds, but it only partly matches the Californian, New American local profile.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999935
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999886
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.99987
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+     "name": "Cocktail Enthusiasts",
+     "affinity": 0.999854
+    }
+   ],
+   "partners": [
+    {
+     "id": "AA7659F0-6F3C-4C62-9712-415C51528088",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "428F933E-D9D8-4598-A280-5B40232BC36E",
+     "name": "Steep Creamery & Tea",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "5F7902D6-E671-4A9C-B84D-12EEC0454E4C",
+     "name": "SPRO - Mission Bay/SOMA",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Maple Latte and Brown Butter as a shareable duo for groups of friends and couples",
+    "Offer Apple Pie and Cinnamon Roll as celebratory treats for foodies",
+    "Position Oatmilk Latte as a lighter, easy option for tourists"
+   ]
+  },
+  "philz-san-francisco-noe-valley": {
+   "store_id": "philz-san-francisco-noe-valley",
+   "fit": -0.24,
+   "label": "maybe",
+   "verdict": "Maybe: the cozy, baked-spice offer suits this lively, social, walkable area only partly, so lean on lighter, portable items.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999976
+    },
+    {
+     "id": "urn:tag:genre:place:planetarium",
+     "name": "Planetarium",
+     "affinity": 0.999929
+    },
+    {
+     "id": "urn:tag:genre:place:art_museum",
+     "name": "Art museum",
+     "affinity": 0.999857
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999834
+    }
+   ],
+   "partners": [
+    {
+     "id": "9AA88919-DCEA-4B03-A53B-1E5DCA203E5D",
+     "name": "Lovejoy's Tea Room",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "D155D3CF-72C6-45EA-843D-A4E4C0484A53",
+     "name": "Omnivore Books on Food",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "4E3F2F4B-DD8E-4673-BB89-B7ACB347EAE7",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Oatmilk Latte as an easy, grab-and-go option for park walkers",
+    "Maple Latte with a light touch for a Californian palate",
+    "Cinnamon Roll or Oatmeal Raisin Cookie as a shareable social treat"
+   ]
+  },
+  "philz-burlingame-burlingame": {
+   "store_id": "philz-burlingame-burlingame",
+   "fit": -0.38,
+   "label": "maybe",
+   "verdict": "Maybe: the cozy, dessert-like offer suits Burlingame's celebratory, foodie crowd, but its sweetness may only partly match Californian, New American tastes.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999931
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.999861
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999769
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999746
+    }
+   ],
+   "partners": [
+    {
+     "id": "D6517DCA-94A0-43D9-A3CA-8629752E60BF",
+     "name": "Copenhagen Bakery & Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "DE7C5032-4644-4B7B-BE00-864C98DE402E",
+     "name": "Tpumps",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "0BF59345-40C4-4137-93EE-49818D3AA364",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Brown Butter with Oatmilk Latte for foodies",
+    "Offer Apple Pie or Cinnamon Roll as a shareable treat for social, celebratory groups",
+    "Keep Maple Latte lightly sweet for business professionals and tourists"
+   ]
+  },
+  "philz-san-jose-philz-coffee-san-jose": {
+   "store_id": "philz-san-jose-philz-coffee-san-jose",
+   "fit": -0.39,
+   "label": "maybe",
+   "verdict": "Maybe: the cozy bakery-style offer suits lively groups and foodies, but nothing in the local tags points to strong demand for these flavors.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999985
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99997
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999955
+    },
+    {
+     "id": "urn:tag:genre:place:live_music_venue",
+     "name": "Live music venue",
+     "affinity": 0.99991
+    }
+   ],
+   "partners": [
+    {
+     "id": "A96232EF-D64F-4BD1-977B-2550303FC78B",
+     "name": "CREAM",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "C7A5E368-BFA6-44AA-B98C-F52831CB8FBF",
+     "name": "Boba Bar",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "C7546A24-8DF0-42D0-AC01-46D2DC828D58",
+     "name": "My Milkshake",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Oatmilk Latte for a Californian crowd",
+    "Shareable Cinnamon Roll for groups of friends",
+    "Brown Butter and Apple Pie for foodies"
+   ]
+  },
+  "philz-san-francisco-potrero": {
+   "store_id": "philz-san-francisco-potrero",
+   "fit": -0.39,
+   "label": "maybe",
+   "verdict": "Maybe fits: the lively, social, foodie crowd may enjoy a cozy bakery-style offer, though the slightly negative fit score suggests moderate, not strong, appeal.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999988
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999976
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999939
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999914
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999902
+    }
+   ],
+   "partners": [
+    {
+     "id": "5E6AC0AF-85AB-4112-B939-FD6236174874",
+     "name": "Tartine Manufactory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F7D6044A-0A47-48D4-96FC-85D8A454E40F",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "16B88248-E207-4607-AF75-990E911C2A58",
+     "name": "Milkbomb Ice Cream",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Shareable cinnamon roll or cookie pairings for groups of friends and couples",
+    "Maple or brown butter latte as a foodie-friendly highlight",
+    "Oatmilk latte option to welcome varied locals and tourists"
+   ]
+  },
+  "philz-menlo-park-menlo-park": {
+   "store_id": "philz-menlo-park-menlo-park",
+   "fit": -0.45,
+   "label": "maybe",
+   "verdict": "Maybe fits: the cozy bakery-style offer suits Menlo Park's foodie, social crowd, but the fit is slightly below average, so test it modestly.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999974
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999895
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999869
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999843
+    }
+   ],
+   "partners": [
+    {
+     "id": "65D8ED68-54A9-4FB0-8846-CCC3E0D2CFCB",
+     "name": "Kepler's Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "74FBA430-848F-4C7F-8BE3-7BB73C7681E6",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "12AEB38C-119B-439A-BB7C-0798074045A5",
+     "name": "Coffeebar Menlo Park",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Maple Latte with Brown Butter for foodies",
+    "Offer Oatmilk Latte as a Californian-style option",
+    "Promote Apple Pie and Cinnamon Roll as shareable treats for couples and groups"
+   ]
+  },
+  "philz-sunnyvale-sunnyvale": {
+   "store_id": "philz-sunnyvale-sunnyvale",
+   "fit": -0.45,
+   "label": "maybe",
+   "verdict": "Maybe: the offer's cozy, bakery-style sweetness only partly suits this lively, foodie-leaning local crowd, so test it modestly before committing.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999976
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999953
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999929
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999905
+    }
+   ],
+   "partners": [
+    {
+     "id": "6F3EAF8B-0B63-4565-9C32-618F5557DFF7",
+     "name": "Blossom Chai Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "D872D137-8B5A-4045-AF76-0FC3454178F0",
+     "name": "Leigh's Favorite Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "9948E117-F41F-4CC8-A936-CEC89D54F66F",
+     "name": "Coffee & More Cafe",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with Oatmilk Latte for foodies and business professionals",
+    "Pair Maple Latte with Cinnamon Roll for groups of friends",
+    "Offer Apple Pie as a shareable treat for tourists and event crowds"
+   ]
+  },
+  "philz-cupertino-deanza-cupertino": {
+   "store_id": "philz-cupertino-deanza-cupertino",
+   "fit": -0.53,
+   "label": "skip",
+   "verdict": "Skip: the sweet, baked-dessert profile fits poorly with this store's Californian, New American foodie crowd, with a slightly below-average fit score of -0.53.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999977
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999954
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999931
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999862
+    }
+   ],
+   "partners": [
+    {
+     "id": "46C8798C-A297-42F1-BDB1-16A36C6FFEC4",
+     "name": "99 Ranch Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "25E4F1D9-6181-44DD-ABC2-12A78D37180A",
+     "name": "Paris Baguette",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "069CE4BA-53B9-40FA-9992-1A61F41F155F",
+     "name": "Panera Bread",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Keep Californian, New American freshness front and center",
+    "Offer lighter, shareable options for groups and couples",
+    "Position any trial as a foodie-friendly, celebratory treat"
+   ]
+  },
+  "philz-san-francisco-ocean-ave": {
+   "store_id": "philz-san-francisco-ocean-ave",
+   "fit": -0.53,
+   "label": "skip",
+   "verdict": "Skip: the cozy, bakery-style fall lineup fits poorly with this lively, foodie-leaning tourist area, though its tiramisu tag hints at some dessert appeal.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999945
+    },
+    {
+     "id": "urn:tag:genre:place:planetarium",
+     "name": "Planetarium",
+     "affinity": 0.999926
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999815
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999778
+    }
+   ],
+   "partners": [
+    {
+     "id": "EEECB599-FA91-438F-A9BD-CFF307A450D9",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "FD49014A-925D-454A-B42C-6910DD4C36A1",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "297FECA6-1CFD-4ED0-B3A1-AF6AED4D0C29",
+     "name": "Cherry Blossom Bakery",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Offer Maple Latte as a small-format dessert-style sip for couples",
+    "Pair Brown Butter flavor with tiramisu-style sweetness for foodies",
+    "Keep Oatmilk Latte as an easy, shareable option for social groups"
+   ]
+  },
+  "philz-san-jose-brokaw-commons": {
+   "store_id": "philz-san-jose-brokaw-commons",
+   "fit": -0.69,
+   "label": "skip",
+   "verdict": "Skip: the offer's sweet, baked-spice profile fits only loosely with local Asian, Japanese and Californian tastes, though dessert and bubble tea interest offers some pull.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:asian",
+     "name": "Asian",
+     "affinity": 0.999962
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:dessert_shop",
+     "name": "Dessert shop",
+     "affinity": 0.999924
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:sushi",
+     "name": "Sushi",
+     "affinity": 0.999885
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:japanese",
+     "name": "Japanese",
+     "affinity": 0.999847
+    }
+   ],
+   "partners": [
+    {
+     "id": "E0DE0B3A-23ED-49E7-9B31-D9CD2D717108",
+     "name": "Cauldron Ice Cream",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6DDCA5C0-1FA7-4C64-8703-3987C7900E51",
+     "name": "Anton",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F111C788-0D24-4CBF-965A-7809F649A979",
+     "name": "Noah's NY Bagels",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with lighter oatmilk latte for Californian and Japanese palates",
+    "Pair sweet dessert-style flavors with the dessert and bubble tea crowd",
+    "Offer single-serve sizes for solo diners"
+   ]
+  },
+  "philz-los-gatos-los-gatos": {
+   "store_id": "philz-los-gatos-los-gatos",
+   "fit": -0.73,
+   "label": "skip",
+   "verdict": "Skip: the sweet, bakery-style offer fits poorly with this foodie, wine-loving, Californian crowd, so the fit score is below average at -0.73.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.99996
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.99992
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.99988
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99986
+    }
+   ],
+   "partners": [
+    {
+     "id": "55F2EE59-9EFC-430A-82AA-AE90F4D52844",
+     "name": "Classic Burgers of Los Gatos",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1A5ADFAF-CC8B-4F93-87B1-7A2387925DD3",
+     "name": "Blvd Coffee",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "577A58C8-539F-40EC-8AC6-54901763CE66",
+     "name": "Noah's NY Bagels",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with a lighter, less sweet pairing for Californian foodie tastes",
+    "Offer a refined, shareable bite for couples and celebratory diners",
+    "Keep a simple oatmilk latte as a familiar option"
+   ]
+  },
+  "philz-redwood-city-redwood-city": {
+   "store_id": "philz-redwood-city-redwood-city",
+   "fit": -0.75,
+   "label": "skip",
+   "verdict": "Skip: the cozy bakery-spice offer fits this lively, foodie-driven Californian crowd only weakly, with a negative fit score of -0.75.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999955
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999909
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999887
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999841
+    }
+   ],
+   "partners": [
+    {
+     "id": "CBA20786-F4DB-4B45-8731-3815FC394772",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2AB2BC97-0770-4DC7-B000-F5518BC29922",
+     "name": "Barnes & Noble",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "E215043D-551C-496F-AE79-8C70D19AD5F9",
+     "name": "Teaspoon Redwood City",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with Californian and New American style freshness, not heavy dessert flavors",
+    "Offer shareable portions for groups of friends and couples",
+    "Highlight one standout flavor to appeal to foodies"
+   ]
+  },
+  "philz-orange-old-towne-orange": {
+   "store_id": "philz-orange-old-towne-orange",
+   "fit": -0.77,
+   "label": "skip",
+   "verdict": "Skip: the offer's cozy baked-sweet profile scores below average for this lively, tourist-and-foodie crowd, so a broad rollout here is a weak fit.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.99998
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99996
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999901
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999862
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999822
+    }
+   ],
+   "partners": [
+    {
+     "id": "6A6FBCB7-517C-43DD-AD53-CAAC99FBBB8B",
+     "name": "The Filling Station Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "8EBB8265-DB1D-4F46-A347-32D3C70DB34D",
+     "name": "CONTRA COFFEE and TEA",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6300C83A-6C29-41A4-95F2-C814C03D337D",
+     "name": "La Poblana Bakery",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Offer only a small test of the Maple Latte for foodies",
+    "Pair Oatmilk Latte with shareable items for groups of friends",
+    "Skip heavy bakery flavors like Cinnamon Roll and Apple Pie"
+   ]
+  },
+  "philz-walnut-creek-walnut-creek": {
+   "store_id": "philz-walnut-creek-walnut-creek",
+   "fit": -0.78,
+   "label": "skip",
+   "verdict": "Skip: the cozy, sweet, bakery-style LTO fits poorly with a Walnut Creek crowd of wine, cocktail and foodie diners, scoring below average.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.999981
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:wine_enthusiasts",
+     "name": "Wine Enthusiasts",
+     "affinity": 0.999926
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999888
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:couples",
+     "name": "Couples",
+     "affinity": 0.999851
+    }
+   ],
+   "partners": [
+    {
+     "id": "F14E967F-A6E2-4116-B24D-22CAD0C63C3E",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "B4F7AEE1-E625-4126-AAA6-1750CED70E24",
+     "name": "San Francisco Creamery",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "B236E3D8-7080-417A-BACE-8355D23A2B09",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair with wine-lover and cocktail-minded tastes",
+    "Highlight foodie-friendly brown butter over sweet pastry notes",
+    "Offer a shareable option for couples and celebratory diners"
+   ]
+  },
+  "philz-brea-brea-mall": {
+   "store_id": "philz-brea-brea-mall",
+   "fit": -1.15,
+   "label": "skip",
+   "verdict": "Skip: the offer's cozy bakery-style sweetness fits poorly with this lively, casual, mixed crowd (z-score -1.15), so a full rollout is unlikely to pay off.",
+   "why_tags": [
+    {
+     "id": "urn:tag:customer_identity:qloo:regulars",
+     "name": "Regulars",
+     "affinity": 0.999894
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999815
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999789
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999736
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:american",
+     "name": "American",
+     "affinity": 0.999709
+    }
+   ],
+   "partners": [
+    {
+     "id": "6C69FBAF-6577-4920-BAEC-0F61AED1D77D",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "FE2EA394-972D-441D-A473-C5F7E8580C35",
+     "name": "Crumbl Cookies",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "F940F600-D3B9-4875-AEF1-D69E8F45F92D",
+     "name": "Panera Bread",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Keep it to one familiar, shareable-style option for groups",
+    "Lead with American-style comfort, not novelty",
+    "Pitch to foodies with a simple maple or cinnamon highlight"
+   ]
+  },
+  "philz-colma-colma": {
+   "store_id": "philz-colma-colma",
+   "fit": -1.24,
+   "label": "skip",
+   "verdict": "Skip: Colma's local tags lean toward savory salads and rich desserts like tiramisu, cheesecake and bread pudding, not this cozy maple-and-spice offer.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 0.999968
+    },
+    {
+     "id": "urn:tag:specialty_dish:place:house_made_tiramisu",
+     "name": "House Made Tiramisu",
+     "affinity": 0.999935
+    },
+    {
+     "id": "urn:tag:specialty_dish:place:salad_bowl",
+     "name": "Salad Bowl",
+     "affinity": 0.999741
+    },
+    {
+     "id": "urn:tag:genre:place:planetarium",
+     "name": "Planetarium",
+     "affinity": 0.999708
+    },
+    {
+     "id": "urn:tag:specialty_dish:place:chocolate_cheesecake",
+     "name": "Chocolate Cheesecake",
+     "affinity": 0.999676
+    }
+   ],
+   "partners": [
+    {
+     "id": "F776F10C-B6AD-462E-9DEF-8B5BB3903E6E",
+     "name": "85\u00b0C Bakery Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "C68532F0-A99A-426A-9048-CE509C194746",
+     "name": "Panera Bread",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "A7E777E3-D4E5-4113-9D55-509275E14F82",
+     "name": "Auntie Anne's",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair with bread pudding-style richness only if testing",
+    "Lean on lighter, salad-friendly sips rather than heavy spice",
+    "Highlight dessert-adjacent flavors like chocolate or tiramisu instead"
    ]
   },
   "philz-san-mateo-hillsdale": {
    "store_id": "philz-san-mateo-hillsdale",
-   "fit": -1.57,
+   "fit": -1.32,
    "label": "skip",
-   "verdict": "Skip: the cozy, bakery-style fall signature fits poorly with this lively, tourist-heavy, Californian and New American crowd, so the offer is a weak match.",
+   "verdict": "Skip: the cozy, bakery-style sweetness of this offer fits poorly with the store's lively, foodie, New American Californian local profile.",
    "why_tags": [
     {
      "id": "urn:tag:genre:place:restaurant:californian",
@@ -1290,9 +2961,241 @@
     }
    ],
    "menu_cues": [
-    "Keep menu lighter and fresher, in line with Californian and New American tastes",
-    "Position any sweet items as shareable treats for couples and celebratory diners",
-    "Offer an elevated, foodie-friendly option instead of heavy dessert flavors"
+    "Lead with Oatmilk Latte as the approachable choice for Californian foodies",
+    "Pair Brown Butter with celebratory, shareable treats for event crowds",
+    "Keep heavy dessert flavors like Apple Pie and Cinnamon Roll limited"
+   ]
+  },
+  "philz-san-francisco-chase-center": {
+   "store_id": "philz-san-francisco-chase-center",
+   "fit": -1.32,
+   "label": "skip",
+   "verdict": "Skip: the cozy, bakery-sweet lineup fits poorly with this energetic, social, event-driven Californian setting (fit z-score -1.32).",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:stadium",
+     "name": "Stadium",
+     "affinity": 0.999931
+    },
+    {
+     "id": "urn:tag:genre:place:arena",
+     "name": "Arena",
+     "affinity": 0.999885
+    },
+    {
+     "id": "urn:tag:genre:place:amphitheater",
+     "name": "Amphitheater",
+     "affinity": 0.999862
+    },
+    {
+     "id": "urn:tag:genre:place:concert_hall",
+     "name": "Concert hall",
+     "affinity": 0.999793
+    }
+   ],
+   "partners": [
+    {
+     "id": "A8BCAF75-A0CE-4398-8C42-DD74D8BA606E",
+     "name": "Neighbor Bakehouse",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "AA7659F0-6F3C-4C62-9712-415C51528088",
+     "name": "Safeway",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "5F7902D6-E671-4A9C-B84D-12EEC0454E4C",
+     "name": "SPRO - Mission Bay/SOMA",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Keep quick-serve, shareable items for celebratory crowds",
+    "Favor lighter Californian-style drinks over heavy spiced sweetness",
+    "Prioritize grab-and-go options for energetic live-event traffic"
+   ]
+  },
+  "philz-oakland-lakeshore-oakland": {
+   "store_id": "philz-oakland-lakeshore-oakland",
+   "fit": -1.62,
+   "label": "skip",
+   "verdict": "Skip: the cozy, bakery-sweet offer fits poorly with this lively, foodie, cocktail-minded Californian crowd, scoring well below average at -1.62.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999892
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999857
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999839
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999821
+    }
+   ],
+   "partners": [
+    {
+     "id": "580ADBE7-270E-46E4-AAAA-CC9CB4F6071E",
+     "name": "Arizmendi Bakery (Lakeshore)",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2004B326-237A-4BEC-A72E-6C68894998BF",
+     "name": "Walden Pond Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "D3BDFA58-8638-4250-A927-6622BFCE7CE8",
+     "name": "Bake Sum",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with lighter, fresh Californian-style drinks",
+    "Offer a shareable, celebratory option for couples",
+    "Add a cocktail-inspired twist for foodies"
+   ]
+  },
+  "philz-campbell-campbell": {
+   "store_id": "philz-campbell-campbell",
+   "fit": -1.67,
+   "label": "skip",
+   "verdict": "Skip: the sweet, bakery-style offer fits poorly with this store's Californian, New American, foodie-leaning local profile, with a fit score of -1.67.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999979
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999938
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999917
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999834
+    }
+   ],
+   "partners": [
+    {
+     "id": "D5AFEFDA-2BE3-4855-9140-8B17D53FCD9B",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "72FB351A-D4E6-4A90-806A-3FC1F6CCC023",
+     "name": "Recycle Bookstore West",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "73B48E52-3304-493D-A0A2-A2383A494903",
+     "name": "Teaspoon Campbell",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with Californian and New American cues",
+    "Offer shareable items for groups and couples",
+    "Keep the lively, celebratory mood for foodies and tourists"
+   ]
+  },
+  "philz-fremont-fremont": {
+   "store_id": "philz-fremont-fremont",
+   "fit": -1.69,
+   "label": "skip",
+   "verdict": "Skip: the cozy, sweet-baked LTO fits poorly with Fremont's lively, foodie-leaning crowd, and the local tags give no taste signals supporting it.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999958
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999894
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999873
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:groups_of_friends",
+     "name": "Groups of Friends",
+     "affinity": 0.99983
+    }
+   ],
+   "partners": [
+    {
+     "id": "05BC76F4-4AC6-48A3-89D4-E900B9F08488",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "8B545171-3882-4FEA-B374-3606836BD16E",
+     "name": "Half Price Books",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "67AB6514-B2D0-4807-A1B3-1BA0DC66E77B",
+     "name": "Panera Bread",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with New American, foodie-friendly framing if offered",
+    "Keep it shareable for groups of friends and celebratory diners",
+    "Favor a lighter Californian feel over heavy baked sweetness"
    ]
   }
  },
@@ -1325,17 +3228,9 @@
    "type": "trace",
    "tool": "find_tags",
    "args": {
-    "query": "latte"
+    "query": "oatmeal"
    },
-   "summary": "4 results: Latte 12oz, Latte Coffee, Latte"
-  },
-  {
-   "type": "trace",
-   "tool": "find_tags",
-   "args": {
-    "query": "oatmeal cookie"
-   },
-   "summary": "2 results: Oatmeal Raisin Cookie, Oatmeal Chocolate Chip Cookie"
+   "summary": "4 results: Oatmeal Raisin Cookie, Oatmeal Bar, Oatmeal Raisin"
   },
   {
    "type": "trace",
@@ -1347,6 +3242,14 @@
   },
   {
    "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "cinnamon roll"
+   },
+   "summary": "5 results: Cinnamon Roll, Cinnamon Roll French Toast, Cinnamon Rolls"
+  },
+  {
+   "type": "trace",
    "tool": "score_stores",
    "args": {
     "items": [
@@ -1354,7 +3257,8 @@
      "Oatmilk Latte",
      "Brown Butter",
      "Oatmeal Raisin Cookie",
-     "Apple Pie"
+     "Apple Pie",
+     "Cinnamon Roll"
     ]
    },
    "summary": "40 of 40 stores scored"
@@ -1411,17 +3315,17 @@
    "type": "trace",
    "tool": "area_taste",
    "args": {
-    "store": "Lakeshore Oakland"
+    "store": "Campbell"
    },
-   "summary": "10 results: Californian, New American, Tourists"
+   "summary": "10 results: Californian, New American, Foodies"
   },
   {
    "type": "trace",
    "tool": "area_taste",
    "args": {
-    "store": "Hillsdale"
+    "store": "Lakeshore Oakland"
    },
-   "summary": "10 results: Californian, Event venue, Science museum"
+   "summary": "10 results: Californian, New American, Tourists"
   }
  ]
 }

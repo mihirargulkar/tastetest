@@ -113,6 +113,24 @@ async def test_retries_429_then_succeeds(tmp_path, monkeypatch):
     assert slept == [1.0, 1.0]
 
 
+async def test_non_numeric_retry_after_uses_backoff(tmp_path, monkeypatch):
+    statuses = [429, 200]
+    slept = []
+
+    async def fake_sleep(s):
+        slept.append(s)
+
+    def handler(request):
+        code = statuses.pop(0)
+        hdr = {"retry-after": "Wed, 21 Oct 2026 07:28:00 GMT"} if code == 429 else {}
+        return httpx.Response(code, json={"results": {"tags": []}}, headers=hdr)
+
+    monkeypatch.setattr(qloo, "_sleep", fake_sleep)
+    q = make_client(tmp_path, handler)
+    assert await q.get("/v2/tags", {"filter.query": "x"}) == {"results": {"tags": []}}
+    assert slept == [2]
+
+
 def test_parsers():
     assert parse_tag_search({"results": {"tags": [{"id": "T1", "name": "Matcha", "type": "urn:tag:specialty_dish:place"}]}}) == [
         {"id": "T1", "name": "Matcha", "type": "urn:tag:specialty_dish:place"}]

@@ -99,9 +99,10 @@ async def test_tool_errors_are_reported_back_and_loop_continues():
                    resp(tool_use("t2", "done", {"ok": True}))])
     events = await collect(run_tool_loop(llm, system="s", user="u", tools=[], handlers={"find_tags": boom},
                                          finish_tool="done"))
-    assert events[0]["summary"].startswith("error")
+    assert events[0]["summary"] == "error: Qloo request failed"
     tool_result = llm.calls[1]["messages"][-1]["content"][0]
     assert tool_result["is_error"] is True
+    assert "bad args" in tool_result["content"]
     assert events[-1] == {"type": "finish", "input": {"ok": True}}
 
 
@@ -174,3 +175,32 @@ async def test_write_brief_uses_only_qloo_entities():
     assert brief["partners"][0]["name"] == "Tea Shop"
     assert brief["verdict"].startswith("The neighborhood")
     assert brief["menu_cues"] == ["Lead with matcha"]
+
+
+async def test_signature_truncated_to_8_items_and_substituted_from_capped():
+    class T(FakeTools):
+        async def find_tags(self, query):
+            return [{"id": f"T{i}", "name": f"n{i}"} for i in range(10)]
+
+    items = [{"id": f"T{i}", "name": "x", "kind": "tag", "weight": 0.5, "substituted_from": "s" * 300}
+             for i in range(10)]
+    llm = FakeLLM([resp(tool_use("t1", "find_tags", {"query": "q"})),
+                   resp(tool_use("t2", "submit_signature", {"items": items}))])
+    events = await collect(build_signature(llm, T(), "x"))
+    assert len(events[-1]["items"]) == 8
+    assert all(len(i["substituted_from"]) == 200 for i in events[-1]["items"])
+
+
+async def test_run_score_skips_reasons_call_when_no_focus():
+    class T(FakeTools):
+        async def score_stores(self, signature):
+            return {"stores": [{**s, "fit": None, "confidence": "none"} for s in self.stores], "stability": None}
+
+    llm = FakeLLM([])
+    sig = [{"id": "T1", "name": "matcha", "kind": "tag", "weight": 1.0, "substituted_from": None}]
+    events = await collect(run_score(llm, T(), sig))
+    assert llm.calls == [] and events[-1]["reasons"] == {}
+
+
+def test_max_tool_calls():
+    assert agent.MAX_TOOL_CALLS == 12

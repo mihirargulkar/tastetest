@@ -37,8 +37,14 @@ async def run_one(llm, tools, slug, title, lto):
         else:
             result = ev
     fits = {s["id"]: s["fit"] for s in result["stores"]}
-    ids = result["top"] + result["bottom"]
-    briefs = await asyncio.gather(*(agent.write_brief(llm, tools, i, signature, fits[i]) for i in ids))
+    ids = [i for i, f in fits.items() if f is not None]
+    sem = asyncio.Semaphore(4)
+
+    async def brief(i):
+        async with sem:
+            return await agent.write_brief(llm, tools, i, signature, fits[i])
+
+    briefs = await asyncio.gather(*(brief(i) for i in ids))
     out = {"slug": slug, "title": title, "lto": lto, "signature": signature, "result": result,
            "briefs": dict(zip(ids, briefs)), "trace": trace}
     (DATA / "demos" / f"{slug}.json").write_text(json.dumps(out, indent=1))

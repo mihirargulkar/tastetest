@@ -83,14 +83,18 @@ class Qloo:
         if f.exists():
             try:
                 return json.loads(f.read_text())
-            except json.JSONDecodeError:
+            except ValueError:
                 pass  # corrupt cache file: treat as a miss and overwrite
         for attempt in range(MAX_RETRIES + 1):
             async with self.sem:
                 r = await self.http.get(path, params=params, headers={"X-Api-Key": self.api_key})
             if r.status_code != 429 or attempt == MAX_RETRIES:
                 break
-            await _sleep(float(r.headers.get("retry-after", 2 ** (attempt + 1))))
+            try:
+                wait = min(float(r.headers.get("retry-after")), 10.0)
+            except (TypeError, ValueError):
+                wait = 2 ** (attempt + 1)
+            await _sleep(wait)
         if r.status_code != 200:
             raise QlooError(r.status_code, r.text)
         data = r.json()
