@@ -85,3 +85,40 @@ def test_brief_unknown_store_404(client, monkeypatch):
 
     monkeypatch.setattr(agent, "write_brief", fake)
     assert client.post("/api/brief", json={"store_id": "zzz", "signature": SIG, "fit": None}).status_code == 404
+
+
+def _ok_score(monkeypatch):
+    async def fake(llm, tools, signature):
+        yield {"type": "result"}
+
+    monkeypatch.setattr(agent, "run_score", fake)
+
+
+def test_rate_limit_ignores_spoofed_leftmost_xff(client, monkeypatch):
+    _ok_score(monkeypatch)
+    codes = [
+        client.post("/api/score", json={"signature": SIG}, headers={"X-Forwarded-For": f"spoof{i}, 1.2.3.4"}).status_code
+        for i in range(7)
+    ]
+    assert codes[-1] == 429
+
+
+def test_global_live_ceiling_across_ips(client, monkeypatch):
+    _ok_score(monkeypatch)
+    monkeypatch.setattr(main, "GLOBAL_LIVE_PER_HOUR", 3)
+    codes = [
+        client.post("/api/score", json={"signature": SIG}, headers={"X-Forwarded-For": f"9.9.9.{i}"}).status_code
+        for i in range(4)
+    ]
+    assert codes == [200, 200, 200, 429]
+
+
+def test_unexpected_error_text_hidden_from_stream(client, monkeypatch):
+    async def fake(llm, tools, signature):
+        raise RuntimeError("secret upstream body")
+        yield  # pragma: no cover
+
+    monkeypatch.setattr(agent, "run_score", fake)
+    r = client.post("/api/score", json={"signature": SIG})
+    assert "secret upstream body" not in r.text
+    assert events(r) == [{"type": "error", "message": "Something went wrong. Try one of the preloaded examples."}]

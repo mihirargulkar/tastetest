@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 import time
 from collections import defaultdict, deque
@@ -21,6 +22,10 @@ DATA = ROOT / "data"
 DEMOS = DATA / "demos"
 DIST = ROOT.parent / "frontend" / "dist"
 LIMITS = {"live": 6, "brief": 30}  # per IP per hour
+GLOBAL_LIVE_PER_HOUR = 60  # all clients combined, caps spend if IPs are rotated
+GLOBAL_BRIEFS_PER_HOUR = 300
+GENERIC_ERROR = "Something went wrong. Try one of the preloaded examples."
+log = logging.getLogger(__name__)
 
 app = FastAPI(title="TasteTest")
 
@@ -57,19 +62,27 @@ def deps(request: Request):
     return s.llm, s.tools
 
 
-# ponytail: in-memory per-IP limiter; resets on restart and assumes a single instance.
-# X-Forwarded-For is set by Render's proxy; it is spoofable elsewhere.
+# ponytail: in-memory limiter; resets on restart and assumes a single instance.
+# Client = rightmost X-Forwarded-For entry (appended by Render's proxy; earlier entries are client-controlled).
 _hits: dict[tuple[str, str], deque] = defaultdict(deque)
 
 
 def check_rate(request: Request, bucket: str) -> None:
-    ip = request.headers.get("x-forwarded-for", request.client.host).split(",")[0].strip()
-    now, q = time.time(), _hits[(bucket, ip)]
-    while q and now - q[0] > 3600:
-        q.popleft()
-    if len(q) >= LIMITS[bucket]:
-        raise HTTPException(429, "Live run limit reached for this hour. The preloaded examples still work.")
-    q.append(now)
+    xff = request.headers.get("x-forwarded-for", "")
+    ip = xff.split(",")[-1].strip() or (request.client.host if request.client else "unknown")
+    glob = GLOBAL_LIVE_PER_HOUR if bucket == "live" else GLOBAL_BRIEFS_PER_HOUR
+    now = time.time()
+    keys = [((bucket, ip), LIMITS[bucket]), ((bucket, "*"), glob)]
+    for k, limit in keys:
+        q = _hits[k]
+        while q and now - q[0] > 3600:
+            q.popleft()
+        if not q:
+            del _hits[k]
+        if len(q) >= limit:
+            raise HTTPException(429, "Live run limit reached for this hour. The preloaded examples still work.")
+    for k, _ in keys:
+        _hits[k].append(now)
 
 
 def sse(gen) -> StreamingResponse:
@@ -78,7 +91,10 @@ def sse(gen) -> StreamingResponse:
             async for ev in gen:
                 yield f"data: {json.dumps(ev)}\n\n"
         except Exception as e:  # stream boundary: show the failure in the UI instead of a dead stream
-            yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
+            if not isinstance(e, agent.AgentError):
+                log.exception("stream failed")
+            msg = str(e) if isinstance(e, agent.AgentError) else GENERIC_ERROR
+            yield f"data: {json.dumps({'type': 'error', 'message': msg})}\n\n"
     return StreamingResponse(body(), media_type="text/event-stream")
 
 
@@ -131,6 +147,9 @@ async def brief(req: BriefReq, request: Request):
         raise HTTPException(404, "unknown store")
     except agent.AgentError as e:
         raise HTTPException(502, str(e))
+    except Exception:
+        log.exception("brief failed")
+        raise HTTPException(502, GENERIC_ERROR)
 
 
 if DIST.exists():
