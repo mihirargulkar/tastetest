@@ -1,0 +1,1147 @@
+{
+ "slug": "matcha-yuzu",
+ "title": "Matcha-yuzu cold brew",
+ "lto": "Matcha-yuzu cold brew: bright, citrusy, aimed at a younger crowd",
+ "signature": [
+  {
+   "id": "urn:tag:specialty_dish:place:matcha",
+   "name": "Matcha",
+   "kind": "tag",
+   "weight": 1.0,
+   "substituted_from": null
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:cold_brew",
+   "name": "Cold Brew",
+   "kind": "tag",
+   "weight": 0.9,
+   "substituted_from": null
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:yuzu_sorbet",
+   "name": "Yuzu Sorbet",
+   "kind": "tag",
+   "weight": 0.8,
+   "substituted_from": "yuzu"
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:yuzu_cheesecake",
+   "name": "Yuzu Cheesecake",
+   "kind": "tag",
+   "weight": 0.4,
+   "substituted_from": "yuzu"
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:matcha_ice_cream",
+   "name": "Matcha Ice Cream",
+   "kind": "tag",
+   "weight": 0.4,
+   "substituted_from": "matcha"
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:citrus_salad",
+   "name": "Citrus Salad",
+   "kind": "tag",
+   "weight": 0.2,
+   "substituted_from": "citrus"
+  }
+ ],
+ "result": {
+  "type": "result",
+  "stores": [
+   {
+    "id": "philz-san-mateo-san-mateo",
+    "name": "San Mateo",
+    "address": "113 S B St, San Mateo, CA 94401",
+    "lat": 37.5669875,
+    "lon": -122.3236083,
+    "metro": "Bay Area",
+    "affinity": 0.8603280720073877,
+    "popularity": 0.8547439304624582,
+    "fit": 1.49,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-embarcadero",
+    "name": "Embarcadero",
+    "address": "5 Embarcadero Center, San Francisco, CA 94111",
+    "lat": 37.7945298,
+    "lon": -122.3951458,
+    "metro": "Bay Area",
+    "affinity": 0.8502334643534496,
+    "popularity": 0.9747592913761929,
+    "fit": 1.44,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-palo-alto-forest-ave",
+    "name": "Forest Ave",
+    "address": "101 Forest Ave, Palo Alto, CA 94306",
+    "lat": 37.4422033,
+    "lon": -122.1616018,
+    "metro": "Bay Area",
+    "affinity": 0.8417780272079092,
+    "popularity": 0.9094884307310644,
+    "fit": 1.39,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-russian-hill",
+    "name": "Russian Hill",
+    "address": "2234 Polk St, San Francisco, CA 94109",
+    "lat": 37.7975392,
+    "lon": -122.4219848,
+    "metro": "Bay Area",
+    "affinity": 0.8417217742374394,
+    "popularity": 0.9082767776631783,
+    "fit": 1.39,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-front-st",
+    "name": "Front St",
+    "address": "1 Front St, San Francisco, CA 94111",
+    "lat": 37.7918825,
+    "lon": -122.3988519,
+    "metro": "Bay Area",
+    "affinity": 0.8313024771689062,
+    "popularity": 0.9901914692330772,
+    "fit": 1.34,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-folsom-beale",
+    "name": "Folsom & Beale",
+    "address": "300 Folsom St, San Francisco, CA 94105",
+    "lat": 37.7887269,
+    "lon": -122.393156,
+    "metro": "Bay Area",
+    "affinity": 0.7992373156658235,
+    "popularity": 0.9341370509488142,
+    "fit": 1.17,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-second-street",
+    "name": "Second Street",
+    "address": "425 Mission Street, San Francisco, CA 94105",
+    "lat": 37.7904312,
+    "lon": -122.3952043,
+    "metro": "Bay Area",
+    "affinity": 0.7992373156658235,
+    "popularity": 0.9341370509488142,
+    "fit": 1.17,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-beverly-hills-south-beverly",
+    "name": "South Beverly",
+    "address": "233 South Beverly Drive, Beverly Hills, CA 90212",
+    "lat": 34.0637237,
+    "lon": -118.399308,
+    "metro": "LA basin",
+    "affinity": 0.7887626355250782,
+    "popularity": 0.8380402867933275,
+    "fit": 1.11,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-civic-center",
+    "name": "Civic Center",
+    "address": "399 Golden Gate Ave, San Francisco, CA 94102",
+    "lat": 37.781385,
+    "lon": -122.416976,
+    "metro": "Bay Area",
+    "affinity": 0.7677975207988329,
+    "popularity": 0.9991182013226021,
+    "fit": 1.0,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-menlo-park-menlo-park",
+    "name": "Menlo Park",
+    "address": "506 Santa Cruz Ave, Menlo Park, CA 94025",
+    "lat": 37.4544368,
+    "lon": -122.1825021,
+    "metro": "Bay Area",
+    "affinity": 0.7652936199770349,
+    "popularity": 0.6558408209687168,
+    "fit": 0.98,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-redwood-city-redwood-city",
+    "name": "Redwood City",
+    "address": "2116 Broadway, Redwood City, CA 94063",
+    "lat": 37.4866611,
+    "lon": -122.228595,
+    "metro": "Bay Area",
+    "affinity": 0.7590739826725449,
+    "popularity": 0.7449140187993705,
+    "fit": 0.95,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-culver-city-culver-city",
+    "name": "Culver City",
+    "address": "9300 Culver Blvd, Culver City, CA 90232",
+    "lat": 34.0244516,
+    "lon": -118.3933641,
+    "metro": "LA basin",
+    "affinity": 0.7574855788482663,
+    "popularity": 0.712560587268975,
+    "fit": 0.94,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-dtla-hope",
+    "name": "DTLA \u2013 Hope",
+    "address": "801 S Hope St, Los Angeles, CA 90017",
+    "lat": 34.0462665,
+    "lon": -118.2596525,
+    "metro": "LA basin",
+    "affinity": 0.7472694261867592,
+    "popularity": 0.9636277466631176,
+    "fit": 0.89,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-cupertino-cupertino-main",
+    "name": "Cupertino Main",
+    "address": "19439 Stevens Creek Blvd, Cupertino, CA 95014",
+    "lat": 37.3242262,
+    "lon": -122.0105165,
+    "metro": "Bay Area",
+    "affinity": 0.72061208997582,
+    "popularity": 0.7175432674306969,
+    "fit": 0.75,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-cupertino-deanza-cupertino",
+    "name": "DeAnza - Cupertino",
+    "address": "20686 Stevens Creek Blvd, Cupertino, CA 95014",
+    "lat": 37.3225787,
+    "lon": -122.034649,
+    "metro": "Bay Area",
+    "affinity": 0.6468815756096786,
+    "popularity": 0.6706300222508719,
+    "fit": 0.35,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-hollywood",
+    "name": "Hollywood",
+    "address": "6430 Sunset Blvd, Los Angeles, CA 90028",
+    "lat": 34.0976563,
+    "lon": -118.3299312,
+    "metro": "LA basin",
+    "affinity": 0.635899502826038,
+    "popularity": 0.9716053128062121,
+    "fit": 0.29,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-pasadena-pasadena",
+    "name": "Pasadena",
+    "address": "146 S Lake Ave, Pasadena, CA 91101",
+    "lat": 34.1432645,
+    "lon": -118.13177,
+    "metro": "LA basin",
+    "affinity": 0.6324615227187813,
+    "popularity": 0.5956305718985551,
+    "fit": 0.27,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-berry",
+    "name": "Berry",
+    "address": "201 Berry St, San Francisco, CA 94158",
+    "lat": 37.7755634,
+    "lon": -122.3933972,
+    "metro": "Bay Area",
+    "affinity": 0.6206589181212574,
+    "popularity": 0.7387268797542808,
+    "fit": 0.21,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-glendale-glendale",
+    "name": "Glendale",
+    "address": "252 South Brand Blvd, Glendale, CA 91204",
+    "lat": 34.1427824,
+    "lon": -118.2547408,
+    "metro": "LA basin",
+    "affinity": 0.5847635654777222,
+    "popularity": 0.7437705202640572,
+    "fit": 0.02,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-castro",
+    "name": "Castro",
+    "address": "549 Castro St, San Francisco, CA 94114",
+    "lat": 37.7601055,
+    "lon": -122.4346797,
+    "metro": "Bay Area",
+    "affinity": 0.5788273842085153,
+    "popularity": 0.8252183248310965,
+    "fit": -0.01,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-philz-coffee-san-jose",
+    "name": "Philz Coffee - San Jose",
+    "address": "118 Paseo de San Antonio Walk, San Jose, CA 95112",
+    "lat": 37.3336349,
+    "lon": -121.88499,
+    "metro": "Bay Area",
+    "affinity": 0.5768049690892972,
+    "popularity": 0.8001818390819111,
+    "fit": -0.02,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-gatos-los-gatos",
+    "name": "Los Gatos",
+    "address": "681 Blossom Hill Rd, Los Gatos, CA 95032",
+    "lat": 37.2359736,
+    "lon": -121.9635663,
+    "metro": "Bay Area",
+    "affinity": 0.577715993197399,
+    "popularity": 0.4993911132184989,
+    "fit": -0.02,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-burlingame-burlingame",
+    "name": "Burlingame",
+    "address": "305 Primrose Rd, Burlingame, CA 94010",
+    "lat": 37.5779248,
+    "lon": -122.3485707,
+    "metro": "Bay Area",
+    "affinity": 0.5459284828730897,
+    "popularity": 0.6825760729822452,
+    "fit": -0.19,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-los-feliz",
+    "name": "Los Feliz",
+    "address": "2117 Hillhurst Avenue, Los Angeles, CA 90027",
+    "lat": 34.1104689,
+    "lon": -118.2876272,
+    "metro": "LA basin",
+    "affinity": 0.49313278050300774,
+    "popularity": 0.6470831392497505,
+    "fit": -0.47,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-colma-colma",
+    "name": "Colma",
+    "address": "5055 Junipero Serra Blvd, Colma, CA 94014",
+    "lat": 37.6717582,
+    "lon": -122.4652105,
+    "metro": "Bay Area",
+    "affinity": 0.47363395024689153,
+    "popularity": 0.4375507725237137,
+    "fit": -0.58,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-campbell-campbell",
+    "name": "Campbell",
+    "address": "1976 S Bascom Ave, Campbell, CA 95008",
+    "lat": 37.2870273,
+    "lon": -121.931647,
+    "metro": "Bay Area",
+    "affinity": 0.4722895068955078,
+    "popularity": 0.2648343680301606,
+    "fit": -0.58,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-willow-glen",
+    "name": "Willow Glen",
+    "address": "1115 Lincoln Ave, San Jose, CA 95125",
+    "lat": 37.307988,
+    "lon": -121.9010641,
+    "metro": "Bay Area",
+    "affinity": 0.4685205122829091,
+    "popularity": 0.5267949338894053,
+    "fit": -0.6,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-sunnyvale-sunnyvale",
+    "name": "Sunnyvale",
+    "address": "125 S Frances St, Sunnyvale, CA 94086",
+    "lat": 37.3767094,
+    "lon": -122.0311824,
+    "metro": "Bay Area",
+    "affinity": 0.4672264121089761,
+    "popularity": 0.5154016720623908,
+    "fit": -0.61,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-noe-valley",
+    "name": "Noe Valley",
+    "address": "4298 24th St, San Francisco, CA 94114",
+    "lat": 37.7511414,
+    "lon": -122.4383792,
+    "metro": "Bay Area",
+    "affinity": 0.4676798712263099,
+    "popularity": 0.6105047259362033,
+    "fit": -0.61,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-torrance-del-amo-fashion-center",
+    "name": "Del Amo Fashion Center",
+    "address": "21434 Hawthorne Boulevard, Torrance, CA 90503",
+    "lat": 33.8342763,
+    "lon": -118.3511753,
+    "metro": "LA basin",
+    "affinity": 0.4656883536291294,
+    "popularity": 0.6183996814551075,
+    "fit": -0.62,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-potrero",
+    "name": "Potrero",
+    "address": "1775 17th St, San Francisco, CA 94103",
+    "lat": 37.7647559,
+    "lon": -122.4011997,
+    "metro": "Bay Area",
+    "affinity": 0.45142933811815517,
+    "popularity": 0.5739422245730121,
+    "fit": -0.69,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-chase-center",
+    "name": "Chase Center",
+    "address": "1 Warriors Way, San Francisco, CA 94158",
+    "lat": 37.7679001,
+    "lon": -122.3874223,
+    "metro": "Bay Area",
+    "affinity": 0.4132697899621094,
+    "popularity": 0.6447246035583148,
+    "fit": -0.9,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-brokaw-commons",
+    "name": "Brokaw Commons",
+    "address": "1085 E Brokaw Road, San Jose, CA 95131",
+    "lat": 37.3834494,
+    "lon": -121.8967714,
+    "metro": "Bay Area",
+    "affinity": 0.4119366518268119,
+    "popularity": 0.3205955993806327,
+    "fit": -0.91,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-ocean-ave",
+    "name": "Ocean Ave",
+    "address": "1110 Ocean Ave, San Francisco, CA 94112",
+    "lat": 37.7236571,
+    "lon": -122.4537767,
+    "metro": "Bay Area",
+    "affinity": 0.40954047062367593,
+    "popularity": 0.4626604008761476,
+    "fit": -0.92,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-oakland-lakeshore-oakland",
+    "name": "Lakeshore Oakland",
+    "address": "3347 Lakeshore Avenue, Oakland, CA 94610",
+    "lat": 37.8112398,
+    "lon": -122.2434366,
+    "metro": "Bay Area",
+    "affinity": 0.3353051662482361,
+    "popularity": 0.3398860315604436,
+    "fit": -1.32,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-mateo-hillsdale",
+    "name": "Hillsdale",
+    "address": "42 Hillsdale Mall, San Mateo, CA 94403",
+    "lat": 37.5388043,
+    "lon": -122.302004,
+    "metro": "Bay Area",
+    "affinity": 0.32137545878249857,
+    "popularity": 0.3487975535933243,
+    "fit": -1.39,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-fremont-fremont",
+    "name": "Fremont",
+    "address": "39000 Paseo Padre Pkwy, Fremont, CA 94538",
+    "lat": 37.5535513,
+    "lon": -121.980306,
+    "metro": "Bay Area",
+    "affinity": 0.3159783735116174,
+    "popularity": 0.32092390011084493,
+    "fit": -1.42,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-walnut-creek-walnut-creek",
+    "name": "Walnut Creek",
+    "address": "1103 S California Blvd, Walnut Creek, CA 94596",
+    "lat": 37.8972067,
+    "lon": -122.0635489,
+    "metro": "Bay Area",
+    "affinity": 0.3131338732170154,
+    "popularity": 0.5250776413091041,
+    "fit": -1.43,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-orange-old-towne-orange",
+    "name": "Old Towne Orange",
+    "address": "202 N Glassell St, Orange, CA 92866",
+    "lat": 33.789841,
+    "lon": -117.853187,
+    "metro": "LA basin",
+    "affinity": 0.264909221308488,
+    "popularity": 0.4182760471274013,
+    "fit": -1.69,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-brea-brea-mall",
+    "name": "Brea Mall",
+    "address": "1240 Brea Mall, Brea, CA 92821",
+    "lat": 33.917613,
+    "lon": -117.8843567,
+    "metro": "LA basin",
+    "affinity": 0.17591104185764114,
+    "popularity": 0.30813719694836095,
+    "fit": -2.17,
+    "confidence": "high"
+   }
+  ],
+  "top": [
+   "philz-san-mateo-san-mateo",
+   "philz-san-francisco-embarcadero",
+   "philz-palo-alto-forest-ave",
+   "philz-san-francisco-russian-hill",
+   "philz-san-francisco-front-st"
+  ],
+  "bottom": [
+   "philz-brea-brea-mall",
+   "philz-orange-old-towne-orange",
+   "philz-walnut-creek-walnut-creek"
+  ],
+  "reasons": {
+   "philz-san-mateo-san-mateo": "Strong fit: Californian, Foodies and New American tags suit a trendy matcha and yuzu offer, with Tourists and Lively traffic.",
+   "philz-san-francisco-embarcadero": "Strong fit: Californian, Foodies and New American tags plus Lively, Social and Tourists crowds suit a new limited-time offer.",
+   "philz-palo-alto-forest-ave": "Good fit: Californian, New American and Foodies tags, with Business Professionals and Tourists, suit testing a citrus and matcha offer.",
+   "philz-san-francisco-russian-hill": "Good fit: Californian, Foodies and Tourists tags with Lively, Social and Couples traffic make it a solid test location.",
+   "philz-san-francisco-front-st": "Good fit: Californian, Foodies and New American tags, plus Lively and Tourists, support a limited-time offer test.",
+   "philz-brea-brea-mall": "Poor fit: American and Casual tags and Regulars lack the Californian, New American profile; Foodies and Lively alone are insufficient.",
+   "philz-orange-old-towne-orange": "Poor fit: American, Live music venue and Event venue tags point away from the Californian, foodie-driven profile this offer needs.",
+   "philz-walnut-creek-walnut-creek": "Weak fit: Wine Enthusiasts and Cocktail Enthusiasts tags suggest a drinks audience less aligned with this offer, despite Californian and Foodies tags."
+  },
+  "stability": {
+   "rho": 0.89,
+   "weakest": "Cold Brew"
+  }
+ },
+ "briefs": {
+  "philz-san-mateo-san-mateo": {
+   "store_id": "philz-san-mateo-san-mateo",
+   "fit": 1.49,
+   "label": "test",
+   "verdict": "Strong fit: San Mateo's Californian, foodie-minded crowd should welcome this bright, citrus-and-matcha lineup, which suits lively groups, couples, and celebratory diners.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999956
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999934
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999912
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999869
+    }
+   ],
+   "partners": [
+    {
+     "id": "CC3AEF98-AD1B-4C0D-BAB3-5EB46A7EB316",
+     "name": "Ramen Dojo",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1D715F6C-D99B-4D38-8B5B-679A7D6FE9F9",
+     "name": "Pausa Bar & Cookery",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "D01634AD-D85F-4623-848D-E474EC3131C7",
+     "name": "Gyu-Kaku Japanese BBQ",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Yuzu Sorbet as a fresh, shareable treat for groups and celebratory tables",
+    "Matcha Cold Brew for quick pick-ups by business professionals and locals",
+    "Citrus Salad paired with Yuzu Cheesecake to suit New American, foodie tastes"
+   ]
+  },
+  "philz-san-francisco-embarcadero": {
+   "store_id": "philz-san-francisco-embarcadero",
+   "fit": 1.44,
+   "label": "test",
+   "verdict": "Strong fit: the citrus-forward, matcha-led lineup suits Embarcadero's lively, social Californian crowd of foodies, couples, and tourists who like New American flavors.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999944
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999915
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999887
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999845
+    }
+   ],
+   "partners": [
+    {
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "4B694352-3FDD-4335-B569-306D0D12BC0C",
+     "name": "Ferry Building",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "18CB1680-1C15-4498-9D39-9608C0BAE714",
+     "name": "Exploratorium",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Yuzu Cheesecake with Matcha for sharing couples and celebratory diners",
+    "Feature Citrus Salad as a fresh Californian-style pairing",
+    "Offer Cold Brew with Yuzu Sorbet as a quick treat for business professionals"
+   ]
+  },
+  "philz-palo-alto-forest-ave": {
+   "store_id": "philz-palo-alto-forest-ave",
+   "fit": 1.39,
+   "label": "test",
+   "verdict": "Good fit: the Californian, New American, foodie crowd should welcome this fresh, citrus-forward, matcha-led lineup, with a lively, social, celebratory feel.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999982
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:business_professionals",
+     "name": "Business Professionals",
+     "affinity": 0.999929
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.999912
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999877
+    }
+   ],
+   "partners": [
+    {
+     "id": "815C1AA9-C5CA-41BA-9591-2EED7FE106AA",
+     "name": "Stanford Shopping Center",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "69E35B88-C959-4991-8D1E-63A820EF93C2",
+     "name": "Stanford Stadium",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "8F94A9DB-1E88-4431-BDD2-7023666F1877",
+     "name": "Nola",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Californian-fresh citrus: spotlight Yuzu Sorbet and Citrus Salad",
+    "Foodie-friendly matcha: pair Matcha Ice Cream with Cold Brew",
+    "Celebratory shareable: Yuzu Cheesecake for couples and social groups"
+   ]
+  },
+  "philz-san-francisco-russian-hill": {
+   "store_id": "philz-san-francisco-russian-hill",
+   "fit": 1.39,
+   "label": "test",
+   "verdict": "Good fit: the matcha and yuzu lineup suits Russian Hill's Californian, foodie crowd, with fresh citrus appealing to lively, social couples and tourists.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999954
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999923
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999908
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999831
+    }
+   ],
+   "partners": [
+    {
+     "id": "59866B4C-CC25-418B-BC27-0495E168ED64",
+     "name": "Fairmont San Francisco",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "84DD6068-1DCC-4984-BB11-CAD5BB9F3681",
+     "name": "In-N-Out Burger",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1D9E51B5-EC82-4472-B19E-27E82047D7C0",
+     "name": "House of Prime Rib",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Yuzu cheesecake for sharing on couple outings",
+    "Citrus salad with a fresh Californian feel",
+    "Matcha cold brew for foodies and busy professionals"
+   ]
+  },
+  "philz-san-francisco-front-st": {
+   "store_id": "philz-san-francisco-front-st",
+   "fit": 1.34,
+   "label": "test",
+   "verdict": "Front St's Californian, foodie-driven crowd suits this citrus and matcha lineup well, with a fit z-score of 1.34 signaling a strong match.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999958
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99993
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999916
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999902
+    }
+   ],
+   "partners": [
+    {
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "4B694352-3FDD-4335-B569-306D0D12BC0C",
+     "name": "Ferry Building",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "18CB1680-1C15-4498-9D39-9608C0BAE714",
+     "name": "Exploratorium",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with Yuzu Sorbet and Citrus Salad for Californian freshness",
+    "Feature Matcha Ice Cream as a shareable dessert for social couples",
+    "Pair Yuzu Cheesecake with Cold Brew for celebratory foodie tables"
+   ]
+  },
+  "philz-brea-brea-mall": {
+   "store_id": "philz-brea-brea-mall",
+   "fit": -2.17,
+   "label": "skip",
+   "verdict": "Skip: the local tags show no taste facts supporting this matcha-yuzu lineup, and the fit score is very low at -2.17.",
+   "why_tags": [
+    {
+     "id": "urn:tag:customer_identity:qloo:regulars",
+     "name": "Regulars",
+     "affinity": 0.999894
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999815
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999789
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999736
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:american",
+     "name": "American",
+     "affinity": 0.999709
+    }
+   ],
+   "partners": [
+    {
+     "id": "5C8A36BF-FBB2-4D08-87D1-49547B4D02A3",
+     "name": "Brea Mall",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "AF87BE3D-F413-4FF6-97DA-5D7F6F310C48",
+     "name": "Lazy Dog Restaurant & Bar",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6C69FBAF-6577-4920-BAEC-0F61AED1D77D",
+     "name": "The Cheesecake Factory",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Provided tags include no flavor preferences, so no taste claims can be supported",
+    "Skip the full lineup at this store",
+    "Revisit only if local taste data emerges"
+   ]
+  },
+  "philz-orange-old-towne-orange": {
+   "store_id": "philz-orange-old-towne-orange",
+   "fit": -1.69,
+   "label": "skip",
+   "verdict": "Skip: the offer's matcha and yuzu profile has weak fit with this lively, mixed crowd of tourists, locals, and groups (z-score -1.69).",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.99998
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99996
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999901
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999862
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999822
+    }
+   ],
+   "partners": [
+    {
+     "id": "8629E1EC-7E98-4ABE-B28D-B3F3CD7AD9D7",
+     "name": "Bruxie",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "6A6FBCB7-517C-43DD-AD53-CAAC99FBBB8B",
+     "name": "The Filling Station Cafe",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "A832B866-9381-41EA-8671-B8AEC8F001A7",
+     "name": "Urth Caffe Orange",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Local tags give no taste facts supporting matcha or yuzu flavors",
+    "Cold brew is the only familiar, broad-appeal item to consider",
+    "Hold the dessert-heavy items until fit improves"
+   ]
+  },
+  "philz-walnut-creek-walnut-creek": {
+   "store_id": "philz-walnut-creek-walnut-creek",
+   "fit": -1.43,
+   "label": "skip",
+   "verdict": "Skip: the matcha-yuzu LTO scores poorly here, as local tags point to wine, cocktail and celebratory dining rather than sweet, citrus-forward cafe treats.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.999981
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:wine_enthusiasts",
+     "name": "Wine Enthusiasts",
+     "affinity": 0.999926
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999888
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:couples",
+     "name": "Couples",
+     "affinity": 0.999851
+    }
+   ],
+   "partners": [
+    {
+     "id": "942FA1E7-5837-4AF9-93BB-7E5C9265BC31",
+     "name": "Broadway Plaza",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "B035B1D7-5EBF-4EF6-8C89-46DB62952925",
+     "name": "Ruth's Chris Steak House",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "13015A31-2A2D-4C75-838F-D730BE7A967A",
+     "name": "Va de Vi Bistro & Wine Bar",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Position citrus items as a light, shareable finish for celebratory diners and couples",
+    "Pitch cold brew to business professionals and locals as a quick, practical option",
+    "Skip heavy promotion of matcha ice cream for the wine and cocktail crowd"
+   ]
+  }
+ },
+ "trace": [
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "matcha"
+   },
+   "summary": "5 results: Matcha Ice Cream, Matcha Tiramisu, Matcha Cheesecake"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "yuzu"
+   },
+   "summary": "5 results: Yuzu Sorbet, Yuzu Cheesecake, Yuzu Shio Ramen"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "cold brew"
+   },
+   "summary": "1 results: Cold Brew"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "citrus"
+   },
+   "summary": "2 results: Citrus Salad, Citrus Salmon"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "bubble tea"
+   },
+   "summary": "0 results"
+  },
+  {
+   "type": "trace",
+   "tool": "score_stores",
+   "args": {
+    "items": [
+     "Matcha",
+     "Cold Brew",
+     "Yuzu Sorbet",
+     "Yuzu Cheesecake",
+     "Matcha Ice Cream",
+     "Citrus Salad"
+    ]
+   },
+   "summary": "40 of 40 stores scored"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "San Mateo"
+   },
+   "summary": "10 results: Californian, Tourists, Foodies"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Embarcadero"
+   },
+   "summary": "10 results: Californian, Lively, Social"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Forest Ave"
+   },
+   "summary": "10 results: Californian, New American, Business Professionals"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Russian Hill"
+   },
+   "summary": "10 results: Californian, Lively, Tourists"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Front St"
+   },
+   "summary": "10 results: Californian, Lively, Tourists"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Brea Mall"
+   },
+   "summary": "10 results: Regulars, Lively, Tourists"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Old Towne Orange"
+   },
+   "summary": "10 results: Lively, Tourists, Locals"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Walnut Creek"
+   },
+   "summary": "10 results: Californian, Celebratory Diners, Wine Enthusiasts"
+  }
+ ]
+}

@@ -1,0 +1,1163 @@
+{
+ "slug": "smoky-tonic",
+ "title": "Smoky cold brew tonic",
+ "lto": "Smoky cold brew tonic: bold and adventurous, for the after-work crowd",
+ "signature": [
+  {
+   "id": "urn:tag:specialty_dish:place:cold_brew",
+   "name": "Cold Brew",
+   "kind": "tag",
+   "weight": 1.0,
+   "substituted_from": null
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:espresso_martini",
+   "name": "Espresso Martini",
+   "kind": "tag",
+   "weight": 0.6,
+   "substituted_from": "tonic"
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:smoked_brisket",
+   "name": "Smoked Brisket",
+   "kind": "tag",
+   "weight": 0.4,
+   "substituted_from": "smoky"
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:iced_coffee",
+   "name": "Iced Coffee",
+   "kind": "tag",
+   "weight": 0.4,
+   "substituted_from": null
+  }
+ ],
+ "result": {
+  "type": "result",
+  "stores": [
+   {
+    "id": "philz-san-francisco-civic-center",
+    "name": "Civic Center",
+    "address": "399 Golden Gate Ave, San Francisco, CA 94102",
+    "lat": 37.781385,
+    "lon": -122.416976,
+    "metro": "Bay Area",
+    "affinity": 0.9768792549253105,
+    "popularity": 1,
+    "fit": 1.93,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-front-st",
+    "name": "Front St",
+    "address": "1 Front St, San Francisco, CA 94111",
+    "lat": 37.7918825,
+    "lon": -122.3988519,
+    "metro": "Bay Area",
+    "affinity": 0.9628071629960413,
+    "popularity": 0.9708255944375892,
+    "fit": 1.88,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-embarcadero",
+    "name": "Embarcadero",
+    "address": "5 Embarcadero Center, San Francisco, CA 94111",
+    "lat": 37.7945298,
+    "lon": -122.3951458,
+    "metro": "Bay Area",
+    "affinity": 0.9011044761272351,
+    "popularity": 0.9220503809584688,
+    "fit": 1.65,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-beverly-hills-south-beverly",
+    "name": "South Beverly",
+    "address": "233 South Beverly Drive, Beverly Hills, CA 90212",
+    "lat": 34.0637237,
+    "lon": -118.399308,
+    "metro": "LA basin",
+    "affinity": 0.8218468662856454,
+    "popularity": 0.8740579504068969,
+    "fit": 1.35,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-hollywood",
+    "name": "Hollywood",
+    "address": "6430 Sunset Blvd, Los Angeles, CA 90028",
+    "lat": 34.0976563,
+    "lon": -118.3299312,
+    "metro": "LA basin",
+    "affinity": 0.7917798296285461,
+    "popularity": 0.9869013118772629,
+    "fit": 1.24,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-folsom-beale",
+    "name": "Folsom & Beale",
+    "address": "300 Folsom St, San Francisco, CA 94105",
+    "lat": 37.7887269,
+    "lon": -122.393156,
+    "metro": "Bay Area",
+    "affinity": 0.7853748489269852,
+    "popularity": 0.8070345549691096,
+    "fit": 1.22,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-second-street",
+    "name": "Second Street",
+    "address": "425 Mission Street, San Francisco, CA 94105",
+    "lat": 37.7904312,
+    "lon": -122.3952043,
+    "metro": "Bay Area",
+    "affinity": 0.7853748489269852,
+    "popularity": 0.8070345549691096,
+    "fit": 1.22,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-castro",
+    "name": "Castro",
+    "address": "549 Castro St, San Francisco, CA 94114",
+    "lat": 37.7601055,
+    "lon": -122.4346797,
+    "metro": "Bay Area",
+    "affinity": 0.7842020940428279,
+    "popularity": 0.835222696846316,
+    "fit": 1.21,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-russian-hill",
+    "name": "Russian Hill",
+    "address": "2234 Polk St, San Francisco, CA 94109",
+    "lat": 37.7975392,
+    "lon": -122.4219848,
+    "metro": "Bay Area",
+    "affinity": 0.7718344363289072,
+    "popularity": 0.7132324822188246,
+    "fit": 1.17,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-dtla-hope",
+    "name": "DTLA \u2013 Hope",
+    "address": "801 S Hope St, Los Angeles, CA 90017",
+    "lat": 34.0462665,
+    "lon": -118.2596525,
+    "metro": "LA basin",
+    "affinity": 0.762212027629365,
+    "popularity": 0.9556081363945095,
+    "fit": 1.13,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-culver-city-culver-city",
+    "name": "Culver City",
+    "address": "9300 Culver Blvd, Culver City, CA 90232",
+    "lat": 34.0244516,
+    "lon": -118.3933641,
+    "metro": "LA basin",
+    "affinity": 0.6655053816939398,
+    "popularity": 0.7017282614126719,
+    "fit": 0.77,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-berry",
+    "name": "Berry",
+    "address": "201 Berry St, San Francisco, CA 94158",
+    "lat": 37.7755634,
+    "lon": -122.3933972,
+    "metro": "Bay Area",
+    "affinity": 0.6441462486329793,
+    "popularity": 0.718268151613969,
+    "fit": 0.7,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-los-feliz",
+    "name": "Los Feliz",
+    "address": "2117 Hillhurst Avenue, Los Angeles, CA 90027",
+    "lat": 34.1104689,
+    "lon": -118.2876272,
+    "metro": "LA basin",
+    "affinity": 0.6251855503143909,
+    "popularity": 0.7223560748697607,
+    "fit": 0.63,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-palo-alto-forest-ave",
+    "name": "Forest Ave",
+    "address": "101 Forest Ave, Palo Alto, CA 94306",
+    "lat": 37.4422033,
+    "lon": -122.1616018,
+    "metro": "Bay Area",
+    "affinity": 0.5967975603475528,
+    "popularity": 0.6374031807167627,
+    "fit": 0.52,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-glendale-glendale",
+    "name": "Glendale",
+    "address": "252 South Brand Blvd, Glendale, CA 91204",
+    "lat": 34.1427824,
+    "lon": -118.2547408,
+    "metro": "LA basin",
+    "affinity": 0.5503360803419234,
+    "popularity": 0.716596288047167,
+    "fit": 0.35,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-philz-coffee-san-jose",
+    "name": "Philz Coffee - San Jose",
+    "address": "118 Paseo de San Antonio Walk, San Jose, CA 95112",
+    "lat": 37.3336349,
+    "lon": -121.88499,
+    "metro": "Bay Area",
+    "affinity": 0.4910614228667202,
+    "popularity": 0.6474273105760079,
+    "fit": 0.13,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-noe-valley",
+    "name": "Noe Valley",
+    "address": "4298 24th St, San Francisco, CA 94114",
+    "lat": 37.7511414,
+    "lon": -122.4383792,
+    "metro": "Bay Area",
+    "affinity": 0.48301345182539185,
+    "popularity": 0.457203526453072,
+    "fit": 0.1,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-menlo-park-menlo-park",
+    "name": "Menlo Park",
+    "address": "506 Santa Cruz Ave, Menlo Park, CA 94025",
+    "lat": 37.4544368,
+    "lon": -122.1825021,
+    "metro": "Bay Area",
+    "affinity": 0.4763929386263169,
+    "popularity": 0.3139075398143739,
+    "fit": 0.07,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-pasadena-pasadena",
+    "name": "Pasadena",
+    "address": "146 S Lake Ave, Pasadena, CA 91101",
+    "lat": 34.1432645,
+    "lon": -118.13177,
+    "metro": "LA basin",
+    "affinity": 0.4487272417232849,
+    "popularity": 0.5611004568952696,
+    "fit": -0.03,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-mateo-san-mateo",
+    "name": "San Mateo",
+    "address": "113 S B St, San Mateo, CA 94401",
+    "lat": 37.5669875,
+    "lon": -122.3236083,
+    "metro": "Bay Area",
+    "affinity": 0.40427524294838724,
+    "popularity": 0.3635830851805255,
+    "fit": -0.19,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-walnut-creek-walnut-creek",
+    "name": "Walnut Creek",
+    "address": "1103 S California Blvd, Walnut Creek, CA 94596",
+    "lat": 37.8972067,
+    "lon": -122.0635489,
+    "metro": "Bay Area",
+    "affinity": 0.4014379341463163,
+    "popularity": 0.4559342414504054,
+    "fit": -0.2,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-orange-old-towne-orange",
+    "name": "Old Towne Orange",
+    "address": "202 N Glassell St, Orange, CA 92866",
+    "lat": 33.789841,
+    "lon": -117.853187,
+    "metro": "LA basin",
+    "affinity": 0.37943040362487135,
+    "popularity": 0.5646208784630798,
+    "fit": -0.29,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-redwood-city-redwood-city",
+    "name": "Redwood City",
+    "address": "2116 Broadway, Redwood City, CA 94063",
+    "lat": 37.4866611,
+    "lon": -122.228595,
+    "metro": "Bay Area",
+    "affinity": 0.35573685544382394,
+    "popularity": 0.3133615578867337,
+    "fit": -0.37,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-torrance-del-amo-fashion-center",
+    "name": "Del Amo Fashion Center",
+    "address": "21434 Hawthorne Boulevard, Torrance, CA 90503",
+    "lat": 33.8342763,
+    "lon": -118.3511753,
+    "metro": "LA basin",
+    "affinity": 0.34966210234475836,
+    "popularity": 0.5736884384494816,
+    "fit": -0.4,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-potrero",
+    "name": "Potrero",
+    "address": "1775 17th St, San Francisco, CA 94103",
+    "lat": 37.7647559,
+    "lon": -122.4011997,
+    "metro": "Bay Area",
+    "affinity": 0.34526623303308307,
+    "popularity": 0.36429020124731115,
+    "fit": -0.41,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-brea-brea-mall",
+    "name": "Brea Mall",
+    "address": "1240 Brea Mall, Brea, CA 92821",
+    "lat": 33.917613,
+    "lon": -117.8843567,
+    "metro": "LA basin",
+    "affinity": 0.32273177567267636,
+    "popularity": 0.5173328105310642,
+    "fit": -0.5,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-cupertino-deanza-cupertino",
+    "name": "DeAnza - Cupertino",
+    "address": "20686 Stevens Creek Blvd, Cupertino, CA 95014",
+    "lat": 37.3225787,
+    "lon": -122.034649,
+    "metro": "Bay Area",
+    "affinity": 0.317755418167894,
+    "popularity": 0.3100968997928778,
+    "fit": -0.51,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-chase-center",
+    "name": "Chase Center",
+    "address": "1 Warriors Way, San Francisco, CA 94158",
+    "lat": 37.7679001,
+    "lon": -122.3874223,
+    "metro": "Bay Area",
+    "affinity": 0.3112168770235612,
+    "popularity": 0.3712641248373657,
+    "fit": -0.54,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-campbell-campbell",
+    "name": "Campbell",
+    "address": "1976 S Bascom Ave, Campbell, CA 95008",
+    "lat": 37.2870273,
+    "lon": -121.931647,
+    "metro": "Bay Area",
+    "affinity": 0.23215600288430502,
+    "popularity": 0.1920759302336106,
+    "fit": -0.83,
+    "confidence": "low"
+   },
+   {
+    "id": "philz-colma-colma",
+    "name": "Colma",
+    "address": "5055 Junipero Serra Blvd, Colma, CA 94014",
+    "lat": 37.6717582,
+    "lon": -122.4652105,
+    "metro": "Bay Area",
+    "affinity": 0.199436040376616,
+    "popularity": 0.20666403324783994,
+    "fit": -0.95,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-sunnyvale-sunnyvale",
+    "name": "Sunnyvale",
+    "address": "125 S Frances St, Sunnyvale, CA 94086",
+    "lat": 37.3767094,
+    "lon": -122.0311824,
+    "metro": "Bay Area",
+    "affinity": 0.18626014419144452,
+    "popularity": 0.24653668333880419,
+    "fit": -1.0,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-cupertino-cupertino-main",
+    "name": "Cupertino Main",
+    "address": "19439 Stevens Creek Blvd, Cupertino, CA 95014",
+    "lat": 37.3242262,
+    "lon": -122.0105165,
+    "metro": "Bay Area",
+    "affinity": 0.1589852435819689,
+    "popularity": 0.22756215888417222,
+    "fit": -1.1,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-burlingame-burlingame",
+    "name": "Burlingame",
+    "address": "305 Primrose Rd, Burlingame, CA 94010",
+    "lat": 37.5779248,
+    "lon": -122.3485707,
+    "metro": "Bay Area",
+    "affinity": 0.15069739235900548,
+    "popularity": 0.23347483323226198,
+    "fit": -1.13,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-willow-glen",
+    "name": "Willow Glen",
+    "address": "1115 Lincoln Ave, San Jose, CA 95125",
+    "lat": 37.307988,
+    "lon": -121.9010641,
+    "metro": "Bay Area",
+    "affinity": 0.14210632706690926,
+    "popularity": 0.22180109157064887,
+    "fit": -1.16,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-mateo-hillsdale",
+    "name": "Hillsdale",
+    "address": "42 Hillsdale Mall, San Mateo, CA 94403",
+    "lat": 37.5388043,
+    "lon": -122.302004,
+    "metro": "Bay Area",
+    "affinity": 0.14008489993935722,
+    "popularity": 0.20739842328684052,
+    "fit": -1.17,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-brokaw-commons",
+    "name": "Brokaw Commons",
+    "address": "1085 E Brokaw Road, San Jose, CA 95131",
+    "lat": 37.3834494,
+    "lon": -121.8967714,
+    "metro": "Bay Area",
+    "affinity": 0.12664240954113606,
+    "popularity": 0.18465736810187994,
+    "fit": -1.22,
+    "confidence": "low"
+   },
+   {
+    "id": "philz-san-francisco-ocean-ave",
+    "name": "Ocean Ave",
+    "address": "1110 Ocean Ave, San Francisco, CA 94112",
+    "lat": 37.7236571,
+    "lon": -122.4537767,
+    "metro": "Bay Area",
+    "affinity": 0.12411562563169598,
+    "popularity": 0.19648271679805943,
+    "fit": -1.23,
+    "confidence": "low"
+   },
+   {
+    "id": "philz-oakland-lakeshore-oakland",
+    "name": "Lakeshore Oakland",
+    "address": "3347 Lakeshore Avenue, Oakland, CA 94610",
+    "lat": 37.8112398,
+    "lon": -122.2434366,
+    "metro": "Bay Area",
+    "affinity": 0.11188599151000607,
+    "popularity": 0.18223165554881746,
+    "fit": -1.28,
+    "confidence": "low"
+   },
+   {
+    "id": "philz-los-gatos-los-gatos",
+    "name": "Los Gatos",
+    "address": "681 Blossom Hill Rd, Los Gatos, CA 95032",
+    "lat": 37.2359736,
+    "lon": -121.9635663,
+    "metro": "Bay Area",
+    "affinity": 0.08783100869213667,
+    "popularity": 0.132504548211037,
+    "fit": -1.37,
+    "confidence": "low"
+   },
+   {
+    "id": "philz-fremont-fremont",
+    "name": "Fremont",
+    "address": "39000 Paseo Padre Pkwy, Fremont, CA 94538",
+    "lat": 37.5535513,
+    "lon": -121.980306,
+    "metro": "Bay Area",
+    "affinity": 0.08338386901152214,
+    "popularity": 0.14478471801091572,
+    "fit": -1.38,
+    "confidence": "low"
+   }
+  ],
+  "top": [
+   "philz-san-francisco-civic-center",
+   "philz-san-francisco-front-st",
+   "philz-san-francisco-embarcadero",
+   "philz-beverly-hills-south-beverly",
+   "philz-los-angeles-hollywood"
+  ],
+  "bottom": [
+   "philz-fremont-fremont",
+   "philz-los-gatos-los-gatos",
+   "philz-oakland-lakeshore-oakland"
+  ],
+  "reasons": {
+   "philz-san-francisco-civic-center": "Good test site: Lively, Social, Tourists and Event venue tags suggest busy, curious crowds likely to try a new offer.",
+   "philz-san-francisco-front-st": "Good test site: Lively, Tourists, Foodies and Business Professionals tags point to varied, adventurous customers who would sample a limited-time offer.",
+   "philz-san-francisco-embarcadero": "Good test site: Lively, Social, Foodies and Tourists tags suggest steady traffic and openness to trying something new.",
+   "philz-beverly-hills-south-beverly": "Decent test site: Stylish, Trendy, Social and Business-Friendly tags suggest an image-conscious crowd that could respond to a novel offer.",
+   "philz-los-angeles-hollywood": "Decent test site: Lively, Social, Fun and Groups of Friends tags suggest shareable, energetic visits suited to a limited-time offer.",
+   "philz-fremont-fremont": "Weaker test site: Locals and Regulars tags suggest habitual customers, and no Social or cocktail-oriented tags support this offer.",
+   "philz-los-gatos-los-gatos": "Weaker test site: Wine Enthusiasts and Couples tags suggest a different focus, with no Social tag to support this offer.",
+   "philz-oakland-lakeshore-oakland": "Weaker test site despite Cocktail Enthusiasts and Social tags, the overall fit is low, so results may not generalize."
+  },
+  "stability": {
+   "rho": 0.92,
+   "weakest": "Cold Brew"
+  }
+ },
+ "briefs": {
+  "philz-san-francisco-civic-center": {
+   "store_id": "philz-san-francisco-civic-center",
+   "fit": 1.93,
+   "label": "test",
+   "verdict": "Strong fit: Civic Center's lively, social crowd of foodies, groups of friends, and event-goers should embrace this bold, shareable offer.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999974
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999935
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999922
+    },
+    {
+     "id": "urn:tag:genre:place:tourist_attraction",
+     "name": "Tourist attraction",
+     "affinity": 0.999909
+    }
+   ],
+   "partners": [
+    {
+     "id": "120D07EB-F96F-4E04-93C4-0B0A202A82B6",
+     "name": "San Francisco City Hall",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "848D69EC-CA8E-476F-91E6-C23838A95A91",
+     "name": "Bill Graham Civic Auditorium",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "47565D33-335A-4AA4-80F6-41F854F933AF",
+     "name": "The Warfield",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Espresso Martini with live-music and event nights for social groups",
+    "Feature Smoked Brisket as a shareable bite for foodies and tourists",
+    "Promote Cold Brew and Iced Coffee as quick, fun grab-and-go options"
+   ]
+  },
+  "philz-san-francisco-front-st": {
+   "store_id": "philz-san-francisco-front-st",
+   "fit": 1.88,
+   "label": "test",
+   "verdict": "Strong fit: Front St's lively, social foodie crowd and Californian, New American leanings suit this bold cold brew, martini, and brisket lineup.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999958
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99993
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999916
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999902
+    }
+   ],
+   "partners": [
+    {
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "4B694352-3FDD-4335-B569-306D0D12BC0C",
+     "name": "Ferry Building",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "18CB1680-1C15-4498-9D39-9608C0BAE714",
+     "name": "Exploratorium",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pitch the Espresso Martini to celebratory diners and couples",
+    "Pair Smoked Brisket with Californian, New American flavors for foodies",
+    "Promote Cold Brew and Iced Coffee to business professionals and locals"
+   ]
+  },
+  "philz-san-francisco-embarcadero": {
+   "store_id": "philz-san-francisco-embarcadero",
+   "fit": 1.65,
+   "label": "test",
+   "verdict": "Embarcadero's Californian, New American foodie crowd should embrace this lively, social, celebratory lineup, with its cold brew and espresso martini suiting couples and professionals.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999944
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999915
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999887
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999845
+    }
+   ],
+   "partners": [
+    {
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "4B694352-3FDD-4335-B569-306D0D12BC0C",
+     "name": "Ferry Building",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "18CB1680-1C15-4498-9D39-9608C0BAE714",
+     "name": "Exploratorium",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Espresso Martini with a romantic, celebratory evening moment",
+    "Position Smoked Brisket as a New American foodie highlight",
+    "Offer Cold Brew and Iced Coffee for quick business professional stops"
+   ]
+  },
+  "philz-beverly-hills-south-beverly": {
+   "store_id": "philz-beverly-hills-south-beverly",
+   "fit": 1.35,
+   "label": "test",
+   "verdict": "Strong fit: the offer's bold, social, cocktail-leaning profile suits a lively, stylish, elegant local crowd that favors trendy yet classic experiences.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999972
+    },
+    {
+     "id": "urn:tag:ambience:qloo:romantic",
+     "name": "Romantic",
+     "affinity": 0.999945
+    },
+    {
+     "id": "urn:tag:ambience:qloo:stylish",
+     "name": "Stylish",
+     "affinity": 0.999904
+    },
+    {
+     "id": "urn:tag:ambience:place:business_friendly",
+     "name": "Business-Friendly",
+     "affinity": 0.99989
+    },
+    {
+     "id": "urn:tag:ambience:qloo:elegant",
+     "name": "Elegant",
+     "affinity": 0.999876
+    }
+   ],
+   "partners": [
+    {
+     "id": "4F54F5DB-6C64-46CE-B342-C9E3F2513F71",
+     "name": "Beverly Wilshire, Beverly Hills, A Four Seasons Hotel",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "25A28952-6BDE-4D87-8B26-680720B4D128",
+     "name": "Waldorf Astoria Beverly Hills",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "03A0F1DC-4023-4A68-A730-EE812E8121C6",
+     "name": "The Peninsula Beverly Hills",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Espresso Martini as the elegant, social-hour hero",
+    "Cold Brew and Iced Coffee in a stylish, trendy presentation",
+    "Smoked Brisket pairing for a luxurious, business-friendly bite"
+   ]
+  },
+  "philz-los-angeles-hollywood": {
+   "store_id": "philz-los-angeles-hollywood",
+   "fit": 1.24,
+   "label": "test",
+   "verdict": "Strong fit: Hollywood's lively, social crowd of foodies, groups and couples should embrace the bold, shareable, evening-friendly LTO lineup.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:live_music_venue",
+     "name": "Live music venue",
+     "affinity": 0.999987
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999973
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.99996
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999933
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999906
+    }
+   ],
+   "partners": [
+    {
+     "id": "B5915C74-1826-4A14-A8EB-EA67FC808923",
+     "name": "Hollywood",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2FEF8FE9-1B13-4CBA-9CB6-BA532C84CD38",
+     "name": "Hollywood Pantages Theatre",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "65395B84-D136-4B72-BB4C-EFE7149E957A",
+     "name": "Hollywood Palladium",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pitch the espresso martini as a pre-show treat for groups and couples",
+    "Pair smoked brisket with cold brew for foodies",
+    "Offer iced coffee as a fun, easy grab for tourists and locals"
+   ]
+  },
+  "philz-fremont-fremont": {
+   "store_id": "philz-fremont-fremont",
+   "fit": -1.38,
+   "label": "skip",
+   "verdict": "Skip: the offer's boozy, smoky, cold-coffee profile fits poorly with Fremont's Californian, New American, foodie-leaning local tastes (fit z-score -1.38).",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999958
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999894
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999873
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:groups_of_friends",
+     "name": "Groups of Friends",
+     "affinity": 0.99983
+    }
+   ],
+   "partners": [
+    {
+     "id": "05BC76F4-4AC6-48A3-89D4-E900B9F08488",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1D8EDCE7-933C-468E-901A-D5AC73CAE260",
+     "name": "Smoking Pig BBQ",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2F434EAD-3CF1-4C72-BA8C-61137C71057F",
+     "name": "Kickapoo State Recreation Area",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lean on Californian and New American flavors",
+    "Appeal to foodies and regulars with fresh, seasonal pairings",
+    "Keep servings shareable for lively groups of friends"
+   ]
+  },
+  "philz-los-gatos-los-gatos": {
+   "store_id": "philz-los-gatos-los-gatos",
+   "fit": -1.37,
+   "label": "skip",
+   "verdict": "Skip: the offer fits poorly, since this store's Californian, New American, wine-loving, foodie crowd is unlikely to embrace a smoked brisket and espresso martini mix.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.99996
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.99992
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "name": "Celebratory Diners",
+     "affinity": 0.99988
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99986
+    }
+   ],
+   "partners": [
+    {
+     "id": "95EC0693-BD69-4B78-AA77-F1CA1D2D25D1",
+     "name": "Vasona Lake County Park",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2E3ECCA9-D745-40DD-BFBB-19CDDD95604C",
+     "name": "Philz Coffee",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "336D37E8-DBB2-44BB-BEB0-A428DD233593",
+     "name": "Super Duper Burgers",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with Californian-style freshness",
+    "Pair with New American small plates",
+    "Offer a celebratory option for couples"
+   ]
+  },
+  "philz-oakland-lakeshore-oakland": {
+   "store_id": "philz-oakland-lakeshore-oakland",
+   "fit": -1.28,
+   "label": "skip",
+   "verdict": "Skip: the offer's cold coffee and smoked brisket fit this lively, cocktail-loving crowd only weakly, with a fit score of -1.28.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999892
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999857
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999839
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999821
+    }
+   ],
+   "partners": [
+    {
+     "id": "9C76B583-1DE1-4474-BCEA-D01366CB18C1",
+     "name": "Grand Lake Theatre",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "112B5275-E33A-4336-BD0E-074ACF4AACE1",
+     "name": "Jong Ga House",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "580ADBE7-270E-46E4-AAAA-CC9CB4F6071E",
+     "name": "Arizmendi Bakery (Lakeshore)",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Espresso Martini for cocktail enthusiasts",
+    "Californian and New American style pairings",
+    "Shareable items for social couples and celebratory diners"
+   ]
+  }
+ },
+ "trace": [
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "cold brew"
+   },
+   "summary": "1 results: Cold Brew"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "tonic water"
+   },
+   "summary": "0 results"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "smoked"
+   },
+   "summary": "4 results: Smoked Salmon, Smoked Brisket, Smoked Chicken"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "espresso tonic"
+   },
+   "summary": "0 results"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "mezcal"
+   },
+   "summary": "0 results"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "tonic"
+   },
+   "summary": "0 results"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "iced coffee"
+   },
+   "summary": "1 results: Iced Coffee"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "old fashioned"
+   },
+   "summary": "2 results: Old Fashioned Burger, Old Fashioned Cheeseburger"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "espresso"
+   },
+   "summary": "2 results: Espresso Roast, Espresso Martini"
+  },
+  {
+   "type": "trace",
+   "tool": "score_stores",
+   "args": {
+    "items": [
+     "Cold Brew",
+     "Espresso Martini",
+     "Smoked Brisket",
+     "Iced Coffee"
+    ]
+   },
+   "summary": "40 of 40 stores scored"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Civic Center"
+   },
+   "summary": "10 results: Lively, Tourists, Social"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Front St"
+   },
+   "summary": "10 results: Californian, Lively, Tourists"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Embarcadero"
+   },
+   "summary": "10 results: Californian, Lively, Social"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "South Beverly"
+   },
+   "summary": "10 results: Lively, Romantic, Stylish"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Hollywood"
+   },
+   "summary": "10 results: Live music venue, Lively, Social"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Fremont"
+   },
+   "summary": "10 results: Californian, Locals, Tourists"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Los Gatos"
+   },
+   "summary": "10 results: Californian, New American, Foodies"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Lakeshore Oakland"
+   },
+   "summary": "10 results: Californian, New American, Tourists"
+  }
+ ]
+}

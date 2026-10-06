@@ -1,0 +1,1139 @@
+{
+ "slug": "maple-oat",
+ "title": "Brown-butter maple oat latte",
+ "lto": "Brown-butter maple oat latte: cozy, nostalgic, fall comfort",
+ "signature": [
+  {
+   "id": "urn:tag:specialty_dish:place:maple_latte",
+   "name": "Maple Latte",
+   "kind": "tag",
+   "weight": 1.0,
+   "substituted_from": null
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:oatmilk_latte",
+   "name": "Oatmilk Latte",
+   "kind": "tag",
+   "weight": 0.9,
+   "substituted_from": null
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:brown_butter",
+   "name": "Brown Butter",
+   "kind": "tag",
+   "weight": 0.7,
+   "substituted_from": null
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:oatmeal_raisin_cookie",
+   "name": "Oatmeal Raisin Cookie",
+   "kind": "tag",
+   "weight": 0.4,
+   "substituted_from": "oat"
+  },
+  {
+   "id": "urn:tag:specialty_dish:place:apple_pie",
+   "name": "Apple Pie",
+   "kind": "tag",
+   "weight": 0.3,
+   "substituted_from": "fall comfort"
+  }
+ ],
+ "result": {
+  "type": "result",
+  "stores": [
+   {
+    "id": "philz-san-francisco-civic-center",
+    "name": "Civic Center",
+    "address": "399 Golden Gate Ave, San Francisco, CA 94102",
+    "lat": 37.781385,
+    "lon": -122.416976,
+    "metro": "Bay Area",
+    "affinity": 0.9810269585570147,
+    "popularity": 1,
+    "fit": 1.57,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-embarcadero",
+    "name": "Embarcadero",
+    "address": "5 Embarcadero Center, San Francisco, CA 94111",
+    "lat": 37.7945298,
+    "lon": -122.3951458,
+    "metro": "Bay Area",
+    "affinity": 0.9648736343130734,
+    "popularity": 0.9696454713022384,
+    "fit": 1.51,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-front-st",
+    "name": "Front St",
+    "address": "1 Front St, San Francisco, CA 94111",
+    "lat": 37.7918825,
+    "lon": -122.3988519,
+    "metro": "Bay Area",
+    "affinity": 0.956966847045372,
+    "popularity": 0.9857158307485109,
+    "fit": 1.49,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-dtla-hope",
+    "name": "DTLA \u2013 Hope",
+    "address": "801 S Hope St, Los Angeles, CA 90017",
+    "lat": 34.0462665,
+    "lon": -118.2596525,
+    "metro": "LA basin",
+    "affinity": 0.8952729778443143,
+    "popularity": 0.9766333295525866,
+    "fit": 1.27,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-hollywood",
+    "name": "Hollywood",
+    "address": "6430 Sunset Blvd, Los Angeles, CA 90028",
+    "lat": 34.0976563,
+    "lon": -118.3299312,
+    "metro": "LA basin",
+    "affinity": 0.8831845159062193,
+    "popularity": 0.9911892234378916,
+    "fit": 1.22,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-castro",
+    "name": "Castro",
+    "address": "549 Castro St, San Francisco, CA 94114",
+    "lat": 37.7601055,
+    "lon": -122.4346797,
+    "metro": "Bay Area",
+    "affinity": 0.8774622601559059,
+    "popularity": 0.8911265523680686,
+    "fit": 1.2,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-palo-alto-forest-ave",
+    "name": "Forest Ave",
+    "address": "101 Forest Ave, Palo Alto, CA 94306",
+    "lat": 37.4422033,
+    "lon": -122.1616018,
+    "metro": "Bay Area",
+    "affinity": 0.871551084631643,
+    "popularity": 0.8747732718954124,
+    "fit": 1.18,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-beverly-hills-south-beverly",
+    "name": "South Beverly",
+    "address": "233 South Beverly Drive, Beverly Hills, CA 90212",
+    "lat": 34.0637237,
+    "lon": -118.399308,
+    "metro": "LA basin",
+    "affinity": 0.8684787824177094,
+    "popularity": 0.9092698379743628,
+    "fit": 1.17,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-folsom-beale",
+    "name": "Folsom & Beale",
+    "address": "300 Folsom St, San Francisco, CA 94105",
+    "lat": 37.7887269,
+    "lon": -122.393156,
+    "metro": "Bay Area",
+    "affinity": 0.847100631681234,
+    "popularity": 0.8882960854847264,
+    "fit": 1.09,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-second-street",
+    "name": "Second Street",
+    "address": "425 Mission Street, San Francisco, CA 94105",
+    "lat": 37.7904312,
+    "lon": -122.3952043,
+    "metro": "Bay Area",
+    "affinity": 0.847100631681234,
+    "popularity": 0.8882960854847264,
+    "fit": 1.09,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-glendale-glendale",
+    "name": "Glendale",
+    "address": "252 South Brand Blvd, Glendale, CA 91204",
+    "lat": 34.1427824,
+    "lon": -118.2547408,
+    "metro": "LA basin",
+    "affinity": 0.8462150271508411,
+    "popularity": 0.8637085090755846,
+    "fit": 1.09,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-russian-hill",
+    "name": "Russian Hill",
+    "address": "2234 Polk St, San Francisco, CA 94109",
+    "lat": 37.7975392,
+    "lon": -122.4219848,
+    "metro": "Bay Area",
+    "affinity": 0.843334882468576,
+    "popularity": 0.8378624697248694,
+    "fit": 1.08,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-culver-city-culver-city",
+    "name": "Culver City",
+    "address": "9300 Culver Blvd, Culver City, CA 90232",
+    "lat": 34.0244516,
+    "lon": -118.3933641,
+    "metro": "LA basin",
+    "affinity": 0.7257634775940043,
+    "popularity": 0.7724600026063251,
+    "fit": 0.66,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-angeles-los-feliz",
+    "name": "Los Feliz",
+    "address": "2117 Hillhurst Avenue, Los Angeles, CA 90027",
+    "lat": 34.1104689,
+    "lon": -118.2876272,
+    "metro": "LA basin",
+    "affinity": 0.7072845311266546,
+    "popularity": 0.6814587971945556,
+    "fit": 0.59,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-pasadena-pasadena",
+    "name": "Pasadena",
+    "address": "146 S Lake Ave, Pasadena, CA 91101",
+    "lat": 34.1432645,
+    "lon": -118.13177,
+    "metro": "LA basin",
+    "affinity": 0.6666935632027314,
+    "popularity": 0.6470887210059915,
+    "fit": 0.45,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-mateo-san-mateo",
+    "name": "San Mateo",
+    "address": "113 S B St, San Mateo, CA 94401",
+    "lat": 37.5669875,
+    "lon": -122.3236083,
+    "metro": "Bay Area",
+    "affinity": 0.6569146197710573,
+    "popularity": 0.6767026248707064,
+    "fit": 0.42,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-cupertino-cupertino-main",
+    "name": "Cupertino Main",
+    "address": "19439 Stevens Creek Blvd, Cupertino, CA 95014",
+    "lat": 37.3242262,
+    "lon": -122.0105165,
+    "metro": "Bay Area",
+    "affinity": 0.5728403896381666,
+    "popularity": 0.5210767839561604,
+    "fit": 0.12,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-torrance-del-amo-fashion-center",
+    "name": "Del Amo Fashion Center",
+    "address": "21434 Hawthorne Boulevard, Torrance, CA 90503",
+    "lat": 33.8342763,
+    "lon": -118.3511753,
+    "metro": "LA basin",
+    "affinity": 0.5578579440600472,
+    "popularity": 0.6626758624638235,
+    "fit": 0.06,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-berry",
+    "name": "Berry",
+    "address": "201 Berry St, San Francisco, CA 94158",
+    "lat": 37.7755634,
+    "lon": -122.3933972,
+    "metro": "Bay Area",
+    "affinity": 0.5420907883684284,
+    "popularity": 0.45257536261304254,
+    "fit": 0.01,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-noe-valley",
+    "name": "Noe Valley",
+    "address": "4298 24th St, San Francisco, CA 94114",
+    "lat": 37.7511414,
+    "lon": -122.4383792,
+    "metro": "Bay Area",
+    "affinity": 0.5222920478229306,
+    "popularity": 0.49500518110834707,
+    "fit": -0.06,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-philz-coffee-san-jose",
+    "name": "Philz Coffee - San Jose",
+    "address": "118 Paseo de San Antonio Walk, San Jose, CA 95112",
+    "lat": 37.3336349,
+    "lon": -121.88499,
+    "metro": "Bay Area",
+    "affinity": 0.4921057945209094,
+    "popularity": 0.667970975425292,
+    "fit": -0.17,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-burlingame-burlingame",
+    "name": "Burlingame",
+    "address": "305 Primrose Rd, Burlingame, CA 94010",
+    "lat": 37.5779248,
+    "lon": -122.3485707,
+    "metro": "Bay Area",
+    "affinity": 0.4941398980235358,
+    "popularity": 0.5100529716048068,
+    "fit": -0.17,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-menlo-park-menlo-park",
+    "name": "Menlo Park",
+    "address": "506 Santa Cruz Ave, Menlo Park, CA 94025",
+    "lat": 37.4544368,
+    "lon": -122.1825021,
+    "metro": "Bay Area",
+    "affinity": 0.4860345305980922,
+    "popularity": 0.4196769767513944,
+    "fit": -0.19,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-potrero",
+    "name": "Potrero",
+    "address": "1775 17th St, San Francisco, CA 94103",
+    "lat": 37.7647559,
+    "lon": -122.4011997,
+    "metro": "Bay Area",
+    "affinity": 0.48605408597217464,
+    "popularity": 0.4409031651851798,
+    "fit": -0.19,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-cupertino-deanza-cupertino",
+    "name": "DeAnza - Cupertino",
+    "address": "20686 Stevens Creek Blvd, Cupertino, CA 95014",
+    "lat": 37.3225787,
+    "lon": -122.034649,
+    "metro": "Bay Area",
+    "affinity": 0.4668185344564695,
+    "popularity": 0.5147564108465622,
+    "fit": -0.26,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-redwood-city-redwood-city",
+    "name": "Redwood City",
+    "address": "2116 Broadway, Redwood City, CA 94063",
+    "lat": 37.4866611,
+    "lon": -122.228595,
+    "metro": "Bay Area",
+    "affinity": 0.4142381523437812,
+    "popularity": 0.46241281453367206,
+    "fit": -0.45,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-walnut-creek-walnut-creek",
+    "name": "Walnut Creek",
+    "address": "1103 S California Blvd, Walnut Creek, CA 94596",
+    "lat": 37.8972067,
+    "lon": -122.0635489,
+    "metro": "Bay Area",
+    "affinity": 0.4067906334720421,
+    "popularity": 0.4963739935219244,
+    "fit": -0.48,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-orange-old-towne-orange",
+    "name": "Old Towne Orange",
+    "address": "202 N Glassell St, Orange, CA 92866",
+    "lat": 33.789841,
+    "lon": -117.853187,
+    "metro": "LA basin",
+    "affinity": 0.40470187196804264,
+    "popularity": 0.5351389443144903,
+    "fit": -0.48,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-sunnyvale-sunnyvale",
+    "name": "Sunnyvale",
+    "address": "125 S Frances St, Sunnyvale, CA 94086",
+    "lat": 37.3767094,
+    "lon": -122.0311824,
+    "metro": "Bay Area",
+    "affinity": 0.3027545909434802,
+    "popularity": 0.350509459379759,
+    "fit": -0.85,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-chase-center",
+    "name": "Chase Center",
+    "address": "1 Warriors Way, San Francisco, CA 94158",
+    "lat": 37.7679001,
+    "lon": -122.3874223,
+    "metro": "Bay Area",
+    "affinity": 0.2726410790895977,
+    "popularity": 0.44507126102730254,
+    "fit": -0.96,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-jose-willow-glen",
+    "name": "Willow Glen",
+    "address": "1115 Lincoln Ave, San Jose, CA 95125",
+    "lat": 37.307988,
+    "lon": -121.9010641,
+    "metro": "Bay Area",
+    "affinity": 0.2551226928284676,
+    "popularity": 0.28673983102517203,
+    "fit": -1.02,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-campbell-campbell",
+    "name": "Campbell",
+    "address": "1976 S Bascom Ave, Campbell, CA 95008",
+    "lat": 37.2870273,
+    "lon": -121.931647,
+    "metro": "Bay Area",
+    "affinity": 0.24024486938918185,
+    "popularity": 0.20293048218950602,
+    "fit": -1.07,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-brea-brea-mall",
+    "name": "Brea Mall",
+    "address": "1240 Brea Mall, Brea, CA 92821",
+    "lat": 33.917613,
+    "lon": -117.8843567,
+    "metro": "LA basin",
+    "affinity": 0.2328310958944288,
+    "popularity": 0.3459766391682531,
+    "fit": -1.1,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-los-gatos-los-gatos",
+    "name": "Los Gatos",
+    "address": "681 Blossom Hill Rd, Los Gatos, CA 95032",
+    "lat": 37.2359736,
+    "lon": -121.9635663,
+    "metro": "Bay Area",
+    "affinity": 0.22336175395153007,
+    "popularity": 0.2047191011235955,
+    "fit": -1.13,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-oakland-lakeshore-oakland",
+    "name": "Lakeshore Oakland",
+    "address": "3347 Lakeshore Avenue, Oakland, CA 94610",
+    "lat": 37.8112398,
+    "lon": -122.2434366,
+    "metro": "Bay Area",
+    "affinity": 0.1671402786257374,
+    "popularity": 0.2874669485889231,
+    "fit": -1.33,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-colma-colma",
+    "name": "Colma",
+    "address": "5055 Junipero Serra Blvd, Colma, CA 94014",
+    "lat": 37.6717582,
+    "lon": -122.4652105,
+    "metro": "Bay Area",
+    "affinity": 0.15578940700445798,
+    "popularity": 0.1557303370786517,
+    "fit": -1.37,
+    "confidence": "low"
+   },
+   {
+    "id": "philz-fremont-fremont",
+    "name": "Fremont",
+    "address": "39000 Paseo Padre Pkwy, Fremont, CA 94538",
+    "lat": 37.5535513,
+    "lon": -121.980306,
+    "metro": "Bay Area",
+    "affinity": 0.1477210994149879,
+    "popularity": 0.2393644207645855,
+    "fit": -1.4,
+    "confidence": "high"
+   },
+   {
+    "id": "philz-san-francisco-ocean-ave",
+    "name": "Ocean Ave",
+    "address": "1110 Ocean Ave, San Francisco, CA 94112",
+    "lat": 37.7236571,
+    "lon": -122.4537767,
+    "metro": "Bay Area",
+    "affinity": 0.1369028671876856,
+    "popularity": 0.17591934500479053,
+    "fit": -1.44,
+    "confidence": "low"
+   },
+   {
+    "id": "philz-san-jose-brokaw-commons",
+    "name": "Brokaw Commons",
+    "address": "1085 E Brokaw Road, San Jose, CA 95131",
+    "lat": 37.3834494,
+    "lon": -121.8967714,
+    "metro": "Bay Area",
+    "affinity": 0.12915884742380693,
+    "popularity": 0.1258426966292135,
+    "fit": -1.47,
+    "confidence": "low"
+   },
+   {
+    "id": "philz-san-mateo-hillsdale",
+    "name": "Hillsdale",
+    "address": "42 Hillsdale Mall, San Mateo, CA 94403",
+    "lat": 37.5388043,
+    "lon": -122.302004,
+    "metro": "Bay Area",
+    "affinity": 0.07124973276005417,
+    "popularity": 0.1404494382022472,
+    "fit": -1.67,
+    "confidence": "low"
+   }
+  ],
+  "top": [
+   "philz-san-francisco-civic-center",
+   "philz-san-francisco-embarcadero",
+   "philz-san-francisco-front-st",
+   "philz-los-angeles-dtla-hope",
+   "philz-los-angeles-hollywood"
+  ],
+  "bottom": [
+   "philz-san-mateo-hillsdale",
+   "philz-san-jose-brokaw-commons",
+   "philz-san-francisco-ocean-ave"
+  ],
+  "reasons": {
+   "philz-san-francisco-civic-center": "Good test site: Lively, Social, Tourists and Locals mix, plus Foodies and Groups of Friends, should give broad feedback on the offer.",
+   "philz-san-francisco-embarcadero": "Good test site: Lively, Social and Tourists traffic, with Foodies, Couples and Business Professionals, suits a new limited-time offer.",
+   "philz-san-francisco-front-st": "Good test site: Lively, Tourists, Foodies and Business Professionals alongside Locals give varied customers to react to a new offer.",
+   "philz-los-angeles-dtla-hope": "Fairly good test site: Lively, Social, Fun, Foodies and Locals suggest engaged customers, though fit is lower than the San Francisco stores.",
+   "philz-los-angeles-hollywood": "Decent test site: Lively, Social, Fun, Locals and Tourists, plus Groups of Friends, should generate shareable offer feedback.",
+   "philz-san-mateo-hillsdale": "Weaker test site: Science museum, Aquarium and Event venue tags suggest attraction-driven visits, with fit well below the other stores.",
+   "philz-san-jose-brokaw-commons": "Poor test site: Asian, Sushi, Japanese and Bubble tea store tags plus Solo Diners point to a mismatched, less social crowd.",
+   "philz-san-francisco-ocean-ave": "Poor test site: Science museum and Planetarium tags suggest destination visits, and fit is low despite Social and Foodies tags."
+  },
+  "stability": {
+   "rho": 0.97,
+   "weakest": "Maple Latte"
+  }
+ },
+ "briefs": {
+  "philz-san-francisco-civic-center": {
+   "store_id": "philz-san-francisco-civic-center",
+   "fit": 1.57,
+   "label": "test",
+   "verdict": "Strong fit: Civic Center's lively, social crowd of locals, tourists and foodies should embrace a shareable, flavorful fall-style offer.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999974
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999935
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:locals",
+     "name": "Locals",
+     "affinity": 0.999922
+    },
+    {
+     "id": "urn:tag:genre:place:tourist_attraction",
+     "name": "Tourist attraction",
+     "affinity": 0.999909
+    }
+   ],
+   "partners": [
+    {
+     "id": "120D07EB-F96F-4E04-93C4-0B0A202A82B6",
+     "name": "San Francisco City Hall",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "848D69EC-CA8E-476F-91E6-C23838A95A91",
+     "name": "Bill Graham Civic Auditorium",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "47565D33-335A-4AA4-80F6-41F854F933AF",
+     "name": "The Warfield",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Maple Latte for lively groups",
+    "Brown Butter treats for foodies",
+    "Apple Pie and Oatmeal Raisin Cookie pairings"
+   ]
+  },
+  "philz-san-francisco-embarcadero": {
+   "store_id": "philz-san-francisco-embarcadero",
+   "fit": 1.51,
+   "label": "test",
+   "verdict": "Strong fit: the autumn-bakery flavors suit a lively, social, foodie crowd with Californian and New American tastes.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999944
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999915
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999887
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999845
+    }
+   ],
+   "partners": [
+    {
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "4B694352-3FDD-4335-B569-306D0D12BC0C",
+     "name": "Ferry Building",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "18CB1680-1C15-4498-9D39-9608C0BAE714",
+     "name": "Exploratorium",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Brown Butter Oatmilk Latte for foodies",
+    "Maple Latte as a celebratory treat for couples",
+    "Apple Pie and Oatmeal Raisin Cookie for a New American touch"
+   ]
+  },
+  "philz-san-francisco-front-st": {
+   "store_id": "philz-san-francisco-front-st",
+   "fit": 1.49,
+   "label": "test",
+   "verdict": "Strong fit: Californian and New American foodie tastes should welcome the offer's warm, buttery, baked-spice flavors in a lively, social setting.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999958
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.99993
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999916
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999902
+    }
+   ],
+   "partners": [
+    {
+     "id": "E86EC0E5-5C8D-4700-935F-973B7E0623A0",
+     "name": "SFMOMA Museum Store",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "4B694352-3FDD-4335-B569-306D0D12BC0C",
+     "name": "Ferry Building",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "18CB1680-1C15-4498-9D39-9608C0BAE714",
+     "name": "Exploratorium",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with Brown Butter and Maple for New American foodies",
+    "Pair Apple Pie and Oatmeal Raisin Cookie as shareable sweet bites",
+    "Feature Oatmilk Latte as a Californian-friendly option"
+   ]
+  },
+  "philz-los-angeles-dtla-hope": {
+   "store_id": "philz-los-angeles-dtla-hope",
+   "fit": 1.27,
+   "label": "test",
+   "verdict": "Strong fit: this lively, social foodie crowd should enjoy a cozy, dessert-inspired seasonal lineup that suits celebratory outings and shared experiences.",
+   "why_tags": [
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999986
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999944
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999917
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:foodies",
+     "name": "Foodies",
+     "affinity": 0.999903
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999875
+    }
+   ],
+   "partners": [
+    {
+     "id": "2CBC5CC2-7A30-4002-9978-A3A392C397E0",
+     "name": "Crypto.com Arena",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "1ABA1843-B6BF-4066-B46B-479BEE81B988",
+     "name": "Grand Central Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2E6410EF-53A0-4559-82B6-876AD7DF3507",
+     "name": "Los Angeles Convention Center",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Pair Maple Latte with Apple Pie for a shareable treat",
+    "Feature Brown Butter Oatmilk Latte for foodie appeal",
+    "Offer Oatmeal Raisin Cookie as a fun celebratory add-on"
+   ]
+  },
+  "philz-los-angeles-hollywood": {
+   "store_id": "philz-los-angeles-hollywood",
+   "fit": 1.22,
+   "label": "test",
+   "verdict": "Hollywood's lively, social crowd of locals, tourists and foodies should embrace this cozy, shareable fall-flavored lineup, a strong fit at z=1.22.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:live_music_venue",
+     "name": "Live music venue",
+     "affinity": 0.999987
+    },
+    {
+     "id": "urn:tag:ambience:qloo:lively",
+     "name": "Lively",
+     "affinity": 0.999973
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.99996
+    },
+    {
+     "id": "urn:tag:ambience:qloo:fun",
+     "name": "Fun",
+     "affinity": 0.999933
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999906
+    }
+   ],
+   "partners": [
+    {
+     "id": "B5915C74-1826-4A14-A8EB-EA67FC808923",
+     "name": "Hollywood",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "2FEF8FE9-1B13-4CBA-9CB6-BA532C84CD38",
+     "name": "Hollywood Pantages Theatre",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "65395B84-D136-4B72-BB4C-EFE7149E957A",
+     "name": "Hollywood Palladium",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Maple Latte as a fun, crowd-pleasing headliner for groups of friends",
+    "Brown Butter and Apple Pie notes to entice foodies and couples",
+    "Oatmeal Raisin Cookie pairing for easy grab-and-go before events"
+   ]
+  },
+  "philz-san-mateo-hillsdale": {
+   "store_id": "philz-san-mateo-hillsdale",
+   "fit": -1.67,
+   "label": "skip",
+   "verdict": "Skip: the cozy, bakery-style fall flavors fit poorly with a lively, Californian, New American crowd of tourists, foodies, and celebratory diners.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:event_venue",
+     "name": "Event venue",
+     "affinity": 0.99997
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999941
+    },
+    {
+     "id": "urn:tag:genre:place:aquarium",
+     "name": "Aquarium",
+     "affinity": 0.999911
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:new_american",
+     "name": "New American",
+     "affinity": 0.999852
+    }
+   ],
+   "partners": [
+    {
+     "id": "6E53E5C2-C5A7-41E4-ABD8-EF46AEF671D3",
+     "name": "San Mateo County Event Center",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "7BFBE5DA-BB6F-4D61-BFCD-4AD29B89A1D6",
+     "name": "Hillsdale Shopping Center",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "A7F251D0-E586-4FF4-949F-22FF8B116172",
+     "name": "Fieldwork San Mateo",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with fresh Californian-style flavors instead",
+    "Offer shareable items for couples and celebratory diners",
+    "Keep options quick for lively tourist traffic"
+   ]
+  },
+  "philz-san-jose-brokaw-commons": {
+   "store_id": "philz-san-jose-brokaw-commons",
+   "fit": -1.47,
+   "label": "skip",
+   "verdict": "Skip: the cozy baked-spice offer fits poorly with local tastes leaning Asian, Japanese, Vietnamese and bubble tea, though dessert-shop interest offers slight upside.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:asian",
+     "name": "Asian",
+     "affinity": 0.999962
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:dessert_shop",
+     "name": "Dessert shop",
+     "affinity": 0.999924
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:sushi",
+     "name": "Sushi",
+     "affinity": 0.999885
+    },
+    {
+     "id": "urn:tag:genre:place:restaurant:japanese",
+     "name": "Japanese",
+     "affinity": 0.999847
+    }
+   ],
+   "partners": [
+    {
+     "id": "D850C092-6FBB-4591-84AF-BF7486D2486C",
+     "name": "San Jose Municipal Golf Course",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "D5D71A5D-D023-4BB4-AD59-E452251572A9",
+     "name": "Gen Korean BBQ House",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "8FEEDCBE-8085-4C22-BC54-60EAA89679A1",
+     "name": "H Mart San Jose",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Lead with a lighter, tea-style or oatmilk drink for the bubble tea and Japanese-leaning crowd",
+    "Offer a single-serve sweet treat pairing for solo diners and dessert-shop fans",
+    "Keep maple and brown butter notes subtle, not heavy"
+   ]
+  },
+  "philz-san-francisco-ocean-ave": {
+   "store_id": "philz-san-francisco-ocean-ave",
+   "fit": -1.44,
+   "label": "skip",
+   "verdict": "Skip: the cozy, bakery-style fall offer fits poorly with this lively, foodie, tourist-heavy Californian crowd that favors New American fare and tiramisu.",
+   "why_tags": [
+    {
+     "id": "urn:tag:genre:place:restaurant:californian",
+     "name": "Californian",
+     "affinity": 1
+    },
+    {
+     "id": "urn:tag:genre:place:science_museum",
+     "name": "Science museum",
+     "affinity": 0.999945
+    },
+    {
+     "id": "urn:tag:genre:place:planetarium",
+     "name": "Planetarium",
+     "affinity": 0.999926
+    },
+    {
+     "id": "urn:tag:customer_identity:qloo:tourists",
+     "name": "Tourists",
+     "affinity": 0.999815
+    },
+    {
+     "id": "urn:tag:ambience:qloo:social",
+     "name": "Social",
+     "affinity": 0.999778
+    }
+   ],
+   "partners": [
+    {
+     "id": "B53E9B71-2061-4772-8027-BE939C4A6252",
+     "name": "Beep's Burgers",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "EEECB599-FA91-438F-A9BD-CFF307A450D9",
+     "name": "Whole Foods Market",
+     "affinity": null,
+     "image": null
+    },
+    {
+     "id": "CA9DAD31-41DB-4889-A4CF-29B3083F3139",
+     "name": "Roxie Food Center",
+     "affinity": null,
+     "image": null
+    }
+   ],
+   "menu_cues": [
+    "Foodie-friendly New American pairing",
+    "House made tiramisu-inspired sweet option",
+    "Shareable treat for social couples"
+   ]
+  }
+ },
+ "trace": [
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "maple"
+   },
+   "summary": "4 results: Maple Bacon Donut, Maple Latte, Maple Walnut"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "oat milk latte"
+   },
+   "summary": "1 results: Oatmilk Latte"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "brown butter"
+   },
+   "summary": "2 results: Brown Butter Cake, Brown Butter"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "oatmeal"
+   },
+   "summary": "4 results: Oatmeal Raisin Cookie, Oatmeal Bar, Oatmeal Raisin"
+  },
+  {
+   "type": "trace",
+   "tool": "find_tags",
+   "args": {
+    "query": "apple pie"
+   },
+   "summary": "5 results: Apple Pie, Apple Pie A La Mode, Apple Pie With Ice Cream"
+  },
+  {
+   "type": "trace",
+   "tool": "score_stores",
+   "args": {
+    "items": [
+     "Maple Latte",
+     "Oatmilk Latte",
+     "Brown Butter",
+     "Oatmeal Raisin Cookie",
+     "Apple Pie"
+    ]
+   },
+   "summary": "40 of 40 stores scored"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Civic Center"
+   },
+   "summary": "10 results: Lively, Tourists, Social"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Embarcadero"
+   },
+   "summary": "10 results: Californian, Lively, Social"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Front St"
+   },
+   "summary": "10 results: Californian, Lively, Tourists"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "DTLA \u2013 Hope"
+   },
+   "summary": "10 results: Lively, New American, Tourists"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Hollywood"
+   },
+   "summary": "10 results: Live music venue, Lively, Social"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Hillsdale"
+   },
+   "summary": "10 results: Californian, Event venue, Science museum"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Brokaw Commons"
+   },
+   "summary": "10 results: Californian, Asian, Dessert shop"
+  },
+  {
+   "type": "trace",
+   "tool": "area_taste",
+   "args": {
+    "store": "Ocean Ave"
+   },
+   "summary": "10 results: Californian, Science museum, Planetarium"
+  }
+ ]
+}
