@@ -33,6 +33,21 @@ async def test_get_sends_key_and_caches(tmp_path):
     assert calls[0].headers["X-Api-Key"] == "test-key"
 
 
+async def test_corrupt_cache_file_is_a_miss(tmp_path):
+    calls = []
+
+    def handler(request):
+        calls.append(request)
+        return httpx.Response(200, json={"ok": 1})
+
+    q = make_client(tmp_path, handler)
+    params = {"filter.query": "matcha"}
+    (tmp_path / f"{cache_key('/v2/tags', params)}.json").write_text('{"trunc')
+    assert await q.get("/v2/tags", params) == {"ok": 1}
+    assert await q.get("/v2/tags", params) == {"ok": 1}
+    assert len(calls) == 1
+
+
 async def test_errors_raise_and_are_not_cached(tmp_path):
     calls = []
 

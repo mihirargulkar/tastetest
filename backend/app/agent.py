@@ -103,16 +103,16 @@ SIGNATURE_TOOLS = [
 
 
 async def build_signature(llm, tools, lto: str, current: list | None = None, instruction: str | None = None):
-    seen = {i["id"] for i in current or []}
+    seen = {i["id"]: {"name": i["name"], "kind": i["kind"]} for i in current or []}
 
     async def find_tags(query):
         out = await tools.find_tags(query)
-        seen.update(o["id"] for o in out)
+        seen.update({o["id"]: {"name": o["name"], "kind": "tag"} for o in out})
         return out
 
     async def find_places(query):
         out = await tools.find_places(query)
-        seen.update(o["id"] for o in out)
+        seen.update({o["id"]: {"name": o["name"], "kind": "entity"} for o in out})
         return out
 
     user = f"LTO: {lto}"
@@ -126,7 +126,8 @@ async def build_signature(llm, tools, lto: str, current: list | None = None, ins
             yield ev
             continue
         submitted = ev["input"]["items"]
-        items = [{**i, "weight": min(1.0, max(0.0, float(i["weight"])))} for i in submitted if i["id"] in seen]
+        items = [{**i, **seen[i["id"]], "weight": min(1.0, max(0.0, float(i["weight"])))}
+                 for i in submitted if i["id"] in seen]
         if not items:
             raise AgentError("no usable Qloo concepts found for this description")
         yield {"type": "signature", "items": items, "dropped": len(submitted) - len(items)}

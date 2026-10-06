@@ -73,6 +73,17 @@ async def test_build_signature_drops_invented_ids():
     assert "tool_choice" not in llm.calls[0]
 
 
+async def test_signature_names_and_kinds_come_from_qloo():
+    llm = FakeLLM([
+        resp(tool_use("t1", "find_tags", {"query": "matcha"})),
+        resp(tool_use("t2", "submit_signature", {"items": [
+            {"id": "T-matcha", "name": "Invented Name", "kind": "entity", "weight": 1.0, "substituted_from": None}]})),
+    ])
+    events = await collect(build_signature(llm, FakeTools(), "matcha latte"))
+    item = events[-1]["items"][0]
+    assert (item["name"], item["kind"]) == ("matcha", "tag")
+
+
 async def test_refinement_keeps_current_ids():
     current = [{"id": "T-old", "name": "old", "kind": "tag", "weight": 1.0, "substituted_from": None}]
     llm = FakeLLM([resp(tool_use("t1", "submit_signature", {"items": current}))])

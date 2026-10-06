@@ -2,6 +2,8 @@
 import asyncio
 import hashlib
 import json
+import os
+import tempfile
 from pathlib import Path
 
 import httpx
@@ -70,7 +72,10 @@ class Qloo:
     async def get(self, path: str, params: dict) -> dict:
         f = self.cache_dir / f"{cache_key(path, params)}.json"
         if f.exists():
-            return json.loads(f.read_text())
+            try:
+                return json.loads(f.read_text())
+            except json.JSONDecodeError:
+                pass  # corrupt cache file: treat as a miss and overwrite
         for attempt in range(MAX_RETRIES + 1):
             async with self.sem:
                 r = await self.http.get(path, params=params, headers={"X-Api-Key": self.api_key})
@@ -80,7 +85,9 @@ class Qloo:
         if r.status_code != 200:
             raise QlooError(r.status_code, r.text)
         data = r.json()
-        f.write_text(json.dumps(data))
+        with tempfile.NamedTemporaryFile("w", dir=f.parent, suffix=".tmp", delete=False) as t:
+            t.write(json.dumps(data))
+        os.replace(t.name, f)
         return data
 
     async def search_tags(self, query: str, take: int = 10) -> list[dict]:
