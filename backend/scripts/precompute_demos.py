@@ -55,7 +55,7 @@ async def main():
     rf = DATA / "regions.json"
     tools = Tools(Qloo(os.environ["QLOO_API_KEY"], DATA / "cache"), load_stores(DATA / "stores.csv"),
                   regions=json.loads(rf.read_text()) if rf.exists() else {})
-    llm = AsyncAnthropic()
+    llm = AsyncAnthropic(timeout=120.0, max_retries=2)
     for d in DEMOS:
         await run_one(llm, tools, *d)
 

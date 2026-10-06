@@ -65,7 +65,8 @@ def deps(request: Request):
         cache_dir = Path(os.environ.get("CACHE_DIR", DATA / "cache"))
         s.tools = Tools(Qloo(os.environ["QLOO_API_KEY"], cache_dir), STORES,
                         regions=json.loads(rf.read_text()) if rf.exists() else {})
-        s.llm = AsyncAnthropic()
+        # SDK default is 600s x 3 attempts; a hung request must not stall a live run for 30 min
+        s.llm = AsyncAnthropic(timeout=60.0, max_retries=1)
     return s.llm, s.tools
 
 
