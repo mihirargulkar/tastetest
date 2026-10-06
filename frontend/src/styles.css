@@ -1,0 +1,57 @@
+:root {
+  --bg: #e9e5dc; --card: #fffdf8; --line: #ddd6c8; --ink: #1d1d1f; --muted: #8a857c;
+  --green: #2f7d3a; --green-dark: #2f5d3a; --red: #b4432f;
+  font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; color: var(--ink);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); }
+button { font: inherit; cursor: pointer; }
+button:disabled { cursor: default; opacity: 0.5; }
+.app { position: fixed; inset: 0; }
+.map { position: absolute; inset: 0; }
+.card { position: absolute; background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.12); padding: 14px; }
+.input-card { top: 14px; left: 14px; width: 340px; max-height: calc(100vh - 150px); overflow: auto; }
+.rank-card, .drawer { top: 14px; right: 14px; width: 380px; max-height: calc(100vh - 150px); overflow: auto; }
+.trace-bar { left: 14px; right: 14px; bottom: 14px; padding: 8px 14px; font-size: 12px; }
+h1 { margin: 0; font-size: 18px; } h2 { margin: 0; font-size: 16px; }
+.sub, .muted, .src, .fine, .why { color: var(--muted); }
+.sub { margin: 2px 0 10px; } .src { font-size: 11px; } .fine { margin: 6px 0 0; font-size: 11px; }
+.label { margin: 12px 0 6px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+textarea, .input { width: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 8px; font: inherit; background: #fff; }
+textarea { height: 72px; resize: vertical; }
+.btn { display: block; width: 100%; margin-top: 10px; padding: 9px; border: 0; border-radius: 8px; background: var(--green-dark); color: #fff; font-weight: 600; }
+.btn.secondary { background: #fff; color: var(--green-dark); border: 1px solid var(--green-dark); }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+.chip { display: inline-flex; align-items: center; gap: 4px; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 2px 4px 2px 10px; font-size: 12px; }
+.chip button { border: 0; background: none; color: var(--muted); padding: 0 4px; }
+.chip s { color: var(--muted); }
+.pill { border: 1px solid var(--line); background: #fff; border-radius: 14px; padding: 3px 10px; font-size: 12px; margin: 0 4px 4px 0; }
+.pill.on { background: var(--green-dark); color: #fff; border-color: var(--green-dark); }
+ul { list-style: none; margin: 0; padding: 0; }
+.row { display: block; width: 100%; text-align: left; border: 0; border-bottom: 1px solid #ece6da; background: none; padding: 7px 0; }
+.row-main { display: flex; justify-content: space-between; }
+.why { display: block; font-size: 12px; }
+.up { color: var(--green); font-weight: 700; } .dn { color: var(--red); font-weight: 700; }
+.trace-row { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.metros { margin-left: auto; }
+.link { border: 0; background: none; padding: 0; color: var(--ink); }
+.trace { max-height: 160px; overflow: auto; margin: 8px 0 0; padding-left: 18px; }
+.drawer-head { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
+.fit { font-size: 20px; }
+.close { border: 0; background: none; font-size: 20px; line-height: 1; color: var(--muted); }
+.verdict { margin: 10px 0; }
+.meter { position: relative; height: 6px; border-radius: 3px; background: #eee; margin: 6px 0 2px; }
+.meter i { position: absolute; left: 50%; top: -3px; width: 2px; height: 12px; background: #999; }
+.meter b { position: absolute; height: 6px; background: var(--green); border-radius: 3px; }
+.sec { margin-top: 12px; padding-top: 10px; border-top: 1px solid #ece6da; }
+.ent { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+.ent img, .ent .thumb { width: 26px; height: 26px; border-radius: 4px; object-fit: cover; background: #cfc8b8; flex: none; }
+.toast { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); background: var(--red); color: #fff; padding: 8px 12px; border-radius: 8px; }
+.toast button { border: 0; background: none; color: #fff; }
+@media (max-width: 800px) {
+  .input-card, .rank-card, .drawer { position: absolute; left: 8px; right: 8px; width: auto; }
+  .input-card { top: 8px; max-height: 40vh; }
+  .rank-card, .drawer { top: auto; bottom: 120px; max-height: 38vh; }
+  .trace-bar { left: 8px; right: 8px; bottom: 8px; }
+}
