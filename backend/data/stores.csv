@@ -1,0 +1,7 @@
+id,name,address,lat,lon,metro
+nyc-williamsburg,Williamsburg,N 6th St & Wythe Ave Brooklyn NY,40.7193,-73.9590,New York
+nyc-midtown-east,Midtown East,E 52nd St & 3rd Ave New York NY,40.7572,-73.9693,New York
+nyc-west-village,West Village,Bleecker St & Christopher St New York NY,40.7335,-74.0040,New York
+la-silver-lake,Silver Lake,Sunset Blvd & Sanborn Ave Los Angeles CA,34.0912,-118.2790,Los Angeles
+la-century-city,Century City,Santa Monica Blvd & Ave of the Stars Los Angeles CA,34.0590,-118.4170,Los Angeles
+la-arts-district,Arts District,E 3rd St & Traction Ave Los Angeles CA,34.0470,-118.2350,Los Angeles
