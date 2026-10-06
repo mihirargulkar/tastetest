@@ -1,6 +1,7 @@
 .superpowers/
 .env
 backend/data/cache/
+backend/tests/.probe-cache/
 __pycache__/
 .venv/
 node_modules/

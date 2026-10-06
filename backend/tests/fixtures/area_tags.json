@@ -1,0 +1,145 @@
+{
+ "success": true,
+ "results": {
+  "tags": [
+   {
+    "tag_id": "urn:tag:ambience:qloo:intimate",
+    "name": "Intimate",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:ambience:qloo",
+    "tag_value": "urn:tag:ambience:qloo:intimate",
+    "popularity": 0.9999182370365646,
+    "query": {
+     "affinity": 0.999987
+    }
+   },
+   {
+    "tag_id": "urn:tag:ambience:qloo:social",
+    "name": "Social",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:ambience:qloo",
+    "tag_value": "urn:tag:ambience:qloo:social",
+    "popularity": 0.9999786363822724,
+    "query": {
+     "affinity": 0.999974
+    }
+   },
+   {
+    "tag_id": "urn:tag:ambience:qloo:lively",
+    "name": "Lively",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:ambience:qloo",
+    "tag_value": "urn:tag:ambience:qloo:lively",
+    "popularity": 0.9999859408545102,
+    "query": {
+     "affinity": 0.999908
+    }
+   },
+   {
+    "tag_id": "urn:tag:customer_identity:qloo:foodies",
+    "name": "Foodies",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:customer_identity:qloo",
+    "tag_value": "urn:tag:customer_identity:qloo:foodies",
+    "popularity": 0.9999822493470352,
+    "query": {
+     "affinity": 0.999881
+    }
+   },
+   {
+    "tag_id": "urn:tag:customer_identity:qloo:business_professionals",
+    "name": "Business Professionals",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:customer_identity:qloo",
+    "tag_value": "urn:tag:customer_identity:qloo:business_professionals",
+    "popularity": 0.9999363018603784,
+    "query": {
+     "affinity": 0.999868
+    }
+   },
+   {
+    "tag_id": "urn:tag:customer_identity:qloo:couples",
+    "name": "Couples",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:customer_identity:qloo",
+    "tag_value": "urn:tag:customer_identity:qloo:couples",
+    "popularity": 0.9999692897995166,
+    "query": {
+     "affinity": 0.999855
+    }
+   },
+   {
+    "tag_id": "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+    "name": "Cocktail Enthusiasts",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:customer_identity:qloo",
+    "tag_value": "urn:tag:customer_identity:qloo:cocktail_enthusiasts",
+    "popularity": 0.9998688336705696,
+    "query": {
+     "affinity": 0.999841
+    }
+   },
+   {
+    "tag_id": "urn:tag:customer_identity:qloo:tourists",
+    "name": "Tourists",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:customer_identity:qloo",
+    "tag_value": "urn:tag:customer_identity:qloo:tourists",
+    "popularity": 0.9999636347242358,
+    "query": {
+     "affinity": 0.999828
+    }
+   },
+   {
+    "tag_id": "urn:tag:customer_identity:qloo:fine_dining_enthusiasts",
+    "name": "Fine Dining Enthusiasts",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:customer_identity:qloo",
+    "tag_value": "urn:tag:customer_identity:qloo:fine_dining_enthusiasts",
+    "popularity": 0.9995911851828231,
+    "query": {
+     "affinity": 0.999815
+    }
+   },
+   {
+    "tag_id": "urn:tag:ambience:qloo:fun",
+    "name": "Fun",
+    "types": [
+     "urn:entity:place"
+    ],
+    "subtype": "urn:tag:ambience:qloo",
+    "tag_value": "urn:tag:ambience:qloo:fun",
+    "popularity": 0.9998974232178227,
+    "query": {
+     "affinity": 0.999802
+    }
+   }
+  ]
+ },
+ "query": {
+  "geospatial": {
+   "panel_size": {
+    "context": 72776032816,
+    "target": 1597285999
+   }
+  }
+ }
+}

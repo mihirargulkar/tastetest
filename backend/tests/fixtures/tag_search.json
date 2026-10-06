@@ -1,0 +1,138 @@
+{
+ "duration": 26,
+ "success": true,
+ "results": {
+  "tags": [
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:menu_highlight:qloo",
+    "id": "urn:tag:menu_highlight:qloo:matcha",
+    "name": "Matcha",
+    "popularity": 0.92695063,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:specialty_dish:place",
+    "id": "urn:tag:specialty_dish:place:matcha",
+    "name": "Matcha",
+    "popularity": 0.92118454,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:specialty_dish:place",
+    "id": "urn:tag:specialty_dish:place:matcha_ice_cream",
+    "name": "Matcha Ice Cream",
+    "popularity": 0.9858014,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:menu_highlight:qloo",
+    "id": "urn:tag:menu_highlight:qloo:matcha_latte",
+    "name": "Matcha Latte",
+    "popularity": 0.9795073,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:specialty_dish:place",
+    "id": "urn:tag:specialty_dish:place:matcha_tiramisu",
+    "name": "Matcha Tiramisu",
+    "popularity": 0.97802955,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:specialty_dish:place",
+    "id": "urn:tag:specialty_dish:place:matcha_cheesecake",
+    "name": "Matcha Cheesecake",
+    "popularity": 0.9775443,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:specialty_dish:place",
+    "id": "urn:tag:specialty_dish:place:matcha_frappucino",
+    "name": "Matcha Frappucino",
+    "popularity": 0.97469735,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:specialty_dish:place",
+    "id": "urn:tag:specialty_dish:place:matcha_creme_brulee",
+    "name": "Matcha Creme Brulee",
+    "popularity": 0.97001207,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:menu_highlight:qloo",
+    "id": "urn:tag:menu_highlight:qloo:matcha_cheesecake",
+    "name": "Matcha Cheesecake",
+    "popularity": 0.9669679,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:menu_highlight:qloo",
+    "id": "urn:tag:menu_highlight:qloo:matcha_tiramisu",
+    "name": "Matcha Tiramisu",
+    "popularity": 0.9662374,
+    "properties": {},
+    "tags": []
+   }
+  ]
+ }
+}

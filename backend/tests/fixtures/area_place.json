@@ -1,0 +1,6035 @@
+{
+ "success": true,
+ "results": {
+  "entities": [
+   {
+    "name": "Washington Square Park",
+    "tags": [
+     {
+      "id": "urn:tag:amenities:place:basketball_court",
+      "name": "Basketball court",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:neoclassical_arch",
+      "name": "Neoclassical arch",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:traditional",
+      "name": "Traditional",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:fountain",
+      "name": "Fountain",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:timeless",
+      "name": "Timeless",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+      "name": "Trendy",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:slides",
+      "name": "Slides",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:pets:place:dog_park",
+      "name": "Dog park",
+      "type": "urn:tag:pets:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:unique",
+      "name": "Unique",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:macdougal_street",
+      "name": "Macdougal street",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:cultural",
+      "name": "Cultural",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:convenience_stop",
+      "name": "Convenience stop",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place",
+      "name": "Place",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:garden_view",
+      "name": "Garden view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:near_university",
+      "name": "Near university",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:welcoming",
+      "name": "Welcoming",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:nature_outdoors",
+      "name": "Nature outdoors",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activities:place:walking",
+      "name": "Walking",
+      "type": "urn:tag:activities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:city_park",
+      "name": "City park",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:park",
+      "name": "Park",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:people_watching",
+      "name": "People watching",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:photography",
+      "name": "Photography",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:picnic_tables",
+      "name": "Picnic tables",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+      "name": "Walkable",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:bohemian",
+      "name": "Bohemian",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:dining_drinking",
+      "name": "Dining drinking",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:children:place:good_for_kids",
+      "name": "Good for kids",
+      "type": "urn:tag:children:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:relaxing",
+      "name": "Relaxing",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:lively",
+      "name": "Lively",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:convenient",
+      "name": "Convenient",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:city_view",
+      "name": "City view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:city_center",
+      "name": "City center",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
+      "name": "Wheelchair accessible parking lot",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:bustling",
+      "name": "Bustling",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:routine_visit",
+      "name": "Routine visit",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:bohemian",
+      "name": "Bohemian",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:dog_runs",
+      "name": "Dog runs",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:authentic",
+      "name": "Authentic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:culture_arts",
+      "name": "Culture arts",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:pets:place:dogs_allowed",
+      "name": "Dogs allowed",
+      "type": "urn:tag:pets:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:morning",
+      "name": "Morning",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:fountain_view",
+      "name": "Fountain view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_seating",
+      "name": "Wheelchair accessible seating",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:all_day",
+      "name": "All day",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:public_restrooms",
+      "name": "Public restrooms",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:destination",
+      "name": "Destination",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:university_adjacent",
+      "name": "University adjacent",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:street_art",
+      "name": "Street art",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:social",
+      "name": "Social",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:skateboarding",
+      "name": "Skateboarding",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:sports_recreation",
+      "name": "Sports recreation",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:eclectic",
+      "name": "Eclectic",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:midday",
+      "name": "Midday",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:people_watching",
+      "name": "People watching",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:sightseeing",
+      "name": "Sightseeing",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:baseball_field",
+      "name": "Baseball field",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:urban_history",
+      "name": "Urban history",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:entertainment",
+      "name": "Entertainment",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:creative_hub",
+      "name": "Creative hub",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:new_york_university",
+      "name": "New york university",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:chess",
+      "name": "Chess",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:chess_tables",
+      "name": "Chess tables",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:parking:place:free_street_parking",
+      "name": "Free street parking",
+      "type": "urn:tag:parking:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:late_night",
+      "name": "Late night",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:day_trip",
+      "name": "Day trip",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:public_square",
+      "name": "Public square",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:bright",
+      "name": "Bright",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:arch",
+      "name": "Arch",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:children:place:playground",
+      "name": "Playground",
+      "type": "urn:tag:children:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:vibrant",
+      "name": "Vibrant",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:sunset_view",
+      "name": "Sunset view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:playgrounds",
+      "name": "Playgrounds",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:picnic_tables",
+      "name": "Picnic tables",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:tourist_attraction",
+      "name": "Tourist attraction",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:greenwich_village",
+      "name": "Greenwich village",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:social_community",
+      "name": "Social community",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:evening",
+      "name": "Evening",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:casual",
+      "name": "Casual",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:safe",
+      "name": "Safe",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:volleyball_court",
+      "name": "Volleyball court",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:authentic",
+      "name": "Authentic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:park",
+      "name": "Park",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:lively",
+      "name": "Lively",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:touristic",
+      "name": "Touristic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:public_restroom",
+      "name": "Public restroom",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:live_events",
+      "name": "Live events",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:tourist_attraction",
+      "name": "Tourist attraction",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:has_a_tennis_court",
+      "name": "Has a tennis court",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:scenic",
+      "name": "Scenic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:family_friendly",
+      "name": "Family friendly",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:early_morning",
+      "name": "Early morning",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:barbecue_grill",
+      "name": "Barbecue grill",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:chess",
+      "name": "Chess",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:live_music",
+      "name": "Live music",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:bohemian",
+      "name": "Bohemian",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:benches",
+      "name": "Benches",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:charming",
+      "name": "Charming",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:casual",
+      "name": "Casual",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:city_park",
+      "name": "City park",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:onsite_services",
+      "name": "Onsite services",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:skateboarding_area",
+      "name": "Skateboarding area",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:tours",
+      "name": "Tours",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activities:place:hiking",
+      "name": "Hiking",
+      "type": "urn:tag:activities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+      "name": "Wheelchair accessible entrance",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:soho",
+      "name": "Soho",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:swings",
+      "name": "Swings",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:historic_arch_view",
+      "name": "Historic arch view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:afternoon",
+      "name": "Afternoon",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     }
+    ],
+    "type": "urn:entity",
+    "enabled": true,
+    "subtype": "urn:entity:place",
+    "external": {
+     "google_place": [
+      {
+       "id": "fa615edfd1b67e18",
+       "place_id": "ChIJjX494pBZwokRGH620d9eYfo"
+      }
+     ]
+    },
+    "location": {
+     "lat": 40.7308838,
+     "lon": -73.997332,
+     "geohash": "dr5rsnuf95py"
+    },
+    "entity_id": "6BBEFAAD-8DE3-4407-881F-B34A3BC9F16A",
+    "popularity": 0.9999923851296812,
+    "properties": {
+     "hours": {
+      "friday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "monday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "sunday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "tuesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "saturday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "thursday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "wednesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ]
+     },
+     "phone": null,
+     "images": [
+      {
+       "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWltPKPAby-81trya0EIyi574Xybi4-e3srcMEz673z4IEkaW6WiXXleiwPYLJKgg3s9RJckBsvI_sg1SyYXlmzHe9BZHwZO-d0X6B9mzK6xql9WLdYL-YKFvdMQklY3p07fbcfLX-DFQPQG=w1900-h1900-k-no",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "New York, NY 10012",
+     "geocode": {
+      "city": "New York",
+      "name": "Greenwich Village",
+      "metro": "New York City",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "New York",
+      "admin2_region": "New York County"
+     },
+     "parking": false,
+     "website": "https://www.nycgovparks.org/parks/washington-square-park",
+     "good_for": [
+      {
+       "id": "urn:tag:children:place:good_kids",
+       "name": "Good for kids",
+       "type": "urn:tag:children:place",
+       "weight": 0.7222222222222222
+      }
+     ],
+     "keywords": [
+      {
+       "name": "lively atmosphere",
+       "count": 723
+      },
+      {
+       "name": "fountain",
+       "count": 304
+      },
+      {
+       "name": "street performers",
+       "count": 214
+      },
+      {
+       "name": "people watching",
+       "count": 426
+      },
+      {
+       "name": "arch",
+       "count": 133
+      },
+      {
+       "name": "dog park",
+       "count": 93
+      },
+      {
+       "name": "chess",
+       "count": 378
+      },
+      {
+       "name": "skateboarding",
+       "count": 90
+      },
+      {
+       "name": "squirrels",
+       "count": 30
+      },
+      {
+       "name": "crowded",
+       "count": 173
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      "metro": {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "state": {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      },
+      "county": {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      "neighborhood": {
+       "name": "Greenwich Village",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "9D3B2D6A-1C86-4072-90A3-20E5E00543A7",
+       "admin_level": 10,
+       "locality_id": "r8398112",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "10003",
+       "place": "ZCTA",
+       "boundary": "ZCTA",
+       "entity_id": "465FE0B8-8EC9-44BE-9046-719FFDC89C30",
+       "admin_level": 9,
+       "locality_id": "z10003",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Greenwich Village",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "9D3B2D6A-1C86-4072-90A3-20E5E00543A7",
+       "admin_level": 10,
+       "locality_id": "r8398112",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Manhattan",
+       "place": "borough",
+       "boundary": "administrative",
+       "entity_id": "97F46DBA-ED36-4CCD-ACC1-4341D9E6EE47",
+       "admin_level": 7,
+       "locality_id": "r8398124",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      }
+     ],
+     "description": "Historic Greenwich Village park featuring a landmark triumphal arch, open plazas and lawns, famed for people-watching, street performers, and community events.",
+     "hotel_class": null,
+     "price_level": null,
+     "price_range": {
+      "to": null,
+      "from": null,
+      "currency": "usd"
+     },
+     "star_rating": null,
+     "event_spaces": true,
+     "neighborhood": "Greenwich Village",
+     "pet_friendly": true,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:city_park",
+      "akas": [
+       {
+        "value": "\"\u179f\u17bd\u1793\u1785\u17d2\u1794\u17b6\u179a\u1791\u17b8\u1780\u17d2\u179a\u17bb\u1784\"",
+        "languages": [
+         "km"
+        ]
+       },
+       {
+        "value": "\"Stadtpark\"",
+        "languages": [
+         "de"
+        ]
+       },
+       {
+        "value": "\"Linnapark\"",
+        "languages": [
+         "et"
+        ]
+       },
+       {
+        "value": "\"\u015eehir park\u0131\"",
+        "languages": [
+         "tr"
+        ]
+       },
+       {
+        "value": "\"\u0928\u0917\u0930 \u092a\u093e\u0930\u094d\u0915\"",
+        "languages": [
+         "hi"
+        ]
+       },
+       {
+        "value": "\"C\u00f4ng vi\u00ean th\u00e0nh ph\u1ed1\"",
+        "languages": [
+         "vi"
+        ]
+       },
+       {
+        "value": "\"\u57ce\u5e02\u516c\u56ed\"",
+        "languages": [
+         "zh"
+        ]
+       },
+       {
+        "value": "\"\u0ba8\u0b95\u0bb0\u0baa\u0bcd \u0baa\u0bc2\u0b99\u0bcd\u0b95\u0bbe\"",
+        "languages": [
+         "ta"
+        ]
+       },
+       {
+        "value": "\"\u09b8\u09bf\u099f\u09bf \u09aa\u09be\u09b0\u09cd\u0995\"",
+        "languages": [
+         "bn"
+        ]
+       },
+       {
+        "value": "\"Parc urbain\"",
+        "languages": [
+         "fr"
+        ]
+       },
+       {
+        "value": "\"\u0eaa\u0ea7\u0e99\u0eaa\u0eb2\u0e97\u0eb2\u0ea5\u0eb0\u0e99\u0eb0\u0ec3\u0e99\u0ec0\u0ea1\u0eb7\u0ead\u0e87\"",
+        "languages": [
+         "lo"
+        ]
+       },
+       {
+        "value": "\"Parku i qytetit\"",
+        "languages": [
+         "sq"
+        ]
+       },
+       {
+        "value": "\"Parke ng lungsod\"",
+        "languages": [
+         "tl"
+        ]
+       },
+       {
+        "value": "\"\ub3c4\uc2dc \uacf5\uc6d0\"",
+        "languages": [
+         "ko"
+        ]
+       },
+       {
+        "value": "\"\u0413\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0439 \u043f\u0430\u0440\u043a\"",
+        "languages": [
+         "ru"
+        ]
+       },
+       {
+        "value": "\"\u1019\u103c\u102d\u102f\u1037\u1015\u103c\u1015\u1014\u103a\u1038\u1001\u103c\u1036\"",
+        "languages": [
+         "my"
+        ]
+       },
+       {
+        "value": "\"Mestsk\u00fd park\"",
+        "languages": [
+         "sk"
+        ]
+       },
+       {
+        "value": "\"Parque urbano\"",
+        "languages": [
+         "pt",
+         "pt_pt",
+         "es_la",
+         "es",
+         "es_ar",
+         "gl"
+        ]
+       },
+       {
+        "value": "\"\u015e\u0259h\u0259r park\u0131\"",
+        "languages": [
+         "az"
+        ]
+       },
+       {
+        "value": "\"Hifadhi ya jiji\"",
+        "languages": [
+         "sw"
+        ]
+       },
+       {
+        "value": "\"\u90fd\u5e02\u516c\u5712\"",
+        "languages": [
+         "ja"
+        ]
+       },
+       {
+        "value": "\"Miesto parkas\"",
+        "languages": [
+         "lt"
+        ]
+       },
+       {
+        "value": "\"Taman kota\"",
+        "languages": [
+         "id"
+        ]
+       },
+       {
+        "value": "\"Parco urbano\"",
+        "languages": [
+         "it"
+        ]
+       },
+       {
+        "value": "\"Kaupunkipuisto\"",
+        "languages": [
+         "fi"
+        ]
+       },
+       {
+        "value": "\"\u041c\u0456\u0441\u044c\u043a\u0438\u0439 \u043f\u0430\u0440\u043a\"",
+        "languages": [
+         "uk"
+        ]
+       },
+       {
+        "value": "\"Parque municipal\"",
+        "languages": [
+         "pt"
+        ]
+       },
+       {
+        "value": "\"\u0c38\u0c3f\u0c1f\u0c40 \u0c2a\u0c3e\u0c30\u0c4d\u0c15\u0c4d\"",
+        "languages": [
+         "te"
+        ]
+       },
+       {
+        "value": "\"\u0e2a\u0e27\u0e19\u0e2a\u0e32\u0e18\u0e32\u0e23\u0e13\u0e30\u0e43\u0e19\u0e40\u0e21\u0e37\u0e2d\u0e07\"",
+        "languages": [
+         "th"
+        ]
+       },
+       {
+        "value": "\"\u10e5\u10d0\u10da\u10d0\u10e5\u10d8\u10e1 \u10de\u10d0\u10e0\u10d9\u10d8\"",
+        "languages": [
+         "ka"
+        ]
+       },
+       {
+        "value": "\"Park miejski\"",
+        "languages": [
+         "pl"
+        ]
+       },
+       {
+        "value": "\"Taman bandar\"",
+        "languages": [
+         "ms"
+        ]
+       },
+       {
+        "value": "\"\u062d\u062f\u064a\u0642\u0629 \u0639\u0627\u0645\u0629\"",
+        "languages": [
+         "ar"
+        ]
+       },
+       {
+        "value": "\"Parc urb\u00e0\"",
+        "languages": [
+         "ca"
+        ]
+       },
+       {
+        "value": "\"Bypark\"",
+        "languages": [
+         "nb",
+         "da"
+        ]
+       },
+       {
+        "value": "\"M\u011bstsk\u00fd park\"",
+        "languages": [
+         "cs"
+        ]
+       },
+       {
+        "value": "\"Mestni park\"",
+        "languages": [
+         "sl"
+        ]
+       },
+       {
+        "value": "\"Gradski park\"",
+        "languages": [
+         "hr",
+         "bs"
+        ]
+       },
+       {
+        "value": "\"\u57ce\u5e02\u516c\u5712\"",
+        "languages": [
+         "zh_tw"
+        ]
+       },
+       {
+        "value": "\"Stadspark\"",
+        "languages": [
+         "af",
+         "nl",
+         "sv"
+        ]
+       },
+       {
+        "value": "\"Hiri-parke\"",
+        "languages": [
+         "eu"
+        ]
+       },
+       {
+        "value": "\"\u05e4\u05d0\u05e8\u05e7 \u05e2\u05d9\u05e8\u05d5\u05e0\u05d9\"",
+        "languages": [
+         "he"
+        ]
+       },
+       {
+        "value": "\"City park\"",
+        "languages": [
+         "en_gb"
+        ]
+       },
+       {
+        "value": "\"Pils\u0113tas parks\"",
+        "languages": [
+         "lv"
+        ]
+       },
+       {
+        "value": "\"Parc urban\"",
+        "languages": [
+         "ro"
+        ]
+       },
+       {
+        "value": "\"Parc municipal\"",
+        "languages": [
+         "fr_ca",
+         "fr"
+        ]
+       },
+       {
+        "value": "\"V\u00e1rosi park\"",
+        "languages": [
+         "hu"
+        ]
+       },
+       {
+        "value": "\"\u049a\u0430\u043b\u0430\u043b\u044b\u049b \u0441\u0430\u044f\u0431\u0430\u049b\"",
+        "languages": [
+         "kk"
+        ]
+       },
+       {
+        "value": "\"\u0413\u0440\u0430\u0434\u0441\u043a\u0438 \u043f\u0430\u0440\u043a\"",
+        "languages": [
+         "bg",
+         "mk",
+         "sr"
+        ]
+       },
+       {
+        "value": "\"\u0394\u03b7\u03bc\u03bf\u03c4\u03b9\u03ba\u03cc \u03c0\u03ac\u03c1\u03ba\u03bf\"",
+        "languages": [
+         "el"
+        ]
+       }
+      ],
+      "name": "City park",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.599999904632568,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Historic Greenwich Village park featuring a landmark triumphal arch, open plazas and lawns, famed for people-watching, street performers, and community events.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "Washington Square Park is a legendary, 9.75-acre public square in the heart of Greenwich Village, serving as an iconic cultural and social hub for New York City. Dominated by the Washington Square Arch and a large central fountain, the park is celebrated for its bohemian atmosphere, diverse crowds, and consistent stream of musicians, artists, and street performers. It acts as an essential meeting place for university students, locals, and tourists, offering a vibrant, multifaceted experience that reflects the unique pulse of the city. Whether for relaxing, people-watching, or enjoying spontaneous performances, it remains one of Manhattan's most significant and lively public landmarks.",
+     "service_description": null,
+     "ambience_description": "The park offers a vibrant, eclectic, and timeless atmosphere that celebrates nonconformity and creative expression. It is a social hub where people gather to relax, perform, and interact in a lively, multicultural setting.",
+     "amenities_description": "The park features essential amenities including the iconic Washington Square Arch, a large central fountain, dedicated dog runs, chess tables, and public restrooms. Ample bench seating and open paved areas are available for lounging, socializing, and viewing performances.",
+     "unique_selling_points": "The park is anchored by the historic Washington Square Arch and a large central fountain, creating a world-famous gathering space known for its bohemian spirit and diverse, spontaneous street performances. It functions as a cultural crossroads where history, university life, and New York City's artistic subcultures intersect.",
+     "neighborhood_description": "The surrounding Greenwich Village neighborhood is a historic, walk-able, and culturally rich area known for its bohemian roots, diverse population, and close proximity to New York University. It is a bustling center filled with students, local residents, cafes, and independent shops.",
+     "physical_setting_description": "A historic, iconic urban park in Lower Manhattan, characterized by open plazas, tree-lined paths, and a prominent triumphal arch and fountain. It serves as a central, vibrant green space surrounded by university buildings and historic neighborhood architecture.",
+     "customer_demographics_description": null
+    },
+    "references": null,
+    "disambiguation": "New York, NY 10012",
+    "query": {
+     "distance": 632.6916870739059,
+     "measurements": {
+      "audience_growth": -2.3094010767585034
+     }
+    }
+   },
+   {
+    "name": "Whitney Museum of American Art",
+    "tags": [
+     {
+      "id": "urn:tag:category:place:museum",
+      "name": "Museum",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:social",
+      "name": "Social",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:fashionable",
+      "name": "Fashionable",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:art_museum",
+      "name": "Art museum",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:airy",
+      "name": "Airy",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:inclusivity:place:lgbtq_friendly",
+      "name": "Lgbtq+ friendly",
+      "type": "urn:tag:inclusivity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:wi_fi",
+      "name": "Wi fi",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:wi_fi",
+      "name": "Wi fi",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:onsite_services",
+      "name": "Onsite services",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:restroom",
+      "name": "Restroom",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:planning:place:getting_tickets_in_advance_recommended",
+      "name": "Getting tickets in advance recommended",
+      "type": "urn:tag:planning:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:midday",
+      "name": "Midday",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+      "name": "Trendy",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:group_events",
+      "name": "Group events",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:modern_art_museum",
+      "name": "Modern art museum",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:theater",
+      "name": "Theater",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:city_view",
+      "name": "City view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:stylish",
+      "name": "Stylish",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:artistic",
+      "name": "Artistic",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:cultural",
+      "name": "Cultural",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:parking:place:parking_lot",
+      "name": "Parking lot",
+      "type": "urn:tag:parking:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:arts_district",
+      "name": "Arts district",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:restaurant",
+      "name": "Restaurant",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:architecture",
+      "name": "Architecture",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:meatpacking_district",
+      "name": "Meatpacking district",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:tours_for_visually_impaired",
+      "name": "Tours for visually impaired",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:touristic",
+      "name": "Touristic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:gender_neutral_restroom",
+      "name": "Gender neutral restroom",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:modern_art_museum",
+      "name": "Modern art museum",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:commercial",
+      "name": "Commercial",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:coat_check",
+      "name": "Coat check",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:assisted_listening_devices",
+      "name": "Assisted listening devices",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:parking:place:on_site_parking",
+      "name": "On site parking",
+      "type": "urn:tag:parking:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:cafe",
+      "name": "Cafe",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:lively",
+      "name": "Lively",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:morning",
+      "name": "Morning",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:tours",
+      "name": "Tours",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:starbucks_reserve_roastery",
+      "name": "Starbucks reserve roastery",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:cafe",
+      "name": "Cafe",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:photography",
+      "name": "Photography",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place",
+      "name": "Place",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:children:place:discounts_for_kids",
+      "name": "Discounts for kids",
+      "type": "urn:tag:children:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:photography",
+      "name": "Photography",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:gift_shop",
+      "name": "Gift shop",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:dining_drinking",
+      "name": "Dining drinking",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:social_community",
+      "name": "Social community",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:minimalist",
+      "name": "Minimalist",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:offers_tours",
+      "name": "Offers tours",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_elevator",
+      "name": "Wheelchair accessible elevator",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:theater",
+      "name": "Theater",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:tourist_attraction",
+      "name": "Tourist attraction",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:afternoon",
+      "name": "Afternoon",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:urban_planning",
+      "name": "Urban planning",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:evening",
+      "name": "Evening",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:standard_grill",
+      "name": "Standard grill",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:bright",
+      "name": "Bright",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:culture_arts",
+      "name": "Culture arts",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:coat_check",
+      "name": "Coat check",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_seating",
+      "name": "Wheelchair accessible seating",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:chelsea_market",
+      "name": "Chelsea market",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:shopping_options",
+      "name": "Shopping options",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:city_center",
+      "name": "City center",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+      "name": "Wheelchair accessible entrance",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:parking:place:free_street_parking",
+      "name": "Free street parking",
+      "type": "urn:tag:parking:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:contemporary",
+      "name": "Contemporary",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:sightseeing",
+      "name": "Sightseeing",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:scenic",
+      "name": "Scenic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:observation_deck",
+      "name": "Observation deck",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:waterfront",
+      "name": "Waterfront",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+      "name": "Wheelchair accessible restroom",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:tourist_attraction",
+      "name": "Tourist attraction",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:contemporary_art",
+      "name": "Contemporary art",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:day_trip",
+      "name": "Day trip",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:spacious",
+      "name": "Spacious",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:admission_fee",
+      "name": "Admission fee",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:audio_headsets",
+      "name": "Audio headsets",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:restaurant",
+      "name": "Restaurant",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:reading_material",
+      "name": "Reading material",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:inclusivity:place:identifies_as_women_owned",
+      "name": "Identifies as women owned",
+      "type": "urn:tag:inclusivity:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:museum",
+      "name": "Museum",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:industrial_chic",
+      "name": "Industrial chic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:gift_shop",
+      "name": "Gift shop",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:art_museum",
+      "name": "Art museum",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:stylish",
+      "name": "Stylish",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:outdoor_leisure",
+      "name": "Outdoor leisure",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:river_view",
+      "name": "River view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_rental",
+      "name": "Wheelchair rental",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:cultural_history",
+      "name": "Cultural history",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:membership_discounts",
+      "name": "Membership discounts",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:children:place:has_changing_tables",
+      "name": "Has changing table s",
+      "type": "urn:tag:children:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:functional",
+      "name": "Functional",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+      "name": "Walkable",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:thought_provoking",
+      "name": "Thought provoking",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:skyline_view",
+      "name": "Skyline view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:assistive_hearing_loop",
+      "name": "Assistive hearing loop",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:high_line_terminal",
+      "name": "High line terminal",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:comfortable",
+      "name": "Comfortable",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:children:place:good_for_kids",
+      "name": "Good for kids",
+      "type": "urn:tag:children:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:high_line",
+      "name": "High line",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:field_trip_options",
+      "name": "Field trip options",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:destination",
+      "name": "Destination",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:sunset_view",
+      "name": "Sunset view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:commercial",
+      "name": "Commercial",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     }
+    ],
+    "type": "urn:entity",
+    "enabled": true,
+    "subtype": "urn:entity:place",
+    "external": {
+     "google_place": [
+      {
+       "id": "c63f52f9d53d7889",
+       "place_id": "ChIJN3MJ6pRYwokRiXg91flSP8Y"
+      }
+     ]
+    },
+    "location": {
+     "lat": 40.7395877,
+     "lon": -74.0088629,
+     "geohash": "dr5rgbkmk3np"
+    },
+    "entity_id": "ABF5777A-1DE8-4F68-836C-147A63F0DA07",
+    "popularity": 0.9999760410177776,
+    "properties": {
+     "hours": {
+      "friday": [
+       {
+        "opens": "T10:30:00",
+        "closed": false,
+        "closes": "T22:00:00"
+       }
+      ],
+      "monday": [
+       {
+        "opens": "T10:30:00",
+        "closed": false,
+        "closes": "T18:00:00"
+       }
+      ],
+      "sunday": [
+       {
+        "opens": "T10:30:00",
+        "closed": false,
+        "closes": "T18:00:00"
+       }
+      ],
+      "tuesday": [
+       {
+        "opens": null,
+        "closed": true,
+        "closes": null
+       }
+      ],
+      "saturday": [
+       {
+        "opens": "T10:30:00",
+        "closed": false,
+        "closes": "T18:00:00"
+       }
+      ],
+      "thursday": [
+       {
+        "opens": "T10:30:00",
+        "closed": false,
+        "closes": "T18:00:00"
+       }
+      ],
+      "wednesday": [
+       {
+        "opens": "T10:30:00",
+        "closed": false,
+        "closes": "T18:00:00"
+       }
+      ]
+     },
+     "phone": "+12125703600",
+     "images": [
+      {
+       "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnjURnZHAO9zQg4rARKVOMIg3MKJr7sVuYP3BvzJoRscRpw_d3NaHvZZZ-SRMs63YS_5H1YVKv6EfbqGGYTGqzDoRJ6OZbau11iW36l7aMaCyFapvsf3D3KpxNf6Uhs0zJ9f4s=w1900-h1900-k-no",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "99 Gansevoort St New York, NY 10014",
+     "geocode": {
+      "city": "New York",
+      "name": "Meatpacking District",
+      "metro": "New York City",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "New York",
+      "admin2_region": "New York County"
+     },
+     "parking": false,
+     "website": "https://whitney.org/",
+     "good_for": [
+      {
+       "id": "urn:tag:children:place:good_kids",
+       "name": "Good for kids",
+       "type": "urn:tag:children:place",
+       "weight": 0.6111111111111112
+      }
+     ],
+     "keywords": null,
+     "locality": {
+      "city": {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      "metro": {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "state": {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      },
+      "county": {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      "neighborhood": {
+       "name": "Meatpacking District",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "7D8FFF34-DE8B-4CE6-977A-A0CA70FFBF5A",
+       "admin_level": 10,
+       "locality_id": "r8398108",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "Meatpacking District",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "7D8FFF34-DE8B-4CE6-977A-A0CA70FFBF5A",
+       "admin_level": 10,
+       "locality_id": "r8398108",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "10014",
+       "place": "ZCTA",
+       "boundary": "ZCTA",
+       "entity_id": "36E5CA99-0F67-4E16-8304-145CC72C4659",
+       "admin_level": 9,
+       "locality_id": "z10014",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Manhattan",
+       "place": "borough",
+       "boundary": "administrative",
+       "entity_id": "97F46DBA-ED36-4CCD-ACC1-4341D9E6EE47",
+       "admin_level": 7,
+       "locality_id": "r8398124",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      }
+     ],
+     "description": "Museum dedicated to 20th-century and contemporary American art, showcasing living artists and the biennial, with modern galleries and city views in the Meatpacking District.",
+     "hotel_class": null,
+     "price_level": null,
+     "price_range": {
+      "to": null,
+      "from": null,
+      "currency": "usd"
+     },
+     "star_rating": null,
+     "event_spaces": true,
+     "neighborhood": "Meatpacking District",
+     "pet_friendly": false,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:modern_art_museum",
+      "akas": [
+       {
+        "value": "\"Modern m\u0171v\u00e9szeti m\u00fazeum\"",
+        "languages": [
+         "hu"
+        ]
+       },
+       {
+        "value": "\"Muzium seni moden\"",
+        "languages": [
+         "ms"
+        ]
+       },
+       {
+        "value": "\"\u179f\u17b6\u179a\u1798\u1793\u17d2\u1791\u17b8\u179a\u179f\u17b7\u179b\u17d2\u1794\u17c8\u179f\u1798\u17d0\u1799\u1791\u17c6\u1793\u17be\u1794\"",
+        "languages": [
+         "km"
+        ]
+       },
+       {
+        "value": "\"Museo ng modernong sining\"",
+        "languages": [
+         "tl"
+        ]
+       },
+       {
+        "value": "\"Muzej moderne umjetnosti\"",
+        "languages": [
+         "hr",
+         "bs"
+        ]
+       },
+       {
+        "value": "\"Modern art museum\"",
+        "languages": [
+         "en_gb"
+        ]
+       },
+       {
+        "value": "\"\u0ba8\u0bb5\u0bc0\u0ba9 \u0b95\u0bb2\u0bc8 \u0b85\u0bb0\u0bc1\u0b99\u0bcd\u0b95\u0bbe\u0b9f\u0bcd\u0b9a\u0bbf\u0baf\u0b95\u0bae\u0bcd\"",
+        "languages": [
+         "ta"
+        ]
+       },
+       {
+        "value": "\"\u1001\u1031\u1010\u103a\u101e\u1005\u103a\u1021\u1014\u102f\u1015\u100a\u102c\u1015\u103c\u1010\u102d\u102f\u1000\u103a\"",
+        "languages": [
+         "my"
+        ]
+       },
+       {
+        "value": "\"Muzeum modern\u00edho um\u011bn\u00ed\"",
+        "languages": [
+         "cs"
+        ]
+       },
+       {
+        "value": "\"\u0906\u0927\u0941\u0928\u093f\u0915 \u0915\u0932\u093e \u0938\u0902\u0917\u094d\u0930\u0939\u093e\u0932\u092f\"",
+        "languages": [
+         "hi"
+        ]
+       },
+       {
+        "value": "\"Museum f\u00fcr moderne Kunst\"",
+        "languages": [
+         "de"
+        ]
+       },
+       {
+        "value": "\"Museum voor moderne kunst\"",
+        "languages": [
+         "nl"
+        ]
+       },
+       {
+        "value": "\"\u0417\u0430\u043c\u0430\u043d\u0430\u0443\u0438 \u04e9\u043d\u0435\u0440 \u043c\u04b1\u0440\u0430\u0436\u0430\u0439\u044b\"",
+        "languages": [
+         "kk"
+        ]
+       },
+       {
+        "value": "\"M\u00fazeum modern\u00e9ho umenia\"",
+        "languages": [
+         "sk"
+        ]
+       },
+       {
+        "value": "\"\u73b0\u4ee3\u827a\u672f\u535a\u7269\u9986\"",
+        "languages": [
+         "zh"
+        ]
+       },
+       {
+        "value": "\"\u0e1e\u0e34\u0e1e\u0e34\u0e18\u0e20\u0e31\u0e13\u0e11\u0e4c\u0e28\u0e34\u0e25\u0e1b\u0e30\u0e2a\u0e21\u0e31\u0e22\u0e43\u0e2b\u0e21\u0e48\"",
+        "languages": [
+         "th"
+        ]
+       },
+       {
+        "value": "\"Museum f\u00fcr Moderne Kunst\"",
+        "languages": [
+         "de"
+        ]
+       },
+       {
+        "value": "\"Mus\u00e9e d'art moderne\"",
+        "languages": [
+         "fr_ca",
+         "fr"
+        ]
+       },
+       {
+        "value": "\"\u0986\u09a7\u09c1\u09a8\u09bf\u0995 \u09b6\u09bf\u09b2\u09cd\u09aa\u0995\u09b2\u09be \u099c\u09be\u09a6\u09c1\u0998\u09b0\"",
+        "languages": [
+         "bn"
+        ]
+       },
+       {
+        "value": "\"Modernaus meno muziejus\"",
+        "languages": [
+         "lt"
+        ]
+       },
+       {
+        "value": "\"M\u00fcasir inc\u0259s\u0259n\u0259t muzeyi\"",
+        "languages": [
+         "az"
+        ]
+       },
+       {
+        "value": "\"B\u1ea3o t\u00e0ng ngh\u1ec7 thu\u1eadt hi\u1ec7n \u0111\u1ea1i\"",
+        "languages": [
+         "vi"
+        ]
+       },
+       {
+        "value": "\"Muzej moderne umetnosti\"",
+        "languages": [
+         "sl"
+        ]
+       },
+       {
+        "value": "\"\u10d7\u10d0\u10dc\u10d0\u10db\u10d4\u10d3\u10e0\u10dd\u10d5\u10d4 \u10ee\u10d4\u10da\u10dd\u10d5\u10dc\u10d4\u10d1\u10d8\u10e1 \u10db\u10e3\u10d6\u10d4\u10e3\u10db\u10d8\"",
+        "languages": [
+         "ka"
+        ]
+       },
+       {
+        "value": "\"Nykytaiteen museo\"",
+        "languages": [
+         "fi"
+        ]
+       },
+       {
+        "value": "\"\u73fe\u4ee3\u7f8e\u8853\u9928\"",
+        "languages": [
+         "zh_tw",
+         "ja"
+        ]
+       },
+       {
+        "value": "\"Museu de arte moderna\"",
+        "languages": [
+         "pt_pt",
+         "pt"
+        ]
+       },
+       {
+        "value": "\"Modern sanat m\u00fczesi\"",
+        "languages": [
+         "tr"
+        ]
+       },
+       {
+        "value": "\"Museo de arte moderno\"",
+        "languages": [
+         "es_la",
+         "es",
+         "gl",
+         "es_ar"
+        ]
+       },
+       {
+        "value": "\"\u0645\u062a\u062d\u0641 \u0641\u0646 \u062d\u062f\u064a\u062b\"",
+        "languages": [
+         "ar"
+        ]
+       },
+       {
+        "value": "\"Museum seni modern\"",
+        "languages": [
+         "id"
+        ]
+       },
+       {
+        "value": "\"\u039c\u03bf\u03c5\u03c3\u03b5\u03af\u03bf \u03bc\u03bf\u03bd\u03c4\u03ad\u03c1\u03bd\u03b1\u03c2 \u03c4\u03ad\u03c7\u03bd\u03b7\u03c2\"",
+        "languages": [
+         "el"
+        ]
+       },
+       {
+        "value": "\"\u041c\u0443\u0437\u0435\u0458 \u0441\u0430\u0432\u0440\u0435\u043c\u0435\u043d\u0435 \u0443\u043c\u0435\u0442\u043d\u043e\u0441\u0442\u0438\"",
+        "languages": [
+         "sr"
+        ]
+       },
+       {
+        "value": "\"\u041c\u0443\u0437\u0435\u0439 \u0441\u0443\u0447\u0430\u0441\u043d\u043e\u0433\u043e \u043c\u0438\u0441\u0442\u0435\u0446\u0442\u0432\u0430\"",
+        "languages": [
+         "uk"
+        ]
+       },
+       {
+        "value": "\"Muzeu de art\u0103 modern\u0103\"",
+        "languages": [
+         "ro"
+        ]
+       },
+       {
+        "value": "\"Museu d'art modern\"",
+        "languages": [
+         "ca"
+        ]
+       },
+       {
+        "value": "\"Modern\u0101s m\u0101kslas muzejs\"",
+        "languages": [
+         "lv"
+        ]
+       },
+       {
+        "value": "\"\u041c\u0443\u0437\u0435\u0458 \u043d\u0430 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u0430 \u0443\u043c\u0435\u0442\u043d\u043e\u0441\u0442\"",
+        "languages": [
+         "mk"
+        ]
+       },
+       {
+        "value": "\"\ud604\ub300 \ubbf8\uc220\uad00\"",
+        "languages": [
+         "ko"
+        ]
+       },
+       {
+        "value": "\"Museum for moderne kunst\"",
+        "languages": [
+         "nb",
+         "da"
+        ]
+       },
+       {
+        "value": "\"Museum f\u00f6r modern konst\"",
+        "languages": [
+         "sv"
+        ]
+       },
+       {
+        "value": "\"Kaasaegse kunsti muuseum\"",
+        "languages": [
+         "et"
+        ]
+       },
+       {
+        "value": "\"Arte modernoko museoa\"",
+        "languages": [
+         "eu"
+        ]
+       },
+       {
+        "value": "\"\u041c\u0443\u0437\u0435\u0439 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0433\u043e \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0430\"",
+        "languages": [
+         "ru"
+        ]
+       },
+       {
+        "value": "\"Makumbusho ya sanaa ya kisasa\"",
+        "languages": [
+         "sw"
+        ]
+       },
+       {
+        "value": "\"\u041c\u0443\u0437\u0435\u0439 \u0437\u0430 \u043c\u043e\u0434\u0435\u0440\u043d\u043e \u0438\u0437\u043a\u0443\u0441\u0442\u0432\u043e\"",
+        "languages": [
+         "bg"
+        ]
+       },
+       {
+        "value": "\"Muzeum sztuki nowoczesnej\"",
+        "languages": [
+         "pl"
+        ]
+       },
+       {
+        "value": "\"Museo d'arte moderna\"",
+        "languages": [
+         "it"
+        ]
+       },
+       {
+        "value": "\"Museum vir moderne kuns\"",
+        "languages": [
+         "af"
+        ]
+       },
+       {
+        "value": "\"\u0eab\u0ecd\u0e9e\u0eb4\u0e9e\u0eb4\u0e97\u0eb0\u0e9e\u0eb1\u0e99\u0eaa\u0eb4\u0ea5\u0eb0\u0e9b\u0eb0\u0eaa\u0eb0\u0ec4\u0edd\u0ec3\u0edd\u0ec8\"",
+        "languages": [
+         "lo"
+        ]
+       },
+       {
+        "value": "\"\u05de\u05d5\u05d6\u05d9\u05d0\u05d5\u05df \u05dc\u05d0\u05de\u05e0\u05d5\u05ea \u05de\u05d5\u05d3\u05e8\u05e0\u05d9\u05ea\"",
+        "languages": [
+         "he"
+        ]
+       },
+       {
+        "value": "\"\u0c06\u0c27\u0c41\u0c28\u0c3f\u0c15 \u0c15\u0c33\u0c3e \u0c38\u0c02\u0c17\u0c4d\u0c30\u0c39\u0c3e\u0c32\u0c2f\u0c02\"",
+        "languages": [
+         "te"
+        ]
+       },
+       {
+        "value": "\"Muzeu i artit modern\"",
+        "languages": [
+         "sq"
+        ]
+       }
+      ],
+      "name": "Modern art museum",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.5,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Museum dedicated to 20th-century and contemporary American art, showcasing living artists and the biennial, with modern galleries and city views in the Meatpacking District.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "The Whitney Museum of American Art serves as a major cultural landmark in New York City, celebrated for its extensive collection of contemporary and 20th-century American works. Situated in the vibrant Meatpacking District at the base of the High Line, its modern architectural design seamlessly blends indoor gallery spaces with outdoor terraces that provide breathtaking views of the city. Visitors can explore a rotating calendar of thought-provoking exhibitions, including the renowned Whitney Biennial, while enjoying amenities like on-site dining and a curated gift shop. It is a destination that appeals to those looking for a sophisticated and scenic art experience in the heart of Manhattan.",
+     "service_description": null,
+     "ambience_description": "The museum offers a bright and airy atmosphere defined by its thoughtful, modern design that encourages exploration. It balances quiet contemplation of art with lively social spaces on its terraces and cafes, catering to both casual visitors and dedicated art enthusiasts.",
+     "amenities_description": "The facility provides comprehensive visitor amenities including multiple dining options, a curated gift shop, complimentary coat check, and accessible audio guides. Guests can also enjoy designated outdoor balconies and observation decks.",
+     "unique_selling_points": "As the preeminent institution dedicated exclusively to 20th-century and contemporary American art, the museum is distinguished by its biennial exhibition and the architectural integration of indoor galleries with expansive outdoor terraces offering iconic Manhattan views.",
+     "neighborhood_description": "The surrounding neighborhood is a bustling, trendy area known for its industrial history, upscale dining, fashion boutiques, and its direct connection to the elevated High Line park.",
+     "physical_setting_description": "Located in the historic Meatpacking District at the terminus of the High Line, the museum is housed in a prominent, modern architectural building along the Hudson River. The venue features multiple outdoor terraces that provide expansive views of the city skyline, the Hudson River, and neighboring boroughs.",
+     "customer_demographics_description": null
+    },
+    "references": null,
+    "disambiguation": "99 Gansevoort St New York, NY 10014",
+    "query": {
+     "distance": 791.2619174464991,
+     "measurements": {
+      "audience_growth": 0
+     }
+    }
+   },
+   {
+    "name": "Chelsea Market",
+    "tags": [
+     {
+      "id": "urn:tag:view:qloo:streetscape_views",
+      "name": "Streetscape views",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:evening",
+      "name": "Evening",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:wi_fi",
+      "name": "Wi fi",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:dining_drinking",
+      "name": "Dining drinking",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:busy",
+      "name": "Busy",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:comfortable",
+      "name": "Comfortable",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:high_line",
+      "name": "High line",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:commercial",
+      "name": "Commercial",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:bookstore",
+      "name": "Bookstore",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:authentic",
+      "name": "Authentic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:charming",
+      "name": "Charming",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:touristic",
+      "name": "Touristic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:bustling",
+      "name": "Bustling",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:people_watching",
+      "name": "People watching",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:public_transport_access",
+      "name": "Public transport access",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+      "name": "Wheelchair accessible entrance",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:casual",
+      "name": "Casual",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:local_artisans",
+      "name": "Local artisans",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:nfc_mobile_payments",
+      "name": "Nfc mobile payments",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:retail_stores",
+      "name": "Retail stores",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_options:place:food_vendors",
+      "name": "Food vendors",
+      "type": "urn:tag:dining_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:business",
+      "name": "Business",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:upbeat",
+      "name": "Upbeat",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:artisan_crafts",
+      "name": "Artisan crafts",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:deli",
+      "name": "Deli",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:atmospheric",
+      "name": "Atmospheric",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:boutique",
+      "name": "Boutique",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:midday",
+      "name": "Midday",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+      "name": "Walkable",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:urban_streetscape",
+      "name": "Urban streetscape",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:tours",
+      "name": "Tours",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:whitney_museum_of_american_art",
+      "name": "Whitney museum of american art",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:unique",
+      "name": "Unique",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:debit_cards",
+      "name": "Debit cards",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:restrooms",
+      "name": "Restrooms",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:indoor_venue",
+      "name": "Indoor venue",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:destination",
+      "name": "Destination",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:gastronomy",
+      "name": "Gastronomy",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:parking:place:paid_parking_lot",
+      "name": "Paid parking lot",
+      "type": "urn:tag:parking:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+      "name": "Wheelchair accessible restroom",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:marketplace",
+      "name": "Marketplace",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:public_restrooms",
+      "name": "Public restrooms",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+      "name": "Trendy",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:convenient",
+      "name": "Convenient",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:photography",
+      "name": "Photography",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:art_exhibits",
+      "name": "Art exhibits",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:local_culture",
+      "name": "Local culture",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:historic_preservation",
+      "name": "Historic preservation",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:stylish",
+      "name": "Stylish",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:city_center",
+      "name": "City center",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:culinary_history",
+      "name": "Culinary history",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:gourmet_food_sampling",
+      "name": "Gourmet food sampling",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:credit_card:place:mastercard",
+      "name": "Mastercard",
+      "type": "urn:tag:credit_card:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place",
+      "name": "Place",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:industrial_chic",
+      "name": "Industrial chic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:indoor_market",
+      "name": "Indoor market",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:market",
+      "name": "Market",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:credit_cards",
+      "name": "Credit cards",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:security_staff",
+      "name": "Security staff",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:outdoor_seating",
+      "name": "Outdoor seating",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:security",
+      "name": "Security",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:event_attendance",
+      "name": "Event attendance",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:commercial",
+      "name": "Commercial",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:stylish",
+      "name": "Stylish",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:restroom",
+      "name": "Restroom",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:art_markets",
+      "name": "Art markets",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:lively",
+      "name": "Lively",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:contemporary_art",
+      "name": "Contemporary art",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:marketplace",
+      "name": "Marketplace",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:supermarket",
+      "name": "Supermarket",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:vibrant",
+      "name": "Vibrant",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:highline_vicinity",
+      "name": "Highline vicinity",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:eclectic",
+      "name": "Eclectic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:day_trip",
+      "name": "Day trip",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:interior_market_views",
+      "name": "Interior market views",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:meatpacking_district",
+      "name": "Meatpacking district",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:architecture",
+      "name": "Architecture",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:social",
+      "name": "Social",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:culinary_destination",
+      "name": "Culinary destination",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:renovated_factory",
+      "name": "Renovated factory",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:meatpacking_district",
+      "name": "Meatpacking district",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:sightseeing",
+      "name": "Sightseeing",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:food_stalls",
+      "name": "Food stalls",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:industrial",
+      "name": "Industrial",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:afternoon",
+      "name": "Afternoon",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:indoor_seating",
+      "name": "Indoor seating",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:meatpacking_district",
+      "name": "Meatpacking district",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:industrial_architecture_views",
+      "name": "Industrial architecture views",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:food_hall",
+      "name": "Food hall",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:restaurants",
+      "name": "Restaurants",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:vibrant",
+      "name": "Vibrant",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:shopping",
+      "name": "Shopping",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:gourmet_cooking",
+      "name": "Gourmet cooking",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:market",
+      "name": "Market",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:industrial_chic",
+      "name": "Industrial chic",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:urban_exploration",
+      "name": "Urban exploration",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:seating_areas",
+      "name": "Seating areas",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:chic",
+      "name": "Chic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:upscale",
+      "name": "Upscale",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:culture_arts",
+      "name": "Culture arts",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:onsite_services",
+      "name": "Onsite services",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:urban_planning",
+      "name": "Urban planning",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:culinary_arts",
+      "name": "Culinary arts",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:indoor_marketplace",
+      "name": "Indoor marketplace",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:tourist_attraction",
+      "name": "Tourist attraction",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:morning",
+      "name": "Morning",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:little_island",
+      "name": "Little island",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:culinary_exploration",
+      "name": "Culinary exploration",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:the_high_line",
+      "name": "The high line",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:reconditioned_factory",
+      "name": "Reconditioned factory",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:sensory_rich",
+      "name": "Sensory rich",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     }
+    ],
+    "type": "urn:entity",
+    "enabled": true,
+    "subtype": "urn:entity:place",
+    "external": {
+     "google_place": [
+      {
+       "id": "7e61762e972dc0a2",
+       "place_id": "ChIJw2lMFL9ZwokRosAtly52YX4"
+      }
+     ]
+    },
+    "location": {
+     "lat": 40.7424396,
+     "lon": -74.0061439,
+     "geohash": "dr5rgbymgvjh"
+    },
+    "entity_id": "168322E2-0EBA-4065-9F9B-A647A5AC62F2",
+    "popularity": 0.9999723264468904,
+    "properties": {
+     "hours": {
+      "friday": [
+       {
+        "opens": "T07:00:00",
+        "closed": false,
+        "closes": "T22:00:00"
+       }
+      ],
+      "monday": [
+       {
+        "opens": "T07:00:00",
+        "closed": false,
+        "closes": "T22:00:00"
+       }
+      ],
+      "sunday": [
+       {
+        "opens": "T07:00:00",
+        "closed": false,
+        "closes": "T22:00:00"
+       }
+      ],
+      "tuesday": [
+       {
+        "opens": "T07:00:00",
+        "closed": false,
+        "closes": "T22:00:00"
+       }
+      ],
+      "saturday": [
+       {
+        "opens": "T07:00:00",
+        "closed": false,
+        "closes": "T22:00:00"
+       }
+      ],
+      "thursday": [
+       {
+        "opens": "T07:00:00",
+        "closed": false,
+        "closes": "T22:00:00"
+       }
+      ],
+      "wednesday": [
+       {
+        "opens": "T07:00:00",
+        "closed": false,
+        "closes": "T22:00:00"
+       }
+      ]
+     },
+     "phone": "+12126522111",
+     "images": [
+      {
+       "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkOyEDxztwU5ysHv63iOqJBtnW4eQCPtWAAw-b2wD3R2Dz-r5dJQG7iR4WwWmQIEL18fchKbi6FdTZVJWkkvZRi614rd_Q6xSufK5XVFZ2ilFx4dgLDjF-rP7KQP6hSP5Ov63zG4MFuc0Sy=w1900-h1900-k-no",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "75 9th Ave New York, NY 10011",
+     "geocode": {
+      "city": "New York",
+      "name": "Chelsea",
+      "metro": "New York City",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "New York",
+      "admin2_region": "New York County"
+     },
+     "parking": false,
+     "website": "https://www.chelseamarket.com/",
+     "good_for": null,
+     "keywords": [
+      {
+       "name": "lobster",
+       "count": 243
+      },
+      {
+       "name": "food hall",
+       "count": 100
+      },
+      {
+       "name": "oysters",
+       "count": 45
+      },
+      {
+       "name": "gelato",
+       "count": 69
+      },
+      {
+       "name": "crowded",
+       "count": 509
+      },
+      {
+       "name": "souvenirs",
+       "count": 163
+      },
+      {
+       "name": "variety of food",
+       "count": 237
+      },
+      {
+       "name": "indoor market",
+       "count": 44
+      },
+      {
+       "name": "seafood",
+       "count": 85
+      },
+      {
+       "name": "Miznon",
+       "count": 4
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      "metro": {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "state": {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      },
+      "county": {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      "neighborhood": {
+       "name": "Chelsea",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "4BFB8B7C-8A4E-40BC-BCE3-8DE9D6DDE441",
+       "admin_level": 10,
+       "locality_id": "r8398107",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "10011",
+       "place": "ZCTA",
+       "boundary": "ZCTA",
+       "entity_id": "546B85E2-882C-4437-A3CF-57906F5D0C05",
+       "admin_level": 9,
+       "locality_id": "z10011",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Chelsea",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "4BFB8B7C-8A4E-40BC-BCE3-8DE9D6DDE441",
+       "admin_level": 10,
+       "locality_id": "r8398107",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Manhattan Community Board 4",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "F4AEDE9B-B344-4EB2-BB26-63293970053C",
+       "admin_level": 10,
+       "locality_id": "r7340066",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Manhattan",
+       "place": "borough",
+       "boundary": "administrative",
+       "entity_id": "97F46DBA-ED36-4CCD-ACC1-4341D9E6EE47",
+       "admin_level": 7,
+       "locality_id": "r8398124",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      }
+     ],
+     "description": "Indoor food hall and shopping destination in a renovated Nabisco factory, offering diverse grocers, restaurants, shops, and events.",
+     "hotel_class": null,
+     "price_level": null,
+     "price_range": {
+      "to": null,
+      "from": null,
+      "currency": "usd"
+     },
+     "star_rating": null,
+     "event_spaces": true,
+     "neighborhood": "Chelsea",
+     "pet_friendly": null,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:market",
+      "akas": [
+       {
+        "value": "\"Markt\"",
+        "languages": [
+         "nl",
+         "de"
+        ]
+       },
+       {
+        "value": "\"Tori\"",
+        "languages": [
+         "fi"
+        ]
+       },
+       {
+        "value": "\"Tr\u017ei\u0161t\u011b\"",
+        "languages": [
+         "cs"
+        ]
+       },
+       {
+        "value": "\"\u041f\u0430\u0437\u0430\u0440\"",
+        "languages": [
+         "bg",
+         "mk"
+        ]
+       },
+       {
+        "value": "\"Treg\"",
+        "languages": [
+         "sq"
+        ]
+       },
+       {
+        "value": "\"Piac\"",
+        "languages": [
+         "hu"
+        ]
+       },
+       {
+        "value": "\"\u1008\u1031\u1038\"",
+        "languages": [
+         "my"
+        ]
+       },
+       {
+        "value": "\"Merkatu\"",
+        "languages": [
+         "eu"
+        ]
+       },
+       {
+        "value": "\"\u0633\u0648\u0642\"",
+        "languages": [
+         "ar"
+        ]
+       },
+       {
+        "value": "\"Pasar\"",
+        "languages": [
+         "id",
+         "ms"
+        ]
+       },
+       {
+        "value": "\"\u10d1\u10d0\u10d6\u10d0\u10e0\u10d8\"",
+        "languages": [
+         "ka"
+        ]
+       },
+       {
+        "value": "\"Turg\"",
+        "languages": [
+         "et"
+        ]
+       },
+       {
+        "value": "\"\u0420\u044b\u043d\u043e\u043a\"",
+        "languages": [
+         "ru"
+        ]
+       },
+       {
+        "value": "\"\u5e02\u5834\"",
+        "languages": [
+         "ja",
+         "zh_tw"
+        ]
+       },
+       {
+        "value": "\"Bazar\"",
+        "languages": [
+         "az"
+        ]
+       },
+       {
+        "value": "\"Trhovisko\"",
+        "languages": [
+         "sk"
+        ]
+       },
+       {
+        "value": "\"Mercado\"",
+        "languages": [
+         "pt_pt",
+         "es_ar",
+         "gl",
+         "es_la",
+         "es",
+         "pt"
+        ]
+       },
+       {
+        "value": "\"\u0e95\u0eb0\u0eab\u0ebc\u0eb2\u0e94\"",
+        "languages": [
+         "lo"
+        ]
+       },
+       {
+        "value": "\"\u041f\u0438\u0458\u0430\u0446\u0430\"",
+        "languages": [
+         "sr"
+        ]
+       },
+       {
+        "value": "\"\u05e9\u05d5\u05e7\"",
+        "languages": [
+         "he"
+        ]
+       },
+       {
+        "value": "\"March\u00e9\"",
+        "languages": [
+         "fr",
+         "fr_ca"
+        ]
+       },
+       {
+        "value": "\"\uc2dc\uc7a5\"",
+        "languages": [
+         "ko"
+        ]
+       },
+       {
+        "value": "\"Tr\u017enica\"",
+        "languages": [
+         "sl",
+         "hr"
+        ]
+       },
+       {
+        "value": "\"Turgus\"",
+        "languages": [
+         "lt"
+        ]
+       },
+       {
+        "value": "\"Mercato\"",
+        "languages": [
+         "it"
+        ]
+       },
+       {
+        "value": "\"\u0b9a\u0ba8\u0bcd\u0ba4\u0bc8\"",
+        "languages": [
+         "ta"
+        ]
+       },
+       {
+        "value": "\"Mercat\"",
+        "languages": [
+         "ca"
+        ]
+       },
+       {
+        "value": "\"\u0420\u0438\u043d\u043e\u043a\"",
+        "languages": [
+         "uk"
+        ]
+       },
+       {
+        "value": "\"Pijaca\"",
+        "languages": [
+         "bs"
+        ]
+       },
+       {
+        "value": "\"\u0e15\u0e25\u0e32\u0e14\"",
+        "languages": [
+         "th"
+        ]
+       },
+       {
+        "value": "\"Mark\"",
+        "languages": [
+         "af"
+        ]
+       },
+       {
+        "value": "\"Soko\"",
+        "languages": [
+         "sw"
+        ]
+       },
+       {
+        "value": "\"\u0391\u03b3\u03bf\u03c1\u03ac\"",
+        "languages": [
+         "el"
+        ]
+       },
+       {
+        "value": "\"\u0c2e\u0c3e\u0c30\u0c4d\u0c15\u0c46\u0c1f\u0c4d\"",
+        "languages": [
+         "te"
+        ]
+       },
+       {
+        "value": "\"Targ\"",
+        "languages": [
+         "pl"
+        ]
+       },
+       {
+        "value": "\"\u0411\u0430\u0437\u0430\u0440\"",
+        "languages": [
+         "kk"
+        ]
+       },
+       {
+        "value": "\"Market\"",
+        "languages": [
+         "en_gb"
+        ]
+       },
+       {
+        "value": "\"Marknad\"",
+        "languages": [
+         "sv"
+        ]
+       },
+       {
+        "value": "\"Pazar\"",
+        "languages": [
+         "tr"
+        ]
+       },
+       {
+        "value": "\"Marked\"",
+        "languages": [
+         "nb",
+         "da"
+        ]
+       },
+       {
+        "value": "\"Pamilihan\"",
+        "languages": [
+         "tl"
+        ]
+       },
+       {
+        "value": "\"\u092c\u093e\u091c\u093c\u093e\u0930\"",
+        "languages": [
+         "hi"
+        ]
+       },
+       {
+        "value": "\"\u1795\u17d2\u179f\u17b6\u179a\"",
+        "languages": [
+         "km"
+        ]
+       },
+       {
+        "value": "\"Tirgus\"",
+        "languages": [
+         "lv"
+        ]
+       },
+       {
+        "value": "\"Ch\u1ee3\"",
+        "languages": [
+         "vi"
+        ]
+       },
+       {
+        "value": "\"Pia\u021b\u0103\"",
+        "languages": [
+         "ro"
+        ]
+       },
+       {
+        "value": "\"\u09ac\u09be\u099c\u09be\u09b0\"",
+        "languages": [
+         "bn"
+        ]
+       },
+       {
+        "value": "\"\u5e02\u573a\"",
+        "languages": [
+         "zh"
+        ]
+       }
+      ],
+      "name": "Market",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.599999904632568,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Indoor food hall and shopping destination in a renovated Nabisco factory, offering diverse grocers, restaurants, shops, and events.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "Chelsea Market is a premier indoor culinary and retail destination located in the historic former Nabisco factory in Manhattan. Blending industrial-chic architecture with a vibrant, modern atmosphere, it offers an extensive variety of global cuisines, artisanal boutiques, and rotating local maker markets. As a must-visit spot for foodies and sightseers, it serves as a bustling hub of New York City culture, conveniently connected to the elevated High Line park.",
+     "service_description": null,
+     "ambience_description": "The atmosphere blends historic industrial charm with a vibrant, modern energy. It is a lively, sensory-rich space that feels cozy yet bustling, making it a popular spot for wandering and people-watching.",
+     "amenities_description": "The complex provides clean public restrooms and various communal seating areas for dining. It is well-serviced by public transportation and features on-site security.",
+     "unique_selling_points": "The venue is globally recognized for its unique integration of a historic biscuit factory legacy with a diverse array of over 40 high-quality food stalls, boutiques, and rotating pop-up events.",
+     "neighborhood_description": "Located in a trendy, bustling district, the surrounding area is a popular destination for locals and tourists alike, known for its proximity to iconic elevated parks and fashion-forward commerce.",
+     "physical_setting_description": "Housed within a historic, renovated 1890s Nabisco biscuit factory, the venue features an industrial-chic aesthetic with exposed brick and pipes. It serves as a large indoor food and retail complex situated in the heart of the city.",
+     "customer_demographics_description": null
+    },
+    "references": null,
+    "disambiguation": "75 9th Ave New York, NY 10011",
+    "query": {
+     "distance": 1010.3175699987929,
+     "measurements": {
+      "audience_growth": -1
+     }
+    }
+   },
+   {
+    "name": "Union Square Park",
+    "tags": [
+     {
+      "id": "urn:tag:setting:qloo:public_square",
+      "name": "Public square",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:bustling",
+      "name": "Bustling",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:culture_arts",
+      "name": "Culture arts",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:tours",
+      "name": "Tours",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:city_view",
+      "name": "City view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:farmers_market",
+      "name": "Farmers market",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:sightseeing",
+      "name": "Sightseeing",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:transit_hub",
+      "name": "Transit hub",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:bright",
+      "name": "Bright",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:family_friendly",
+      "name": "Family friendly",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:streetscape",
+      "name": "Streetscape",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:vibrant",
+      "name": "Vibrant",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:local_history",
+      "name": "Local history",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:street_photography",
+      "name": "Street photography",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:morning",
+      "name": "Morning",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:lively",
+      "name": "Lively",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:cultural_hub",
+      "name": "Cultural hub",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:public_restrooms",
+      "name": "Public restrooms",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:social",
+      "name": "Social",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:chess_tables",
+      "name": "Chess tables",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:evening",
+      "name": "Evening",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:business",
+      "name": "Business",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:statues",
+      "name": "Statues",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:sports_recreation",
+      "name": "Sports recreation",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:energizing",
+      "name": "Energizing",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:city_center",
+      "name": "City center",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:classical",
+      "name": "Classical",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:special_occasion",
+      "name": "Special occasion",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:strand_bookstore",
+      "name": "Strand bookstore",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:public_art",
+      "name": "Public art",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:playground_activities",
+      "name": "Playground activities",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:sustainable_agriculture",
+      "name": "Sustainable agriculture",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:welcoming",
+      "name": "Welcoming",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:afternoon",
+      "name": "Afternoon",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:city_park",
+      "name": "City park",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place",
+      "name": "Place",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:casual",
+      "name": "Casual",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:flatiron_district",
+      "name": "Flatiron district",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:fitness",
+      "name": "Fitness",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:greenwich_village",
+      "name": "Greenwich village",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:city_park",
+      "name": "City park",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:park",
+      "name": "Park",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:chess",
+      "name": "Chess",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:convenient",
+      "name": "Convenient",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:holiday_market",
+      "name": "Holiday market",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:entertainment",
+      "name": "Entertainment",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:bustling",
+      "name": "Bustling",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:playground",
+      "name": "Playground",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_restroom",
+      "name": "Wheelchair accessible restroom",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:commercial",
+      "name": "Commercial",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:convenience_stop",
+      "name": "Convenience stop",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:urban_planning",
+      "name": "Urban planning",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:splash_pad",
+      "name": "Splash pad",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:shopping",
+      "name": "Shopping",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+      "name": "Wheelchair accessible entrance",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:eclectic",
+      "name": "Eclectic",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:architectural",
+      "name": "Architectural",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:social_community",
+      "name": "Social community",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+      "name": "Walkable",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:nature_outdoors",
+      "name": "Nature outdoors",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:outdoor_seating",
+      "name": "Outdoor seating",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:live_events",
+      "name": "Live events",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+      "name": "Trendy",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:dining_drinking",
+      "name": "Dining drinking",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:midday",
+      "name": "Midday",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:park",
+      "name": "Park",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:touristic",
+      "name": "Touristic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:nature",
+      "name": "Nature",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:tourist_attraction",
+      "name": "Tourist attraction",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:dog_run",
+      "name": "Dog run",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:routine_visit",
+      "name": "Routine visit",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:climate_clock",
+      "name": "Climate clock",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:relaxing",
+      "name": "Relaxing",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:ice_rink",
+      "name": "Ice rink",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:all_day",
+      "name": "All day",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:tourist_attraction",
+      "name": "Tourist attraction",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:people_watching",
+      "name": "People watching",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:destination",
+      "name": "Destination",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     }
+    ],
+    "type": "urn:entity",
+    "enabled": true,
+    "subtype": "urn:entity:place",
+    "external": {
+     "google_place": [
+      {
+       "id": "2a5c7f9eea6938a0",
+       "place_id": "ChIJuwazLZ9ZwokRoDhp6p5_XCo"
+      }
+     ]
+    },
+    "location": {
+     "lat": 40.735823499999995,
+     "lon": -73.9905215,
+     "geohash": "dr5rsr9xru46"
+    },
+    "entity_id": "FFB22F52-72ED-4B6A-BDC7-1092ECF175B4",
+    "popularity": 0.9999606255485957,
+    "properties": {
+     "hours": {
+      "friday": [
+       {
+        "opens": "T06:00:00",
+        "closed": false,
+        "closes": "T01:00:00"
+       }
+      ],
+      "monday": [
+       {
+        "opens": "T06:00:00",
+        "closed": false,
+        "closes": "T01:00:00"
+       }
+      ],
+      "sunday": [
+       {
+        "opens": "T06:00:00",
+        "closed": false,
+        "closes": "T01:00:00"
+       }
+      ],
+      "tuesday": [
+       {
+        "opens": "T06:00:00",
+        "closed": false,
+        "closes": "T01:00:00"
+       }
+      ],
+      "saturday": [
+       {
+        "opens": "T06:00:00",
+        "closed": false,
+        "closes": "T01:00:00"
+       }
+      ],
+      "thursday": [
+       {
+        "opens": "T06:00:00",
+        "closed": false,
+        "closes": "T01:00:00"
+       }
+      ],
+      "wednesday": [
+       {
+        "opens": "T06:00:00",
+        "closed": false,
+        "closes": "T01:00:00"
+       }
+      ]
+     },
+     "phone": "+12124601200",
+     "images": [
+      {
+       "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkI_M0yuOq5BA1qJXFwhBcN8d1-Tdh_EnhFlFRLbLQwYrdh5CaIviYM9URgD0WkE9xY8Tns1r6cy_fwHJf7PwasQe36eJhtXQzZq_Hk2nZw-41jvv60IvYuHPeTUbZdSsT22OsQa50Umks=w1900-h1900-k-no",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "201 Park Ave S New York, NY 10003",
+     "geocode": {
+      "city": "New York",
+      "name": "Union Square",
+      "metro": "New York City",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "New York",
+      "admin2_region": "New York County"
+     },
+     "parking": false,
+     "website": "https://www.unionsquarenyc.org/",
+     "good_for": [
+      {
+       "id": "urn:tag:children:place:good_kids",
+       "name": "Good for kids",
+       "type": "urn:tag:children:place",
+       "weight": 0.6666666666666666
+      }
+     ],
+     "keywords": [
+      {
+       "name": "farmers market",
+       "count": 759
+      },
+      {
+       "name": "people watching",
+       "count": 133
+      },
+      {
+       "name": "relaxing atmosphere",
+       "count": 218
+      },
+      {
+       "name": "vendors",
+       "count": 196
+      },
+      {
+       "name": "dog park",
+       "count": 52
+      },
+      {
+       "name": "subway access",
+       "count": 32
+      },
+      {
+       "name": "squirrels",
+       "count": 16
+      },
+      {
+       "name": "street performers",
+       "count": 41
+      },
+      {
+       "name": "green market",
+       "count": 51
+      },
+      {
+       "name": "chess",
+       "count": 169
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      "metro": {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "state": {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      },
+      "county": {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      "neighborhood": {
+       "name": "Union Square",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "36957C6D-DA22-4A80-AD6D-D13957B28B30",
+       "admin_level": 10,
+       "locality_id": "r8398106",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "Union Square",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "36957C6D-DA22-4A80-AD6D-D13957B28B30",
+       "admin_level": 10,
+       "locality_id": "r8398106",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "10003",
+       "place": "ZCTA",
+       "boundary": "ZCTA",
+       "entity_id": "465FE0B8-8EC9-44BE-9046-719FFDC89C30",
+       "admin_level": 9,
+       "locality_id": "z10003",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Manhattan Community Board 5",
+       "place": null,
+       "boundary": "administrative",
+       "entity_id": "DD0C2C54-2CFA-459B-B5D7-BFE3B4D52BBB",
+       "admin_level": 10,
+       "locality_id": "r7340060",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Manhattan",
+       "place": "borough",
+       "boundary": "administrative",
+       "entity_id": "97F46DBA-ED36-4CCD-ACC1-4341D9E6EE47",
+       "admin_level": 7,
+       "locality_id": "r8398124",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      }
+     ],
+     "description": "Large urban gathering space and transit hub featuring a year-round greenmarket, public art, outdoor seating, and frequent community events.",
+     "hotel_class": null,
+     "price_level": null,
+     "price_range": {
+      "to": null,
+      "from": null,
+      "currency": "usd"
+     },
+     "star_rating": null,
+     "event_spaces": true,
+     "neighborhood": "Union Square",
+     "pet_friendly": true,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:park",
+      "akas": [
+       {
+        "value": "\"Parque\"",
+        "languages": [
+         "gl",
+         "pt",
+         "es",
+         "es_la",
+         "pt_pt",
+         "es_ar"
+        ]
+       },
+       {
+        "value": "\"\u0421\u0430\u044f\u0431\u0430\u049b\"",
+        "languages": [
+         "kk"
+        ]
+       },
+       {
+        "value": "\"Hifadhi\"",
+        "languages": [
+         "sw"
+        ]
+       },
+       {
+        "value": "\"\u0baa\u0bc2\u0b99\u0bcd\u0b95\u0bbe\"",
+        "languages": [
+         "ta"
+        ]
+       },
+       {
+        "value": "\"\u516c\u5712\"",
+        "languages": [
+         "ja",
+         "zh_tw"
+        ]
+       },
+       {
+        "value": "\"Taman\"",
+        "languages": [
+         "ms",
+         "id"
+        ]
+       },
+       {
+        "value": "\"\u0e2a\u0e27\u0e19\u0e2a\u0e32\u0e18\u0e32\u0e23\u0e13\u0e30\"",
+        "languages": [
+         "th"
+        ]
+       },
+       {
+        "value": "\"C\u00f4ng vi\u00ean\"",
+        "languages": [
+         "vi"
+        ]
+       },
+       {
+        "value": "\"\u0eaa\u0ea7\u0e99\u0eaa\u0eb2\u0e97\u0eb2\u0ea5\u0eb0\u0e99\u0eb0\"",
+        "languages": [
+         "lo"
+        ]
+       },
+       {
+        "value": "\"\u062d\u062f\u064a\u0642\u0629\"",
+        "languages": [
+         "ar"
+        ]
+       },
+       {
+        "value": "\"\u179f\u17bd\u1793\u1785\u17d2\u1794\u17b6\u179a\"",
+        "languages": [
+         "km"
+        ]
+       },
+       {
+        "value": "\"\uacf5\uc6d0\"",
+        "languages": [
+         "ko"
+        ]
+       },
+       {
+        "value": "\"Parks\"",
+        "languages": [
+         "lv"
+        ]
+       },
+       {
+        "value": "\"Parco\"",
+        "languages": [
+         "it"
+        ]
+       },
+       {
+        "value": "\"\u1015\u1014\u103a\u1038\u1001\u103c\u1036\"",
+        "languages": [
+         "my"
+        ]
+       },
+       {
+        "value": "\"Puisto\"",
+        "languages": [
+         "fi"
+        ]
+       },
+       {
+        "value": "\"\u03a0\u03ac\u03c1\u03ba\u03bf\"",
+        "languages": [
+         "el"
+        ]
+       },
+       {
+        "value": "\"Parke\"",
+        "languages": [
+         "tl",
+         "eu"
+        ]
+       },
+       {
+        "value": "\"\u516c\u56ed\"",
+        "languages": [
+         "zh"
+        ]
+       },
+       {
+        "value": "\"Park\"",
+        "languages": [
+         "cs",
+         "nb",
+         "bs",
+         "et",
+         "tr",
+         "pl",
+         "nl",
+         "sl",
+         "hu",
+         "da",
+         "hr",
+         "en_gb",
+         "az",
+         "af",
+         "de",
+         "sk",
+         "sq",
+         "sv"
+        ]
+       },
+       {
+        "value": "\"Parc\"",
+        "languages": [
+         "fr",
+         "fr_ca",
+         "ca",
+         "ro"
+        ]
+       },
+       {
+        "value": "\"\u092a\u093e\u0930\u094d\u0915\"",
+        "languages": [
+         "hi"
+        ]
+       },
+       {
+        "value": "\"\u0c2a\u0c3e\u0c30\u0c4d\u0c15\u0c4d\"",
+        "languages": [
+         "te"
+        ]
+       },
+       {
+        "value": "\"\u10de\u10d0\u10e0\u10d9\u10d8\"",
+        "languages": [
+         "ka"
+        ]
+       },
+       {
+        "value": "\"\u041f\u0430\u0440\u043a\"",
+        "languages": [
+         "ru",
+         "bg",
+         "mk",
+         "uk",
+         "sr"
+        ]
+       },
+       {
+        "value": "\"\u05e4\u05d0\u05e8\u05e7\"",
+        "languages": [
+         "he"
+        ]
+       },
+       {
+        "value": "\"\u09aa\u09be\u09b0\u09cd\u0995\"",
+        "languages": [
+         "bn"
+        ]
+       },
+       {
+        "value": "\"Parkas\"",
+        "languages": [
+         "lt"
+        ]
+       }
+      ],
+      "name": "Park",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.599999904632568,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Large urban gathering space and transit hub featuring a year-round greenmarket, public art, outdoor seating, and frequent community events.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "Union Square Park is a historic and vibrant urban space in the heart of Manhattan, serving as a critical hub for culture, commerce, and community. Renowned for its year-round Greenmarket and seasonal festivities, the park features lush greenery, public art, and diverse recreational areas. It attracts a wide array of people, from local commuters and chess enthusiasts to tourists looking to experience the authentic energy of New York City. Despite its busy nature, it remains a cherished destination that perfectly captures the dynamic spirit of the city.",
+     "service_description": null,
+     "ambience_description": "The park offers a dynamic and lively atmosphere where urban energy meets pockets of peace, making it a perfect spot for people-watching and community engagement. It balances a bustling, social vibe with moments of relaxation under the shade of mature trees.",
+     "amenities_description": "The park provides essential urban amenities including a popular year-round greenmarket, a playground with a splash pad, a dedicated dog run, and numerous benches for relaxation. It is also well-connected to major public transit lines and surrounded by a wide range of retail and dining establishments.",
+     "unique_selling_points": "The park is uniquely distinguished by its historic significance, the renowned year-round Greenmarket, and its role as a vibrant, multi-functional community hub in the heart of Manhattan. It serves as both a peaceful retreat and a central stage for political, social, and seasonal events.",
+     "neighborhood_description": "The surrounding neighborhood is a vibrant and high-energy commercial district known for its diverse retail options, proximity to major subway lines, and status as a significant transit and community intersection.",
+     "physical_setting_description": "Union Square Park is a compact, historic urban oasis situated in the heart of Manhattan. It features lush greenery, mature trees, and a thoughtful layout that integrates open lawns, seating areas, and iconic statuary with the surrounding bustling city streets.",
+     "customer_demographics_description": null
+    },
+    "references": null,
+    "disambiguation": "201 Park Ave S New York, NY 10003",
+    "query": {
+     "distance": 1164.6748862360446,
+     "measurements": {
+      "audience_growth": 0
+     }
+    }
+   },
+   {
+    "name": "New York University",
+    "tags": [
+     {
+      "id": "urn:tag:setting:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:greenwich_village",
+      "name": "Greenwich village",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:global_citizenship",
+      "name": "Global citizenship",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:resource_center",
+      "name": "Resource center",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:washington_square_park",
+      "name": "Washington square park",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:destination",
+      "name": "Destination",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:academic_research",
+      "name": "Academic research",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:ambitious",
+      "name": "Ambitious",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:routine_visit",
+      "name": "Routine visit",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:convenient",
+      "name": "Convenient",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:parking:place:paid_street_parking",
+      "name": "Paid street parking",
+      "type": "urn:tag:parking:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:soho",
+      "name": "Soho",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:urban_exploration",
+      "name": "Urban exploration",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:academic",
+      "name": "Academic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:professional_networking",
+      "name": "Professional networking",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_parking_lot",
+      "name": "Wheelchair accessible parking lot",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:research_center",
+      "name": "Research center",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:college",
+      "name": "College",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:parking:place:free_street_parking",
+      "name": "Free street parking",
+      "type": "urn:tag:parking:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:evening",
+      "name": "Evening",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:cosmopolitan",
+      "name": "Cosmopolitan",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:afternoon",
+      "name": "Afternoon",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:morning",
+      "name": "Morning",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:education_learning",
+      "name": "Education learning",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:parking:place:paid_parking_garage",
+      "name": "Paid parking garage",
+      "type": "urn:tag:parking:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:tours",
+      "name": "Tours",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:social",
+      "name": "Social",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:academic_campus",
+      "name": "Academic campus",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+      "name": "Trendy",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:library",
+      "name": "Library",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:authentic",
+      "name": "Authentic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:touristic",
+      "name": "Touristic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:academic",
+      "name": "Academic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:sightseeing",
+      "name": "Sightseeing",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:academic_research",
+      "name": "Academic research",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+      "name": "Wheelchair accessible entrance",
+      "type": "urn:tag:accessibility:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:stylish",
+      "name": "Stylish",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:lively",
+      "name": "Lively",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:functional",
+      "name": "Functional",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:university",
+      "name": "University",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:dynamic",
+      "name": "Dynamic",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:city_view",
+      "name": "City view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:scenic",
+      "name": "Scenic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:onsite_services",
+      "name": "Onsite services",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:bright",
+      "name": "Bright",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:institutional",
+      "name": "Institutional",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:fifth_avenue",
+      "name": "Fifth avenue",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:city_center",
+      "name": "City center",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:intellectual",
+      "name": "Intellectual",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:culture_arts",
+      "name": "Culture arts",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:dining_hall",
+      "name": "Dining hall",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:midday",
+      "name": "Midday",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:dormitory",
+      "name": "Dormitory",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:public_safety_office",
+      "name": "Public safety office",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:arts_and_culture",
+      "name": "Arts and culture",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:cosmopolitan",
+      "name": "Cosmopolitan",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:the_strand_bookstore",
+      "name": "The strand bookstore",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:park_view",
+      "name": "Park view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:place_page_attributes:place:voting_location",
+      "name": "Voting location",
+      "type": "urn:tag:place_page_attributes:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:urban",
+      "name": "Urban",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:bustling",
+      "name": "Bustling",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+      "name": "Walkable",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:social_community",
+      "name": "Social community",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:athletic_facility",
+      "name": "Athletic facility",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     }
+    ],
+    "type": "urn:entity",
+    "enabled": true,
+    "subtype": "urn:entity:place",
+    "external": {
+     "google_place": [
+      {
+       "id": "da30743171b5f305",
+       "place_id": "ChIJwZVT9ZpZwokRBfO1cTF0MNo"
+      }
+     ]
+    },
+    "location": {
+     "lat": 40.729513399999995,
+     "lon": -73.9964609,
+     "geohash": "dr5rsnt6tebm"
+    },
+    "entity_id": "2273B539-DF9E-49BE-99CF-717BE99E8E35",
+    "popularity": 0.999807585228043,
+    "properties": {
+     "hours": null,
+     "phone": "+12129981212",
+     "images": [
+      {
+       "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnNOLt_vMQSKoSPAcSsr7O1XFqwioo3hbWyOk_j1PLWhqWl71NR2CbdmSvBFA3J3hpvjOqGvnatXxCqj2OCphzwjsoE7ZNQ-swV4eL0fUQR3NrLU3FifBcn8XLRwYoyNuknTJo=w1900-h1900-k-no",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "New York, NY 10012",
+     "geocode": {
+      "city": "New York",
+      "name": "Greenwich Village",
+      "metro": "New York City",
+      "country": "United States",
+      "country_code": "US",
+      "admin1_region": "New York",
+      "admin2_region": "New York County"
+     },
+     "parking": false,
+     "website": "https://www.nyu.edu/",
+     "good_for": null,
+     "keywords": [
+      {
+       "name": "architecture",
+       "count": 2
+      },
+      {
+       "name": "tuition",
+       "count": 9
+      },
+      {
+       "name": "nyu alumni",
+       "count": 6
+      },
+      {
+       "name": "external facade",
+       "count": 2
+      },
+      {
+       "name": "financial aid",
+       "count": 5
+      },
+      {
+       "name": "learning environment",
+       "count": 10
+      },
+      {
+       "name": "research opportunities",
+       "count": 2
+      },
+      {
+       "name": "cultural enrichment",
+       "count": 4
+      },
+      {
+       "name": "friendly university",
+       "count": 2
+      },
+      {
+       "name": "beautiful venue",
+       "count": 3
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      "metro": {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "state": {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      },
+      "county": {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      "neighborhood": {
+       "name": "Greenwich Village",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "9D3B2D6A-1C86-4072-90A3-20E5E00543A7",
+       "admin_level": 10,
+       "locality_id": "r8398112",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": null,
+     "localities": [
+      {
+       "name": "10003",
+       "place": "ZCTA",
+       "boundary": "ZCTA",
+       "entity_id": "465FE0B8-8EC9-44BE-9046-719FFDC89C30",
+       "admin_level": 9,
+       "locality_id": "z10003",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Greenwich Village",
+       "place": "neighbourhood",
+       "boundary": "place",
+       "entity_id": "9D3B2D6A-1C86-4072-90A3-20E5E00543A7",
+       "admin_level": 10,
+       "locality_id": "r8398112",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "New York",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "admin_level": 5,
+       "locality_id": "r175905",
+       "abbreviation": "NYC",
+       "country_code": null
+      },
+      {
+       "name": "New York City",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8451A8C4-166B-4072-B4D1-050810D90654",
+       "admin_level": 12,
+       "locality_id": "81E61924-6CEE-4AB4-93D3-282A5C784AB8",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Manhattan",
+       "place": "borough",
+       "boundary": "administrative",
+       "entity_id": "97F46DBA-ED36-4CCD-ACC1-4341D9E6EE47",
+       "admin_level": 7,
+       "locality_id": "r8398124",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "New York County",
+       "place": "county",
+       "boundary": "administrative",
+       "entity_id": "CE2B08BB-3A5B-4DDD-92DF-2815614EEA72",
+       "admin_level": 6,
+       "locality_id": "r2552485",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "United States",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "FCA82A91-546B-4A8F-BC61-DB14088A7E94",
+       "admin_level": 2,
+       "locality_id": "r148838",
+       "abbreviation": "USA",
+       "country_code": "US"
+      },
+      {
+       "name": "New York",
+       "place": "state",
+       "boundary": "administrative",
+       "entity_id": "BDFC9271-4583-412E-84D8-F285BB8220FE",
+       "admin_level": 4,
+       "locality_id": "r61320",
+       "abbreviation": "N.Y.",
+       "country_code": null
+      }
+     ],
+     "description": "Private research university in Greenwich Village with global campuses and strong arts, law, business, and medical programs.",
+     "hotel_class": null,
+     "price_level": null,
+     "price_range": {
+      "to": null,
+      "from": null,
+      "currency": "usd"
+     },
+     "star_rating": null,
+     "event_spaces": true,
+     "neighborhood": "Greenwich Village",
+     "pet_friendly": null,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:university",
+      "akas": [
+       {
+        "value": "\"\u0e21\u0e2b\u0e32\u0e27\u0e34\u0e17\u0e22\u0e32\u0e25\u0e31\u0e22\"",
+        "languages": [
+         "th"
+        ]
+       },
+       {
+        "value": "\"Chuo kikuu\"",
+        "languages": [
+         "sw"
+        ]
+       },
+       {
+        "value": "\"Tr\u01b0\u1eddng \u0111\u1ea1i h\u1ecdc\"",
+        "languages": [
+         "vi"
+        ]
+       },
+       {
+        "value": "\"\u10e3\u10dc\u10d8\u10d5\u10d4\u10e0\u10e1\u10d8\u10e2\u10d4\u10e2\u10d8\"",
+        "languages": [
+         "ka"
+        ]
+       },
+       {
+        "value": "\"\u0ea1\u0eb0\u0eab\u0eb2\u0ea7\u0eb4\u0e97\u0eb0\u0e8d\u0eb2\u0ec4\u0ea5\"",
+        "languages": [
+         "lo"
+        ]
+       },
+       {
+        "value": "\"Universitate\"",
+        "languages": [
+         "ro"
+        ]
+       },
+       {
+        "value": "\"Uniwersytet\"",
+        "languages": [
+         "pl"
+        ]
+       },
+       {
+        "value": "\"Univerza\"",
+        "languages": [
+         "sl"
+        ]
+       },
+       {
+        "value": "\"Universidade\"",
+        "languages": [
+         "pt_pt",
+         "gl",
+         "pt"
+        ]
+       },
+       {
+        "value": "\"Unibertsitatea\"",
+        "languages": [
+         "eu"
+        ]
+       },
+       {
+        "value": "\"University\"",
+        "languages": [
+         "en_gb"
+        ]
+       },
+       {
+        "value": "\"Univerzitet\"",
+        "languages": [
+         "bs"
+        ]
+       },
+       {
+        "value": "\"Sveu\u010dili\u0161te\"",
+        "languages": [
+         "hr"
+        ]
+       },
+       {
+        "value": "\"\u062c\u0627\u0645\u0639\u0629\"",
+        "languages": [
+         "ar"
+        ]
+       },
+       {
+        "value": "\"Universitat\"",
+        "languages": [
+         "ca"
+        ]
+       },
+       {
+        "value": "\"\u5927\u5b78\"",
+        "languages": [
+         "zh_tw"
+        ]
+       },
+       {
+        "value": "\"\u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f\"",
+        "languages": [
+         "hi"
+        ]
+       },
+       {
+        "value": "\"Universiteit\"",
+        "languages": [
+         "af",
+         "nl"
+        ]
+       },
+       {
+        "value": "\"Egyetem\"",
+        "languages": [
+         "hu"
+        ]
+       },
+       {
+        "value": "\"\u00dclikool\"",
+        "languages": [
+         "et"
+        ]
+       },
+       {
+        "value": "\"\ub300\ud559\uad50\"",
+        "languages": [
+         "ko"
+        ]
+       },
+       {
+        "value": "\"\u179f\u17b6\u1780\u179b\u179c\u17b7\u1791\u17d2\u1799\u17b6\u179b\u17d0\u1799\"",
+        "languages": [
+         "km"
+        ]
+       },
+       {
+        "value": "\"\u0423\u043d\u0438\u0432\u0435\u0440\u0437\u0438\u0442\u0435\u0442\"",
+        "languages": [
+         "mk",
+         "sr"
+        ]
+       },
+       {
+        "value": "\"Unibersidad\"",
+        "languages": [
+         "tl"
+        ]
+       },
+       {
+        "value": "\"Universitas\"",
+        "languages": [
+         "id"
+        ]
+       },
+       {
+        "value": "\"Univerzita\"",
+        "languages": [
+         "sk",
+         "cs"
+        ]
+       },
+       {
+        "value": "\"Universit\u0101te\"",
+        "languages": [
+         "lv"
+        ]
+       },
+       {
+        "value": "\"Universit\u00e9\"",
+        "languages": [
+         "fr_ca",
+         "fr"
+        ]
+       },
+       {
+        "value": "\"Universit\u00e4t\"",
+        "languages": [
+         "de"
+        ]
+       },
+       {
+        "value": "\"\u09ac\u09bf\u09b6\u09cd\u09ac\u09ac\u09bf\u09a6\u09cd\u09af\u09be\u09b2\u09af\u09bc\"",
+        "languages": [
+         "bn"
+        ]
+       },
+       {
+        "value": "\"\u5927\u5b66\"",
+        "languages": [
+         "ja",
+         "zh"
+        ]
+       },
+       {
+        "value": "\"\u0baa\u0bb2\u0bcd\u0b95\u0bb2\u0bc8\u0b95\u0bcd\u0b95\u0bb4\u0b95\u0bae\u0bcd\"",
+        "languages": [
+         "ta"
+        ]
+       },
+       {
+        "value": "\"Universitet\"",
+        "languages": [
+         "sq",
+         "az",
+         "nb",
+         "da",
+         "sv"
+        ]
+       },
+       {
+        "value": "\"\u00dcniversite\"",
+        "languages": [
+         "tr"
+        ]
+       },
+       {
+        "value": "\"Universidad\"",
+        "languages": [
+         "es_la",
+         "es",
+         "es_ar"
+        ]
+       },
+       {
+        "value": "\"\u1010\u1000\u1039\u1000\u101e\u102d\u102f\u101c\u103a\"",
+        "languages": [
+         "my"
+        ]
+       },
+       {
+        "value": "\"\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\"",
+        "languages": [
+         "bg",
+         "ru",
+         "kk"
+        ]
+       },
+       {
+        "value": "\"Universitetas\"",
+        "languages": [
+         "lt"
+        ]
+       },
+       {
+        "value": "\"\u05d0\u05d5\u05e0\u05d9\u05d1\u05e8\u05e1\u05d9\u05d8\u05d4\"",
+        "languages": [
+         "he"
+        ]
+       },
+       {
+        "value": "\"Yliopisto\"",
+        "languages": [
+         "fi"
+        ]
+       },
+       {
+        "value": "\"\u0423\u043d\u0456\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\"",
+        "languages": [
+         "uk"
+        ]
+       },
+       {
+        "value": "\"Universit\u00e0\"",
+        "languages": [
+         "it"
+        ]
+       },
+       {
+        "value": "\"Universiti\"",
+        "languages": [
+         "ms"
+        ]
+       },
+       {
+        "value": "\"\u0c35\u0c3f\u0c36\u0c4d\u0c35\u0c35\u0c3f\u0c26\u0c4d\u0c2f\u0c3e\u0c32\u0c2f\u0c02\"",
+        "languages": [
+         "te"
+        ]
+       },
+       {
+        "value": "\"\u03a0\u03b1\u03bd\u03b5\u03c0\u03b9\u03c3\u03c4\u03ae\u03bc\u03b9\u03bf\"",
+        "languages": [
+         "el"
+        ]
+       }
+      ],
+      "name": "University",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     "check_out_time": null,
+     "business_rating": 4.400000095367432,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Private research university in Greenwich Village with global campuses and strong arts, law, business, and medical programs.",
+     "number_of_stations": null,
+     "cuisine_description": null,
+     "overall_description": "New York University is a prominent private research institution renowned for its seamless integration with the fabric of New York City. Founded in 1831, the university functions as an open, urban campus that leverages the city's resources to offer a dynamic academic experience across hundreds of fields of study. With a strong global footprint and a reputation for excellence in the arts, sciences, and professional programs, it attracts students from around the world to its central location in Manhattan. While the high cost of education and dense city living are frequent topics of discussion, the university remains a prestigious beacon for those seeking to immerse themselves in both rigorous scholarship and the vibrant culture of a major global metropolis.",
+     "service_description": null,
+     "ambience_description": "The environment is energetic, ambitious, and deeply connected to the rhythm of New York City. It offers a fast-paced, intellectually stimulating atmosphere that encourages social interaction and diverse cultural engagement.",
+     "amenities_description": "The university provides a range of academic and support facilities, including extensive library networks, residence halls, and specialized research centers. Student services and campus safety offices are integrated into the daily campus life.",
+     "unique_selling_points": "The university is defined by its seamless integration into New York City, treating the entire metropolis as an extended campus for students. It offers a global educational experience with degree-granting campuses worldwide and deep historical roots in one of the world's most influential cities.",
+     "neighborhood_description": "The surrounding neighborhood is a vibrant and bustling hub of activity that blends historic charm with a modern, dense city atmosphere. It is characterized by diverse architecture, numerous local businesses, cafes, and its central connection point, Washington Square Park.",
+     "physical_setting_description": "New York University is an open, urban campus integrated directly into the historic Greenwich Village neighborhood of Manhattan. It lacks traditional gated grounds, with academic buildings and dorms interspersed throughout the city blocks surrounding Washington Square Park.",
+     "customer_demographics_description": null
+    },
+    "references": null,
+    "disambiguation": "New York, NY 10012",
+    "query": {
+     "distance": 774.6294504897961,
+     "measurements": {
+      "audience_growth": 0
+     }
+    }
+   }
+  ]
+ }
+}

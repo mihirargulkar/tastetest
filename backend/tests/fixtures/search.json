@@ -1,0 +1,5525 @@
+{
+ "results": [
+  {
+   "name": "Matcha",
+   "entity_id": "FA136DF8-71FD-4FEA-99C5-29429B66E8D2",
+   "types": [
+    "urn:entity:place"
+   ],
+   "properties": {
+    "akas": [
+     {
+      "language": "",
+      "value": "Matcha, C. de la Infanta Mercedes, 62 Tetu\u00e1n 28020 Madrid Spain"
+     }
+    ],
+    "address": "C. de la Infanta Mercedes, 62 Tetu\u00e1n 28020 Madrid Spain",
+    "business_rating": 4.5,
+    "description": "Stylish, relaxed Japanese restaurant offering sushi, tempura, dumplings, and a varied menu including vegan and vegetarian options.",
+    "external": {
+     "resy": {
+      "neighborhood": "Madrid",
+      "cuisine": "Sushi",
+      "min_party_size": 1,
+      "id": "29273",
+      "url": "https://resy.com/cities/madrid-spain/venues/matcha",
+      "max_party_size": 12
+     },
+     "tripadvisor": {
+      "id": "d5262946",
+      "rating": 4.5,
+      "rating_count": 215
+     },
+     "google_place": {
+      "id": "84696d35396b943a",
+      "place_id": "ChIJ3eumagQpQg0ROpRrOTVtaYQ"
+     }
+    },
+    "geocode": {
+     "name": "Castillejos",
+     "city": "Madrid",
+     "admin1_region": "Community of Madrid",
+     "admin2_region": "Community of Madrid",
+     "country_code": "ES",
+     "country": "Spain",
+     "metro": "Madrid"
+    },
+    "hours": {
+     "sunday": [
+      {
+       "closed": false,
+       "opens": "T11:30:00",
+       "closes": "T16:30:00"
+      }
+     ],
+     "monday": [
+      {
+       "closed": false,
+       "opens": "T11:30:00",
+       "closes": "T16:30:00"
+      }
+     ],
+     "tuesday": [
+      {
+       "closed": false,
+       "opens": "T11:30:00",
+       "closes": "T16:30:00"
+      }
+     ],
+     "wednesday": [
+      {
+       "closed": false,
+       "opens": "T11:30:00",
+       "closes": "T16:30:00"
+      }
+     ],
+     "thursday": [
+      {
+       "closed": false,
+       "opens": "T11:30:00",
+       "closes": "T16:30:00"
+      }
+     ],
+     "friday": [
+      {
+       "closed": false,
+       "opens": "T11:30:00",
+       "closes": "T16:30:00"
+      }
+     ],
+     "saturday": [
+      {
+       "closed": false,
+       "opens": "T11:30:00",
+       "closes": "T16:30:00"
+      }
+     ]
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/FA136DF8-71FD-4FEA-99C5-29429B66E8D2-420x-auto.jpg"
+    },
+    "is_closed": false,
+    "neighborhood": "Castillejos",
+    "phone": "+34915700579",
+    "price_level": 2,
+    "price_range": {
+     "currency": "usd"
+    },
+    "website": "https://matchahouse.es/",
+    "specialty_dishes": [
+     {
+      "id": "urn:tag:specialty_dish:place:volcano_roll_y_crispi_salmon",
+      "name": "Volcano Roll Y Crispi De Salmon",
+      "type": "urn:tag:specialty_dish:place",
+      "weight": 1
+     },
+     {
+      "id": "urn:tag:specialty_dish:place:sushi_crispy_con_salmon",
+      "name": "Sushi Crispy Con Salmon",
+      "type": "urn:tag:specialty_dish:place",
+      "weight": 0.9473684210526315
+     },
+     {
+      "id": "urn:tag:specialty_dish:place:crujiente_paquetito_vegetal_y_gyozas",
+      "name": "Crujiente Paquetito Vegetal Y Gyozas",
+      "type": "urn:tag:specialty_dish:place",
+      "weight": 0.8947368421052632
+     }
+    ],
+    "primary_genre": {
+     "id": "urn:tag:genre:place:restaurant:sushi",
+     "name": "Sushi restaurant",
+     "type": "urn:tag:genre:place",
+     "akas": [
+      {
+       "language": "bn",
+       "value": "\"\u09b8\u09c1\u09b6\u09bf \u09ac\u09be\u09b0\""
+      },
+      {
+       "language": "ca",
+       "value": "\"Restaurant de sushi\""
+      },
+      {
+       "language": "pl",
+       "value": "\"Bar sushi\""
+      },
+      {
+       "language": "en_gb",
+       "value": "\"Sushi restaurant\""
+      },
+      {
+       "language": "bg",
+       "value": "\"\u0421\u0443\u0448\u0438 \u0440\u0435\u0441\u0442\u043e\u0440\u0430\u043d\u0442\""
+      },
+      {
+       "language": "lt",
+       "value": "\"Su\u0161i restoranas\""
+      },
+      {
+       "language": "my",
+       "value": "\"\u1006\u1030\u101b\u103e\u102e\u1005\u102c\u1038\u101e\u1031\u102c\u1000\u103a\u1006\u102d\u102f\u1004\u103a\""
+      },
+      {
+       "language": "sq",
+       "value": "\"Restorant sushi\""
+      },
+      {
+       "language": "lv",
+       "value": "\"Su\u0161i b\u0101rs\""
+      },
+      {
+       "language": "bs",
+       "value": "\"Su\u0161i restoran\""
+      },
+      {
+       "language": "tr",
+       "value": "\"Su\u015fi restoran\u0131\""
+      },
+      {
+       "language": "ta",
+       "value": "\"\u0b9a\u0bc1\u0bb7\u0bbf \u0b89\u0ba3\u0bb5\u0b95\u0bae\u0bcd\""
+      },
+      {
+       "language": "de",
+       "value": "\"Sushi-Restaurant\""
+      },
+      {
+       "language": "cs",
+       "value": "\"Sushi restaurace\""
+      },
+      {
+       "language": "hu",
+       "value": "\"Sushi b\u00e1r\""
+      },
+      {
+       "language": "kk",
+       "value": "\"\u0421\u0443\u0448\u0438-\u0431\u0430\u0440\""
+      },
+      {
+       "language": "ro",
+       "value": "\"Bar de sushi\""
+      },
+      {
+       "language": "pt_pt",
+       "value": "\"Bar de sushi\""
+      },
+      {
+       "language": "gl",
+       "value": "\"Bar de sushi\""
+      },
+      {
+       "language": "az",
+       "value": "\"Su\u015fi bar\u0131\""
+      },
+      {
+       "language": "he",
+       "value": "\"\u05e1\u05d5\u05e9\u05d9 \u05d1\u05e8\""
+      },
+      {
+       "language": "te",
+       "value": "\"\u0c38\u0c41\u0c37\u0c40 \u0c2c\u0c3e\u0c30\u0c4d\""
+      },
+      {
+       "language": "km",
+       "value": "\"\u1797\u17c4\u1787\u1793\u17b8\u1799\u178a\u17d2\u178b\u17b6\u1793\u179f\u17ca\u17bc\u179f\u17ca\u17b8\""
+      },
+      {
+       "language": "sl",
+       "value": "\"Su\u0161i bar\""
+      },
+      {
+       "language": "fi",
+       "value": "\"Sushiravintola\""
+      },
+      {
+       "language": "ka",
+       "value": "\"\u10e1\u10e3\u10e8\u10d8-\u10e0\u10d4\u10e1\u10e2\u10dd\u10e0\u10d0\u10dc\u10d8\""
+      },
+      {
+       "language": "es",
+       "value": "\"Restaurante de sushi\""
+      },
+      {
+       "language": "es_ar",
+       "value": "\"Restaurante de sushi\""
+      },
+      {
+       "language": "pt",
+       "value": "\"Restaurante de sushi\""
+      },
+      {
+       "language": "es_la",
+       "value": "\"Restaurante de sushi\""
+      },
+      {
+       "language": "ar",
+       "value": "\"\u0645\u0637\u0639\u0645 \u0633\u0648\u0634\u064a\""
+      },
+      {
+       "language": "zh_tw",
+       "value": "\"\u58fd\u53f8\u5e97\""
+      },
+      {
+       "language": "ko",
+       "value": "\"\ucd08\ubc25\uc9d1\""
+      },
+      {
+       "language": "hi",
+       "value": "\"\u0938\u0941\u0936\u0940 \u0930\u0947\u0938\u094d\u0924\u0930\u093e\u0902\""
+      },
+      {
+       "language": "it",
+       "value": "\"Ristorante di sushi\""
+      },
+      {
+       "language": "tl",
+       "value": "\"Sushi bar\""
+      },
+      {
+       "language": "sk",
+       "value": "\"Sushi bar\""
+      },
+      {
+       "language": "hr",
+       "value": "\"Sushi bar\""
+      },
+      {
+       "language": "id",
+       "value": "\"Restoran sushi\""
+      },
+      {
+       "language": "ms",
+       "value": "\"Restoran sushi\""
+      },
+      {
+       "language": "vi",
+       "value": "\"Nh\u00e0 h\u00e0ng sushi\""
+      },
+      {
+       "language": "sv",
+       "value": "\"Sushirestaurang\""
+      },
+      {
+       "language": "th",
+       "value": "\"\u0e23\u0e49\u0e32\u0e19\u0e0b\u0e39\u0e0a\u0e34\""
+      },
+      {
+       "language": "sr",
+       "value": "\"\u0421\u0443\u0448\u0438 \u0440\u0435\u0441\u0442\u043e\u0440\u0430\u043d\""
+      },
+      {
+       "language": "et",
+       "value": "\"Sushibaar\""
+      },
+      {
+       "language": "uk",
+       "value": "\"\u0421\u0443\u0448\u0456-\u0431\u0430\u0440\""
+      },
+      {
+       "language": "nb",
+       "value": "\"Sushibar\""
+      },
+      {
+       "language": "eu",
+       "value": "\"Sushi jatetxea\""
+      },
+      {
+       "language": "sw",
+       "value": "\"Mgahawa wa sushi\""
+      },
+      {
+       "language": "fr_ca",
+       "value": "\"Restaurant de sushis\""
+      },
+      {
+       "language": "fr",
+       "value": "\"Restaurant de sushis\""
+      },
+      {
+       "language": "ru",
+       "value": "\"\u0421\u0443\u0448\u0438-\u0440\u0435\u0441\u0442\u043e\u0440\u0430\u043d\""
+      },
+      {
+       "language": "mk",
+       "value": "\"\u0421\u0443\u0448\u0438 \u0431\u0430\u0440\""
+      },
+      {
+       "language": "lo",
+       "value": "\"\u0eae\u0ec9\u0eb2\u0e99\u0e8a\u0eb9\u0e8a\u0eb4\""
+      },
+      {
+       "language": "da",
+       "value": "\"Sushi-restaurant\""
+      },
+      {
+       "language": "nl",
+       "value": "\"Sushi-restaurant\""
+      },
+      {
+       "language": "af",
+       "value": "\"Sushi-restaurant\""
+      },
+      {
+       "language": "el",
+       "value": "\"\u0395\u03c3\u03c4\u03b9\u03b1\u03c4\u03cc\u03c1\u03b9\u03bf \u03c3\u03bf\u03cd\u03c3\u03b9\""
+      },
+      {
+       "language": "ja",
+       "value": "\"\u5bff\u53f8\u5e97\""
+      },
+      {
+       "language": "zh",
+       "value": "\"\u5bff\u53f8\u5e97\""
+      }
+     ]
+    }
+   },
+   "popularity": 0.9715276284210733,
+   "disambiguation": "C. de la Infanta Mercedes, 62 Tetu\u00e1n 28020 Madrid Spain",
+   "location": {
+    "lat": 40.4601651,
+    "lon": -3.6963622
+   },
+   "tags": [
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_type:qloo:takeout",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:takeout"
+    },
+    {
+     "name": "Couples",
+     "tag_id": "urn:tag:customer_identity:qloo:couples",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:couples"
+    },
+    {
+     "name": "Urban fusion",
+     "tag_id": "urn:tag:decor:qloo:urban_fusion",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:urban_fusion"
+    },
+    {
+     "name": "Edamame",
+     "tag_id": "urn:tag:specialty_dish:place:edamame",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:edamame"
+    },
+    {
+     "name": "Chinese",
+     "tag_id": "urn:tag:cuisine:qloo:chinese",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:chinese"
+    },
+    {
+     "name": "Tempura mixta",
+     "tag_id": "urn:tag:specialty_dish:place:tempura_mixta",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:tempura_mixta"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_options:place:outdoor_seating",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:outdoor_seating"
+    },
+    {
+     "name": "Stylish",
+     "tag_id": "urn:tag:ambience:qloo:stylish",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:stylish"
+    },
+    {
+     "name": "Drive thru",
+     "tag_id": "urn:tag:service_type:qloo:drive_thru",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:drive_thru"
+    },
+    {
+     "name": "Urban",
+     "tag_id": "urn:tag:setting:qloo:urban",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:urban"
+    },
+    {
+     "name": "Beer",
+     "tag_id": "urn:tag:beverage_offering:qloo:beer",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:beer"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:activity_type:qloo:takeout",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:takeout"
+    },
+    {
+     "name": "Full bar",
+     "tag_id": "urn:tag:beverage_offering:qloo:full_bar",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:full_bar"
+    },
+    {
+     "name": "Reservations",
+     "tag_id": "urn:tag:service_type:qloo:reservations",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:reservations"
+    },
+    {
+     "name": "Mastercard",
+     "tag_id": "urn:tag:credit_card:place:mastercard",
+     "type": "urn:tag:credit_card:place",
+     "value": "urn:tag:credit_card:place:mastercard"
+    },
+    {
+     "name": "Japanese",
+     "tag_id": "urn:tag:genre:place:restaurant:japanese",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:japanese"
+    },
+    {
+     "name": "Wine",
+     "tag_id": "urn:tag:offerings:place:wine",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:wine"
+    },
+    {
+     "name": "Midday",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:midday",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:midday"
+    },
+    {
+     "name": "Price level",
+     "tag_id": "urn:tag:payments:place:price_level",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:price_level"
+    },
+    {
+     "name": "Lunch",
+     "tag_id": "urn:tag:dining_options:place:lunch",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:lunch"
+    },
+    {
+     "name": "Book",
+     "tag_id": "urn:tag:resy:keyword:place:book",
+     "type": "urn:tag:resy:keyword:place",
+     "value": "urn:tag:resy:keyword:place:book"
+    },
+    {
+     "name": "Restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant"
+    },
+    {
+     "name": "Young professionals",
+     "tag_id": "urn:tag:customer_identity:qloo:young_professionals",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:young_professionals"
+    },
+    {
+     "name": "Seafood",
+     "tag_id": "urn:tag:cuisine:qloo:seafood",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:seafood"
+    },
+    {
+     "name": "Debit cards",
+     "tag_id": "urn:tag:payments:place:debit_cards",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:debit_cards"
+    },
+    {
+     "name": "Vegan meals",
+     "tag_id": "urn:tag:offerings:place:vegan_options",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:vegan_options"
+    },
+    {
+     "name": "Authentic",
+     "tag_id": "urn:tag:culinary_style:qloo:authentic",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:authentic"
+    },
+    {
+     "name": "Halal",
+     "tag_id": "urn:tag:dietary_option:qloo:halal",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:halal"
+    },
+    {
+     "name": "Tempura mixta",
+     "tag_id": "urn:tag:menu_highlight:qloo:tempura_mixta",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:tempura_mixta"
+    },
+    {
+     "name": "28020",
+     "tag_id": "urn:tag:resy:keyword:place:28020",
+     "type": "urn:tag:resy:keyword:place",
+     "value": "urn:tag:resy:keyword:place:28020"
+    },
+    {
+     "name": "Volcano roll",
+     "tag_id": "urn:tag:menu_highlight:qloo:volcano_roll",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:volcano_roll"
+    },
+    {
+     "name": "Authentic japanese restaurant",
+     "tag_id": "urn:tag:category:place:authentic_japanese_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:authentic_japanese_restaurant"
+    },
+    {
+     "name": "Tartar salmon con trufa",
+     "tag_id": "urn:tag:menu_highlight:qloo:tartar_salmon_con_trufa",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:tartar_salmon_con_trufa"
+    },
+    {
+     "name": "Order ahead",
+     "tag_id": "urn:tag:dining_options:place:order_ahead",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:order_ahead"
+    },
+    {
+     "name": "Lively",
+     "tag_id": "urn:tag:ambience:qloo:lively",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:lively"
+    },
+    {
+     "name": "Table service",
+     "tag_id": "urn:tag:dining_options:place:table_service",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:table_service"
+    },
+    {
+     "name": "Fusion gastronomy",
+     "tag_id": "urn:tag:interests:qloo:fusion_gastronomy",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:fusion_gastronomy"
+    },
+    {
+     "name": "Casual dining",
+     "tag_id": "urn:tag:interests:qloo:casual_dining",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:casual_dining"
+    },
+    {
+     "name": "No contact delivery",
+     "tag_id": "urn:tag:service_options:place:no_contact_delivery",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:no_contact_delivery"
+    },
+    {
+     "name": "Sushi takeaway",
+     "tag_id": "urn:tag:category:place:sushi_takeaway",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:sushi_takeaway"
+    },
+    {
+     "name": "Business district adjacent",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:business_district_adjacent",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:business_district_adjacent"
+    },
+    {
+     "name": "Cover manager",
+     "tag_id": "urn:tag:resy:keyword:place:cover_manager",
+     "type": "urn:tag:resy:keyword:place",
+     "value": "urn:tag:resy:keyword:place:cover_manager"
+    },
+    {
+     "name": "Nfc mobile payments",
+     "tag_id": "urn:tag:payments:place:nfc_mobile_payments",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:nfc_mobile_payments"
+    },
+    {
+     "name": "Afternoon",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:afternoon",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:afternoon"
+    },
+    {
+     "name": "Mandarin restaurant",
+     "tag_id": "urn:tag:category:place:mandarin_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:mandarin_restaurant"
+    },
+    {
+     "name": "Crujiente paquetito vegetal y gyozas",
+     "tag_id": "urn:tag:menu_highlight:qloo:crujiente_paquetito_vegetal_y_gyozas",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:crujiente_paquetito_vegetal_y_gyozas"
+    },
+    {
+     "name": "Tori katsu y gyozas de gallina con crema",
+     "tag_id": "urn:tag:specialty_dish:place:tori_katsu_y_gyozas_de_gallina_con_crema",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:tori_katsu_y_gyozas_de_gallina_con_crema"
+    },
+    {
+     "name": "Paid parking lot",
+     "tag_id": "urn:tag:parking:place:paid_parking_lot",
+     "type": "urn:tag:parking:place",
+     "value": "urn:tag:parking:place:paid_parking_lot"
+    },
+    {
+     "name": "Paid parking garage",
+     "tag_id": "urn:tag:parking:place:paid_parking_garage",
+     "type": "urn:tag:parking:place",
+     "value": "urn:tag:parking:place:paid_parking_garage"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_options:place:takeout",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:takeout"
+    },
+    {
+     "name": "Convenience stop",
+     "tag_id": "urn:tag:visit_intent:qloo:convenience_stop",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:convenience_stop"
+    },
+    {
+     "name": "Wheelchair accessible seating",
+     "tag_id": "urn:tag:accessibility:place:wheelchair_accessible_seating",
+     "type": "urn:tag:accessibility:place",
+     "value": "urn:tag:accessibility:place:wheelchair_accessible_seating"
+    },
+    {
+     "name": "Dinner",
+     "tag_id": "urn:tag:dining_options:place:dinner",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:dinner"
+    },
+    {
+     "name": "Vegetarian restaurant",
+     "tag_id": "urn:tag:category:place:vegetarian_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:vegetarian_restaurant"
+    },
+    {
+     "name": "Alcohol",
+     "tag_id": "urn:tag:offerings:place:alcohol",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:alcohol"
+    },
+    {
+     "name": "Fusion",
+     "tag_id": "urn:tag:cuisine:qloo:fusion",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:fusion"
+    },
+    {
+     "name": "Delivery",
+     "tag_id": "urn:tag:service_type:qloo:delivery",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:delivery"
+    },
+    {
+     "name": "Free parking lot",
+     "tag_id": "urn:tag:parking:place:free_parking_lot",
+     "type": "urn:tag:parking:place",
+     "value": "urn:tag:parking:place:free_parking_lot"
+    },
+    {
+     "name": "Groups of friends",
+     "tag_id": "urn:tag:customer_identity:qloo:groups_of_friends",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:groups_of_friends"
+    },
+    {
+     "name": "Cozy",
+     "tag_id": "urn:tag:ambience:qloo:cozy",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:cozy"
+    },
+    {
+     "name": "Asian",
+     "tag_id": "urn:tag:cuisine:qloo:asian",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:asian"
+    },
+    {
+     "name": "Healthy options",
+     "tag_id": "urn:tag:dietary_option:qloo:healthy_options",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:healthy_options"
+    },
+    {
+     "name": "Temaki restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant:temaki",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:temaki"
+    },
+    {
+     "name": "Central",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:central",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:central"
+    },
+    {
+     "name": "Wheelchair accessible entrance",
+     "tag_id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+     "type": "urn:tag:accessibility:place",
+     "value": "urn:tag:accessibility:place:wheelchair_accessible_entrance"
+    },
+    {
+     "name": "Hard liquor",
+     "tag_id": "urn:tag:offerings:place:hard_liquor",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:hard_liquor"
+    },
+    {
+     "name": "Sushi",
+     "tag_id": "urn:tag:resy:keyword:place:sushi",
+     "type": "urn:tag:resy:keyword:place",
+     "value": "urn:tag:resy:keyword:place:sushi"
+    },
+    {
+     "name": "Wine",
+     "tag_id": "urn:tag:beverage_offering:qloo:wine",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:wine"
+    },
+    {
+     "name": "Locals",
+     "tag_id": "urn:tag:customer_identity:qloo:locals",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:locals"
+    },
+    {
+     "name": "Brunch",
+     "tag_id": "urn:tag:dining_options:place:brunch",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:brunch"
+    },
+    {
+     "name": "Vegetarian",
+     "tag_id": "urn:tag:genre:place:restaurant:vegetarian",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:vegetarian"
+    },
+    {
+     "name": "Large group",
+     "tag_id": "urn:tag:ambience:place:large_group",
+     "type": "urn:tag:ambience:place",
+     "value": "urn:tag:ambience:place:large_group"
+    },
+    {
+     "name": "Health food restaurant",
+     "tag_id": "urn:tag:category:place:health_food_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:health_food_restaurant"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:ambience:qloo:casual",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:casual"
+    },
+    {
+     "name": "Delivery",
+     "tag_id": "urn:tag:service_options:place:delivery",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:delivery"
+    },
+    {
+     "name": "Asian",
+     "tag_id": "urn:tag:genre:place:restaurant:asian",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:asian"
+    },
+    {
+     "name": "Minimalist",
+     "tag_id": "urn:tag:decor:qloo:minimalist",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:minimalist"
+    },
+    {
+     "name": "Catering",
+     "tag_id": "urn:tag:dining_options:place:catering",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:catering"
+    },
+    {
+     "name": "Safe",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:safe",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:safe"
+    },
+    {
+     "name": "Japanese",
+     "tag_id": "urn:tag:cuisine:qloo:japanese",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:japanese"
+    },
+    {
+     "name": "Place",
+     "tag_id": "urn:tag:genre:place",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place"
+    },
+    {
+     "name": "Sushi takeaway",
+     "tag_id": "urn:tag:genre:place:restaurant:sushi_takeaway",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:sushi_takeaway"
+    },
+    {
+     "name": "Beer",
+     "tag_id": "urn:tag:offerings:place:beer",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:beer"
+    },
+    {
+     "name": "Cocktails",
+     "tag_id": "urn:tag:offerings:place:cocktails",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:cocktails"
+    },
+    {
+     "name": "Commercial",
+     "tag_id": "urn:tag:setting:qloo:commercial",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:commercial"
+    },
+    {
+     "name": "Routine visit",
+     "tag_id": "urn:tag:visit_intent:qloo:routine_visit",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:routine_visit"
+    },
+    {
+     "name": "Madrid",
+     "tag_id": "urn:tag:resy:keyword:place:madrid",
+     "type": "urn:tag:resy:keyword:place",
+     "value": "urn:tag:resy:keyword:place:madrid"
+    },
+    {
+     "name": "Yakisoba vegetal",
+     "tag_id": "urn:tag:menu_highlight:qloo:yakisoba_vegetal",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:yakisoba_vegetal"
+    },
+    {
+     "name": "Temaki restaurant",
+     "tag_id": "urn:tag:category:place:temaki_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:temaki_restaurant"
+    },
+    {
+     "name": "Tartar salmon con trufa",
+     "tag_id": "urn:tag:specialty_dish:place:tartar_salmon_con_trufa",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:tartar_salmon_con_trufa"
+    },
+    {
+     "name": "Foodies",
+     "tag_id": "urn:tag:customer_identity:qloo:foodies",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:foodies"
+    },
+    {
+     "name": "18 24",
+     "tag_id": "urn:tag:age_range:qloo:18_24",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:18_24"
+    },
+    {
+     "name": "Online ordering",
+     "tag_id": "urn:tag:service_type:qloo:online_ordering",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:online_ordering"
+    },
+    {
+     "name": "Cocktails",
+     "tag_id": "urn:tag:beverage_offering:qloo:cocktails",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:cocktails"
+    },
+    {
+     "name": "Mandarin restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant:mandarin",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:mandarin"
+    },
+    {
+     "name": "Sushi de tempura de langostino tigre",
+     "tag_id": "urn:tag:menu_highlight:qloo:sushi_de_tempura_de_langostino_tigre",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:sushi_de_tempura_de_langostino_tigre"
+    },
+    {
+     "name": "Postre",
+     "tag_id": "urn:tag:specialty_dish:place:postre",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:postre"
+    },
+    {
+     "name": "Relaxing",
+     "tag_id": "urn:tag:ambience:qloo:relaxing",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:relaxing"
+    },
+    {
+     "name": "Private dining room",
+     "tag_id": "urn:tag:amenity:qloo:private_dining_room",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:private_dining_room"
+    },
+    {
+     "name": "Sushi variado",
+     "tag_id": "urn:tag:menu_highlight:qloo:sushi_variado",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:sushi_variado"
+    },
+    {
+     "name": "Tatami salmon roll",
+     "tag_id": "urn:tag:specialty_dish:place:tatami_salmon_roll",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:tatami_salmon_roll"
+    },
+    {
+     "name": "Fine dining restaurant",
+     "tag_id": "urn:tag:category:place:fine_dining_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:fine_dining_restaurant"
+    },
+    {
+     "name": "Reservations",
+     "tag_id": "urn:tag:resy:keyword:place:reservations",
+     "type": "urn:tag:resy:keyword:place",
+     "value": "urn:tag:resy:keyword:place:reservations"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:amenity:qloo:outdoor_seating",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:outdoor_seating"
+    },
+    {
+     "name": "Sushi restaurant",
+     "tag_id": "urn:tag:category:place:sushi_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:sushi_restaurant"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:culinary_style:qloo:casual",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:casual"
+    },
+    {
+     "name": "Contemporary",
+     "tag_id": "urn:tag:decor:qloo:contemporary",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:contemporary"
+    },
+    {
+     "name": "Spicy toro roll",
+     "tag_id": "urn:tag:menu_highlight:qloo:spicy_toro_roll",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:spicy_toro_roll"
+    },
+    {
+     "name": "Modern",
+     "tag_id": "urn:tag:decor:qloo:modern",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:modern"
+    },
+    {
+     "name": "Bustling",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:bustling",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:bustling"
+    },
+    {
+     "name": "Sashimi varied small special cut",
+     "tag_id": "urn:tag:menu_highlight:qloo:sashimi_varied_small_special_cut",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:sashimi_varied_small_special_cut"
+    },
+    {
+     "name": "Vegetarian",
+     "tag_id": "urn:tag:dietary_option:qloo:vegetarian",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:vegetarian"
+    },
+    {
+     "name": "City center",
+     "tag_id": "urn:tag:setting:qloo:city_center",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:city_center"
+    },
+    {
+     "name": "Solo diners",
+     "tag_id": "urn:tag:customer_identity:qloo:solo_diners",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:solo_diners"
+    },
+    {
+     "name": "Dining",
+     "tag_id": "urn:tag:resy:keyword:place:dining",
+     "type": "urn:tag:resy:keyword:place",
+     "value": "urn:tag:resy:keyword:place:dining"
+    },
+    {
+     "name": "Credit cards",
+     "tag_id": "urn:tag:payments:place:credit_cards",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:credit_cards"
+    },
+    {
+     "name": "Dessert",
+     "tag_id": "urn:tag:dining_options:place:dessert",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:dessert"
+    },
+    {
+     "name": "Sushi crispy con salmon",
+     "tag_id": "urn:tag:specialty_dish:place:sushi_crispy_con_salmon",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:sushi_crispy_con_salmon"
+    },
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_options:place:dine_in",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:dine_in"
+    },
+    {
+     "name": "Culinary exploration",
+     "tag_id": "urn:tag:interests:qloo:culinary_exploration",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:culinary_exploration"
+    },
+    {
+     "name": "Tatami salmon roll",
+     "tag_id": "urn:tag:menu_highlight:qloo:tatami_salmon_roll",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:tatami_salmon_roll"
+    },
+    {
+     "name": "Families",
+     "tag_id": "urn:tag:customer_identity:qloo:families",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:families"
+    },
+    {
+     "name": "Gyozas de gallina con crema",
+     "tag_id": "urn:tag:menu_highlight:qloo:gyozas_de_gallina_con_crema",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:gyozas_de_gallina_con_crema"
+    },
+    {
+     "name": "25 29",
+     "tag_id": "urn:tag:age_range:qloo:25_29",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:25_29"
+    },
+    {
+     "name": "Private dining",
+     "tag_id": "urn:tag:service_type:qloo:private_dining",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:private_dining"
+    },
+    {
+     "name": "Wi fi",
+     "tag_id": "urn:tag:amenity:qloo:wi_fi",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:wi_fi"
+    },
+    {
+     "name": "Cuzco area",
+     "tag_id": "urn:tag:nearby_attraction:qloo:cuzco_area",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:cuzco_area"
+    },
+    {
+     "name": "Walkable",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:walkable"
+    },
+    {
+     "name": "Volcano roll y crispi de salmon",
+     "tag_id": "urn:tag:specialty_dish:place:volcano_roll_y_crispi_de_salmon",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:volcano_roll_y_crispi_de_salmon"
+    },
+    {
+     "name": "Business professionals",
+     "tag_id": "urn:tag:customer_identity:qloo:business_professionals",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:business_professionals"
+    },
+    {
+     "name": "Work dinner",
+     "tag_id": "urn:tag:event:place:work_dinner",
+     "type": "urn:tag:event:place",
+     "value": "urn:tag:event:place:work_dinner"
+    },
+    {
+     "name": "Comfortable",
+     "tag_id": "urn:tag:ambience:qloo:comfortable",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:comfortable"
+    },
+    {
+     "name": "Takeout service",
+     "tag_id": "urn:tag:amenity:qloo:takeout_service",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:takeout_service"
+    },
+    {
+     "name": "Delivery",
+     "tag_id": "urn:tag:activity_type:qloo:delivery",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:delivery"
+    },
+    {
+     "name": "Special occasion",
+     "tag_id": "urn:tag:visit_intent:qloo:special_occasion",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:special_occasion"
+    },
+    {
+     "name": "Modern",
+     "tag_id": "urn:tag:ambience:qloo:modern",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:modern"
+    },
+    {
+     "name": "4 0 star",
+     "tag_id": "urn:tag:resy:keyword:place:4_0_star",
+     "type": "urn:tag:resy:keyword:place",
+     "value": "urn:tag:resy:keyword:place:4_0_star"
+    },
+    {
+     "name": "Convenient",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:convenient",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:convenient"
+    },
+    {
+     "name": "Contemporary",
+     "tag_id": "urn:tag:culinary_style:qloo:contemporary",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:contemporary"
+    },
+    {
+     "name": "Pato con salsa tropical",
+     "tag_id": "urn:tag:menu_highlight:qloo:pato_con_salsa_tropical",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:pato_con_salsa_tropical"
+    },
+    {
+     "name": "35 44",
+     "tag_id": "urn:tag:age_range:qloo:35_44",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:35_44"
+    },
+    {
+     "name": "Street view",
+     "tag_id": "urn:tag:view:qloo:street_view",
+     "type": "urn:tag:view:qloo",
+     "value": "urn:tag:view:qloo:street_view"
+    },
+    {
+     "name": "Parking",
+     "tag_id": "urn:tag:amenity:qloo:parking",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:parking"
+    },
+    {
+     "name": "Traditional",
+     "tag_id": "urn:tag:culinary_style:qloo:traditional",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:traditional"
+    },
+    {
+     "name": "Cozy",
+     "tag_id": "urn:tag:decor:qloo:cozy",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:cozy"
+    },
+    {
+     "name": "Matcha moriawase",
+     "tag_id": "urn:tag:specialty_dish:place:matcha_moriawase",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:matcha_moriawase"
+    },
+    {
+     "name": "Authentic japanese restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant:authentic_japanese",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:authentic_japanese"
+    },
+    {
+     "name": "Tetuan neighborhood",
+     "tag_id": "urn:tag:nearby_attraction:qloo:tetuan_neighborhood",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:tetuan_neighborhood"
+    },
+    {
+     "name": "Ensalada de algas",
+     "tag_id": "urn:tag:menu_highlight:qloo:ensalada_de_algas",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:ensalada_de_algas"
+    },
+    {
+     "name": "Stylish",
+     "tag_id": "urn:tag:decor:qloo:stylish",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:stylish"
+    },
+    {
+     "name": "\u20ac20 to \u20ac30",
+     "tag_id": "urn:tag:cost_description:place:\u20ac20_to_\u20ac30",
+     "type": "urn:tag:cost_description:place",
+     "value": "urn:tag:cost_description:place:\u20ac20_to_\u20ac30"
+    },
+    {
+     "name": "Matcha moriawase",
+     "tag_id": "urn:tag:menu_highlight:qloo:matcha_moriawase",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:matcha_moriawase"
+    },
+    {
+     "name": "Dim sum",
+     "tag_id": "urn:tag:menu_highlight:qloo:dim_sum",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:dim_sum"
+    },
+    {
+     "name": "Crujiente paquetito vegetal y gyozas",
+     "tag_id": "urn:tag:specialty_dish:place:crujiente_paquetito_vegetal_y_gyozas",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:crujiente_paquetito_vegetal_y_gyozas"
+    },
+    {
+     "name": "Seating",
+     "tag_id": "urn:tag:dining_options:place:seating",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:seating"
+    },
+    {
+     "name": "Welcoming",
+     "tag_id": "urn:tag:ambience:qloo:welcoming",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:welcoming"
+    },
+    {
+     "name": "Asian restaurant",
+     "tag_id": "urn:tag:category:place:asian_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:asian_restaurant"
+    },
+    {
+     "name": "Flan de te verde",
+     "tag_id": "urn:tag:specialty_dish:place:flan_de_te_verde",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:flan_de_te_verde"
+    },
+    {
+     "name": "Delivery service",
+     "tag_id": "urn:tag:amenity:qloo:delivery_service",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:delivery_service"
+    },
+    {
+     "name": "Tartar de atun con aguacate",
+     "tag_id": "urn:tag:specialty_dish:place:tartar_de_atun_con_aguacate",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:tartar_de_atun_con_aguacate"
+    },
+    {
+     "name": "Vegan",
+     "tag_id": "urn:tag:dietary_option:qloo:vegan",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:vegan"
+    },
+    {
+     "name": "Tartar de atun con aguacate",
+     "tag_id": "urn:tag:menu_highlight:qloo:tartar_de_atun_con_aguacate",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:tartar_de_atun_con_aguacate"
+    },
+    {
+     "name": "Toro uramaki",
+     "tag_id": "urn:tag:menu_highlight:qloo:toro_uramaki",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:toro_uramaki"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:decor:qloo:casual",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:casual"
+    },
+    {
+     "name": "Japanese restaurant",
+     "tag_id": "urn:tag:category:place:japanese_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:japanese_restaurant"
+    },
+    {
+     "name": "Restroom",
+     "tag_id": "urn:tag:amenities:place:restroom",
+     "type": "urn:tag:amenities:place",
+     "value": "urn:tag:amenities:place:restroom"
+    },
+    {
+     "name": "Restaurant",
+     "tag_id": "urn:tag:resy:keyword:place:restaurant",
+     "type": "urn:tag:resy:keyword:place",
+     "value": "urn:tag:resy:keyword:place:restaurant"
+    },
+    {
+     "name": "Sushi",
+     "tag_id": "urn:tag:genre:place:restaurant:sushi",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:sushi"
+    },
+    {
+     "name": "Evening",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:evening",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:evening"
+    },
+    {
+     "name": "Flan de te verde",
+     "tag_id": "urn:tag:menu_highlight:qloo:flan_de_te_verde",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:flan_de_te_verde"
+    },
+    {
+     "name": "Sushi variado",
+     "tag_id": "urn:tag:specialty_dish:place:sushi_variado",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:sushi_variado"
+    },
+    {
+     "name": "Tori katsu",
+     "tag_id": "urn:tag:menu_highlight:qloo:tori_katsu",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:tori_katsu"
+    },
+    {
+     "name": "Street level restaurant",
+     "tag_id": "urn:tag:setting:qloo:street_level_restaurant",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:street_level_restaurant"
+    },
+    {
+     "name": "Sushi crispy de pato",
+     "tag_id": "urn:tag:menu_highlight:qloo:sushi_crispy_de_pato",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:sushi_crispy_de_pato"
+    },
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_type:qloo:dine_in",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:dine_in"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_type:qloo:outdoor_seating",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:outdoor_seating"
+    },
+    {
+     "name": "Crispi de salmon",
+     "tag_id": "urn:tag:menu_highlight:qloo:crispi_de_salmon",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:crispi_de_salmon"
+    },
+    {
+     "name": "Health food",
+     "tag_id": "urn:tag:genre:place:restaurant:health_food",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:health_food"
+    },
+    {
+     "name": "Social networking",
+     "tag_id": "urn:tag:interests:qloo:social_networking",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:social_networking"
+    },
+    {
+     "name": "Coffee",
+     "tag_id": "urn:tag:offerings:place:coffee",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:coffee"
+    },
+    {
+     "name": "Coffee and tea",
+     "tag_id": "urn:tag:beverage_offering:qloo:coffee_and_tea",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:coffee_and_tea"
+    },
+    {
+     "name": "Healthy eating",
+     "tag_id": "urn:tag:interests:qloo:healthy_eating",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:healthy_eating"
+    },
+    {
+     "name": "Moderate",
+     "tag_id": "urn:tag:noise_level:qloo:moderate",
+     "type": "urn:tag:noise_level:qloo",
+     "value": "urn:tag:noise_level:qloo:moderate"
+    },
+    {
+     "name": "Fine dining restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant:fine_dining",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:fine_dining"
+    },
+    {
+     "name": "Vegetarian meals",
+     "tag_id": "urn:tag:offerings:place:vegetarian_options",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:vegetarian_options"
+    },
+    {
+     "name": "Dining drinking",
+     "tag_id": "urn:tag:activity_type:qloo:dining_drinking",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:dining_drinking"
+    },
+    {
+     "name": "Accepts reservations",
+     "tag_id": "urn:tag:planning:place:accepts_reservations",
+     "type": "urn:tag:planning:place",
+     "value": "urn:tag:planning:place:accepts_reservations"
+    },
+    {
+     "name": "Gyoza mixta",
+     "tag_id": "urn:tag:specialty_dish:place:gyoza_mixta",
+     "type": "urn:tag:specialty_dish:place",
+     "value": "urn:tag:specialty_dish:place:gyoza_mixta"
+    },
+    {
+     "name": "Tasting menu",
+     "tag_id": "urn:tag:offerings:place:tasting_menu",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:tasting_menu"
+    },
+    {
+     "name": "Chic",
+     "tag_id": "urn:tag:decor:qloo:chic",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:chic"
+    },
+    {
+     "name": "Healthy options",
+     "tag_id": "urn:tag:offerings:place:healthy_options",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:healthy_options"
+    },
+    {
+     "name": "Paid street parking",
+     "tag_id": "urn:tag:parking:place:paid_street_parking",
+     "type": "urn:tag:parking:place",
+     "value": "urn:tag:parking:place:paid_street_parking"
+    }
+   ]
+  },
+  {
+   "name": "MatCha",
+   "entity_id": "E8888F63-2448-4121-A8BB-5C0D9E6D8E9E",
+   "types": [
+    "urn:entity:place"
+   ],
+   "properties": {
+    "akas": [
+     {
+      "language": "",
+      "value": "MatCha, Mnt du Ch\u00e2teau vieux 84160 Cucuron France"
+     }
+    ],
+    "address": "Mnt du Ch\u00e2teau vieux 84160 Cucuron France",
+    "business_rating": 4.8,
+    "description": "Intimate restaurant in Cucuron offering creative, refined cuisine with fresh local products and a charming atmosphere.",
+    "external": {
+     "michelin": {
+      "id": "1000307"
+     },
+     "tripadvisor": {
+      "id": "d12568828",
+      "rating": 4.5,
+      "rating_count": 265
+     },
+     "google_place": {
+      "id": "48d2347cf3a8bd8c",
+      "place_id": "ChIJh9hZtqsjyhIRjL2o83w00kg"
+     }
+    },
+    "geocode": {
+     "city": "Cucuron",
+     "admin1_region": "Provence-Alpes-C\u00f4te d'Azur",
+     "admin2_region": "Vaucluse",
+     "country_code": "FR",
+     "country": "France"
+    },
+    "hours": {
+     "sunday": [
+      {
+       "closed": true
+      }
+     ],
+     "monday": [
+      {
+       "closed": true
+      }
+     ],
+     "tuesday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T13:30:00"
+      }
+     ],
+     "wednesday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T13:30:00"
+      }
+     ],
+     "thursday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T13:30:00"
+      }
+     ],
+     "friday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T13:30:00"
+      }
+     ],
+     "saturday": [
+      {
+       "closed": false,
+       "opens": "T19:30:00",
+       "closes": "T21:30:00"
+      }
+     ]
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/E8888F63-2448-4121-A8BB-5C0D9E6D8E9E-420x-auto.jpg"
+    },
+    "is_closed": false,
+    "phone": "+33486785596",
+    "price_level": 3,
+    "price_range": {
+     "currency": "usd"
+    },
+    "website": "http://matcharestaurant.com/",
+    "specialty_dishes": [
+     {
+      "id": "urn:tag:specialty_dish:place:ravioles_gambas_au_basilic",
+      "name": "Ravioles De Gambas Au Basilic",
+      "type": "urn:tag:specialty_dish:place",
+      "weight": 1
+     },
+     {
+      "id": "urn:tag:specialty_dish:place:risotto_courgettes_gambas",
+      "name": "Risotto Courgettes Gambas",
+      "type": "urn:tag:specialty_dish:place",
+      "weight": 0
+     }
+    ],
+    "good_for": [
+     {
+      "id": "urn:tag:children:place:good_kids",
+      "name": "Good for kids",
+      "type": "urn:tag:children:place",
+      "weight": 0.38888888888888884
+     }
+    ],
+    "primary_genre": {
+     "id": "urn:tag:genre:place:restaurant",
+     "name": "Restaurant",
+     "type": "urn:tag:genre:place",
+     "akas": [
+      {
+       "language": "sw",
+       "value": "\"Mgahawa\""
+      },
+      {
+       "language": "te",
+       "value": "\"\u0c30\u0c46\u0c38\u0c4d\u0c1f\u0c3e\u0c30\u0c46\u0c02\u0c1f\u0c4d\""
+      },
+      {
+       "language": "lv",
+       "value": "\"Restor\u0101ns\""
+      },
+      {
+       "language": "ka",
+       "value": "\"\u10e0\u10d4\u10e1\u10e2\u10dd\u10e0\u10d0\u10dc\u10d8\""
+      },
+      {
+       "language": "ja",
+       "value": "\"\u30ec\u30b9\u30c8\u30e9\u30f3\""
+      },
+      {
+       "language": "eu",
+       "value": "\"Jatetxea\""
+      },
+      {
+       "language": "kk",
+       "value": "\"\u041c\u0435\u0439\u0440\u0430\u043c\u0445\u0430\u043d\u0430\""
+      },
+      {
+       "language": "it",
+       "value": "\"Ristorante\""
+      },
+      {
+       "language": "sk",
+       "value": "\"Re\u0161taur\u00e1cia\""
+      },
+      {
+       "language": "ar",
+       "value": "\"\u0645\u0637\u0639\u0645\""
+      },
+      {
+       "language": "sv",
+       "value": "\"Restaurang\""
+      },
+      {
+       "language": "el",
+       "value": "\"\u0395\u03c3\u03c4\u03b9\u03b1\u03c4\u03cc\u03c1\u03b9\u03bf\""
+      },
+      {
+       "language": "pt_pt",
+       "value": "\"Restaurante\""
+      },
+      {
+       "language": "es_la",
+       "value": "\"Restaurante\""
+      },
+      {
+       "language": "pt",
+       "value": "\"Restaurante\""
+      },
+      {
+       "language": "es_ar",
+       "value": "\"Restaurante\""
+      },
+      {
+       "language": "es",
+       "value": "\"Restaurante\""
+      },
+      {
+       "language": "gl",
+       "value": "\"Restaurante\""
+      },
+      {
+       "language": "hi",
+       "value": "\"\u0930\u0947\u0938\u094d\u0924\u0930\u093e\u0902\""
+      },
+      {
+       "language": "lo",
+       "value": "\"\u0eae\u0ec9\u0eb2\u0e99\u0ead\u0eb2\u0eab\u0eb2\u0e99\""
+      },
+      {
+       "language": "sq",
+       "value": "\"Restorant\""
+      },
+      {
+       "language": "ta",
+       "value": "\"\u0b89\u0ba3\u0bb5\u0b95\u0bae\u0bcd\""
+      },
+      {
+       "language": "bg",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d\u0442\""
+      },
+      {
+       "language": "he",
+       "value": "\"\u05de\u05e1\u05e2\u05d3\u05d4\""
+      },
+      {
+       "language": "fr",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "af",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "ca",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "en_gb",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "nl",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "da",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "fr_ca",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "nb",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "ro",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "de",
+       "value": "\"Restaurant\""
+      },
+      {
+       "language": "bn",
+       "value": "\"\u09b0\u09c7\u09b8\u09cd\u09a4\u09cb\u09b0\u09be\u0981\""
+      },
+      {
+       "language": "tr",
+       "value": "\"Restoran\""
+      },
+      {
+       "language": "id",
+       "value": "\"Restoran\""
+      },
+      {
+       "language": "ms",
+       "value": "\"Restoran\""
+      },
+      {
+       "language": "et",
+       "value": "\"Restoran\""
+      },
+      {
+       "language": "bs",
+       "value": "\"Restoran\""
+      },
+      {
+       "language": "az",
+       "value": "\"Restoran\""
+      },
+      {
+       "language": "hr",
+       "value": "\"Restoran\""
+      },
+      {
+       "language": "pl",
+       "value": "\"Restauracja\""
+      },
+      {
+       "language": "vi",
+       "value": "\"Nh\u00e0 h\u00e0ng\""
+      },
+      {
+       "language": "km",
+       "value": "\"\u1797\u17c4\u1787\u1793\u17b8\u1799\u178a\u17d2\u178b\u17b6\u1793\""
+      },
+      {
+       "language": "zh",
+       "value": "\"\u9910\u5385\""
+      },
+      {
+       "language": "sl",
+       "value": "\"Restavracija\""
+      },
+      {
+       "language": "fi",
+       "value": "\"Ravintola\""
+      },
+      {
+       "language": "my",
+       "value": "\"\u1005\u102c\u1038\u101e\u1031\u102c\u1000\u103a\u1006\u102d\u102f\u1004\u103a\""
+      },
+      {
+       "language": "hu",
+       "value": "\"\u00c9tterem\""
+      },
+      {
+       "language": "tl",
+       "value": "\"Restawran\""
+      },
+      {
+       "language": "sr",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d\""
+      },
+      {
+       "language": "uk",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d\""
+      },
+      {
+       "language": "ru",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d\""
+      },
+      {
+       "language": "mk",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d\""
+      },
+      {
+       "language": "ko",
+       "value": "\"\uc2dd\ub2f9\""
+      },
+      {
+       "language": "th",
+       "value": "\"\u0e23\u0e49\u0e32\u0e19\u0e2d\u0e32\u0e2b\u0e32\u0e23\""
+      },
+      {
+       "language": "zh_tw",
+       "value": "\"\u9910\u5ef3\""
+      },
+      {
+       "language": "cs",
+       "value": "\"Restaurace\""
+      },
+      {
+       "language": "lt",
+       "value": "\"Restoranas\""
+      }
+     ]
+    }
+   },
+   "popularity": 0.6951650402418037,
+   "disambiguation": "Mnt du Ch\u00e2teau vieux 84160 Cucuron France",
+   "location": {
+    "lat": 43.77363,
+    "lon": 5.4396907
+   },
+   "tags": [
+    {
+     "name": "Event catering",
+     "tag_id": "urn:tag:service_type:qloo:event_catering",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:event_catering"
+    },
+    {
+     "name": "Cocktails",
+     "tag_id": "urn:tag:offerings:place:cocktails",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:cocktails"
+    },
+    {
+     "name": "Rustic",
+     "tag_id": "urn:tag:ambience:qloo:rustic",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:rustic"
+    },
+    {
+     "name": "Simple",
+     "tag_id": "urn:tag:decor:qloo:simple",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:simple"
+    },
+    {
+     "name": "Dinner",
+     "tag_id": "urn:tag:dining_options:place:dinner",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:dinner"
+    },
+    {
+     "name": "Provencal",
+     "tag_id": "urn:tag:cuisine:qloo:provencal",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:provencal"
+    },
+    {
+     "name": "Side street",
+     "tag_id": "urn:tag:setting:qloo:side_street",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:side_street"
+    },
+    {
+     "name": "Midday",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:midday",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:midday"
+    },
+    {
+     "name": "Healthy options",
+     "tag_id": "urn:tag:offerings:place:healthy_options",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:healthy_options"
+    },
+    {
+     "name": "Restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant"
+    },
+    {
+     "name": "Moderate",
+     "tag_id": "urn:tag:noise_level:qloo:moderate",
+     "type": "urn:tag:noise_level:qloo",
+     "value": "urn:tag:noise_level:qloo:moderate"
+    },
+    {
+     "name": "Free street parking",
+     "tag_id": "urn:tag:parking:place:free_street_parking",
+     "type": "urn:tag:parking:place",
+     "value": "urn:tag:parking:place:free_street_parking"
+    },
+    {
+     "name": "Cooking classes",
+     "tag_id": "urn:tag:service_type:qloo:cooking_classes",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:cooking_classes"
+    },
+    {
+     "name": "\u20ac40 to \u20ac50",
+     "tag_id": "urn:tag:cost_description:place:\u20ac40_to_\u20ac50",
+     "type": "urn:tag:cost_description:place",
+     "value": "urn:tag:cost_description:place:\u20ac40_to_\u20ac50"
+    },
+    {
+     "name": "Charming",
+     "tag_id": "urn:tag:ambience:qloo:charming",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:charming"
+    },
+    {
+     "name": "Village",
+     "tag_id": "urn:tag:setting:qloo:village",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:village"
+    },
+    {
+     "name": "Social",
+     "tag_id": "urn:tag:ambience:qloo:social",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:social"
+    },
+    {
+     "name": "Free parking lot",
+     "tag_id": "urn:tag:parking:place:free_parking_lot",
+     "type": "urn:tag:parking:place",
+     "value": "urn:tag:parking:place:free_parking_lot"
+    },
+    {
+     "name": "Modern",
+     "tag_id": "urn:tag:culinary_style:qloo:modern",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:modern"
+    },
+    {
+     "name": "Alcohol",
+     "tag_id": "urn:tag:offerings:place:alcohol",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:alcohol"
+    },
+    {
+     "name": "Farm to table",
+     "tag_id": "urn:tag:culinary_style:qloo:farm_to_table",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:farm_to_table"
+    },
+    {
+     "name": "French",
+     "tag_id": "urn:tag:genre:place:restaurant:french",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:french"
+    },
+    {
+     "name": "Authentic",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:authentic",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:authentic"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:amenity:qloo:takeout",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:takeout"
+    },
+    {
+     "name": "Walkable",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:walkable"
+    },
+    {
+     "name": "Good for kids",
+     "tag_id": "urn:tag:children:place:good_for_kids",
+     "type": "urn:tag:children:place",
+     "value": "urn:tag:children:place:good_for_kids"
+    },
+    {
+     "name": "Lunch reservations recommended",
+     "tag_id": "urn:tag:planning:place:lunch_reservations_recommended",
+     "type": "urn:tag:planning:place",
+     "value": "urn:tag:planning:place:lunch_reservations_recommended"
+    },
+    {
+     "name": "Catering",
+     "tag_id": "urn:tag:dining_options:place:catering",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:catering"
+    },
+    {
+     "name": "Destination",
+     "tag_id": "urn:tag:visit_intent:qloo:destination",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:destination"
+    },
+    {
+     "name": "Culture arts",
+     "tag_id": "urn:tag:activity_type:qloo:culture_arts",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:culture_arts"
+    },
+    {
+     "name": "Restroom",
+     "tag_id": "urn:tag:amenities:place:restroom",
+     "type": "urn:tag:amenities:place",
+     "value": "urn:tag:amenities:place:restroom"
+    },
+    {
+     "name": "Fine dining",
+     "tag_id": "urn:tag:interests:qloo:fine_dining",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:fine_dining"
+    },
+    {
+     "name": "Contemporary",
+     "tag_id": "urn:tag:culinary_style:qloo:contemporary",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:contemporary"
+    },
+    {
+     "name": "Intimate",
+     "tag_id": "urn:tag:ambience:qloo:intimate",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:intimate"
+    },
+    {
+     "name": "Local gastronomy",
+     "tag_id": "urn:tag:interests:qloo:local_gastronomy",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:local_gastronomy"
+    },
+    {
+     "name": "Anniversary",
+     "tag_id": "urn:tag:event:place:anniversary",
+     "type": "urn:tag:event:place",
+     "value": "urn:tag:event:place:anniversary"
+    },
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_options:place:dine_in",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:dine_in"
+    },
+    {
+     "name": "Friendly",
+     "tag_id": "urn:tag:ambience:qloo:friendly",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:friendly"
+    },
+    {
+     "name": "Reservations",
+     "tag_id": "urn:tag:service_type:qloo:reservations",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:reservations"
+    },
+    {
+     "name": "Special occasion",
+     "tag_id": "urn:tag:visit_intent:qloo:special_occasion",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:special_occasion"
+    },
+    {
+     "name": "Boudin de volaille",
+     "tag_id": "urn:tag:menu_highlight:qloo:boudin_de_volaille",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:boudin_de_volaille"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_type:qloo:takeout",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:takeout"
+    },
+    {
+     "name": "Accepts reservations",
+     "tag_id": "urn:tag:planning:place:accepts_reservations",
+     "type": "urn:tag:planning:place",
+     "value": "urn:tag:planning:place:accepts_reservations"
+    },
+    {
+     "name": "Romantic",
+     "tag_id": "urn:tag:ambience:qloo:romantic",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:romantic"
+    },
+    {
+     "name": "Dining drinking",
+     "tag_id": "urn:tag:activity_type:qloo:dining_drinking",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:dining_drinking"
+    },
+    {
+     "name": "Creative",
+     "tag_id": "urn:tag:ambience:qloo:creative",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:creative"
+    },
+    {
+     "name": "35 44",
+     "tag_id": "urn:tag:age_range:qloo:35_44",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:35_44"
+    },
+    {
+     "name": "Mastercard",
+     "tag_id": "urn:tag:credit_card:place:mastercard",
+     "type": "urn:tag:credit_card:place",
+     "value": "urn:tag:credit_card:place:mastercard"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:culinary_style:qloo:casual",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:casual"
+    },
+    {
+     "name": "Village vibe",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:village_vibe",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:village_vibe"
+    },
+    {
+     "name": "Risotto courgettes gambas",
+     "tag_id": "urn:tag:menu_highlight:qloo:risotto_courgettes_gambas",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:risotto_courgettes_gambas"
+    },
+    {
+     "name": "Beer",
+     "tag_id": "urn:tag:beverage_offering:qloo:beer",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:beer"
+    },
+    {
+     "name": "Dinner reservations recommended",
+     "tag_id": "urn:tag:planning:place:dinner_reservations_recommended",
+     "type": "urn:tag:planning:place",
+     "value": "urn:tag:planning:place:dinner_reservations_recommended"
+    },
+    {
+     "name": "Wine",
+     "tag_id": "urn:tag:beverage_offering:qloo:wine",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:wine"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:decor:qloo:casual",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:casual"
+    },
+    {
+     "name": "French restaurant",
+     "tag_id": "urn:tag:category:place:french_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:french_restaurant"
+    },
+    {
+     "name": "Healthy options",
+     "tag_id": "urn:tag:dietary_option:qloo:healthy_options",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:healthy_options"
+    },
+    {
+     "name": "25 29",
+     "tag_id": "urn:tag:age_range:qloo:25_29",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:25_29"
+    },
+    {
+     "name": "Vegetarian options",
+     "tag_id": "urn:tag:amenity:qloo:vegetarian_options",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:vegetarian_options"
+    },
+    {
+     "name": "Families",
+     "tag_id": "urn:tag:customer_identity:qloo:families",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:families"
+    },
+    {
+     "name": "Breakfast",
+     "tag_id": "urn:tag:dining_options:place:breakfast",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:breakfast"
+    },
+    {
+     "name": "Ravioles de gambas au basilic",
+     "tag_id": "urn:tag:menu_highlight:qloo:ravioles_de_gambas_au_basilic",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:ravioles_de_gambas_au_basilic"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:amenity:qloo:outdoor_seating",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:outdoor_seating"
+    },
+    {
+     "name": "Lunch",
+     "tag_id": "urn:tag:dining_options:place:lunch",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:lunch"
+    },
+    {
+     "name": "Coffee and tea",
+     "tag_id": "urn:tag:beverage_offering:qloo:coffee_and_tea",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:coffee_and_tea"
+    },
+    {
+     "name": "Table service",
+     "tag_id": "urn:tag:dining_options:place:table_service",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:table_service"
+    },
+    {
+     "name": "Cocktails",
+     "tag_id": "urn:tag:beverage_offering:qloo:cocktails",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:cocktails"
+    },
+    {
+     "name": "Bassins de letang",
+     "tag_id": "urn:tag:nearby_attraction:qloo:bassins_de_l_etang",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:bassins_de_l_etang"
+    },
+    {
+     "name": "Restaurant",
+     "tag_id": "urn:tag:category:place:restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:restaurant"
+    },
+    {
+     "name": "45 54",
+     "tag_id": "urn:tag:age_range:qloo:45_54",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:45_54"
+    },
+    {
+     "name": "Full bar",
+     "tag_id": "urn:tag:beverage_offering:qloo:full_bar",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:full_bar"
+    },
+    {
+     "name": "Hard liquor",
+     "tag_id": "urn:tag:offerings:place:hard_liquor",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:hard_liquor"
+    },
+    {
+     "name": "Celebratory diners",
+     "tag_id": "urn:tag:customer_identity:qloo:celebratory_diners",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:celebratory_diners"
+    },
+    {
+     "name": "French",
+     "tag_id": "urn:tag:cuisine:qloo:french",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:french"
+    },
+    {
+     "name": "Wine tasting",
+     "tag_id": "urn:tag:interests:qloo:wine_tasting",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:wine_tasting"
+    },
+    {
+     "name": "Fresh juices",
+     "tag_id": "urn:tag:beverage_offering:qloo:fresh_juices",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:fresh_juices"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_options:place:outdoor_seating",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:outdoor_seating"
+    },
+    {
+     "name": "Cooking lessons",
+     "tag_id": "urn:tag:activity_type:qloo:cooking_lessons",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:cooking_lessons"
+    },
+    {
+     "name": "Catering services",
+     "tag_id": "urn:tag:activity_type:qloo:catering_services",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:catering_services"
+    },
+    {
+     "name": "Wine list",
+     "tag_id": "urn:tag:amenity:qloo:wine_list",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:wine_list"
+    },
+    {
+     "name": "Nfc mobile payments",
+     "tag_id": "urn:tag:payments:place:nfc_mobile_payments",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:nfc_mobile_payments"
+    },
+    {
+     "name": "Quiet",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:quiet",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:quiet"
+    },
+    {
+     "name": "Mediterranean",
+     "tag_id": "urn:tag:genre:place:restaurant:mediterranean",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:mediterranean"
+    },
+    {
+     "name": "Seasonal cooking",
+     "tag_id": "urn:tag:interests:qloo:seasonal_cooking",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:seasonal_cooking"
+    },
+    {
+     "name": "Delivery",
+     "tag_id": "urn:tag:amenity:qloo:delivery",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:delivery"
+    },
+    {
+     "name": "Seasonal",
+     "tag_id": "urn:tag:culinary_style:qloo:seasonal",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:seasonal"
+    },
+    {
+     "name": "Wheelchair accessible seating",
+     "tag_id": "urn:tag:accessibility:place:wheelchair_accessible_seating",
+     "type": "urn:tag:accessibility:place",
+     "value": "urn:tag:accessibility:place:wheelchair_accessible_seating"
+    },
+    {
+     "name": "Catering",
+     "tag_id": "urn:tag:amenity:qloo:catering",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:catering"
+    },
+    {
+     "name": "Welcoming",
+     "tag_id": "urn:tag:ambience:qloo:welcoming",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:welcoming"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:ambience:qloo:casual",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:casual"
+    },
+    {
+     "name": "Beer",
+     "tag_id": "urn:tag:offerings:place:beer",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:beer"
+    },
+    {
+     "name": "Wine",
+     "tag_id": "urn:tag:offerings:place:wine",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:wine"
+    },
+    {
+     "name": "Evening",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:evening",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:evening"
+    },
+    {
+     "name": "Historic",
+     "tag_id": "urn:tag:setting:qloo:historic",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:historic"
+    },
+    {
+     "name": "Groups of friends",
+     "tag_id": "urn:tag:customer_identity:qloo:groups_of_friends",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:groups_of_friends"
+    },
+    {
+     "name": "Quiet",
+     "tag_id": "urn:tag:ambience:qloo:quiet",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:quiet"
+    },
+    {
+     "name": "Culinary arts",
+     "tag_id": "urn:tag:interests:qloo:culinary_arts",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:culinary_arts"
+    },
+    {
+     "name": "Village street view",
+     "tag_id": "urn:tag:view:qloo:village_street_view",
+     "type": "urn:tag:view:qloo",
+     "value": "urn:tag:view:qloo:village_street_view"
+    },
+    {
+     "name": "Morning",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:morning",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:morning"
+    },
+    {
+     "name": "Relaxing",
+     "tag_id": "urn:tag:ambience:qloo:relaxing",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:relaxing"
+    },
+    {
+     "name": "Tourists",
+     "tag_id": "urn:tag:customer_identity:qloo:tourists",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:tourists"
+    },
+    {
+     "name": "Mousse de fromage de chevre",
+     "tag_id": "urn:tag:menu_highlight:qloo:mousse_de_fromage_de_chevre",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:mousse_de_fromage_de_chevre"
+    },
+    {
+     "name": "Refined",
+     "tag_id": "urn:tag:culinary_style:qloo:refined",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:refined"
+    },
+    {
+     "name": "Delivery",
+     "tag_id": "urn:tag:service_type:qloo:delivery",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:delivery"
+    },
+    {
+     "name": "Halal",
+     "tag_id": "urn:tag:dietary_option:qloo:halal",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:halal"
+    },
+    {
+     "name": "Foodies",
+     "tag_id": "urn:tag:customer_identity:qloo:foodies",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:foodies"
+    },
+    {
+     "name": "Private events",
+     "tag_id": "urn:tag:service_type:qloo:private_events",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:private_events"
+    },
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_type:qloo:dine_in",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:dine_in"
+    },
+    {
+     "name": "Afternoon",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:afternoon",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:afternoon"
+    },
+    {
+     "name": "Luberon regional park",
+     "tag_id": "urn:tag:nearby_attraction:qloo:luberon_regional_park",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:luberon_regional_park"
+    },
+    {
+     "name": "Coffee",
+     "tag_id": "urn:tag:offerings:place:coffee",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:coffee"
+    },
+    {
+     "name": "Boutique",
+     "tag_id": "urn:tag:setting:qloo:boutique",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:boutique"
+    },
+    {
+     "name": "Boutique",
+     "tag_id": "urn:tag:decor:qloo:boutique",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:boutique"
+    },
+    {
+     "name": "Mediterranean",
+     "tag_id": "urn:tag:cuisine:qloo:mediterranean",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:mediterranean"
+    },
+    {
+     "name": "Dessert",
+     "tag_id": "urn:tag:dining_options:place:dessert",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:dessert"
+    },
+    {
+     "name": "Debit cards",
+     "tag_id": "urn:tag:payments:place:debit_cards",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:debit_cards"
+    },
+    {
+     "name": "Seating",
+     "tag_id": "urn:tag:dining_options:place:seating",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:seating"
+    },
+    {
+     "name": "Artisanal",
+     "tag_id": "urn:tag:culinary_style:qloo:artisanal",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:artisanal"
+    },
+    {
+     "name": "Locals",
+     "tag_id": "urn:tag:customer_identity:qloo:locals",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:locals"
+    },
+    {
+     "name": "Couples",
+     "tag_id": "urn:tag:customer_identity:qloo:couples",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:couples"
+    },
+    {
+     "name": "Reservations required",
+     "tag_id": "urn:tag:planning:place:reservations_required",
+     "type": "urn:tag:planning:place",
+     "value": "urn:tag:planning:place:reservations_required"
+    },
+    {
+     "name": "Credit cards",
+     "tag_id": "urn:tag:payments:place:credit_cards",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:credit_cards"
+    },
+    {
+     "name": "Wine enthusiasts",
+     "tag_id": "urn:tag:customer_identity:qloo:wine_enthusiasts",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:wine_enthusiasts"
+    },
+    {
+     "name": "Place",
+     "tag_id": "urn:tag:genre:place",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place"
+    },
+    {
+     "name": "Scenic",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:scenic",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:scenic"
+    },
+    {
+     "name": "Rustic",
+     "tag_id": "urn:tag:decor:qloo:rustic",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:rustic"
+    },
+    {
+     "name": "Mediterranean restaurant",
+     "tag_id": "urn:tag:category:place:mediterranean_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:mediterranean_restaurant"
+    },
+    {
+     "name": "Vegetarian",
+     "tag_id": "urn:tag:dietary_option:qloo:vegetarian",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:vegetarian"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_type:qloo:outdoor_seating",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:outdoor_seating"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_options:place:takeout",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:takeout"
+    },
+    {
+     "name": "Parking",
+     "tag_id": "urn:tag:parking:place:parking",
+     "type": "urn:tag:parking:place",
+     "value": "urn:tag:parking:place:parking"
+    },
+    {
+     "name": "Historic",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:historic",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:historic"
+    },
+    {
+     "name": "Vegetarian meals",
+     "tag_id": "urn:tag:offerings:place:vegetarian_options",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:vegetarian_options"
+    }
+   ]
+  },
+  {
+   "name": "Matcha Mylkbar.",
+   "entity_id": "C341DB1F-61F9-4BA8-8586-9CE17055241A",
+   "types": [
+    "urn:entity:place"
+   ],
+   "properties": {
+    "akas": [
+     {
+      "language": "",
+      "value": "Matcha Mylkbar., 72A Acland St St Kilda VIC 3182 Australia"
+     }
+    ],
+    "address": "72A Acland St St Kilda VIC 3182 Australia",
+    "business_rating": 3.9,
+    "description": "Matcha-focused cafe and breakfast spot in St Kilda offering organic, vegetarian, and gluten-free dishes, specialty matcha drinks, cocktails and locally sourced ingredients.",
+    "external": {
+     "google_place": {
+      "id": "42be4fa238887ae2",
+      "place_id": "ChIJuRUFiGZo1moR4nqIOKJPvkI"
+     }
+    },
+    "geocode": {
+     "name": "St Kilda",
+     "city": "City of Port Phillip",
+     "admin1_region": "Victoria",
+     "admin2_region": "City of Port Phillip",
+     "country_code": "AU",
+     "country": "Australia",
+     "metro": "Melbourne"
+    },
+    "hours": {},
+    "image": {
+     "url": "https://images.qloo.com/i/C341DB1F-61F9-4BA8-8586-9CE17055241A-420x-auto.jpg"
+    },
+    "is_closed": true,
+    "neighborhood": "St Kilda",
+    "phone": "+61395341111",
+    "price_level": 2,
+    "price_range": {
+     "currency": "usd"
+    },
+    "website": "https://matcha-mylkbar.square.site/",
+    "primary_genre": {
+     "id": "urn:tag:genre:place:restaurant:cafe",
+     "name": "Cafe",
+     "type": "urn:tag:genre:place",
+     "akas": [
+      {
+       "language": "te",
+       "value": "\"\u0c15\u0c47\u0c2b\u0c4d\""
+      },
+      {
+       "language": "uk",
+       "value": "\"\u041a\u0430\u0444\u0435\""
+      },
+      {
+       "language": "mk",
+       "value": "\"\u041a\u0430\u0444\u0435\""
+      },
+      {
+       "language": "kk",
+       "value": "\"\u041a\u0430\u0444\u0435\""
+      },
+      {
+       "language": "ru",
+       "value": "\"\u041a\u0430\u0444\u0435\""
+      },
+      {
+       "language": "pl",
+       "value": "\"Kawiarnia\""
+      },
+      {
+       "language": "tl",
+       "value": "\"Kapehan\""
+      },
+      {
+       "language": "ka",
+       "value": "\"\u10d9\u10d0\u10e4\u10d4\""
+      },
+      {
+       "language": "bg",
+       "value": "\"\u041a\u0430\u0444\u0435\u043d\u0435\""
+      },
+      {
+       "language": "ta",
+       "value": "\"\u0b9a\u0bbf\u0bb1\u0bcd\u0bb1\u0bc1\u0ba3\u0bcd\u0b9f\u0bbf\u0b9a\u0bcd\u0b9a\u0bbe\u0bb2\u0bc8\""
+      },
+      {
+       "language": "vi",
+       "value": "\"Qu\u00e1n c\u00e0 ph\u00ea\""
+      },
+      {
+       "language": "el",
+       "value": "\"\u039a\u03b1\u03c6\u03b5\u03c4\u03ad\u03c1\u03b9\u03b1\""
+      },
+      {
+       "language": "et",
+       "value": "\"Kohvik\""
+      },
+      {
+       "language": "ja",
+       "value": "\"\u30ab\u30d5\u30a7\""
+      },
+      {
+       "language": "lv",
+       "value": "\"Kafejn\u012bca\""
+      },
+      {
+       "language": "ar",
+       "value": "\"\u0645\u0642\u0647\u0649\""
+      },
+      {
+       "language": "pt",
+       "value": "\"Cafeteria\""
+      },
+      {
+       "language": "ca",
+       "value": "\"Cafeteria\""
+      },
+      {
+       "language": "eu",
+       "value": "\"Kafetegia\""
+      },
+      {
+       "language": "zh_tw",
+       "value": "\"\u5496\u5561\u5ef3\""
+      },
+      {
+       "language": "lt",
+       "value": "\"Kavin\u0117\""
+      },
+      {
+       "language": "en_gb",
+       "value": "\"Cafe\""
+      },
+      {
+       "language": "hr",
+       "value": "\"Kafi\u0107\""
+      },
+      {
+       "language": "bs",
+       "value": "\"Kafi\u0107\""
+      },
+      {
+       "language": "sk",
+       "value": "\"Kaviare\u0148\""
+      },
+      {
+       "language": "ko",
+       "value": "\"\uce74\ud398\""
+      },
+      {
+       "language": "hi",
+       "value": "\"\u0915\u0948\u092b\u0947\""
+      },
+      {
+       "language": "cs",
+       "value": "\"Kav\u00e1rna\""
+      },
+      {
+       "language": "bn",
+       "value": "\"\u0995\u09cd\u09af\u09be\u09ab\u09c7\""
+      },
+      {
+       "language": "sr",
+       "value": "\"\u041a\u0430\u0444\u0438\u045b\""
+      },
+      {
+       "language": "fi",
+       "value": "\"Kahvila\""
+      },
+      {
+       "language": "lo",
+       "value": "\"\u0eae\u0ec9\u0eb2\u0e99\u0e81\u0eb2\u0ec0\u0e9f\""
+      },
+      {
+       "language": "hu",
+       "value": "\"K\u00e1v\u00e9z\u00f3\""
+      },
+      {
+       "language": "sl",
+       "value": "\"Kavarna\""
+      },
+      {
+       "language": "km",
+       "value": "\"\u17a0\u17b6\u1784\u1780\u17b6\u17a0\u17d2\u179c\u17c1\""
+      },
+      {
+       "language": "my",
+       "value": "\"\u1000\u1031\u102c\u103a\u1016\u102e\u1006\u102d\u102f\u1004\u103a\""
+      },
+      {
+       "language": "nb",
+       "value": "\"Kaf\u00e9\""
+      },
+      {
+       "language": "sw",
+       "value": "\"Kaf\u00e9\""
+      },
+      {
+       "language": "sv",
+       "value": "\"Kaf\u00e9\""
+      },
+      {
+       "language": "af",
+       "value": "\"Kafee\""
+      },
+      {
+       "language": "he",
+       "value": "\"\u05d1\u05d9\u05ea \u05e7\u05e4\u05d4\""
+      },
+      {
+       "language": "th",
+       "value": "\"\u0e04\u0e32\u0e40\u0e1f\u0e48\""
+      },
+      {
+       "language": "id",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "az",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "sq",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "ms",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "tr",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "fr",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "gl",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "pt",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "da",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "nl",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "de",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "fr_ca",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "pt_pt",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "ro",
+       "value": "\"Cafenea\""
+      },
+      {
+       "language": "es_ar",
+       "value": "\"Cafeter\u00eda\""
+      },
+      {
+       "language": "es",
+       "value": "\"Cafeter\u00eda\""
+      },
+      {
+       "language": "es_la",
+       "value": "\"Cafeter\u00eda\""
+      },
+      {
+       "language": "zh",
+       "value": "\"\u5496\u5561\u9986\""
+      },
+      {
+       "language": "it",
+       "value": "\"Caffetteria\""
+      }
+     ]
+    }
+   },
+   "popularity": 0.9954498363917252,
+   "disambiguation": "72A Acland St St Kilda VIC 3182 Australia",
+   "location": {
+    "lat": -37.866878299999996,
+    "lon": 144.9784334
+   },
+   "tags": [
+    {
+     "name": "Vegetarian meals",
+     "tag_id": "urn:tag:offerings:place:vegetarian_options",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:vegetarian_options"
+    },
+    {
+     "name": "Holistic wellness",
+     "tag_id": "urn:tag:interests:qloo:holistic_wellness",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:holistic_wellness"
+    },
+    {
+     "name": "Afternoon",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:afternoon",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:afternoon"
+    },
+    {
+     "name": "Delivery service",
+     "tag_id": "urn:tag:amenity:qloo:delivery_service",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:delivery_service"
+    },
+    {
+     "name": "Bustling",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:bustling",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:bustling"
+    },
+    {
+     "name": "Hot tea",
+     "tag_id": "urn:tag:offerings:place:hot_tea",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:hot_tea"
+    },
+    {
+     "name": "Sustainable",
+     "tag_id": "urn:tag:culinary_style:qloo:sustainable",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:sustainable"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_options:place:outdoor_seating",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:outdoor_seating"
+    },
+    {
+     "name": "Vegans",
+     "tag_id": "urn:tag:customer_identity:qloo:vegans",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:vegans"
+    },
+    {
+     "name": "Morning",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:morning",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:morning"
+    },
+    {
+     "name": "Breakfast",
+     "tag_id": "urn:tag:dining_options:place:breakfast",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:breakfast"
+    },
+    {
+     "name": "Mixology",
+     "tag_id": "urn:tag:interests:qloo:mixology",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:mixology"
+    },
+    {
+     "name": "Order ahead",
+     "tag_id": "urn:tag:dining_options:place:order_ahead",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:order_ahead"
+    },
+    {
+     "name": "Full bar",
+     "tag_id": "urn:tag:amenity:qloo:full_bar",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:full_bar"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:category:place:cafe",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:cafe"
+    },
+    {
+     "name": "Moderate",
+     "tag_id": "urn:tag:noise_level:qloo:moderate",
+     "type": "urn:tag:noise_level:qloo",
+     "value": "urn:tag:noise_level:qloo:moderate"
+    },
+    {
+     "name": "Cash only",
+     "tag_id": "urn:tag:payments:place:cash_only",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:cash_only"
+    },
+    {
+     "name": "Place",
+     "tag_id": "urn:tag:genre:place",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place"
+    },
+    {
+     "name": "Moderately expensive",
+     "tag_id": "urn:tag:cost_description:place:moderately_expensive",
+     "type": "urn:tag:cost_description:place",
+     "value": "urn:tag:cost_description:place:moderately_expensive"
+    },
+    {
+     "name": "Vegan breakfast bowls",
+     "tag_id": "urn:tag:menu_highlight:qloo:vegan_breakfast_bowls",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:vegan_breakfast_bowls"
+    },
+    {
+     "name": "Chic",
+     "tag_id": "urn:tag:decor:qloo:chic",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:chic"
+    },
+    {
+     "name": "Plant based nutrition",
+     "tag_id": "urn:tag:interests:qloo:plant_based_nutrition",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:plant_based_nutrition"
+    },
+    {
+     "name": "Breakfast restaurant",
+     "tag_id": "urn:tag:category:place:breakfast_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:breakfast_restaurant"
+    },
+    {
+     "name": "18 24",
+     "tag_id": "urn:tag:age_range:qloo:18_24",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:18_24"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:culinary_style:qloo:cafe",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:cafe"
+    },
+    {
+     "name": "Energetic",
+     "tag_id": "urn:tag:ambience:qloo:energetic",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:energetic"
+    },
+    {
+     "name": "St kilda beach",
+     "tag_id": "urn:tag:nearby_attraction:qloo:st_kilda_beach",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:st_kilda_beach"
+    },
+    {
+     "name": "Organic plant based dishes",
+     "tag_id": "urn:tag:menu_highlight:qloo:organic_plant_based_dishes",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:organic_plant_based_dishes"
+    },
+    {
+     "name": "Stylish",
+     "tag_id": "urn:tag:ambience:qloo:stylish",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:stylish"
+    },
+    {
+     "name": "Sustainable living",
+     "tag_id": "urn:tag:interests:qloo:sustainable_living",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:sustainable_living"
+    },
+    {
+     "name": "Dining drinking",
+     "tag_id": "urn:tag:activity_type:qloo:dining_drinking",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:dining_drinking"
+    },
+    {
+     "name": "Takeout service",
+     "tag_id": "urn:tag:amenity:qloo:takeout_service",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:takeout_service"
+    },
+    {
+     "name": "Local ingredients",
+     "tag_id": "urn:tag:offerings:place:local_ingredients",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:local_ingredients"
+    },
+    {
+     "name": "Specialty coffee",
+     "tag_id": "urn:tag:interests:qloo:specialty_coffee",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:specialty_coffee"
+    },
+    {
+     "name": "Catering",
+     "tag_id": "urn:tag:dining_options:place:catering",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:catering"
+    },
+    {
+     "name": "Gluten free options",
+     "tag_id": "urn:tag:offerings:place:gluten_free_options",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:gluten_free_options"
+    },
+    {
+     "name": "Brunching",
+     "tag_id": "urn:tag:activity_type:qloo:brunching",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:brunching"
+    },
+    {
+     "name": "Health conscious",
+     "tag_id": "urn:tag:customer_identity:qloo:health_conscious",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:health_conscious"
+    },
+    {
+     "name": "Vegan",
+     "tag_id": "urn:tag:dietary_option:qloo:vegan",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:vegan"
+    },
+    {
+     "name": "Ok to order just drinks",
+     "tag_id": "urn:tag:offerings:place:ok_to_order_just_drinks",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:ok_to_order_just_drinks"
+    },
+    {
+     "name": "Welcoming",
+     "tag_id": "urn:tag:ambience:qloo:welcoming",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:welcoming"
+    },
+    {
+     "name": "Plant based",
+     "tag_id": "urn:tag:cuisine:qloo:plant_based",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:plant_based"
+    },
+    {
+     "name": "Dessert",
+     "tag_id": "urn:tag:dining_options:place:dessert",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:dessert"
+    },
+    {
+     "name": "Delivery",
+     "tag_id": "urn:tag:service_type:qloo:delivery",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:delivery"
+    },
+    {
+     "name": "Hard liquor",
+     "tag_id": "urn:tag:offerings:place:hard_liquor",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:hard_liquor"
+    },
+    {
+     "name": "Destination",
+     "tag_id": "urn:tag:visit_intent:qloo:destination",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:destination"
+    },
+    {
+     "name": "Vegetarian",
+     "tag_id": "urn:tag:dietary_option:qloo:vegetarian",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:vegetarian"
+    },
+    {
+     "name": "Plant based",
+     "tag_id": "urn:tag:dietary_option:qloo:plant_based",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:plant_based"
+    },
+    {
+     "name": "Walkable",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:walkable"
+    },
+    {
+     "name": "Vegetarians",
+     "tag_id": "urn:tag:customer_identity:qloo:vegetarians",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:vegetarians"
+    },
+    {
+     "name": "Dinner",
+     "tag_id": "urn:tag:dining_options:place:dinner",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:dinner"
+    },
+    {
+     "name": "Cocktails",
+     "tag_id": "urn:tag:beverage_offering:qloo:cocktails",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:cocktails"
+    },
+    {
+     "name": "Streetscape",
+     "tag_id": "urn:tag:view:qloo:streetscape",
+     "type": "urn:tag:view:qloo",
+     "value": "urn:tag:view:qloo:streetscape"
+    },
+    {
+     "name": "Organic dishes",
+     "tag_id": "urn:tag:offerings:place:organic_dishes",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:organic_dishes"
+    },
+    {
+     "name": "Spirits",
+     "tag_id": "urn:tag:beverage_offering:qloo:spirits",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:spirits"
+    },
+    {
+     "name": "Asian",
+     "tag_id": "urn:tag:cuisine:qloo:asian",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:asian"
+    },
+    {
+     "name": "Price level",
+     "tag_id": "urn:tag:payments:place:price_level",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:price_level"
+    },
+    {
+     "name": "Ok to order just coffee",
+     "tag_id": "urn:tag:offerings:place:ok_to_order_just_coffee",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:ok_to_order_just_coffee"
+    },
+    {
+     "name": "Trendy",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:trendy"
+    },
+    {
+     "name": "Beer",
+     "tag_id": "urn:tag:offerings:place:beer",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:beer"
+    },
+    {
+     "name": "Locals",
+     "tag_id": "urn:tag:customer_identity:qloo:locals",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:locals"
+    },
+    {
+     "name": "Urban",
+     "tag_id": "urn:tag:setting:qloo:urban",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:urban"
+    },
+    {
+     "name": "Kids menu",
+     "tag_id": "urn:tag:children:place:kids_menu",
+     "type": "urn:tag:children:place",
+     "value": "urn:tag:children:place:kids_menu"
+    },
+    {
+     "name": "Seating",
+     "tag_id": "urn:tag:dining_options:place:seating",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:seating"
+    },
+    {
+     "name": "Brunch",
+     "tag_id": "urn:tag:dining_options:place:brunch",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:brunch"
+    },
+    {
+     "name": "Acland street shops",
+     "tag_id": "urn:tag:nearby_attraction:qloo:acland_street_shops",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:acland_street_shops"
+    },
+    {
+     "name": "Farm to table",
+     "tag_id": "urn:tag:culinary_style:qloo:farm_to_table",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:farm_to_table"
+    },
+    {
+     "name": "Gluten free",
+     "tag_id": "urn:tag:dietary_option:qloo:gluten_free",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:gluten_free"
+    },
+    {
+     "name": "Lunch",
+     "tag_id": "urn:tag:dining_options:place:lunch",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:lunch"
+    },
+    {
+     "name": "American",
+     "tag_id": "urn:tag:cuisine:qloo:american",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:american"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_type:qloo:takeout",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:takeout"
+    },
+    {
+     "name": "Modern",
+     "tag_id": "urn:tag:ambience:qloo:modern",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:modern"
+    },
+    {
+     "name": "Coffee and tea",
+     "tag_id": "urn:tag:beverage_offering:qloo:coffee_and_tea",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:coffee_and_tea"
+    },
+    {
+     "name": "City center",
+     "tag_id": "urn:tag:setting:qloo:city_center",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:city_center"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:amenity:qloo:outdoor_seating",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:outdoor_seating"
+    },
+    {
+     "name": "Organic",
+     "tag_id": "urn:tag:dietary_option:qloo:organic",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:organic"
+    },
+    {
+     "name": "Restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_type:qloo:outdoor_seating",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:outdoor_seating"
+    },
+    {
+     "name": "Delivery",
+     "tag_id": "urn:tag:service_options:place:delivery",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:delivery"
+    },
+    {
+     "name": "Bright",
+     "tag_id": "urn:tag:ambience:qloo:bright",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:bright"
+    },
+    {
+     "name": "Convenience stop",
+     "tag_id": "urn:tag:visit_intent:qloo:convenience_stop",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:convenience_stop"
+    },
+    {
+     "name": "Vibrant",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:vibrant",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:vibrant"
+    },
+    {
+     "name": "Alcohol",
+     "tag_id": "urn:tag:offerings:place:alcohol",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:alcohol"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:ambience:qloo:casual",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:casual"
+    },
+    {
+     "name": "Luna park",
+     "tag_id": "urn:tag:nearby_attraction:qloo:luna_park",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:luna_park"
+    },
+    {
+     "name": "St kilda botanical gardens",
+     "tag_id": "urn:tag:nearby_attraction:qloo:st_kilda_botanical_gardens",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:st_kilda_botanical_gardens"
+    },
+    {
+     "name": "Cocktails",
+     "tag_id": "urn:tag:offerings:place:cocktails",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:cocktails"
+    },
+    {
+     "name": "Plant forward",
+     "tag_id": "urn:tag:ambience:qloo:plant_forward",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:plant_forward"
+    },
+    {
+     "name": "Wheelchair accessible entrance",
+     "tag_id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+     "type": "urn:tag:accessibility:place",
+     "value": "urn:tag:accessibility:place:wheelchair_accessible_entrance"
+    },
+    {
+     "name": "Minimalist",
+     "tag_id": "urn:tag:decor:qloo:minimalist",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:minimalist"
+    },
+    {
+     "name": "Table service",
+     "tag_id": "urn:tag:dining_options:place:table_service",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:table_service"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:genre:place:restaurant:cafe",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:cafe"
+    },
+    {
+     "name": "Street level",
+     "tag_id": "urn:tag:setting:qloo:street_level",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:street_level"
+    },
+    {
+     "name": "Wine",
+     "tag_id": "urn:tag:offerings:place:wine",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:wine"
+    },
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_type:qloo:dine_in",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:dine_in"
+    },
+    {
+     "name": "Beer",
+     "tag_id": "urn:tag:beverage_offering:qloo:beer",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:beer"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_options:place:takeout",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:takeout"
+    },
+    {
+     "name": "Botanical aesthetic",
+     "tag_id": "urn:tag:decor:qloo:botanical_aesthetic",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:botanical_aesthetic"
+    },
+    {
+     "name": "Matcha latte",
+     "tag_id": "urn:tag:menu_highlight:qloo:matcha_latte",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:matcha_latte"
+    },
+    {
+     "name": "Debit cards",
+     "tag_id": "urn:tag:payments:place:debit_cards",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:debit_cards"
+    },
+    {
+     "name": "Wine",
+     "tag_id": "urn:tag:beverage_offering:qloo:wine",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:wine"
+    },
+    {
+     "name": "Coastal",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:coastal",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:coastal"
+    },
+    {
+     "name": "Nfc mobile payments",
+     "tag_id": "urn:tag:payments:place:nfc_mobile_payments",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:nfc_mobile_payments"
+    },
+    {
+     "name": "Midday",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:midday",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:midday"
+    },
+    {
+     "name": "Breakfast",
+     "tag_id": "urn:tag:genre:place:restaurant:breakfast",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:breakfast"
+    },
+    {
+     "name": "Modern",
+     "tag_id": "urn:tag:decor:qloo:modern",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:modern"
+    },
+    {
+     "name": "30 34",
+     "tag_id": "urn:tag:age_range:qloo:30_34",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:30_34"
+    },
+    {
+     "name": "Foodies",
+     "tag_id": "urn:tag:customer_identity:qloo:foodies",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:foodies"
+    },
+    {
+     "name": "Restroom",
+     "tag_id": "urn:tag:amenities:place:restroom",
+     "type": "urn:tag:amenities:place",
+     "value": "urn:tag:amenities:place:restroom"
+    },
+    {
+     "name": "Coffee",
+     "tag_id": "urn:tag:offerings:place:coffee",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:coffee"
+    },
+    {
+     "name": "25 29",
+     "tag_id": "urn:tag:age_range:qloo:25_29",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:25_29"
+    }
+   ]
+  },
+  {
+   "name": "MATCHA CABINET",
+   "entity_id": "093995EF-4C34-45B1-83F3-F40B91C018A0",
+   "types": [
+    "urn:entity:place"
+   ],
+   "properties": {
+    "akas": [
+     {
+      "language": "",
+      "value": "MATCHA CABINET, 4 2 Hussadhisawee Soi 4 Si Phum, Mueang Chiang Mai District Chiang Mai 50200, Thailand"
+     }
+    ],
+    "address": "4 2 Hussadhisawee Soi 4 Si Phum, Mueang Chiang Mai District Chiang Mai 50200, Thailand",
+    "business_rating": 4.6,
+    "description": "Small Si Phum caf\u00e9 offering specialty coffee, outdoor seating, and simple dine-in and takeout service.",
+    "external": {
+     "google_place": {
+      "id": "bbd4bbdbed04dae6",
+      "place_id": "ChIJ1XPHBdc72jAR5toE7du71Ls"
+     }
+    },
+    "geocode": {
+     "city": "Chiang Mai City Municipality",
+     "admin1_region": "Chiang Mai Province",
+     "country_code": "TH",
+     "country": "Thailand"
+    },
+    "hours": {
+     "sunday": [
+      {
+       "closed": false,
+       "opens": "T09:00:00",
+       "closes": "T17:00:00"
+      }
+     ],
+     "monday": [
+      {
+       "closed": false,
+       "opens": "T09:00:00",
+       "closes": "T17:00:00"
+      }
+     ],
+     "tuesday": [
+      {
+       "closed": false,
+       "opens": "T09:00:00",
+       "closes": "T17:00:00"
+      }
+     ],
+     "wednesday": [
+      {
+       "closed": false,
+       "opens": "T09:00:00",
+       "closes": "T17:00:00"
+      }
+     ],
+     "thursday": [
+      {
+       "closed": false,
+       "opens": "T09:00:00",
+       "closes": "T17:00:00"
+      }
+     ],
+     "friday": [
+      {
+       "closed": false,
+       "opens": "T09:00:00",
+       "closes": "T17:00:00"
+      }
+     ],
+     "saturday": [
+      {
+       "closed": false,
+       "opens": "T09:00:00",
+       "closes": "T17:00:00"
+      }
+     ]
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/093995EF-4C34-45B1-83F3-F40B91C018A0-420x-auto.jpg"
+    },
+    "is_closed": false,
+    "phone": "+66654619744",
+    "price_range": {
+     "currency": "usd"
+    },
+    "website": "https://www.instagram.com/matcha_cabinet?igsh=bmczcmt2djY5ZnY2",
+    "primary_genre": {
+     "id": "urn:tag:genre:place:restaurant:japanese_sweets",
+     "name": "Japanese sweets restaurant",
+     "type": "urn:tag:genre:place",
+     "akas": [
+      {
+       "language": "cs",
+       "value": "\"Restaurace s japonsk\u00fdmi sladkostmi\""
+      },
+      {
+       "language": "km",
+       "value": "\"\u1797\u17c4\u1787\u1793\u17b8\u1799\u178a\u17d2\u178b\u17b6\u1793\u1794\u1784\u17d2\u17a2\u17c2\u1798\u1787\u1794\u17c9\u17bb\u1793\""
+      },
+      {
+       "language": "zh_tw",
+       "value": "\"\u65e5\u5f0f\u751c\u9ede\u9910\u5ef3\""
+      },
+      {
+       "language": "uk",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d \u044f\u043f\u043e\u043d\u0441\u044c\u043a\u0438\u0445 \u0441\u043e\u043b\u043e\u0434\u043e\u0449\u0456\u0432\""
+      },
+      {
+       "language": "de",
+       "value": "\"Japanisches S\u00fc\u00dfwarenrestaurant\""
+      },
+      {
+       "language": "kk",
+       "value": "\"\u0416\u0430\u043f\u043e\u043d \u0442\u04d9\u0442\u0442\u0456\u043b\u0435\u0440\u0456 \u043c\u0435\u0439\u0440\u0430\u043c\u0445\u0430\u043d\u0430\u0441\u044b\""
+      },
+      {
+       "language": "hr",
+       "value": "\"Restoran japanskih slastica\""
+      },
+      {
+       "language": "sv",
+       "value": "\"Japansk godisrestaurang\""
+      },
+      {
+       "language": "az",
+       "value": "\"Yapon \u015firniyyat evi\""
+      },
+      {
+       "language": "pl",
+       "value": "\"Restauracja z japo\u0144skimi s\u0142odyczami\""
+      },
+      {
+       "language": "te",
+       "value": "\"\u0c1c\u0c2a\u0c28\u0c40\u0c38\u0c4d \u0c38\u0c4d\u0c35\u0c40\u0c1f\u0c4d\u0c32 \u0c30\u0c46\u0c38\u0c4d\u0c1f\u0c3e\u0c30\u0c46\u0c02\u0c1f\u0c4d\""
+      },
+      {
+       "language": "sw",
+       "value": "\"Mgahawa wa vitu vitamu vya Kijapani\""
+      },
+      {
+       "language": "fr",
+       "value": "\"P\u00e2tisserie japonaise\""
+      },
+      {
+       "language": "nl",
+       "value": "\"Japans snoeprestaurant\""
+      },
+      {
+       "language": "vi",
+       "value": "\"Nh\u00e0 h\u00e0ng \u0111\u1ed3 ng\u1ecdt Nh\u1eadt B\u1ea3n\""
+      },
+      {
+       "language": "ms",
+       "value": "\"Restoran manisan Jepun\""
+      },
+      {
+       "language": "mk",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d \u0437\u0430 \u0458\u0430\u043f\u043e\u043d\u0441\u043a\u0438 \u0441\u043b\u0430\u0442\u043a\u0438\""
+      },
+      {
+       "language": "he",
+       "value": "\"\u05de\u05e1\u05e2\u05d3\u05ea \u05de\u05de\u05ea\u05e7\u05d9\u05dd \u05d9\u05e4\u05e0\u05d9\u05ea\""
+      },
+      {
+       "language": "lt",
+       "value": "\"Japoni\u0161k\u0173 saldumyn\u0173 restoranas\""
+      },
+      {
+       "language": "th",
+       "value": "\"\u0e23\u0e49\u0e32\u0e19\u0e02\u0e19\u0e21\u0e0d\u0e35\u0e48\u0e1b\u0e38\u0e48\u0e19\""
+      },
+      {
+       "language": "sr",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d \u0458\u0430\u043f\u0430\u043d\u0441\u043a\u0438\u0445 \u0441\u043b\u0430\u0442\u043a\u0438\u0448\u0430\""
+      },
+      {
+       "language": "lo",
+       "value": "\"\u0eae\u0ec9\u0eb2\u0e99\u0ead\u0eb2\u0eab\u0eb2\u0e99\u0eab\u0ea7\u0eb2\u0e99\u0e8d\u0eb5\u0ec8\u0e9b\u0eb8\u0ec8\u0e99\""
+      },
+      {
+       "language": "ca",
+       "value": "\"Restaurant de dol\u00e7os japonesos\""
+      },
+      {
+       "language": "hi",
+       "value": "\"\u091c\u093e\u092a\u093e\u0928\u0940 \u092e\u093f\u0920\u093e\u0908 \u0930\u0947\u0938\u094d\u0924\u0930\u093e\u0902\""
+      },
+      {
+       "language": "en_gb",
+       "value": "\"Japanese sweets restaurant\""
+      },
+      {
+       "language": "bn",
+       "value": "\"\u099c\u09be\u09aa\u09be\u09a8\u09bf \u09ae\u09bf\u09b7\u09cd\u099f\u09bf\u09b0 \u09a6\u09cb\u0995\u09be\u09a8\""
+      },
+      {
+       "language": "sl",
+       "value": "\"Restavracija z japonskimi sladicami\""
+      },
+      {
+       "language": "nb",
+       "value": "\"Japansk godterirestaurant\""
+      },
+      {
+       "language": "el",
+       "value": "\"\u0395\u03c3\u03c4\u03b9\u03b1\u03c4\u03cc\u03c1\u03b9\u03bf \u03b9\u03b1\u03c0\u03c9\u03bd\u03b9\u03ba\u03ce\u03bd \u03b3\u03bb\u03c5\u03ba\u03ce\u03bd\""
+      },
+      {
+       "language": "es",
+       "value": "\"Restaurante de dulces japoneses\""
+      },
+      {
+       "language": "es_la",
+       "value": "\"Restaurante de dulces japoneses\""
+      },
+      {
+       "language": "es_ar",
+       "value": "\"Restaurante de dulces japoneses\""
+      },
+      {
+       "language": "bg",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d\u0442 \u0437\u0430 \u044f\u043f\u043e\u043d\u0441\u043a\u0438 \u0441\u043b\u0430\u0434\u043a\u0438\u0448\u0438\""
+      },
+      {
+       "language": "tl",
+       "value": "\"Restawran ng mga pagkaing matamis na Hapon\""
+      },
+      {
+       "language": "es",
+       "value": "\"Confiter\u00eda japonesa\""
+      },
+      {
+       "language": "gl",
+       "value": "\"Restaurante de doces xaponeses\""
+      },
+      {
+       "language": "fr_ca",
+       "value": "\"Restaurant de p\u00e2tisseries japonaises\""
+      },
+      {
+       "language": "fr",
+       "value": "\"Restaurant de p\u00e2tisseries japonaises\""
+      },
+      {
+       "language": "ro",
+       "value": "\"Restaurant cu dulciuri japoneze\""
+      },
+      {
+       "language": "sq",
+       "value": "\"Restorant i \u00ebmb\u00eblsirave japoneze\""
+      },
+      {
+       "language": "af",
+       "value": "\"Japannese lekkers-restaurant\""
+      },
+      {
+       "language": "ru",
+       "value": "\"\u0420\u0435\u0441\u0442\u043e\u0440\u0430\u043d \u044f\u043f\u043e\u043d\u0441\u043a\u0438\u0445 \u0441\u043b\u0430\u0434\u043e\u0441\u0442\u0435\u0439\""
+      },
+      {
+       "language": "ko",
+       "value": "\"\uc77c\ubcf8\uc2dd \ub514\uc800\ud2b8 \uc804\ubb38\uc810\""
+      },
+      {
+       "language": "eu",
+       "value": "\"Japoniar gozokien jatetxea\""
+      },
+      {
+       "language": "et",
+       "value": "\"Jaapani maiustuste restoran\""
+      },
+      {
+       "language": "ka",
+       "value": "\"\u10d8\u10d0\u10de\u10dd\u10dc\u10e3\u10e0\u10d8 \u10e2\u10d9\u10d1\u10d8\u10da\u10d4\u10e3\u10da\u10d8\u10e1 \u10e0\u10d4\u10e1\u10e2\u10dd\u10e0\u10d0\u10dc\u10d8\""
+      },
+      {
+       "language": "bs",
+       "value": "\"Restoran japanskih slatki\u0161a\""
+      },
+      {
+       "language": "lv",
+       "value": "\"Jap\u0101\u0146u saldumu restor\u0101ns\""
+      },
+      {
+       "language": "pt",
+       "value": "\"Confeitaria japonesa\""
+      },
+      {
+       "language": "da",
+       "value": "\"Japansk slikrestaurant\""
+      },
+      {
+       "language": "my",
+       "value": "\"\u1002\u103b\u1015\u1014\u103a\u1019\u102f\u1014\u1037\u103a\u1006\u102d\u102f\u1004\u103a\""
+      },
+      {
+       "language": "ar",
+       "value": "\"\u0645\u0637\u0639\u0645 \u062d\u0644\u0648\u064a\u0627\u062a \u064a\u0627\u0628\u0627\u0646\u064a\u0629\""
+      },
+      {
+       "language": "hu",
+       "value": "\"Jap\u00e1n \u00e9dess\u00e9g\u00e9tterem\""
+      },
+      {
+       "language": "ja",
+       "value": "\"\u548c\u83d3\u5b50\u5e97\""
+      },
+      {
+       "language": "pt",
+       "value": "\"Restaurante de doces japoneses\""
+      },
+      {
+       "language": "pt_pt",
+       "value": "\"Restaurante de doces japoneses\""
+      },
+      {
+       "language": "it",
+       "value": "\"Ristorante di dolci giapponesi\""
+      },
+      {
+       "language": "de",
+       "value": "\"Japanische Konditorei\""
+      },
+      {
+       "language": "zh",
+       "value": "\"\u65e5\u5f0f\u751c\u54c1\u5e97\""
+      },
+      {
+       "language": "id",
+       "value": "\"Restoran manisan Jepang\""
+      },
+      {
+       "language": "fi",
+       "value": "\"Japanilainen makeisravintola\""
+      },
+      {
+       "language": "sk",
+       "value": "\"Re\u0161taur\u00e1cia s japonsk\u00fdmi sladkos\u0165ami\""
+      },
+      {
+       "language": "ta",
+       "value": "\"\u0b9c\u0baa\u0bcd\u0baa\u0bbe\u0ba9\u0bbf\u0baf \u0b87\u0ba9\u0bbf\u0baa\u0bcd\u0baa\u0bc1 \u0b89\u0ba3\u0bb5\u0b95\u0bae\u0bcd\""
+      },
+      {
+       "language": "tr",
+       "value": "\"Japon tatl\u0131lar\u0131 restoran\u0131\""
+      }
+     ]
+    }
+   },
+   "popularity": 0.9892145577004726,
+   "disambiguation": "4 2 Hussadhisawee Soi 4 Si Phum, Mueang Chiang Mai District Chiang Mai 50200, Thailand",
+   "location": {
+    "lat": 18.7975608,
+    "lon": 98.9793195
+   },
+   "tags": [
+    {
+     "name": "Place",
+     "tag_id": "urn:tag:genre:place",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place"
+    },
+    {
+     "name": "Destination",
+     "tag_id": "urn:tag:visit_intent:qloo:destination",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:destination"
+    },
+    {
+     "name": "Bright",
+     "tag_id": "urn:tag:ambience:qloo:bright",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:bright"
+    },
+    {
+     "name": "Urban",
+     "tag_id": "urn:tag:setting:qloo:urban",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:urban"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:culinary_style:qloo:cafe",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:cafe"
+    },
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_type:qloo:dine_in",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:dine_in"
+    },
+    {
+     "name": "Courtyard view",
+     "tag_id": "urn:tag:view:qloo:courtyard_view",
+     "type": "urn:tag:view:qloo",
+     "value": "urn:tag:view:qloo:courtyard_view"
+    },
+    {
+     "name": "Spacious",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:spacious",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:spacious"
+    },
+    {
+     "name": "Tea house",
+     "tag_id": "urn:tag:category:place:tea_house",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:tea_house"
+    },
+    {
+     "name": "Social community",
+     "tag_id": "urn:tag:activity_type:qloo:social_community",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:social_community"
+    },
+    {
+     "name": "Tropical",
+     "tag_id": "urn:tag:ambience:qloo:tropical",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:tropical"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:ambience:qloo:casual",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:casual"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:amenity:qloo:takeout",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:takeout"
+    },
+    {
+     "name": "Quiet",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:quiet",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:quiet"
+    },
+    {
+     "name": "Tea house",
+     "tag_id": "urn:tag:genre:place:restaurant:tea_house",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:tea_house"
+    },
+    {
+     "name": "Minimalist",
+     "tag_id": "urn:tag:ambience:qloo:minimalist",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:minimalist"
+    },
+    {
+     "name": "Tropical",
+     "tag_id": "urn:tag:decor:qloo:tropical",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:tropical"
+    },
+    {
+     "name": "Airy",
+     "tag_id": "urn:tag:ambience:qloo:airy",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:airy"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:category:place:cafe",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:cafe"
+    },
+    {
+     "name": "Clean",
+     "tag_id": "urn:tag:ambience:qloo:clean",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:clean"
+    },
+    {
+     "name": "30 34",
+     "tag_id": "urn:tag:age_range:qloo:30_34",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:30_34"
+    },
+    {
+     "name": "Convenience stop",
+     "tag_id": "urn:tag:visit_intent:qloo:convenience_stop",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:convenience_stop"
+    },
+    {
+     "name": "Trendy",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:trendy"
+    },
+    {
+     "name": "Morning",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:morning",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:morning"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:amenity:qloo:outdoor_seating",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:outdoor_seating"
+    },
+    {
+     "name": "Creamy minimalist",
+     "tag_id": "urn:tag:decor:qloo:creamy_minimalist",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:creamy_minimalist"
+    },
+    {
+     "name": "Spa complex",
+     "tag_id": "urn:tag:setting:qloo:spa_complex",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:spa_complex"
+    },
+    {
+     "name": "25 29",
+     "tag_id": "urn:tag:age_range:qloo:25_29",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:25_29"
+    },
+    {
+     "name": "Soft drinks",
+     "tag_id": "urn:tag:beverage_offering:qloo:soft_drinks",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:soft_drinks"
+    },
+    {
+     "name": "Japanese sweets restaurant",
+     "tag_id": "urn:tag:category:place:japanese_sweets_restaurant",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:japanese_sweets_restaurant"
+    },
+    {
+     "name": "Locals",
+     "tag_id": "urn:tag:customer_identity:qloo:locals",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:locals"
+    },
+    {
+     "name": "Tourists",
+     "tag_id": "urn:tag:customer_identity:qloo:tourists",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:tourists"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_type:qloo:outdoor_seating",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:outdoor_seating"
+    },
+    {
+     "name": "Modern",
+     "tag_id": "urn:tag:decor:qloo:modern",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:modern"
+    },
+    {
+     "name": "Photography",
+     "tag_id": "urn:tag:interests:qloo:photography",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:photography"
+    },
+    {
+     "name": "Charming",
+     "tag_id": "urn:tag:ambience:qloo:charming",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:charming"
+    },
+    {
+     "name": "Wellness",
+     "tag_id": "urn:tag:interests:qloo:wellness",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:wellness"
+    },
+    {
+     "name": "Dining drinking",
+     "tag_id": "urn:tag:activity_type:qloo:dining_drinking",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:dining_drinking"
+    },
+    {
+     "name": "Quiet",
+     "tag_id": "urn:tag:noise_level:qloo:quiet",
+     "type": "urn:tag:noise_level:qloo",
+     "value": "urn:tag:noise_level:qloo:quiet"
+    },
+    {
+     "name": "Midday",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:midday",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:midday"
+    },
+    {
+     "name": "Central",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:central",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:central"
+    },
+    {
+     "name": "Afternoon",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:afternoon",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:afternoon"
+    },
+    {
+     "name": "Matcha latte",
+     "tag_id": "urn:tag:menu_highlight:qloo:matcha_latte",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:matcha_latte"
+    },
+    {
+     "name": "Foodies",
+     "tag_id": "urn:tag:customer_identity:qloo:foodies",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:foodies"
+    },
+    {
+     "name": "18 24",
+     "tag_id": "urn:tag:age_range:qloo:18_24",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:18_24"
+    },
+    {
+     "name": "Coffee and tea",
+     "tag_id": "urn:tag:beverage_offering:qloo:coffee_and_tea",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:coffee_and_tea"
+    },
+    {
+     "name": "Bakery",
+     "tag_id": "urn:tag:cuisine:qloo:bakery",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:bakery"
+    },
+    {
+     "name": "Stylish",
+     "tag_id": "urn:tag:ambience:qloo:stylish",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:stylish"
+    },
+    {
+     "name": "In full bloom",
+     "tag_id": "urn:tag:menu_highlight:qloo:in_full_bloom",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:in_full_bloom"
+    },
+    {
+     "name": "Minimalist",
+     "tag_id": "urn:tag:decor:qloo:minimalist",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:minimalist"
+    },
+    {
+     "name": "Relaxing",
+     "tag_id": "urn:tag:ambience:qloo:relaxing",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:relaxing"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_type:qloo:takeout",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:takeout"
+    },
+    {
+     "name": "Chocolate cake",
+     "tag_id": "urn:tag:menu_highlight:qloo:chocolate_cake",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:chocolate_cake"
+    },
+    {
+     "name": "Japanese sweets restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant:japanese_sweets",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:japanese_sweets"
+    },
+    {
+     "name": "Specialty coffee",
+     "tag_id": "urn:tag:interests:qloo:specialty_coffee",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:specialty_coffee"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:genre:place:restaurant:cafe",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:cafe"
+    },
+    {
+     "name": "Photography",
+     "tag_id": "urn:tag:activity_type:qloo:photography",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:photography"
+    },
+    {
+     "name": "Interior design",
+     "tag_id": "urn:tag:interests:qloo:interior_design",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:interior_design"
+    },
+    {
+     "name": "Dine in service",
+     "tag_id": "urn:tag:amenity:qloo:dine_in_service",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:dine_in_service"
+    },
+    {
+     "name": "Burnt cheesecake",
+     "tag_id": "urn:tag:menu_highlight:qloo:burnt_cheesecake",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:burnt_cheesecake"
+    },
+    {
+     "name": "Restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant"
+    },
+    {
+     "name": "Lychee soda",
+     "tag_id": "urn:tag:menu_highlight:qloo:lychee_soda",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:lychee_soda"
+    },
+    {
+     "name": "Coffee",
+     "tag_id": "urn:tag:cuisine:qloo:coffee",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:coffee"
+    },
+    {
+     "name": "City center",
+     "tag_id": "urn:tag:setting:qloo:city_center",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:city_center"
+    },
+    {
+     "name": "Modern",
+     "tag_id": "urn:tag:culinary_style:qloo:modern",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:modern"
+    },
+    {
+     "name": "4pm fizzy drink",
+     "tag_id": "urn:tag:menu_highlight:qloo:4pm_fizzy_drink",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:4pm_fizzy_drink"
+    },
+    {
+     "name": "Scenic",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:scenic",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:scenic"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:decor:qloo:casual",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:casual"
+    },
+    {
+     "name": "Cafe hopping",
+     "tag_id": "urn:tag:interests:qloo:cafe_hopping",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:cafe_hopping"
+    },
+    {
+     "name": "Fresh juices",
+     "tag_id": "urn:tag:beverage_offering:qloo:fresh_juices",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:fresh_juices"
+    },
+    {
+     "name": "Cheeva spa",
+     "tag_id": "urn:tag:nearby_attraction:qloo:cheeva_spa",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:cheeva_spa"
+    },
+    {
+     "name": "Quiet",
+     "tag_id": "urn:tag:ambience:qloo:quiet",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:quiet"
+    },
+    {
+     "name": "Stylish",
+     "tag_id": "urn:tag:decor:qloo:stylish",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:stylish"
+    }
+   ]
+  },
+  {
+   "name": "Matcha-Ya",
+   "entity_id": "30B62519-784B-4DEF-B796-C82F8883146E",
+   "types": [
+    "urn:entity:place"
+   ],
+   "properties": {
+    "akas": [
+     {
+      "language": "",
+      "value": "Matcha-Ya, NW.05/10 Steam Mill La Haymarket NSW 2000 Australia"
+     }
+    ],
+    "address": "NW.05/10 Steam Mill La Haymarket NSW 2000 Australia",
+    "business_rating": 4.3,
+    "description": "Authentic Japanese matcha-focused cafe and bar in Darling Square offering seasonal matcha drinks, small plates, vegan options, cocktails and private dining.",
+    "external": {
+     "google_place": {
+      "id": "747b3a72d6e628e2",
+      "place_id": "ChIJzTgrQgWvEmsR4ijm1nI6e3Q"
+     }
+    },
+    "geocode": {
+     "name": "Sydney CBD",
+     "city": "Council of the City of Sydney",
+     "admin1_region": "New South Wales",
+     "admin2_region": "Council of the City of Sydney",
+     "country_code": "AU",
+     "country": "Australia",
+     "metro": "Sydney"
+    },
+    "hours": {
+     "sunday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T21:00:00"
+      }
+     ],
+     "monday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T21:00:00"
+      }
+     ],
+     "tuesday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T21:00:00"
+      }
+     ],
+     "wednesday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T21:00:00"
+      }
+     ],
+     "thursday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T21:00:00"
+      }
+     ],
+     "friday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T22:00:00"
+      }
+     ],
+     "saturday": [
+      {
+       "closed": false,
+       "opens": "T12:00:00",
+       "closes": "T22:00:00"
+      }
+     ]
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/30B62519-784B-4DEF-B796-C82F8883146E-420x-auto.jpg"
+    },
+    "is_closed": false,
+    "neighborhood": "Sydney CBD",
+    "phone": "+61473437631",
+    "price_level": 1,
+    "price_range": {
+     "currency": "usd"
+    },
+    "website": "http://instagram.com/matchaya_sydney",
+    "good_for": [
+     {
+      "id": "urn:tag:children:place:good_kids",
+      "name": "Good for kids",
+      "type": "urn:tag:children:place",
+      "weight": 0.6111111111111112
+     }
+    ],
+    "primary_genre": {
+     "id": "urn:tag:genre:place:restaurant:cafe",
+     "name": "Cafe",
+     "type": "urn:tag:genre:place",
+     "akas": [
+      {
+       "language": "te",
+       "value": "\"\u0c15\u0c47\u0c2b\u0c4d\""
+      },
+      {
+       "language": "uk",
+       "value": "\"\u041a\u0430\u0444\u0435\""
+      },
+      {
+       "language": "mk",
+       "value": "\"\u041a\u0430\u0444\u0435\""
+      },
+      {
+       "language": "kk",
+       "value": "\"\u041a\u0430\u0444\u0435\""
+      },
+      {
+       "language": "ru",
+       "value": "\"\u041a\u0430\u0444\u0435\""
+      },
+      {
+       "language": "pl",
+       "value": "\"Kawiarnia\""
+      },
+      {
+       "language": "tl",
+       "value": "\"Kapehan\""
+      },
+      {
+       "language": "ka",
+       "value": "\"\u10d9\u10d0\u10e4\u10d4\""
+      },
+      {
+       "language": "bg",
+       "value": "\"\u041a\u0430\u0444\u0435\u043d\u0435\""
+      },
+      {
+       "language": "ta",
+       "value": "\"\u0b9a\u0bbf\u0bb1\u0bcd\u0bb1\u0bc1\u0ba3\u0bcd\u0b9f\u0bbf\u0b9a\u0bcd\u0b9a\u0bbe\u0bb2\u0bc8\""
+      },
+      {
+       "language": "vi",
+       "value": "\"Qu\u00e1n c\u00e0 ph\u00ea\""
+      },
+      {
+       "language": "el",
+       "value": "\"\u039a\u03b1\u03c6\u03b5\u03c4\u03ad\u03c1\u03b9\u03b1\""
+      },
+      {
+       "language": "et",
+       "value": "\"Kohvik\""
+      },
+      {
+       "language": "ja",
+       "value": "\"\u30ab\u30d5\u30a7\""
+      },
+      {
+       "language": "lv",
+       "value": "\"Kafejn\u012bca\""
+      },
+      {
+       "language": "ar",
+       "value": "\"\u0645\u0642\u0647\u0649\""
+      },
+      {
+       "language": "pt",
+       "value": "\"Cafeteria\""
+      },
+      {
+       "language": "ca",
+       "value": "\"Cafeteria\""
+      },
+      {
+       "language": "eu",
+       "value": "\"Kafetegia\""
+      },
+      {
+       "language": "zh_tw",
+       "value": "\"\u5496\u5561\u5ef3\""
+      },
+      {
+       "language": "lt",
+       "value": "\"Kavin\u0117\""
+      },
+      {
+       "language": "en_gb",
+       "value": "\"Cafe\""
+      },
+      {
+       "language": "hr",
+       "value": "\"Kafi\u0107\""
+      },
+      {
+       "language": "bs",
+       "value": "\"Kafi\u0107\""
+      },
+      {
+       "language": "sk",
+       "value": "\"Kaviare\u0148\""
+      },
+      {
+       "language": "ko",
+       "value": "\"\uce74\ud398\""
+      },
+      {
+       "language": "hi",
+       "value": "\"\u0915\u0948\u092b\u0947\""
+      },
+      {
+       "language": "cs",
+       "value": "\"Kav\u00e1rna\""
+      },
+      {
+       "language": "bn",
+       "value": "\"\u0995\u09cd\u09af\u09be\u09ab\u09c7\""
+      },
+      {
+       "language": "sr",
+       "value": "\"\u041a\u0430\u0444\u0438\u045b\""
+      },
+      {
+       "language": "fi",
+       "value": "\"Kahvila\""
+      },
+      {
+       "language": "lo",
+       "value": "\"\u0eae\u0ec9\u0eb2\u0e99\u0e81\u0eb2\u0ec0\u0e9f\""
+      },
+      {
+       "language": "hu",
+       "value": "\"K\u00e1v\u00e9z\u00f3\""
+      },
+      {
+       "language": "sl",
+       "value": "\"Kavarna\""
+      },
+      {
+       "language": "km",
+       "value": "\"\u17a0\u17b6\u1784\u1780\u17b6\u17a0\u17d2\u179c\u17c1\""
+      },
+      {
+       "language": "my",
+       "value": "\"\u1000\u1031\u102c\u103a\u1016\u102e\u1006\u102d\u102f\u1004\u103a\""
+      },
+      {
+       "language": "nb",
+       "value": "\"Kaf\u00e9\""
+      },
+      {
+       "language": "sw",
+       "value": "\"Kaf\u00e9\""
+      },
+      {
+       "language": "sv",
+       "value": "\"Kaf\u00e9\""
+      },
+      {
+       "language": "af",
+       "value": "\"Kafee\""
+      },
+      {
+       "language": "he",
+       "value": "\"\u05d1\u05d9\u05ea \u05e7\u05e4\u05d4\""
+      },
+      {
+       "language": "th",
+       "value": "\"\u0e04\u0e32\u0e40\u0e1f\u0e48\""
+      },
+      {
+       "language": "id",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "az",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "sq",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "ms",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "tr",
+       "value": "\"Kafe\""
+      },
+      {
+       "language": "fr",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "gl",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "pt",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "da",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "nl",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "de",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "fr_ca",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "pt_pt",
+       "value": "\"Caf\u00e9\""
+      },
+      {
+       "language": "ro",
+       "value": "\"Cafenea\""
+      },
+      {
+       "language": "es_ar",
+       "value": "\"Cafeter\u00eda\""
+      },
+      {
+       "language": "es",
+       "value": "\"Cafeter\u00eda\""
+      },
+      {
+       "language": "es_la",
+       "value": "\"Cafeter\u00eda\""
+      },
+      {
+       "language": "zh",
+       "value": "\"\u5496\u5561\u9986\""
+      },
+      {
+       "language": "it",
+       "value": "\"Caffetteria\""
+      }
+     ]
+    }
+   },
+   "popularity": 0.9730058419056343,
+   "disambiguation": "NW.05/10 Steam Mill La Haymarket NSW 2000 Australia",
+   "location": {
+    "lat": -33.8782279,
+    "lon": 151.2011763
+   },
+   "tags": [
+    {
+     "name": "Credit cards",
+     "tag_id": "urn:tag:payments:place:credit_cards",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:credit_cards"
+    },
+    {
+     "name": "18 24",
+     "tag_id": "urn:tag:age_range:qloo:18_24",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:18_24"
+    },
+    {
+     "name": "Onsite services",
+     "tag_id": "urn:tag:service_options:place:onsite_services",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:onsite_services"
+    },
+    {
+     "name": "Private dining room",
+     "tag_id": "urn:tag:amenity:qloo:private_dining_room",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:private_dining_room"
+    },
+    {
+     "name": "Hojicha cheesecake",
+     "tag_id": "urn:tag:menu_highlight:qloo:hojicha_cheesecake",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:hojicha_cheesecake"
+    },
+    {
+     "name": "Social community",
+     "tag_id": "urn:tag:activity_type:qloo:social_community",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:social_community"
+    },
+    {
+     "name": "Japanese inspired",
+     "tag_id": "urn:tag:decor:qloo:japanese_inspired",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:japanese_inspired"
+    },
+    {
+     "name": "Destination",
+     "tag_id": "urn:tag:visit_intent:qloo:destination",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:destination"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_type:qloo:takeout",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:takeout"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:genre:place:restaurant:cafe",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:cafe"
+    },
+    {
+     "name": "Couples",
+     "tag_id": "urn:tag:customer_identity:qloo:couples",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:couples"
+    },
+    {
+     "name": "Midday",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:midday",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:midday"
+    },
+    {
+     "name": "Walkable",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:walkable"
+    },
+    {
+     "name": "Trendy",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:trendy"
+    },
+    {
+     "name": "Urban",
+     "tag_id": "urn:tag:setting:qloo:urban",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:urban"
+    },
+    {
+     "name": "Laneway view",
+     "tag_id": "urn:tag:view:qloo:laneway_view",
+     "type": "urn:tag:view:qloo",
+     "value": "urn:tag:view:qloo:laneway_view"
+    },
+    {
+     "name": "Vegan",
+     "tag_id": "urn:tag:dietary_option:qloo:vegan",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:vegan"
+    },
+    {
+     "name": "Delivery",
+     "tag_id": "urn:tag:service_options:place:delivery",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:delivery"
+    },
+    {
+     "name": "Minimalist",
+     "tag_id": "urn:tag:decor:qloo:minimalist",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:minimalist"
+    },
+    {
+     "name": "Seating",
+     "tag_id": "urn:tag:dining_options:place:seating",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:seating"
+    },
+    {
+     "name": "Small plates",
+     "tag_id": "urn:tag:offerings:place:small_plates",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:small_plates"
+    },
+    {
+     "name": "Dessert craft",
+     "tag_id": "urn:tag:interests:qloo:dessert_craft",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:dessert_craft"
+    },
+    {
+     "name": "Large group",
+     "tag_id": "urn:tag:ambience:place:large_group",
+     "type": "urn:tag:ambience:place",
+     "value": "urn:tag:ambience:place:large_group"
+    },
+    {
+     "name": "Modern japanese",
+     "tag_id": "urn:tag:ambience:qloo:modern_japanese",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:modern_japanese"
+    },
+    {
+     "name": "Tea culture",
+     "tag_id": "urn:tag:interests:qloo:tea_culture",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:tea_culture"
+    },
+    {
+     "name": "Quick bite",
+     "tag_id": "urn:tag:offerings:place:quick_bite",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:quick_bite"
+    },
+    {
+     "name": "Matcha parfait",
+     "tag_id": "urn:tag:menu_highlight:qloo:matcha_parfait",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:matcha_parfait"
+    },
+    {
+     "name": "Vegetarian",
+     "tag_id": "urn:tag:dietary_option:qloo:vegetarian",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:vegetarian"
+    },
+    {
+     "name": "Order ahead",
+     "tag_id": "urn:tag:dining_options:place:order_ahead",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:order_ahead"
+    },
+    {
+     "name": "Desserts",
+     "tag_id": "urn:tag:cuisine:qloo:desserts",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:desserts"
+    },
+    {
+     "name": "30 34",
+     "tag_id": "urn:tag:age_range:qloo:30_34",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:30_34"
+    },
+    {
+     "name": "Truffle parmesan chips",
+     "tag_id": "urn:tag:menu_highlight:qloo:truffle_parmesan_chips",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:truffle_parmesan_chips"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:decor:qloo:casual",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:casual"
+    },
+    {
+     "name": "Evening",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:evening",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:evening"
+    },
+    {
+     "name": "Shiratama sundae",
+     "tag_id": "urn:tag:menu_highlight:qloo:shiratama_sundae",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:shiratama_sundae"
+    },
+    {
+     "name": "Dessert tasting",
+     "tag_id": "urn:tag:activity_type:qloo:dessert_tasting",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:dessert_tasting"
+    },
+    {
+     "name": "Cafe hopping",
+     "tag_id": "urn:tag:interests:qloo:cafe_hopping",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:cafe_hopping"
+    },
+    {
+     "name": "Cocktails",
+     "tag_id": "urn:tag:beverage_offering:qloo:cocktails",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:cocktails"
+    },
+    {
+     "name": "Alcohol",
+     "tag_id": "urn:tag:offerings:place:alcohol",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:alcohol"
+    },
+    {
+     "name": "Wine",
+     "tag_id": "urn:tag:beverage_offering:qloo:wine",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:wine"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_options:place:takeout",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:takeout"
+    },
+    {
+     "name": "Hojicha soft serve",
+     "tag_id": "urn:tag:menu_highlight:qloo:hojicha_soft_serve",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:hojicha_soft_serve"
+    },
+    {
+     "name": "Tea house",
+     "tag_id": "urn:tag:category:place:tea_house",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:tea_house"
+    },
+    {
+     "name": "Convenient",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:convenient",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:convenient"
+    },
+    {
+     "name": "Cozy",
+     "tag_id": "urn:tag:ambience:qloo:cozy",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:cozy"
+    },
+    {
+     "name": "Table service",
+     "tag_id": "urn:tag:amenity:qloo:table_service",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:table_service"
+    },
+    {
+     "name": "Nfc mobile payments",
+     "tag_id": "urn:tag:payments:place:nfc_mobile_payments",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:nfc_mobile_payments"
+    },
+    {
+     "name": "Convenient",
+     "tag_id": "urn:tag:ambience:qloo:convenient",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:convenient"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:culinary_style:qloo:casual",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:casual"
+    },
+    {
+     "name": "Lively",
+     "tag_id": "urn:tag:ambience:qloo:lively",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:lively"
+    },
+    {
+     "name": "Matcha infused curry",
+     "tag_id": "urn:tag:menu_highlight:qloo:matcha_infused_curry",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:matcha_infused_curry"
+    },
+    {
+     "name": "Hot tea",
+     "tag_id": "urn:tag:offerings:place:hot_tea",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:hot_tea"
+    },
+    {
+     "name": "Beer",
+     "tag_id": "urn:tag:beverage_offering:qloo:beer",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:beer"
+    },
+    {
+     "name": "Convenience stop",
+     "tag_id": "urn:tag:visit_intent:qloo:convenience_stop",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:convenience_stop"
+    },
+    {
+     "name": "Dessert enthusiasts",
+     "tag_id": "urn:tag:customer_identity:qloo:dessert_enthusiasts",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:dessert_enthusiasts"
+    },
+    {
+     "name": "Foodies",
+     "tag_id": "urn:tag:customer_identity:qloo:foodies",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:foodies"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:amenity:qloo:outdoor_seating",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:outdoor_seating"
+    },
+    {
+     "name": "Dinner",
+     "tag_id": "urn:tag:dining_options:place:dinner",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:dinner"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:culinary_style:qloo:cafe",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:cafe"
+    },
+    {
+     "name": "Mastercard",
+     "tag_id": "urn:tag:credit_card:place:mastercard",
+     "type": "urn:tag:credit_card:place",
+     "value": "urn:tag:credit_card:place:mastercard"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:category:place:cafe",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:cafe"
+    },
+    {
+     "name": "Tea house",
+     "tag_id": "urn:tag:genre:place:restaurant:tea_house",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:tea_house"
+    },
+    {
+     "name": "Debit cards",
+     "tag_id": "urn:tag:payments:place:debit_cards",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:debit_cards"
+    },
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_type:qloo:dine_in",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:dine_in"
+    },
+    {
+     "name": "Bar onsite",
+     "tag_id": "urn:tag:amenities:place:bar_onsite",
+     "type": "urn:tag:amenities:place",
+     "value": "urn:tag:amenities:place:bar_onsite"
+    },
+    {
+     "name": "Full bar",
+     "tag_id": "urn:tag:beverage_offering:qloo:full_bar",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:full_bar"
+    },
+    {
+     "name": "Good for kids",
+     "tag_id": "urn:tag:children:place:good_for_kids",
+     "type": "urn:tag:children:place",
+     "value": "urn:tag:children:place:good_for_kids"
+    },
+    {
+     "name": "Popcorn octopus",
+     "tag_id": "urn:tag:menu_highlight:qloo:popcorn_octopus",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:popcorn_octopus"
+    },
+    {
+     "name": "Modern",
+     "tag_id": "urn:tag:decor:qloo:modern",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:modern"
+    },
+    {
+     "name": "Culinary innovation",
+     "tag_id": "urn:tag:interests:qloo:culinary_innovation",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:culinary_innovation"
+    },
+    {
+     "name": "Bustling",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:bustling",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:bustling"
+    },
+    {
+     "name": "Parking",
+     "tag_id": "urn:tag:parking:place:parking",
+     "type": "urn:tag:parking:place",
+     "value": "urn:tag:parking:place:parking"
+    },
+    {
+     "name": "Moderate",
+     "tag_id": "urn:tag:noise_level:qloo:moderate",
+     "type": "urn:tag:noise_level:qloo",
+     "value": "urn:tag:noise_level:qloo:moderate"
+    },
+    {
+     "name": "Laneway",
+     "tag_id": "urn:tag:setting:qloo:laneway",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:laneway"
+    },
+    {
+     "name": "Groups of friends",
+     "tag_id": "urn:tag:customer_identity:qloo:groups_of_friends",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:groups_of_friends"
+    },
+    {
+     "name": "Darling square",
+     "tag_id": "urn:tag:nearby_attraction:qloo:darling_square",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:darling_square"
+    },
+    {
+     "name": "Restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_options:place:outdoor_seating",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:outdoor_seating"
+    },
+    {
+     "name": "Coffee and tea",
+     "tag_id": "urn:tag:beverage_offering:qloo:coffee_and_tea",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:coffee_and_tea"
+    },
+    {
+     "name": "High foot traffic",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:high_foot_traffic",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:high_foot_traffic"
+    },
+    {
+     "name": "Matcha tiramisu",
+     "tag_id": "urn:tag:menu_highlight:qloo:matcha_tiramisu",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:matcha_tiramisu"
+    },
+    {
+     "name": "Wheelchair accessible entrance",
+     "tag_id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+     "type": "urn:tag:accessibility:place",
+     "value": "urn:tag:accessibility:place:wheelchair_accessible_entrance"
+    },
+    {
+     "name": "Buzzing",
+     "tag_id": "urn:tag:ambience:qloo:buzzing",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:buzzing"
+    },
+    {
+     "name": "Casual",
+     "tag_id": "urn:tag:ambience:qloo:casual",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:casual"
+    },
+    {
+     "name": "Central",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:central",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:central"
+    },
+    {
+     "name": "Afternoon",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:afternoon",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:afternoon"
+    },
+    {
+     "name": "Japanese",
+     "tag_id": "urn:tag:cuisine:qloo:japanese",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:japanese"
+    },
+    {
+     "name": "Authentic",
+     "tag_id": "urn:tag:culinary_style:qloo:authentic",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:authentic"
+    },
+    {
+     "name": "Karaage",
+     "tag_id": "urn:tag:menu_highlight:qloo:karaage",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:karaage"
+    },
+    {
+     "name": "Bar service",
+     "tag_id": "urn:tag:service_type:qloo:bar_service",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:bar_service"
+    },
+    {
+     "name": "Japanese cuisine",
+     "tag_id": "urn:tag:interests:qloo:japanese_cuisine",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:japanese_cuisine"
+    },
+    {
+     "name": "Cocktails",
+     "tag_id": "urn:tag:offerings:place:cocktails",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:cocktails"
+    },
+    {
+     "name": "Private dining",
+     "tag_id": "urn:tag:service_type:qloo:private_dining",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:private_dining"
+    },
+    {
+     "name": "City center",
+     "tag_id": "urn:tag:setting:qloo:city_center",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:city_center"
+    },
+    {
+     "name": "Matcha latte",
+     "tag_id": "urn:tag:menu_highlight:qloo:matcha_latte",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:matcha_latte"
+    },
+    {
+     "name": "Coffee jelly",
+     "tag_id": "urn:tag:menu_highlight:qloo:coffee_jelly",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:coffee_jelly"
+    },
+    {
+     "name": "Welcoming",
+     "tag_id": "urn:tag:ambience:qloo:welcoming",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:welcoming"
+    },
+    {
+     "name": "Locals",
+     "tag_id": "urn:tag:customer_identity:qloo:locals",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:locals"
+    },
+    {
+     "name": "Place",
+     "tag_id": "urn:tag:genre:place",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place"
+    },
+    {
+     "name": "Central station",
+     "tag_id": "urn:tag:nearby_attraction:qloo:central_station",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:central_station"
+    },
+    {
+     "name": "A$1 to a$20",
+     "tag_id": "urn:tag:cost_description:place:a1_to_a20",
+     "type": "urn:tag:cost_description:place",
+     "value": "urn:tag:cost_description:place:a1_to_a20"
+    },
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_options:place:dine_in",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:dine_in"
+    },
+    {
+     "name": "25 29",
+     "tag_id": "urn:tag:age_range:qloo:25_29",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:25_29"
+    },
+    {
+     "name": "Stylish",
+     "tag_id": "urn:tag:ambience:qloo:stylish",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:stylish"
+    },
+    {
+     "name": "Alcohol service",
+     "tag_id": "urn:tag:amenity:qloo:alcohol_service",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:alcohol_service"
+    },
+    {
+     "name": "Dessert",
+     "tag_id": "urn:tag:dining_options:place:dessert",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:dessert"
+    },
+    {
+     "name": "Delivery",
+     "tag_id": "urn:tag:service_type:qloo:delivery",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:delivery"
+    },
+    {
+     "name": "Paddys market",
+     "tag_id": "urn:tag:nearby_attraction:qloo:paddy_s_market",
+     "type": "urn:tag:nearby_attraction:qloo",
+     "value": "urn:tag:nearby_attraction:qloo:paddy_s_market"
+    },
+    {
+     "name": "Matcha",
+     "tag_id": "urn:tag:cuisine:qloo:matcha",
+     "type": "urn:tag:cuisine:qloo",
+     "value": "urn:tag:cuisine:qloo:matcha"
+    },
+    {
+     "name": "Coffee",
+     "tag_id": "urn:tag:offerings:place:coffee",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:coffee"
+    },
+    {
+     "name": "Dining drinking",
+     "tag_id": "urn:tag:activity_type:qloo:dining_drinking",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:dining_drinking"
+    },
+    {
+     "name": "Lunch",
+     "tag_id": "urn:tag:dining_options:place:lunch",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:lunch"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_type:qloo:outdoor_seating",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:outdoor_seating"
+    },
+    {
+     "name": "Relaxing",
+     "tag_id": "urn:tag:ambience:qloo:relaxing",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:relaxing"
+    }
+   ]
+  }
+ ]
+}
