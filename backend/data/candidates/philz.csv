@@ -1,0 +1,88 @@
+id,name,address,lat,lon,metro
+philz-san-diego-radd-san-diego,RaDD San Diego,"825 North Harbor Drive, San Diego, CA 92101",32.7138845,-117.1725506,San Diego
+philz-concord-willows-concord,Willows Concord,"1975 Diamond Boulevard, Concord, CA 94520",37.9701504,-122.0564050,Concord
+philz-san-jose-brokaw-commons,Brokaw Commons,"1085 E Brokaw Road, San Jose, CA 95131",37.3834494,-121.8967714,San Jose
+philz-whittier-whittier,Whittier,"7007 Walnut Grove Drive, Whittier, CA 90601",33.9770092,-118.0500941,Whittier
+philz-pleasanton-pleasanton,Pleasanton,"1803 Santa Rita Road, Pleasanton, CA 94566",37.6773325,-121.8745710,Pleasanton
+philz-long-beach-bixby-knolls,Bixby Knolls,"3850 Atlantic Ave, Long Beach, CA 90807",33.8281231,-118.1849039,Long Beach
+philz-brea-brea-mall,Brea Mall,"1240 Brea Mall, Brea, CA 92821",33.9176130,-117.8843567,Brea
+philz-valencia-valencia-crossroads,Valencia Crossroads,"24286 Valencia Blvd, Valencia, CA 91355",34.4130127,-118.5592971,Valencia
+philz-palo-alto-forest-ave,Forest Ave,"101 Forest Ave, Palo Alto, CA 94306",37.4422033,-122.1616018,Palo Alto
+philz-colma-colma,Colma,"5055 Junipero Serra Blvd, Colma, CA 94014",37.6717582,-122.4652105,Colma
+philz-san-jose-willow-glen,Willow Glen,"1115 Lincoln Ave, San Jose, CA 95125",37.3079880,-121.9010641,San Jose
+philz-aliso-viejo-aliso-viejo,Aliso Viejo,"26509 Aliso Creek Road, Aliso Viejo, CA 92656",33.5767340,-117.7234370,Aliso Viejo
+philz-san-leandro-san-leandro,San Leandro,"1194 E 14th St, San Leandro, CA 94577",37.7258994,-122.1571372,San Leandro
+philz-san-jose-philz-coffee-san-jose,Philz Coffee - San Jose,"118 Paseo de San Antonio Walk, San Jose, CA 95112",37.3336349,-121.8849900,San Jose
+philz-rancho-cucamonga-victoria-gardens,Victoria Gardens,"12448 North Mainstreet, Rancho Cucamonga, CA 91739",34.1120240,-117.5333670,Rancho Cucamonga
+philz-menlo-park-menlo-park,Menlo Park,"506 Santa Cruz Ave, Menlo Park, CA 94025",37.4544368,-122.1825021,Menlo Park
+philz-sunnyvale-sunnyvale,Sunnyvale,"125 S Frances St, Sunnyvale, CA 94086",37.3767094,-122.0311824,Sunnyvale
+philz-berkeley-gilman,Gilman,"1313 Ninth St, Berkeley, CA 94710",37.8780778,-122.2973390,Berkeley
+philz-san-diego-del-mar,Del Mar,"12873 El Camino Real, San Diego, CA 92130",32.9514644,-117.2327346,San Diego
+philz-tarzana-tarzana,Tarzana,"18640 Ventura Blvd, Tarzana, CA 91356",34.1700071,-118.5392958,Tarzana
+philz-san-jose-west-valley-san-jose,West Valley San Jose,"5205 Prospect Road, San Jose, CA 95129",37.2928785,-121.9929284,San Jose
+philz-san-mateo-san-mateo,San Mateo,"113 S B St, San Mateo, CA 94401",37.5669875,-122.3236083,San Mateo
+philz-beverly-hills-south-beverly,South Beverly,"233 South Beverly Drive, Beverly Hills, CA 90212",34.0637237,-118.3993080,Beverly Hills
+philz-morgan-hill-morgan-hill,Morgan Hill,"250 Cochrane Plaza, Morgan Hill, CA 95037",37.1511281,-121.6545264,Morgan Hill
+philz-elk-grove-elk-grove,Elk Grove,"8170 Elk Grove Boulevard, Elk Grove, CA 95758",38.4074342,-121.4025917,Elk Grove
+philz-eastvale-eastvale,Eastvale,"12571 Limonite Avenue, Eastvale, CA 91752",33.9759101,-117.5568223,Eastvale
+philz-chicago-one-chicago,One Chicago,"27 W. Chicago Ave, Chicago, IL 60654",41.8964765,-87.6293462,Chicago
+philz-oakland-college-ave,College Ave,"6310 College Ave, Oakland, CA 94618",37.8501594,-122.2522190,Oakland
+philz-orange-old-towne-orange,Old Towne Orange,"202 N Glassell St, Orange, CA 92866",33.7898410,-117.8531870,Orange
+philz-san-francisco-folsom-beale,Folsom & Beale,"300 Folsom St, San Francisco, CA 94105",37.7887269,-122.3931560,San Francisco
+philz-chicago-old-town-chicago,Old Town Chicago,"1555 N Wells Street, Chicago, IL 60610",41.9108012,-87.6344795,Chicago
+philz-castro-valley-castro-valley,Castro Valley,"3359 Castro Valley Blvd, Castro Valley, CA 94546",37.6957379,-122.0773501,Castro Valley
+philz-sacramento-the-park,The Park,"4680 Freeport Blvd, Sacramento, CA 95822",38.5327677,-121.4946449,Sacramento
+philz-san-francisco-second-street,Second Street,"425 Mission Street, San Francisco, CA 94105",37.7904312,-122.3952043,San Francisco
+philz-pasadena-pasadena,Pasadena,"146 S Lake Ave, Pasadena, CA 91101",34.1432645,-118.1317700,Pasadena
+philz-cupertino-cupertino-main,Cupertino Main,"19439 Stevens Creek Blvd, Cupertino, CA 95014",37.3242262,-122.0105165,Cupertino
+philz-calabasas-calabasas,Calabasas,"26787 Agoura Rd, Calabasas, CA 91302",34.1400036,-118.7081232,Calabasas
+philz-dana-point-dana-point,Dana Point,"34179 Pacific Coast Highway, Dana Point, CA 92629",33.4909465,-117.7320283,Dana Point
+philz-huntington-beach-bella-terra,Bella Terra HB,"7821 Edinger Avenue, Huntington Beach, CA 92647",33.7303590,-117.9923060,Huntington Beach
+philz-chicago-hyde-park,Hyde Park,"1425 E 53rd St, Chicago, IL 60615",41.7993706,-87.5906372,Chicago
+philz-claremont-claremont,Claremont,"330 W. Bonita Avenue, Claremont, CA 91711",34.0965280,-117.7184420,Claremont
+philz-glendale-glendale,Glendale,"252 South Brand Blvd, Glendale, CA 91204",34.1427824,-118.2547408,Glendale
+philz-mission-viejo-mission-viejo,Mission Viejo,"24440 Alicia Pkwy, Mission Viejo, CA 92691",33.6085002,-117.6887879,Mission Viejo
+philz-huntington-beach-huntington-beach,Pacific City HB,"21010 Pacific Coast Highway, Huntington Beach, CA 92648",33.6556370,-117.9987885,Huntington Beach
+philz-walnut-creek-walnut-creek,Walnut Creek,"1103 S California Blvd, Walnut Creek, CA 94596",37.8972067,-122.0635489,Walnut Creek
+philz-san-francisco-noe-valley,Noe Valley,"4298 24th St, San Francisco, CA 94114",37.7511414,-122.4383792,San Francisco
+philz-torrance-del-amo-fashion-center,Del Amo Fashion Center,"21434 Hawthorne Boulevard, Torrance, CA 90503",33.8342763,-118.3511753,Torrance
+philz-south-san-francisco-westborough,Westborough,"2248 Westborough Blvd, South San Francisco, CA 94080",37.6440550,-122.4522895,South San Francisco
+philz-san-mateo-hillsdale,Hillsdale,"42 Hillsdale Mall, San Mateo, CA 94403",37.5388043,-122.3020040,San Mateo
+philz-corte-madera-corte-madera,Corte Madera,"403 Corte Madera Town Center, Corte Madera, CA 94925",37.9261110,-122.5173515,Corte Madera
+philz-sacramento-sacramento-midtown,Sacramento Midtown,"1725 R St, Sacramento, CA 95811",38.5688941,-121.4872680,Sacramento
+philz-los-angeles-hollywood,Hollywood,"6430 Sunset Blvd, Los Angeles, CA 90028",34.0976563,-118.3299312,Los Angeles
+philz-fremont-fremont,Fremont,"39000 Paseo Padre Pkwy, Fremont, CA 94538",37.5535513,-121.9803060,Fremont
+philz-san-francisco-castro,Castro,"549 Castro St, San Francisco, CA 94114",37.7601055,-122.4346797,San Francisco
+philz-encinitas-encinitas,Encinitas,"1060 S Coast Highway 101, Encinitas, CA 92024",33.0384152,-117.2931251,Encinitas
+philz-oakland-lakeshore-oakland,Lakeshore Oakland,"3347 Lakeshore Avenue, Oakland, CA 94610",37.8112398,-122.2434366,Oakland
+philz-la-jolla-la-jolla,La Jolla,"8849 Villa La Jolla Dr, La Jolla, CA 92037",32.8699288,-117.2339573,La Jolla
+philz-san-diego-mission-valley-san-diego,Mission Valley San Diego,"1640 Camino del Rio North, San Diego, CA 92108",32.7686909,-117.1472479,San Diego
+philz-los-angeles-dtla-hope,DTLA – Hope,"801 S Hope St, Los Angeles, CA 90017",34.0462665,-118.2596525,Los Angeles
+philz-culver-city-culver-city,Culver City,"9300 Culver Blvd, Culver City, CA 90232",34.0244516,-118.3933641,Culver City
+philz-los-angeles-los-feliz,Los Feliz,"2117 Hillhurst Avenue, Los Angeles, CA 90027",34.1104689,-118.2876272,Los Angeles
+philz-burlingame-burlingame,Burlingame,"305 Primrose Rd, Burlingame, CA 94010",37.5779248,-122.3485707,Burlingame
+philz-el-segundo-el-segundo,El Segundo,"2191 Rosecrans Ave, El Segundo, CA 90245",33.9021614,-118.3854420,El Segundo
+philz-los-gatos-los-gatos,Los Gatos,"681 Blossom Hill Rd, Los Gatos, CA 95032",37.2359736,-121.9635663,Los Gatos
+philz-davis-davis,Davis,"521 2nd Street, Davis, CA 95616",38.5433518,-121.7412710,Davis
+philz-fullerton-fullerton,Fullerton,"520 North State College Blvd, Fullerton, CA 92831",33.8750814,-117.8891617,Fullerton
+philz-costa-mesa-south-coast-metro,South Coast Metro,"3420 Bristol St, Costa Mesa, CA 92626",33.6929524,-117.8852859,Costa Mesa
+philz-studio-city-studio-city,Studio City,"13005 Ventura Blvd, Studio City, CA 91604",34.1451703,-118.4157285,Studio City
+philz-lafayette-lafayette,Lafayette,"3597 Mt Diablo Blvd, Lafayette, CA 94549",37.8913453,-122.1234190,Lafayette
+philz-san-francisco-embarcadero,Embarcadero,"5 Embarcadero Center, San Francisco, CA 94111",37.7945298,-122.3951458,San Francisco
+philz-san-francisco-russian-hill,Russian Hill,"2234 Polk St, San Francisco, CA 94109",37.7975392,-122.4219848,San Francisco
+philz-san-francisco-front-st,Front St,"1 Front St, San Francisco, CA 94111",37.7918825,-122.3988519,San Francisco
+philz-long-beach-belmont-shore,Belmont Shore,"4801 E 2nd St, Long Beach, CA 90803",33.7617044,-118.1377540,Long Beach
+philz-campbell-campbell,Campbell,"1976 S Bascom Ave, Campbell, CA 95008",37.2870273,-121.9316470,Campbell
+philz-thousand-oaks-thousand-oaks,Thousand Oaks,"33 N Moorpark Road, Thousand Oaks, CA 91360",34.1798364,-118.8770470,Thousand Oaks
+philz-san-ramon-bishop-ranch,Bishop Ranch,"6000 Bollinger Canyon Rd, San Ramon, CA 94583",37.7629355,-121.9598080,San Ramon
+philz-chicago-wicker-park,Wicker Park,"1640 W Division St, Chicago, IL 60622",41.9036864,-87.6692551,Chicago
+philz-san-francisco-civic-center,Civic Center,"399 Golden Gate Ave, San Francisco, CA 94102",37.7813850,-122.4169760,San Francisco
+philz-san-francisco-berry,Berry,"201 Berry St, San Francisco, CA 94158",37.7755634,-122.3933972,San Francisco
+philz-emeryville-emeryville,Emeryville,"5663 Bay Street, Emeryville, CA 94608",37.8359915,-122.2925123,Emeryville
+philz-san-francisco-potrero,Potrero,"1775 17th St, San Francisco, CA 94103",37.7647559,-122.4011997,San Francisco
+philz-chicago-lincoln-park,Lincoln Park,"2323 N Lincoln Ave, Chicago, IL 60614",41.9243849,-87.6470380,Chicago
+philz-evanston-evanston,Evanston,"1030 Davis St, Evanston, IL 60201",42.0468008,-87.6865991,Evanston
+philz-san-francisco-chase-center,Chase Center,"1 Warriors Way, San Francisco, CA 94158",37.7679001,-122.3874223,San Francisco
+philz-cupertino-deanza-cupertino,DeAnza - Cupertino,"20686 Stevens Creek Blvd, Cupertino, CA 95014",37.3225787,-122.0346490,Cupertino
+philz-redwood-city-redwood-city,Redwood City,"2116 Broadway, Redwood City, CA 94063",37.4866611,-122.2285950,Redwood City
+philz-san-francisco-ocean-ave,Ocean Ave,"1110 Ocean Ave, San Francisco, CA 94112",37.7236571,-122.4537767,San Francisco

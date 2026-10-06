@@ -1,7 +1,16 @@
 id,name,address,lat,lon,metro
-nyc-williamsburg,Williamsburg,N 6th St & Wythe Ave Brooklyn NY,40.7193,-73.9590,New York
-nyc-midtown-east,Midtown East,E 52nd St & 3rd Ave New York NY,40.7572,-73.9693,New York
-nyc-west-village,West Village,Bleecker St & Christopher St New York NY,40.7335,-74.0040,New York
-la-silver-lake,Silver Lake,Sunset Blvd & Sanborn Ave Los Angeles CA,34.0912,-118.2790,Los Angeles
-la-century-city,Century City,Santa Monica Blvd & Ave of the Stars Los Angeles CA,34.0590,-118.4170,Los Angeles
-la-arts-district,Arts District,E 3rd St & Traction Ave Los Angeles CA,34.0470,-118.2350,Los Angeles
+philz-los-angeles-hollywood,Hollywood,"6430 Sunset Blvd, Los Angeles, CA 90028",34.0976563,-118.3299312,Los Angeles
+philz-los-angeles-dtla-hope,DTLA – Hope,"801 S Hope St, Los Angeles, CA 90017",34.0462665,-118.2596525,Los Angeles
+philz-los-angeles-los-feliz,Los Feliz,"2117 Hillhurst Avenue, Los Angeles, CA 90027",34.1104689,-118.2876272,Los Angeles
+philz-san-francisco-folsom-beale,Folsom & Beale,"300 Folsom St, San Francisco, CA 94105",37.7887269,-122.393156,San Francisco
+philz-san-francisco-second-street,Second Street,"425 Mission Street, San Francisco, CA 94105",37.7904312,-122.3952043,San Francisco
+philz-san-francisco-noe-valley,Noe Valley,"4298 24th St, San Francisco, CA 94114",37.7511414,-122.4383792,San Francisco
+philz-san-francisco-castro,Castro,"549 Castro St, San Francisco, CA 94114",37.7601055,-122.4346797,San Francisco
+philz-san-francisco-embarcadero,Embarcadero,"5 Embarcadero Center, San Francisco, CA 94111",37.7945298,-122.3951458,San Francisco
+philz-san-francisco-russian-hill,Russian Hill,"2234 Polk St, San Francisco, CA 94109",37.7975392,-122.4219848,San Francisco
+philz-san-francisco-front-st,Front St,"1 Front St, San Francisco, CA 94111",37.7918825,-122.3988519,San Francisco
+philz-san-francisco-civic-center,Civic Center,"399 Golden Gate Ave, San Francisco, CA 94102",37.781385,-122.416976,San Francisco
+philz-san-francisco-berry,Berry,"201 Berry St, San Francisco, CA 94158",37.7755634,-122.3933972,San Francisco
+philz-san-francisco-potrero,Potrero,"1775 17th St, San Francisco, CA 94103",37.7647559,-122.4011997,San Francisco
+philz-san-francisco-chase-center,Chase Center,"1 Warriors Way, San Francisco, CA 94158",37.7679001,-122.3874223,San Francisco
+philz-san-francisco-ocean-ave,Ocean Ave,"1110 Ocean Ave, San Francisco, CA 94112",37.7236571,-122.4537767,San Francisco
