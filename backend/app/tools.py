@@ -6,11 +6,13 @@ from .scoring import score, stability
 RADIUS_M = 1200
 # The only tag type the hackathon API returns heatmaps for (live probe, 2026-10-06).
 HEATMAP_TAG_PREFIX = "urn:tag:specialty_dish:place:"
+MAX_TAGS = 5  # heatmap calls per find_tags
 
 
 class Tools:
-    def __init__(self, qloo, stores: list[dict]):
+    def __init__(self, qloo, stores: list[dict], regions: dict[str, str] | None = None):
         self.qloo = qloo
+        self.regions = regions or {}
         self.stores = stores
         self._by_id = {s["id"]: s for s in stores}
 
@@ -18,7 +20,20 @@ class Tools:
         return self._by_id[store_id]
 
     async def find_tags(self, query: str) -> list[dict]:
-        return [t for t in await self.qloo.search_tags(query) if t["id"].startswith(HEATMAP_TAG_PREFIX)]
+        tags = [t for t in await self.qloo.search_tags(query) if t["id"].startswith(HEATMAP_TAG_PREFIX)]
+        if not self.regions:
+            return tags
+        tags = tags[:MAX_TAGS]
+        wkts = list(self.regions.values())
+        counts = await asyncio.gather(*(self.qloo.heatmap({"id": t["id"], "kind": "tag"}, w) for t in tags for w in wkts),
+                                      return_exceptions=True)
+        out = []
+        for i, t in enumerate(tags):
+            part = counts[i * len(wkts):(i + 1) * len(wkts)]
+            cells = sum(0 if isinstance(c, Exception) else len(c) for c in part)
+            if cells:
+                out.append({**t, "cells": cells})
+        return sorted(out, key=lambda t: -t["cells"])
 
     async def find_places(self, query: str) -> list[dict]:
         return await self.qloo.search_places(query)
@@ -27,7 +42,7 @@ class Tools:
         items = [i for i in signature if i["weight"] > 0]
         metros = sorted({s["metro"] for s in self.stores})
         pairs = [(m, i) for m in metros for i in items]
-        results = await asyncio.gather(*(self.qloo.heatmap(i, m) for m, i in pairs), return_exceptions=True)
+        results = await asyncio.gather(*(self.qloo.heatmap(i, self.regions.get(m, m)) for m, i in pairs), return_exceptions=True)
         if results and all(isinstance(r, Exception) for r in results):
             raise results[0]
         by_metro = {m: {} for m in metros}

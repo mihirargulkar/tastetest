@@ -6,7 +6,7 @@ function Meter({ fit, confidence }) {
   return (
     <div>
       <div className="meter"><i /><b style={bar} /></div>
-      <div className="src">fit vs. chain average (relative to each city) · confidence: {confidence}</div>
+      <div className="src">fit vs. chain average (relative to each region) · confidence: {confidence}</div>
     </div>
   );
 }

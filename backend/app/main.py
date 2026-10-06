@@ -57,7 +57,9 @@ class BriefReq(BaseModel):
 def deps(request: Request):
     s = request.app.state
     if not hasattr(s, "tools"):
-        s.tools = Tools(Qloo(os.environ["QLOO_API_KEY"], DATA / "cache"), load_stores(DATA / "stores.csv"))
+        rf = DATA / "regions.json"
+        s.tools = Tools(Qloo(os.environ["QLOO_API_KEY"], DATA / "cache"), load_stores(DATA / "stores.csv"),
+                        regions=json.loads(rf.read_text()) if rf.exists() else {})
         s.llm = AsyncAnthropic()
     return s.llm, s.tools
 

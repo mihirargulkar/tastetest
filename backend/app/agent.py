@@ -75,7 +75,7 @@ async def run_tool_loop(llm, *, system: str, user: str, tools: list, handlers: d
 SIGNATURE_SYSTEM = """You turn a coffee chain's limited-time offer (LTO) description into a Qloo taste signature.
 
 1. Break the description into 3-8 concepts that are dishes, drinks, or ingredients (e.g. "matcha latte", "yuzu", "cold brew"). Express the vibe of the target customer through such items or through a well-known place that embodies it.
-2. Resolve every concept to a real Qloo ID with find_tags (preferred; it only returns dish and drink tags) or find_places. If a search returns nothing useful, try a broader or synonymous term and put the original word in substituted_from.
+2. Resolve every concept to a real Qloo ID with find_tags (preferred; it only returns dish and drink tags) or find_places. If a search returns nothing useful, try a broader or synonymous term and put the original word in substituted_from. find_tags results include "cells", how much local data Qloo has for that tag in the chain's regions; prefer tags with more cells, and avoid tags under 20 cells unless nothing better exists.
 3. Weight each item from 0.1 to 1.0 by how central it is to the product.
 4. Finish by calling submit_signature exactly once, using only IDs that a search returned. Never invent IDs.
 
@@ -84,7 +84,7 @@ If you are given a current signature and an instruction, edit the signature to s
 _STR = {"type": "string"}
 SIGNATURE_TOOLS = [
     {"name": "find_tags", "strict": True,
-     "description": "Search Qloo tags (flavors, cuisines, genres, styles, scenes) by keyword. Returns [{id, name}].",
+     "description": "Search Qloo tags (flavors, cuisines, genres, styles, scenes) by keyword. Returns [{id, name, type, cells}], only tags with local data.",
      "input_schema": {"type": "object", "properties": {"query": _STR}, "required": ["query"],
                       "additionalProperties": False}},
     {"name": "find_places", "strict": True,

@@ -64,3 +64,40 @@ async def test_area_taste_tolerates_partial_failure():
 def test_unknown_store_raises_keyerror():
     with pytest.raises(KeyError):
         Tools(FakeQloo(), STORES).store("nope")
+
+
+async def test_score_stores_sends_region_wkt_to_heatmap():
+    q = FakeQloo()
+    t = Tools(q, STORES, regions={"M1": "POLYGON((M1))"})
+    q.heatmap = lambda item, area: _wkt_heatmap(q, item, area)
+    await t.score_stores(SIG)
+    assert sorted(q.heatmap_calls) == [("T1", "M2"), ("T1", "POLYGON((M1))")]
+
+
+async def _wkt_heatmap(q, item, area):
+    q.heatmap_calls.append((item["id"], area))
+    return []
+
+
+class TagQloo:
+    CELLS = {"t1": 5, "t2": 0, "t3": 30, "t4": 1, "t5": 2, "t6": 99}
+
+    async def search_tags(self, query, take=10):
+        return [{"id": f"urn:tag:specialty_dish:place:{k}", "name": k, "type": "x"} for k in self.CELLS]
+
+    async def heatmap(self, item, area):
+        n = self.CELLS[item["id"].rsplit(":", 1)[-1]]
+        if area == "bad":
+            raise QlooError(500, "boom")
+        return [{"lat": 0, "lon": 0, "affinity": 0.5, "popularity": 0.5}] * (n // 2 + n % 2 if area == "W1" else n // 2)
+
+
+async def test_find_tags_annotates_cells_drops_empty_sorts_and_caps_at_5():
+    tags = await Tools(TagQloo(), STORES, regions={"R1": "W1", "R2": "W2"}).find_tags("x")
+    # first 5 only (t6 excluded); t2 has 0 cells and is dropped; sorted by cells desc
+    assert [(t["name"], t["cells"]) for t in tags] == [("t3", 30), ("t1", 5), ("t5", 2), ("t4", 1)]
+
+
+async def test_find_tags_counts_failed_region_as_zero():
+    tags = await Tools(TagQloo(), STORES, regions={"R1": "W1", "R2": "bad"}).find_tags("x")
+    assert tags and all(t["cells"] > 0 for t in tags)

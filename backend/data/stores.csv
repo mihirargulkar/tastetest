@@ -1,16 +1,41 @@
 id,name,address,lat,lon,metro
-philz-los-angeles-hollywood,Hollywood,"6430 Sunset Blvd, Los Angeles, CA 90028",34.0976563,-118.3299312,Los Angeles
-philz-los-angeles-dtla-hope,DTLA – Hope,"801 S Hope St, Los Angeles, CA 90017",34.0462665,-118.2596525,Los Angeles
-philz-los-angeles-los-feliz,Los Feliz,"2117 Hillhurst Avenue, Los Angeles, CA 90027",34.1104689,-118.2876272,Los Angeles
-philz-san-francisco-folsom-beale,Folsom & Beale,"300 Folsom St, San Francisco, CA 94105",37.7887269,-122.393156,San Francisco
-philz-san-francisco-second-street,Second Street,"425 Mission Street, San Francisco, CA 94105",37.7904312,-122.3952043,San Francisco
-philz-san-francisco-noe-valley,Noe Valley,"4298 24th St, San Francisco, CA 94114",37.7511414,-122.4383792,San Francisco
-philz-san-francisco-castro,Castro,"549 Castro St, San Francisco, CA 94114",37.7601055,-122.4346797,San Francisco
-philz-san-francisco-embarcadero,Embarcadero,"5 Embarcadero Center, San Francisco, CA 94111",37.7945298,-122.3951458,San Francisco
-philz-san-francisco-russian-hill,Russian Hill,"2234 Polk St, San Francisco, CA 94109",37.7975392,-122.4219848,San Francisco
-philz-san-francisco-front-st,Front St,"1 Front St, San Francisco, CA 94111",37.7918825,-122.3988519,San Francisco
-philz-san-francisco-civic-center,Civic Center,"399 Golden Gate Ave, San Francisco, CA 94102",37.781385,-122.416976,San Francisco
-philz-san-francisco-berry,Berry,"201 Berry St, San Francisco, CA 94158",37.7755634,-122.3933972,San Francisco
-philz-san-francisco-potrero,Potrero,"1775 17th St, San Francisco, CA 94103",37.7647559,-122.4011997,San Francisco
-philz-san-francisco-chase-center,Chase Center,"1 Warriors Way, San Francisco, CA 94158",37.7679001,-122.3874223,San Francisco
-philz-san-francisco-ocean-ave,Ocean Ave,"1110 Ocean Ave, San Francisco, CA 94112",37.7236571,-122.4537767,San Francisco
+philz-san-jose-brokaw-commons,Brokaw Commons,"1085 E Brokaw Road, San Jose, CA 95131",37.3834494,-121.8967714,Bay Area
+philz-palo-alto-forest-ave,Forest Ave,"101 Forest Ave, Palo Alto, CA 94306",37.4422033,-122.1616018,Bay Area
+philz-colma-colma,Colma,"5055 Junipero Serra Blvd, Colma, CA 94014",37.6717582,-122.4652105,Bay Area
+philz-san-jose-willow-glen,Willow Glen,"1115 Lincoln Ave, San Jose, CA 95125",37.307988,-121.9010641,Bay Area
+philz-san-jose-philz-coffee-san-jose,Philz Coffee - San Jose,"118 Paseo de San Antonio Walk, San Jose, CA 95112",37.3336349,-121.88499,Bay Area
+philz-menlo-park-menlo-park,Menlo Park,"506 Santa Cruz Ave, Menlo Park, CA 94025",37.4544368,-122.1825021,Bay Area
+philz-sunnyvale-sunnyvale,Sunnyvale,"125 S Frances St, Sunnyvale, CA 94086",37.3767094,-122.0311824,Bay Area
+philz-san-mateo-san-mateo,San Mateo,"113 S B St, San Mateo, CA 94401",37.5669875,-122.3236083,Bay Area
+philz-san-francisco-folsom-beale,Folsom & Beale,"300 Folsom St, San Francisco, CA 94105",37.7887269,-122.393156,Bay Area
+philz-san-francisco-second-street,Second Street,"425 Mission Street, San Francisco, CA 94105",37.7904312,-122.3952043,Bay Area
+philz-cupertino-cupertino-main,Cupertino Main,"19439 Stevens Creek Blvd, Cupertino, CA 95014",37.3242262,-122.0105165,Bay Area
+philz-walnut-creek-walnut-creek,Walnut Creek,"1103 S California Blvd, Walnut Creek, CA 94596",37.8972067,-122.0635489,Bay Area
+philz-san-francisco-noe-valley,Noe Valley,"4298 24th St, San Francisco, CA 94114",37.7511414,-122.4383792,Bay Area
+philz-san-mateo-hillsdale,Hillsdale,"42 Hillsdale Mall, San Mateo, CA 94403",37.5388043,-122.302004,Bay Area
+philz-fremont-fremont,Fremont,"39000 Paseo Padre Pkwy, Fremont, CA 94538",37.5535513,-121.980306,Bay Area
+philz-san-francisco-castro,Castro,"549 Castro St, San Francisco, CA 94114",37.7601055,-122.4346797,Bay Area
+philz-oakland-lakeshore-oakland,Lakeshore Oakland,"3347 Lakeshore Avenue, Oakland, CA 94610",37.8112398,-122.2434366,Bay Area
+philz-burlingame-burlingame,Burlingame,"305 Primrose Rd, Burlingame, CA 94010",37.5779248,-122.3485707,Bay Area
+philz-los-gatos-los-gatos,Los Gatos,"681 Blossom Hill Rd, Los Gatos, CA 95032",37.2359736,-121.9635663,Bay Area
+philz-san-francisco-embarcadero,Embarcadero,"5 Embarcadero Center, San Francisco, CA 94111",37.7945298,-122.3951458,Bay Area
+philz-san-francisco-russian-hill,Russian Hill,"2234 Polk St, San Francisco, CA 94109",37.7975392,-122.4219848,Bay Area
+philz-san-francisco-front-st,Front St,"1 Front St, San Francisco, CA 94111",37.7918825,-122.3988519,Bay Area
+philz-campbell-campbell,Campbell,"1976 S Bascom Ave, Campbell, CA 95008",37.2870273,-121.931647,Bay Area
+philz-san-francisco-civic-center,Civic Center,"399 Golden Gate Ave, San Francisco, CA 94102",37.781385,-122.416976,Bay Area
+philz-san-francisco-berry,Berry,"201 Berry St, San Francisco, CA 94158",37.7755634,-122.3933972,Bay Area
+philz-san-francisco-potrero,Potrero,"1775 17th St, San Francisco, CA 94103",37.7647559,-122.4011997,Bay Area
+philz-san-francisco-chase-center,Chase Center,"1 Warriors Way, San Francisco, CA 94158",37.7679001,-122.3874223,Bay Area
+philz-cupertino-deanza-cupertino,DeAnza - Cupertino,"20686 Stevens Creek Blvd, Cupertino, CA 95014",37.3225787,-122.034649,Bay Area
+philz-redwood-city-redwood-city,Redwood City,"2116 Broadway, Redwood City, CA 94063",37.4866611,-122.228595,Bay Area
+philz-san-francisco-ocean-ave,Ocean Ave,"1110 Ocean Ave, San Francisco, CA 94112",37.7236571,-122.4537767,Bay Area
+philz-brea-brea-mall,Brea Mall,"1240 Brea Mall, Brea, CA 92821",33.917613,-117.8843567,LA basin
+philz-beverly-hills-south-beverly,South Beverly,"233 South Beverly Drive, Beverly Hills, CA 90212",34.0637237,-118.399308,LA basin
+philz-orange-old-towne-orange,Old Towne Orange,"202 N Glassell St, Orange, CA 92866",33.789841,-117.853187,LA basin
+philz-pasadena-pasadena,Pasadena,"146 S Lake Ave, Pasadena, CA 91101",34.1432645,-118.13177,LA basin
+philz-glendale-glendale,Glendale,"252 South Brand Blvd, Glendale, CA 91204",34.1427824,-118.2547408,LA basin
+philz-torrance-del-amo-fashion-center,Del Amo Fashion Center,"21434 Hawthorne Boulevard, Torrance, CA 90503",33.8342763,-118.3511753,LA basin
+philz-los-angeles-hollywood,Hollywood,"6430 Sunset Blvd, Los Angeles, CA 90028",34.0976563,-118.3299312,LA basin
+philz-los-angeles-dtla-hope,DTLA – Hope,"801 S Hope St, Los Angeles, CA 90017",34.0462665,-118.2596525,LA basin
+philz-culver-city-culver-city,Culver City,"9300 Culver Blvd, Culver City, CA 90232",34.0244516,-118.3933641,LA basin
+philz-los-angeles-los-feliz,Los Feliz,"2117 Hillhurst Avenue, Los Angeles, CA 90027",34.1104689,-118.2876272,LA basin

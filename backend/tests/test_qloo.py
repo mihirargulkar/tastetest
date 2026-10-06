@@ -125,3 +125,18 @@ def test_parsers():
     assert parse_heatmap({"results": {"heatmap": [{"location": {"latitude": 1.0, "longitude": 2.0},
                                                     "query": {"affinity": 0.5, "popularity": 0.4}}]}}) == [
         {"lat": 1.0, "lon": 2.0, "affinity": 0.5, "popularity": 0.4}]
+
+
+async def test_heatmap_polygon_area_goes_to_filter_location(tmp_path):
+    seen = []
+
+    def handler(request):
+        seen.append(dict(request.url.params))
+        return httpx.Response(200, json={"results": {"heatmap": []}})
+
+    q = make_client(tmp_path, handler)
+    wkt = "POLYGON((0 0,1 0,1 1,0 1,0 0))"
+    await q.heatmap({"id": "T1", "kind": "tag"}, wkt)
+    await q.heatmap({"id": "T1", "kind": "tag"}, "Brooklyn")
+    assert seen[0]["filter.location"] == wkt and "filter.location.query" not in seen[0]
+    assert seen[1]["filter.location.query"] == "Brooklyn" and "filter.location" not in seen[1]

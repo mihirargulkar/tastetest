@@ -25,7 +25,7 @@ export default function TraceBar({ trace, stability, metros, metro, onMetro }) {
           {trace.map((t, i) => <li key={i}><code>{t.tool}</code> {JSON.stringify(t.args)} → {t.summary}</li>)}
         </ol>
       )}
-      <p className="fine">Fit is relative to each city. Prioritizes which stores to test in. Not a sales forecast. Not affiliated with {CHAIN}.</p>
+      <p className="fine">Fit is relative to each region. Prioritizes which stores to test in. Not a sales forecast. Not affiliated with {CHAIN}.</p>
     </footer>
   );
 }

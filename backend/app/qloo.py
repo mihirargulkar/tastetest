@@ -96,10 +96,10 @@ class Qloo:
     async def search_places(self, query: str, take: int = 5) -> list[dict]:
         return parse_search(await self.get("/search", {"query": query, "types": "urn:entity:place", "take": take}))
 
-    async def heatmap(self, item: dict, metro: str) -> list[dict]:
+    async def heatmap(self, item: dict, area: str) -> list[dict]:
         key = "signal.interests.tags" if item["kind"] == "tag" else "signal.interests.entities"
-        return parse_heatmap(await self.get("/v2/insights", {
-            "filter.type": "urn:heatmap", "filter.location.query": metro, key: item["id"]}))
+        loc = "filter.location" if area.startswith(("POLYGON", "MULTIPOLYGON")) else "filter.location.query"
+        return parse_heatmap(await self.get("/v2/insights", {"filter.type": "urn:heatmap", loc: area, key: item["id"]}))
 
     async def area_tags(self, lat: float, lon: float, radius_m: int, take: int = 10) -> list[dict]:
         return parse_area_tags(await self.get("/v2/insights", {
