@@ -45,11 +45,12 @@ def test_missing_data_rules():
               store("nodata", 0.0, 0.0, metro="M2")]
     cells = {"M": {"T1": [cell(0.0, 0.0, 0.9, popularity=0.1), cell(0.0, 0.1, 0.5)]}}
     by_id = {s["id"]: s for s in score(stores, cells, {"T1": 1.0})}
-    assert by_id["far"]["affinity"] == 0.0 and by_id["far"]["confidence"] == "low"  # city has data, none nearby
+    assert by_id["far"]["affinity"] is None and by_id["far"]["fit"] is None  # city has data, none nearby: missing, not 0
+    assert by_id["far"]["confidence"] == "none"
     assert by_id["nodata"]["fit"] is None and by_id["nodata"]["confidence"] == "none"  # city has no data
     assert by_id["a"]["confidence"] == "low"  # popularity below MIN_POPULARITY
     out = score(stores, cells, {"T1": 1.0})
-    assert [s["id"] for s in out] == ["a", "b", "far", "nodata"]
+    assert [s["id"] for s in out] == ["a", "b", "far", "nodata"]  # far and nodata tie at the end, input order
 
 
 def test_item_without_city_data_is_skipped_not_penalized():
@@ -104,31 +105,11 @@ def test_stability_needs_two_items():
     assert stability(four_stores(), {"M": {"T1": cells_for([0.9, 0.7, 0.5, 0.3])}}, {"T1": 1.0}) is None
 
 
-def _ab_stores():
-    return [store("A", 0.0, 0.0), store("B", 0.0, 0.1), store("C", 0.0, 0.2)]
 
-
-def _lons(affs):
-    return [cell(0.0, 0.1 * i, a) for i, a in enumerate(affs)]
-
-
-def test_baseline_cancels_common_factor():
-    cells = {"M": {"T1": _lons([0.9, 0.6, 0.3])}}
-    base = {"M": [_lons([0.9, 0.1, 0.3])]}
-    out = score(_ab_stores(), cells, {"T1": 1.0}, base)
-    assert out[0]["id"] == "B"
-    for r in out:
-        assert r["lift"] == pytest.approx(r["affinity"] - r["baseline"])
-    assert {r["id"]: round(r["lift"], 2) for r in out} == {"A": 0.0, "B": 0.5, "C": 0.0}
-
-
-def test_empty_baseline_lists_leave_lift_equal_affinity():
-    cells = {"M": {"T1": _lons([0.9, 0.6, 0.3])}}
-    out = score(_ab_stores(), cells, {"T1": 1.0}, {"M": [[], []]})
-    assert all(r["baseline"] is None and r["lift"] == r["affinity"] for r in out)
-
-
-def test_stability_with_baseline():
-    cells = {"M": {"T1": _lons([0.9, 0.6, 0.3]), "T2": _lons([0.2, 0.8, 0.5])}}
-    st = stability(_ab_stores(), cells, {"T1": 1.0, "T2": 1.0}, {"M": [_lons([0.9, 0.1, 0.3])]})
-    assert set(st) == {"rho", "weakest"}
+def test_items_holds_per_item_affinity_none_when_skipped():
+    stores = [store("a", 0.0, 0.0), store("far", 10.0, 10.0)]
+    cells = {"M": {"T1": [cell(0.0, 0.0, 0.8)], "T2": [cell(0.0, 0.0, 0.3), cell(10.0, 10.0, 0.6)]}}
+    by_id = {s["id"]: s for s in score(stores, cells, {"T1": 1.0, "T2": 1.0})}
+    assert by_id["a"]["items"] == {"T1": 0.8, "T2": 0.3}
+    assert by_id["far"]["items"] == {"T1": None, "T2": 0.6}
+    assert by_id["far"]["affinity"] == 0.6  # T1 skipped, not zeroed

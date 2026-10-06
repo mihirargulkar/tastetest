@@ -76,7 +76,7 @@ export default function App() {
       <InputCard demos={demos} lto={lto} setLto={setLto} signature={signature} setSignature={setSignature}
         busy={busy} onDemo={loadDemo} onReadTaste={readTaste} onScore={scoreStores} storeCount={stores.length} />
       {selectedStore
-        ? <StoreDrawer store={selectedStore} brief={briefs[selected]} onClose={() => setSelected(null)} />
+        ? <StoreDrawer store={selectedStore} signature={signature} allStores={result?.stores || []} brief={briefs[selected]} onClose={() => setSelected(null)} />
         : <RankCard result={result} busy={busy === "score"} onSelect={openStore} />}
       <TraceBar trace={trace} stability={result?.stability} metros={metros} metro={metro} onMetro={setMetro} />
       {error && <div className="toast" role="alert">{error} <button onClick={() => setError(null)} aria-label="Dismiss">×</button></div>}

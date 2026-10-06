@@ -21,42 +21,39 @@ def nearest_cell(cells: list[dict], lat: float, lon: float, max_km: float = MAX_
     return best if km(lat, lon, best["lat"], best["lon"]) <= max_km else None
 
 
-def _store_affinity(store: dict, cells_by_item: dict, weights: dict) -> tuple[float | None, float | None]:
+def _store_affinity(store: dict, cells_by_item: dict, weights: dict):
+    """Weighted mean nearest-cell affinity over the items with a usable cell.
+
+    An item is skipped (None) when the city has no cells for it or no cell lies within MAX_CELL_KM of the store:
+    missing data is missing, not zero. Returns (affinity, popularity, per-item affinities).
+    """
+    items = {item_id: None for item_id in cells_by_item}
     hits = []  # (weight, affinity, popularity)
     for item_id, cells in cells_by_item.items():
-        if not cells:
-            continue  # the city has no data for this item: skip it rather than penalize the store
-        c = nearest_cell(cells, store["lat"], store["lon"])
-        # Cells only exist where there's signal, so none nearby (in a city with data) means low interest.
-        hits.append((weights[item_id], c["affinity"], c["popularity"]) if c else (weights[item_id], 0.0, 0.0))
+        c = nearest_cell(cells, store["lat"], store["lon"]) if cells else None
+        if c:
+            items[item_id] = c["affinity"]
+            hits.append((weights[item_id], c["affinity"], c["popularity"]))
     total = sum(w for w, _, _ in hits)
     if total == 0:
-        return None, None
-    return sum(w * a for w, a, _ in hits) / total, mean(p for _, _, p in hits)
+        return None, None, items
+    return sum(w * a for w, a, _ in hits) / total, mean(p for _, _, p in hits), items
 
 
-def _baseline_affinity(store: dict, baseline_lists: list[list[dict]]) -> float | None:
-    """Unweighted mean nearest-cell affinity over the baseline tags, same sparse-cell rules as _store_affinity."""
-    affs = [(c["affinity"] if (c := nearest_cell(cells, store["lat"], store["lon"])) else 0.0)
-            for cells in baseline_lists if cells]
-    return mean(affs) if affs else None
-
-
-def score(stores: list[dict], cells_by_metro: dict, weights: dict, baseline_by_metro: dict | None = None) -> list[dict]:
+def score(stores: list[dict], cells_by_metro: dict, weights: dict) -> list[dict]:
+    """fit = z-score of weighted nearest-cell affinity across the chain; `items` gives each item's affinity per store."""
     rows = []
     for s in stores:
-        aff, pop = _store_affinity(s, cells_by_metro.get(s["metro"], {}), weights)
-        base = _baseline_affinity(s, baseline_by_metro.get(s["metro"], [])) if baseline_by_metro else None
-        lift = None if aff is None else aff if base is None else aff - base
-        rows.append({**s, "affinity": aff, "popularity": pop, "baseline": base, "lift": lift})
-    vals = [r["lift"] for r in rows if r["lift"] is not None]
+        aff, pop, items = _store_affinity(s, cells_by_metro.get(s["metro"], {}), weights)
+        rows.append({**s, "affinity": aff, "popularity": pop, "items": items})
+    vals = [r["affinity"] for r in rows if r["affinity"] is not None]
     mu = mean(vals) if vals else 0.0
     sd = pstdev(vals) if len(vals) > 1 else 0.0
     for r in rows:
         if r["affinity"] is None:
             r["fit"], r["confidence"] = None, "none"
         else:
-            r["fit"] = round((r["lift"] - mu) / sd, 2) if sd else 0.0
+            r["fit"] = round((r["affinity"] - mu) / sd, 2) if sd else 0.0
             r["confidence"] = "high" if r["popularity"] >= MIN_POPULARITY else "low"
     return sorted(rows, key=lambda r: (r["fit"] is None, -(r["fit"] or 0)))
 
@@ -93,16 +90,16 @@ def spearman(a: list[float], b: list[float]) -> float | None:
     return sum((x - ma) * (y - mb) for x, y in zip(ra, rb)) / (len(ra) * sa * sb)
 
 
-def stability(stores: list[dict], cells_by_metro: dict, weights: dict, baseline_by_metro: dict | None = None) -> dict | None:
+def stability(stores: list[dict], cells_by_metro: dict, weights: dict) -> dict | None:
     """Leave-one-out: how much does the ranking move when any single concept is dropped? Reports the worst case."""
     if len(weights) < 2:
         return None
-    full = {s["id"]: s["fit"] for s in score(stores, cells_by_metro, weights, baseline_by_metro)}
+    full = {s["id"]: s["fit"] for s in score(stores, cells_by_metro, weights)}
     worst = None
     for item_id in weights:
         w2 = {k: v for k, v in weights.items() if k != item_id}
         c2 = {m: {k: v for k, v in items.items() if k != item_id} for m, items in cells_by_metro.items()}
-        reduced = {s["id"]: s["fit"] for s in score(stores, c2, w2, baseline_by_metro)}
+        reduced = {s["id"]: s["fit"] for s in score(stores, c2, w2)}
         ids = [i for i in full if full[i] is not None and reduced.get(i) is not None]
         rho = spearman([full[i] for i in ids], [reduced[i] for i in ids])
         if rho is not None and (worst is None or rho < worst[0]):

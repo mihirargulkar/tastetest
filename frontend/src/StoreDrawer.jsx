@@ -6,7 +6,7 @@ function Meter({ fit, confidence }) {
   return (
     <div>
       <div className="meter"><i /><b style={bar} /></div>
-      <div className="src">fit vs. chain average (relative to each region) · confidence: {confidence}</div>
+      <div className="src">local demand vs. chain average (relative to each region) · confidence: {confidence}</div>
     </div>
   );
 }
@@ -25,7 +25,27 @@ function Section({ title, children }) {
   return <div className="sec"><div className="label" style={{ marginTop: 0 }}>{title}</div>{children}</div>;
 }
 
-export default function StoreDrawer({ store, brief, onClose }) {
+function Drivers({ store, signature, allStores }) {
+  const rows = signature.flatMap((it) => {
+    const a = store.items?.[it.id];
+    if (a == null) return [];
+    const vals = allStores.map((s) => s.items?.[it.id]).filter((v) => v != null);
+    return [{ id: it.id, name: it.name, a, avg: vals.reduce((x, y) => x + y, 0) / vals.length }];
+  });
+  if (!rows.length) return null;
+  return (
+    <Section title="What drives this score">
+      {rows.map((r) => (
+        <div key={r.id} className="ent">
+          <span>{r.name}</span>
+          <span className="src">· {Math.round(r.a * 100)}% {r.a > r.avg ? "▲" : "▼"} chain avg {Math.round(r.avg * 100)}%</span>
+        </div>
+      ))}
+    </Section>
+  );
+}
+
+export default function StoreDrawer({ store, signature, allStores, brief, onClose }) {
   return (
     <aside className="card drawer" aria-label={`${store.name} brief`}>
       <header className="drawer-head">
@@ -37,6 +57,7 @@ export default function StoreDrawer({ store, brief, onClose }) {
         <>
           <p className="verdict"><b>{LABEL[brief.label]}</b> {brief.verdict}</p>
           {store.fit != null && <Meter fit={store.fit} confidence={store.confidence} />}
+          <Drivers store={store} signature={signature} allStores={allStores} />
           <Section title="Why">
             <div className="chips">{brief.why_tags.map((t) => <span key={t.id} className="chip" style={{ paddingRight: 10 }}>{t.name}</span>)}</div>
             <div className="src">Qloo taste analysis · 1.2 km radius</div>
