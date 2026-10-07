@@ -41,11 +41,11 @@ The preloaded demos and their briefs are served from precomputed files and need 
 
 ## Use your own chain
 
-1. Replace `backend/data/stores.csv` with your stores; `scripts/geocode.py` fills in lat/lon.
+1. Replace `backend/data/stores.csv` with your stores; `backend/scripts/geocode.py` fills in lat/lon.
 2. Edit `backend/data/regions.json` with a polygon per metro your stores sit in.
-3. Run `scripts/coverage_check.py` to confirm Qloo has heatmap data for your regions.
+3. Run `backend/scripts/coverage_check.py` to confirm Qloo has heatmap data for your regions.
 4. Set `CHAIN` in `frontend/src/config.js`.
-5. Re-run `scripts/precompute_demos.py`.
+5. Re-run `backend/scripts/precompute_demos.py` . Run the scripts from `backend/` (e.g. `cd backend && python scripts/precompute_demos.py`) with `QLOO_API_KEY` and `ANTHROPIC_API_KEY` exported.
 
 ## License
 
