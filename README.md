@@ -2,7 +2,7 @@
 
 **Tells a coffee chain which stores to test a new drink in, and why, based on local demand for the drink's ingredients.**
 
-Live demo: <Render URL> · Built for the [Qloo Agentic Hackathon](https://qloo.devpost.com)
+Live demo: https://tastetest-i5p5.onrender.com (free hosting: the first visit after idle takes ~30-60s to wake) · Built for the [Qloo Agentic Hackathon](https://qloo.devpost.com)
 
 ## What it does
 
