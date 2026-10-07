@@ -1,0 +1,10 @@
+.env
+**/.env
+**/node_modules
+**/.venv
+**/__pycache__
+frontend/dist
+backend/data/cache
+backend/tests/.probe-cache
+.superpowers
+.git

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: tastetest
+    runtime: docker
+    plan: starter # free plan sleeps; a ~50s cold start could hit a judge's first click
+    healthCheckPath: /api/demos
+    envVars:
+      - key: QLOO_API_KEY
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: LIVE_MODE
+        value: "on"
+      - key: LIVE_RUNS_PER_DAY
+        value: "30"
+      - key: BRIEFS_PER_DAY
+        value: "200"
