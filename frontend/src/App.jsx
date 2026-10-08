@@ -21,7 +21,7 @@ export default function App() {
 
   useEffect(() => {
     Promise.all([getJSON("/api/stores"), getJSON("/api/demos")])
-      .then(([s, d]) => { setStores(s); setDemos(d); if (d.length) loadDemo(d[0].slug); })
+      .then(([s, d]) => { setStores(s); setDemos(d); const want = new URLSearchParams(location.search).get("demo"); if (d.length) loadDemo(d.some((x) => x.slug === want) ? want : d[0].slug); })
       .catch((e) => setError(e.message));
   }, []);
 
