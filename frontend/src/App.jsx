@@ -19,6 +19,7 @@ export default function App() {
   const [busy, setBusy] = useState(null); // "signature" | "score" | null
   const [error, setError] = useState(null);
   const [runFrom, setRunFrom] = useState(0);
+  const [freshResult, setFreshResult] = useState(false); // row fade-up only after a live score run
 
   useEffect(() => {
     Promise.all([getJSON("/api/stores"), getJSON("/api/demos")])
@@ -30,14 +31,14 @@ export default function App() {
     try {
       const d = await getJSON(`/api/demos/${slug}`);
       setLto(d.lto); setSignature(d.signature); setResult(d.result);
-      setBriefs(d.briefs || {}); setTrace(d.trace || []); setSelected(null); setError(null);
+      setBriefs(d.briefs || {}); setTrace(d.trace || []); setSelected(null); setError(null); setFreshResult(false);
     } catch (e) { setError(e.message); }
   }
 
   function onEvent(ev) {
     if (ev.type === "trace") setTrace((t) => [...t, ev]);
     else if (ev.type === "signature") setSignature(ev.items);
-    else if (ev.type === "result") setResult(ev);
+    else if (ev.type === "result") { setResult(ev); setFreshResult(true); }
     else if (ev.type === "error") setError(ev.message);
   }
 
@@ -63,7 +64,7 @@ export default function App() {
   const metros = useMemo(() => [...new Set(stores.map((s) => s.metro))].sort(), [stores]);
 
   async function openStore(id) {
-    setSelected(id);
+    setSelected(id); setFreshResult(false);
     if (briefs[id] || signature.length === 0) return;
     const fit = result?.stores.find((s) => s.id === id)?.fit ?? null;
     try {
@@ -81,7 +82,7 @@ export default function App() {
         busy={busy} onDemo={loadDemo} onReadTaste={readTaste} onScore={scoreStores} storeCount={stores.length} runTrace={runTrace} />
       {selectedStore
         ? <StoreDrawer store={selectedStore} signature={signature} allStores={result?.stores || []} brief={briefs[selected]} onClose={() => setSelected(null)} />
-        : <RankCard result={result} busy={busy === "score"} onSelect={openStore} runTrace={runTrace} storeCount={stores.length} />}
+        : <RankCard result={result} busy={busy === "score"} onSelect={openStore} runTrace={runTrace} storeCount={stores.length} animate={freshResult} />}
       <TraceBar trace={trace} stability={result?.stability} metros={metros} metro={metro} onMetro={setMetro} />
       {error && <div className="toast" role="alert">{error} <button onClick={() => setError(null)} aria-label="Dismiss">×</button></div>}
     </div>

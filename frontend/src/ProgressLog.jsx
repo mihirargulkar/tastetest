@@ -1,12 +1,14 @@
-import { foundTags, scoreSteps, signatureSteps } from "./progress";
+import { foundTags, scoreSteps, signatureSteps, statusText } from "./progress";
 
 export default function ProgressLog({ kind, trace, storeCount }) {
   const steps = kind === "signature" ? signatureSteps(trace) : scoreSteps(trace, storeCount);
   const tags = kind === "signature" ? foundTags(trace) : [];
   return (
-    <ol className="progress" aria-live="polite" aria-label="Run progress">
+    <>
+    <p className="sr-only" aria-live="polite">{statusText(steps)}</p>
+    <ol className="progress" aria-label="Run progress">
       {steps.map((s, i) => (
-        <li key={s.label} className={`step ${s.state}`}>
+        <li key={s.label} className={`step ${s.state}`} aria-current={s.state === "now" ? "step" : undefined}>
           <span className="step-mark" aria-hidden="true">{s.state === "done" ? "✓" : ""}</span>
           <span className="step-body">
             <span className={s.state === "now" ? "step-label shimmer" : "step-label"}>{s.label}</span>
@@ -18,5 +20,6 @@ export default function ProgressLog({ kind, trace, storeCount }) {
         </li>
       ))}
     </ol>
+    </>
   );
 }

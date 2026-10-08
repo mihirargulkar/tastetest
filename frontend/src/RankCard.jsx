@@ -4,11 +4,11 @@ function fmt(fit) {
   return `${fit > 0 ? "+" : ""}${fit.toFixed(1)}`;
 }
 
-export default function RankCard({ result, busy, onSelect, runTrace, storeCount }) {
+export default function RankCard({ result, busy, onSelect, runTrace, storeCount, animate }) {
   if (!result) {
     if (busy) {
       return (
-        <section className="card rank-card" aria-busy="true" aria-label="Scoring stores">
+        <section className="card rank-card" aria-label="Scoring stores">
           <ProgressLog kind="score" trace={runTrace} storeCount={storeCount} />
           <div className="label">Test here</div>
           {[88, 70, 80, 62, 75].map((w, i) => <div key={i} className="sk" style={{ width: `${w}%` }} />)}
@@ -27,7 +27,7 @@ export default function RankCard({ result, busy, onSelect, runTrace, storeCount 
   const renderRow = (id, idx) => {
     const s = byId[id];
     return (
-      <li key={id} className="row-in" style={{ "--i": idx }}>
+      <li key={id} className={animate ? "row-in" : undefined} style={animate ? { "--i": idx } : undefined}>
         <button className="row" onClick={() => onSelect(id)}>
           <span className="row-main"><span>{s.name}</span><span className={s.fit >= 0 ? "up" : "dn"}>{fmt(s.fit)}</span></span>
           {result.reasons?.[id] && <span className="why">{result.reasons[id]}</span>}

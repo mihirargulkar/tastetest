@@ -16,7 +16,7 @@ export default function InputCard({ demos, lto, setLto, signature, setSignature,
       <h1>TasteTest</h1>
       <p className="sub">Where should your next limited-time drink launch first?</p>
       {demos.length > 0 && (
-        <div>{demos.map((d) => <button key={d.slug} className="pill" onClick={() => onDemo(d.slug)}>{d.title}</button>)}</div>
+        <div>{demos.map((d) => <button key={d.slug} className="pill" disabled={!!busy} onClick={() => onDemo(d.slug)}>{d.title}</button>)}</div>
       )}
       <label className="label" htmlFor="lto">New LTO</label>
       <textarea id="lto" maxLength={500} value={lto} onChange={(e) => setLto(e.target.value)}

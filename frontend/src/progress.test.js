@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { foundTags, scoreSteps, signatureSteps } from "./progress.js";
+import { foundTags, scoreSteps, signatureSteps, statusText } from "./progress.js";
 
 const t = (tool, summary) => ({ type: "trace", tool, args: {}, summary });
 
@@ -33,4 +33,14 @@ test("scoreSteps advances on score_stores then area_taste, with a read count", (
   assert.deepEqual(steps.map((s) => s.state), ["done", "done", "now"]);
   assert.equal(steps[1].detail, "2 neighborhoods read");
   assert.equal(steps[2].label, "Writing reasons");
+});
+
+test("statusText names the current step, with detail when present, else Done", () => {
+  assert.equal(statusText(scoreSteps([], 40)), "Step 1 of 3: Scoring 40 stores");
+  const read = [t("score_stores", "40 of 40 stores scored"), t("area_taste", "3 results: a"), t("area_taste", "3 results: b")];
+  assert.equal(statusText(scoreSteps(read.slice(0, 2), 40)), "Step 3 of 3: Writing reasons");
+  const mid = [t("score_stores", "40 of 40 stores scored")];
+  assert.equal(statusText(scoreSteps(mid, 40)), "Step 2 of 3: Reading each neighborhood");
+  assert.equal(statusText([{ label: "A", state: "now", detail: "2 read" }]), "Step 1 of 1: A, 2 read");
+  assert.equal(statusText([{ label: "A", state: "done" }, { label: "B", state: "done" }]), "Done");
 });

@@ -32,3 +32,10 @@ export function scoreSteps(trace, storeCount) {
   if (reads > 0) steps[1].detail = `${reads} neighborhoods read`;
   return steps;
 }
+
+export function statusText(steps) {
+  const i = steps.findIndex((s) => s.state === "now");
+  if (i < 0) return "Done";
+  const s = steps[i];
+  return `Step ${i + 1} of ${steps.length}: ${s.label}${s.detail ? `, ${s.detail}` : ""}`;
+}
