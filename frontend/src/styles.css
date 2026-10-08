@@ -57,3 +57,33 @@ ul { list-style: none; margin: 0; padding: 0; }
   .input-card, .rank-card, .drawer, .trace-bar { position: static; width: auto; margin: 8px; max-height: none; }
   .maplibregl-ctrl-bottom-right { bottom: 0; }
 }
+
+/* Live-run loading state */
+.progress { list-style: none; margin: 12px 0 4px; padding: 0; }
+.step { display: flex; gap: 8px; align-items: flex-start; padding: 4px 0; color: var(--muted); font-size: 13px; }
+.step.done, .step.now { color: var(--ink); }
+.step-mark { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--line); flex: none; margin-top: 2px; display: grid; place-items: center; font-size: 9px; color: #fff; }
+.step.done .step-mark { background: var(--green-dark); border-color: var(--green-dark); }
+.step.now .step-mark { border-color: var(--green-dark); border-top-color: transparent; }
+.step-detail { color: var(--muted); }
+.found { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.found-chip { padding: 2px 9px; }
+.sk { height: 10px; border-radius: 5px; background: #eee9df; margin: 9px 0; }
+.map-scan { position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
+.map-scan::before { content: ""; position: absolute; top: 0; bottom: 0; width: 140px; left: -140px;
+  background: linear-gradient(90deg, transparent, rgba(255, 253, 248, 0.45), transparent); }
+@media (prefers-reduced-motion: no-preference) {
+  .step.now .step-mark { animation: tt-spin 0.9s linear infinite; }
+  .shimmer { background: linear-gradient(90deg, var(--ink) 40%, #b9b2a4 50%, var(--ink) 60%); background-size: 250% 100%;
+    -webkit-background-clip: text; background-clip: text; color: transparent; animation: tt-shimmer 1.8s linear infinite; }
+  .found-chip { animation: tt-pop 0.35s ease-out both; }
+  .sk { background: linear-gradient(90deg, #eee9df 25%, #f8f5ef 50%, #eee9df 75%); background-size: 200% 100%;
+    animation: tt-sk 1.3s ease-in-out infinite; }
+  .map-scan::before { animation: tt-scan 2.2s ease-in-out infinite; }
+  .row-in { animation: tt-pop 0.35s ease-out both; animation-delay: calc(var(--i) * 70ms); }
+}
+@keyframes tt-spin { to { transform: rotate(360deg); } }
+@keyframes tt-shimmer { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+@keyframes tt-pop { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes tt-sk { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@keyframes tt-scan { from { left: -140px; } to { left: 100%; } }

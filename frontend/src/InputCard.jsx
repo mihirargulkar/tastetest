@@ -1,6 +1,7 @@
 import { useState } from "react";
+import ProgressLog from "./ProgressLog";
 
-export default function InputCard({ demos, lto, setLto, signature, setSignature, busy, onDemo, onReadTaste, onScore, storeCount }) {
+export default function InputCard({ demos, lto, setLto, signature, setSignature, busy, onDemo, onReadTaste, onScore, storeCount, runTrace }) {
   const [instruction, setInstruction] = useState("");
 
   function refine(e) {
@@ -23,6 +24,7 @@ export default function InputCard({ demos, lto, setLto, signature, setSignature,
       <button className="btn secondary" disabled={!lto.trim() || !!busy} onClick={() => onReadTaste()}>
         {busy === "signature" ? "Reading the taste…" : "Read the taste"}
       </button>
+      {busy === "signature" && <ProgressLog kind="signature" trace={runTrace} />}
 
       {signature.length > 0 && (
         <>

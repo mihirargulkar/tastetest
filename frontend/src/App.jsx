@@ -18,6 +18,7 @@ export default function App() {
   const [metro, setMetro] = useState(null);
   const [busy, setBusy] = useState(null); // "signature" | "score" | null
   const [error, setError] = useState(null);
+  const [runFrom, setRunFrom] = useState(0);
 
   useEffect(() => {
     Promise.all([getJSON("/api/stores"), getJSON("/api/demos")])
@@ -42,6 +43,7 @@ export default function App() {
 
   async function run(kind, url, body) {
     setBusy(kind); setError(null);
+    setRunFrom(kind === "signature" ? 0 : trace.length);
     if (kind === "signature") setTrace([]);
     if (kind === "score") { setResult(null); setBriefs({}); setSelected(null); }
     let terminal = false;
@@ -70,14 +72,16 @@ export default function App() {
     } catch (e) { setError(e.message); }
   }
 
+  const runTrace = trace.slice(runFrom);
+
   return (
     <div className="app">
-      <MapView stores={shown} selected={selected} metro={metro} onSelect={openStore} />
+      <MapView stores={shown} selected={selected} metro={metro} onSelect={openStore} scanning={busy === "score"} />
       <InputCard demos={demos} lto={lto} setLto={setLto} signature={signature} setSignature={setSignature}
-        busy={busy} onDemo={loadDemo} onReadTaste={readTaste} onScore={scoreStores} storeCount={stores.length} />
+        busy={busy} onDemo={loadDemo} onReadTaste={readTaste} onScore={scoreStores} storeCount={stores.length} runTrace={runTrace} />
       {selectedStore
         ? <StoreDrawer store={selectedStore} signature={signature} allStores={result?.stores || []} brief={briefs[selected]} onClose={() => setSelected(null)} />
-        : <RankCard result={result} busy={busy === "score"} onSelect={openStore} />}
+        : <RankCard result={result} busy={busy === "score"} onSelect={openStore} runTrace={runTrace} storeCount={stores.length} />}
       <TraceBar trace={trace} stability={result?.stability} metros={metros} metro={metro} onMetro={setMetro} />
       {error && <div className="toast" role="alert">{error} <button onClick={() => setError(null)} aria-label="Dismiss">×</button></div>}
     </div>

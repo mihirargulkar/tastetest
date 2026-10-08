@@ -7,6 +7,10 @@ maplibregl.setWorkerUrl(workerUrl);
 
 const STYLE = "https://tiles.openfreemap.org/styles/positron"; // free, no API key
 
+const RADIUS = ["case", ["get", "selected"], 11, 7];
+const reduceMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const greyed = (stores) => stores.map((s) => ({ ...s, fit: null }));
+
 function toGeoJSON(stores, selected) {
   return {
     type: "FeatureCollection",
@@ -18,7 +22,7 @@ function toGeoJSON(stores, selected) {
   };
 }
 
-export default function MapView({ stores, selected, metro, onSelect }) {
+export default function MapView({ stores, selected, metro, onSelect, scanning }) {
   const container = useRef(null);
   const map = useRef(null);
   const onSelectRef = useRef(onSelect);
@@ -34,7 +38,7 @@ export default function MapView({ stores, selected, metro, onSelect }) {
       m.addLayer({
         id: "stores", type: "circle", source: "stores",
         paint: {
-          "circle-radius": ["case", ["get", "selected"], 11, 7],
+          "circle-radius": RADIUS,
           "circle-color": ["case", ["==", ["get", "fit"], null], "#9b958a",
             ["interpolate", ["linear"], ["get", "fit"], -2, "#b4432f", 0, "#d9c9a0", 2, "#2f7d3a"]],
           "circle-opacity": ["match", ["get", "confidence"], "low", 0.4, 1],
@@ -50,9 +54,43 @@ export default function MapView({ stores, selected, metro, onSelect }) {
     return () => m.remove();
   }, []);
 
+  const wasScanning = useRef(false);
   useEffect(() => {
-    if (ready) map.current.getSource("stores").setData(toGeoJSON(stores, selected));
-  }, [ready, stores, selected]);
+    if (!ready) return;
+    const src = map.current.getSource("stores");
+    const reveal = wasScanning.current && !scanning && stores.some((s) => s.fit != null) && !reduceMotion();
+    wasScanning.current = scanning;
+    if (!reveal) {
+      // While scanning, hide fits so a result that lands a render before busy clears doesn't flash in early.
+      src.setData(toGeoJSON(scanning ? greyed(stores) : stores, selected));
+      return;
+    }
+    const order = [...stores].sort((a, b) => (b.fit ?? -99) - (a.fit ?? -99)).map((s) => s.id);
+    const batch = Math.ceil(order.length / 16); // about 1 s at 60 ms per batch
+    const timers = [];
+    let k = 0;
+    const step = () => {
+      k = Math.min(order.length, k + batch);
+      const shown = new Set(order.slice(0, k));
+      src.setData(toGeoJSON(stores.map((s) => (shown.has(s.id) ? s : { ...s, fit: null })), selected));
+      if (k < order.length) timers.push(setTimeout(step, 60));
+    };
+    step();
+    return () => timers.forEach(clearTimeout);
+  }, [ready, stores, selected, scanning]);
+
+  useEffect(() => {
+    if (!ready || !scanning || reduceMotion()) return;
+    const m = map.current;
+    const t0 = performance.now();
+    let raf;
+    const tick = (now) => {
+      m.setPaintProperty("stores", "circle-radius", 8 + Math.sin((now - t0) / 350)); // 7..9 px, no React state
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => { cancelAnimationFrame(raf); m.setPaintProperty("stores", "circle-radius", RADIUS); };
+  }, [ready, scanning]);
 
   useEffect(() => {
     const inView = stores.filter((s) => !metro || s.metro === metro);
@@ -66,5 +104,9 @@ export default function MapView({ stores, selected, metro, onSelect }) {
     map.current.fitBounds(bounds, { padding, maxZoom: 13, duration: 800 });
   }, [ready, metro, stores.length]);
 
-  return <div ref={container} className="map" role="region" aria-label="Map of stores colored by fit" />;
+  return (
+    <div ref={container} className="map" role="region" aria-label="Map of stores colored by fit">
+      {scanning && !reduceMotion() && <div className="map-scan" aria-hidden="true" />}
+    </div>
+  );
 }
