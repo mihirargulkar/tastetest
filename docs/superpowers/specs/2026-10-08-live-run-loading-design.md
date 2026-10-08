@@ -28,15 +28,14 @@ Nothing changes on the backend.
 
 **Signature steps:**
 1. **Reading the drink** is current until the first tag-search trace arrives, then done.
-2. **Finding Qloo tags with local data** is current until the run ends.
+2. **Finding Qloo tags with local data** is current until the stream ends. It's the last signature step: the stream has no "searching finished" marker, so a third step could never become current.
    - Below it, the names parsed from each successful search summary appear as chips: the text after `": "`, split on `", "`. Show at most 3 per search and at most 12 in total, de-duplicated.
    - Chips pop in as their search arrives.
    - Failed searches add nothing.
-3. **Building the taste signature** is the final step and stays current until the stream ends.
 
 **Score steps:**
 1. **Scoring {storeCount} stores** is current until the `score_stores` trace arrives.
-2. **Reading each neighborhood** is current until the first `area_taste` trace arrives. It then shows `{n} of {m}` while the traces come in.
+2. **Reading each neighborhood** is current until the first `area_taste` trace arrives. Those traces arrive as one burst, so it then shows `{n} neighborhoods read`.
 3. **Writing reasons** is current until the stream ends.
 
 **Visuals:**
