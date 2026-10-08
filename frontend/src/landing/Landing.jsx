@@ -36,7 +36,7 @@ export default function Landing() {
           <div className="hero-row">
             <div className="hero-copy">
               <p className="lede rise">
-                TasteTest scores every store on how much its neighborhood likes the drink's ingredients, using Qloo taste data.
+                TasteTest scores every store on local demand for the drink's ingredients, using Qloo taste data.
               </p>
               <div className="ctas rise">
                 <OpenTool />
@@ -63,7 +63,7 @@ export default function Landing() {
           <div className="bento">
             <article className="cell cell-describe reveal">
               <h3>Describe the drink.</h3>
-              <p>Plain words are enough. The first demo starts from this line:</p>
+              <p>Plain words are enough. The matcha-yuzu demo starts from this line:</p>
               <blockquote>“Matcha-yuzu cold brew: bright, citrusy, aimed at a younger crowd”</blockquote>
             </article>
             <article className="cell cell-signature reveal">
