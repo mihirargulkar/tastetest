@@ -43,6 +43,14 @@ Qloo provides the signal at every step:
 
 Without Qloo there is nothing to rank. The LLM only chooses concepts and writes prose; every score comes from deterministic code over Qloo data.
 
+**The math.** Each signature item $i$ has a weight $w_i$. For store $s$, let $a_{s,i}$ be the affinity of the nearest Qloo heatmap cell within 1.5 km, and let $I_s$ be the items that have such a cell. An item with no nearby data is skipped, not counted as zero. The store's affinity and its fit are:
+
+$$A_s = \frac{\sum_{i \in I_s} w_i \, a_{s,i}}{\sum_{i \in I_s} w_i}, \qquad \text{fit}_s = \frac{A_s - \bar{A}}{\sigma_A}$$
+
+The stability check drops one item $j$ at a time, re-scores every store, and reports the worst-case rank agreement with the full ranking:
+
+$$\rho_{\min} = \min_{j} \; \rho_{\text{Spearman}}\left(\text{fit}, \; \text{fit}^{(-j)}\right)$$
+
 ### How I built it
 - **Backend:** Python and FastAPI.
   - A hand-written Claude tool-use loop: 12 tool calls max, with Qloo tag search and place search as tools.
@@ -59,7 +67,7 @@ Without Qloo there is nothing to rank. The LLM only chooses concepts and writes 
 ### Challenges I ran into
 - **Most tags have no heatmap data.** Probing the hackathon API showed heatmaps only return data for `specialty_dish` tags and place entities. So the agent became coverage-aware: it sees each tag's cell count and only keeps tags that have data.
 - **Coverage varies a lot by city.** Philadelphia returned zero heatmap cells, which ruled out Philly-heavy chains. Per-city queries were sparse too (Palo Alto had 21 cells), so I switched to region polygons. The Bay Area box returns 267 matcha cells and covers 30 of Philz's stores.
-- **The score was measuring popularity, not taste.** In my first version, three unrelated drinks produced nearly the same ranking (fit correlations up to 0.90). I tested five scoring variants against the data and found that, in this API, heatmap affinity for most dish tags tracks local popularity (r ≈ 0.91 to 0.95). Treating "no nearby data" as missing rather than zero brought the cross-drink correlations down to 0.48 to 0.67. Rather than overclaim, the app labels the score honestly as *local demand for the drink's ingredients* and shows the per-item drivers behind every store.
+- **The score was measuring popularity, not taste.** In my first version, three unrelated drinks produced nearly the same ranking (fit correlations up to 0.90). I tested five scoring variants against the data and found that, in this API, heatmap affinity for most dish tags tracks local popularity ($r \approx 0.91$ to $0.95$). Treating "no nearby data" as missing rather than zero brought the cross-drink correlations down to 0.48 to 0.67. Rather than overclaim, the app labels the score honestly as *local demand for the drink's ingredients* and shows the per-item drivers behind every store.
 - **Engineering details:**
   - MapLibre's web worker broke under Vite's bundling, so the map rendered blank; I loaded the worker explicitly instead.
   - Qloo rate-limits bursts, so concurrency is capped at 3 with exponential back-off.
